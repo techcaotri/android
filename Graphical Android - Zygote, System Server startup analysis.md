@@ -43,7 +43,7 @@ is the structure diagram of all the classes related to Zygote, and the other is
 the flow chart started by Zygote.
 
  
-<img src="/media/f0f6cc48c83d5fddf7c92d9214d86686.png" />
+<img src="/media/f0f6cc48c83d5fddf7c92d9214d86686.png" style="width: 100%; height:100%"/>
 
 According to the figure, we decompose the startup process of Zygote according
 to the serial number in Figure 1.
