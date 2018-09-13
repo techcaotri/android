@@ -43,8 +43,7 @@ is the structure diagram of all the classes related to Zygote, and the other is
 the flow chart started by Zygote.
 
  
-
-![Zyogote class structure diagram](media/f0f6cc48c83d5fddf7c92d9214d86686.png)
+<img src="/media/f0f6cc48c83d5fddf7c92d9214d86686.png" />
 
 According to the figure, we decompose the startup process of Zygote according
 to the serial number in Figure 1.
@@ -116,9 +115,7 @@ DNS service).
  
 
 **2. AndroidRuntime**
-
-     First of all, what is Runtime? Take a look at several explanations given by
-the wiki:      
+     First of all, what is Runtime? Take a look at several explanations given by the wiki:      
 
 -   [Run time (program lifecycle
     phase)](http://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase))*,
@@ -127,12 +124,9 @@ the wiki:      
 -   [Runtime library](http://en.wikipedia.org/wiki/Runtime_library)*, a program
     library designed to implement functions built into a programming language*
 
- 
+    I tend to refer to the latter here and see a further explanation:
 
-     I tend to refer to the latter here and see a further explanation:
-
-     *In *[computer
-programming](http://en.wikipedia.org/wiki/Computer_programming)*, a runtime
+     *In *[computer programming](http://en.wikipedia.org/wiki/Computer_programming)*, a runtime
 library is the *[API](http://en.wikipedia.org/wiki/API)* used by
 a *[compiler](http://en.wikipedia.org/wiki/Compiler)* to invoke some of the
 behaviors of a *[runtime system](http://en.wikipedia.org/wiki/Runtime_system)*.
