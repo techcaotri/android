@@ -55,15 +55,16 @@ to the serial number in Figure 1.
     The code is located in frameworks/base/cmds/app_process/app_main.cpp,
     specified in init.rc.
 
+```bash
 \#init.rc
 
 service zygote /system/bin/app_process -Xzygote /system/bin --zygote
 --start-system-server
 
 code show as below
-
+```
 ![Copy code](media/51e409b11aa51c150090697429a953ed.gif)
-```cpp - C++
+```cpp
 ...
 else if (strcmp(arg, "--zygote") == 0) {
     zygote = true;
@@ -98,9 +99,9 @@ if (zygote) {
        3. Other Java programs that specify the class name, such as the commonly
 used am. /system/bin/am is actually a shell program, its real implementation is 
      
-
+```bash
 exec app_process \$base/bin com.android.commands.am.Am "\$\@"
-
+```
 These Java applications are all started with AppRuntime.start(className). As you
 can see from the first big picture, AppRuntime is a subclass of AndroidRuntime.
 It mainly implements several callback functions, and the start() method is
