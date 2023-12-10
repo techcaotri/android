@@ -1,0 +1,1642 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android Permissions - Application permissions before android M and application permissions after M · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android Permissions - Provider permissions detailed.html" />
+    
+    
+    <link rel="prev" href="Android Permissions - The difference between setUidMode and setMode in AppOps.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android Permissions - Application permissions before android M and application permissions after M</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#application-permissions-before-android-m-and-application-permissions-after-m"><b>1. </b>Application permissions before android M and application permissions after M</a></li><ul><li><span class="title-icon "></span><a href="#reprinted-to-indicate-the-source"><b>1.1. </b>Reprinted to indicate the source:</a></li><li><span class="title-icon "></span><a href="#related-resources"><b>1.2. </b>related resources:</a></li><li><span class="title-icon "></span><a href="#foreword"><b>1.3. </b>Foreword:</a></li><li><span class="title-icon "></span><a href="#source-code-analysis"><b>1.4. </b>Source code analysis:</a></li><li><span class="title-icon "></span><a href="#first-look-at-startactivity"><b>1.5. </b>First look at startActivity:</a></li><li><span class="title-icon "></span><a href="#finally-it-will-call-startactivity-in-activitystarter"><b>1.6. </b>Finally, it will call startActivity in ActivityStarter:</a></li><li><span class="title-icon "></span><a href="#1-mservicecheckpermissionstartanyactivity-callingpid-callinguid"><b>1.7. </b>1. mService.checkPermission(START_ANY_ACTIVITY, callingPid, callingUid);</a></li><li><span class="title-icon "></span><a href="#2-getcomponentrestrictionforcallingpackage"><b>1.8. </b>2. getComponentRestrictionForCallingPackage()</a></li><li><span class="title-icon "></span><a href="#3-getactionrestrictionforcallingpackage"><b>1.9. </b>3. getActionRestrictionForCallingPackage()</a></li><li><span class="title-icon "></span><a href="#to-sum-up"><b>1.10. </b>to sum up:</a></li><li><span class="title-icon "></span><a href="#dialog-prompt"><b>1.11. </b>Dialog prompt</a></li></ul></ul></div><a href="#application-permissions-before-android-m-and-application-permissions-after-m" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="application-permissions-before-android-m-and-application-permissions-after-m"><a name="application-permissions-before-android-m-and-application-permissions-after-m" class="anchor-navigation-ex-anchor" href="#application-permissions-before-android-m-and-application-permissions-after-m"><i class="fa fa-link" aria-hidden="true"></i></a>1. Application permissions before android M and application permissions after M</h1>
+<p>Personal classification: <a href="https://blog.csdn.net/jingerppp/article/category/7732294" target="_blank">android ------ security and
+permissions</a></p>
+<p>Copyright statement: This article is the original article of the blogger, please
+be sure to indicate the author and the original
+link. Https://blog.csdn.net/jingerppp/article/details/80674768</p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#application-permissions-before-android-m-and-application-permissions-after-m"><strong>Application permissions before android M and application permissions after M</strong></a><ul>
+<li><a href="#reprinted-to-indicate-the-source"><strong>Reprinted to indicate the source:</strong></a></li>
+<li><a href="#related-resources"><strong>related resources:</strong></a></li>
+<li><a href="#foreword"><strong>Foreword:</strong></a></li>
+<li><a href="#source-code-analysis"><strong>Source code analysis:</strong></a></li>
+<li><a href="#first-look-at-startactivity"><strong>First look at startActivity:</strong></a></li>
+<li><a href="#finally-it-will-call-startactivity-in-activitystarter"><strong>Finally, it will call startActivity in ActivityStarter:</strong></a></li>
+<li><a href="#1-mservicecheckpermissionstartanyactivity-callingpid-callinguid"><strong>1. mService.checkPermission(START_ANY_ACTIVITY, callingPid, callingUid);</strong></a></li>
+<li><a href="#2-getcomponentrestrictionforcallingpackage"><strong>2. getComponentRestrictionForCallingPackage()</strong></a></li>
+<li><a href="#3-getactionrestrictionforcallingpackage"><strong>3. getActionRestrictionForCallingPackage()</strong></a></li>
+<li><a href="#to-sum-up"><strong>to sum up:</strong></a></li>
+<li><a href="#dialog-prompt"><strong>Dialog prompt</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="reprinted-to-indicate-the-source"><a name="reprinted-to-indicate-the-source" class="anchor-navigation-ex-anchor" href="#reprinted-to-indicate-the-source"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Reprinted to indicate the source:</h2>
+<p><a href="https://blog.csdn.net/shift_wwx/article/details/80674768" target="_blank">https://blog.csdn.net/shift_wwx/article/details/80674768</a></p>
+<h2 id="related-resources"><a name="related-resources" class="anchor-navigation-ex-anchor" href="#related-resources"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. related resources:</h2>
+<p><a href="Android%20Permissions%20-%20Android%20Runtime%20Permission.html">Android Runtime Permission,
+https://blog.csdn.net/jingerppp/article/details/80194908</a></p>
+<p><a href="Android%20Permissions%20-%20Android%20grantRuntimePermission%20Detailed.html">Android grantRuntimePermission
+Detailed, https://blog.csdn.net/jingerppp/article/details/80249595</a></p>
+<p><a href="Android%20Permissions%20-%20Android%20GrantPermissionsActivity%20Detailed.html">Android GrantPermissionsActivity
+Detailed, https://blog.csdn.net/jingerppp/article/details/80263467</a></p>
+<p><a href="Android%20Permissions%20-%20AppOps%20control%20for%20Normal%20permission.html">AppOps control for Normal
+permission, https://blog.csdn.net/jingerppp/article/details/80360676</a></p>
+<p><a href="Android%20Permissions%20-%20Android%20native%20permission%20control%20process.html">Android native permission control
+process, https://blog.csdn.net/jingerppp/article/details/80519212</a></p>
+<p><a href="Android%20Permissions%20-%20The%20difference%20between%20setUidMode%20and%20setMode%20in%20AppOps.html">The difference between setUidMode and setMode in
+AppOps, https://blog.csdn.net/jingerppp/article/details/80674651</a></p>
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Foreword:</h2>
+<p>Recently, the process of permission control, from the <a href="Android%20Permissions%20-%20Android%20Runtime%20Permission.html">Android Runtime
+Permission
+detailed</a> understanding,
+the android system is not the same process for the control of permissions after
+M. For the apk before M, of course, there is no interface in the system after M,
+such as checkPermission. In the application after M, the interface of
+checkPermission is used to confirm whether the permission is granted. The
+application before M cannot use checkPermission. The system adds this part of
+the process control to AppOps. This article mainly analyzes the process of pre-M
+app permission control reservation in M &#x200B;&#x200B;system through source code.</p>
+<h2 id="source-code-analysis"><a name="source-code-analysis" class="anchor-navigation-ex-anchor" href="#source-code-analysis"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Source code analysis:</h2>
+<p>For the permission control after M, you can see the <a href="Android%20Permissions%20-%20Android%20Runtime%20Permission.html">Android Runtime
+Permission.</a></p>
+<h2 id="first-look-at-startactivity"><a name="first-look-at-startactivity" class="anchor-navigation-ex-anchor" href="#first-look-at-startactivity"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. First look at startActivity:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@Override
+public final int startActivity(IApplicationThread caller, String callingPackage,
+        Intent intent, String resolvedType, IBinder resultTo, String resultWho, int requestCode,
+        int startFlags, ProfilerInfo profilerInfo, Bundle bOptions) {
+    return startActivityAsUser(caller, callingPackage, intent, resolvedType, resultTo,
+            resultWho, requestCode, startFlags, profilerInfo, bOptions,
+            UserHandle.getCallingUserId());
+}<br></div></div>
+
+<p>Then startActivityAsUser will be called, and the following process source code
+will not be posted (occupied space).</p>
+<h2 id="finally-it-will-call-startactivity-in-activitystarter"><a name="finally-it-will-call-startactivity-in-activitystarter" class="anchor-navigation-ex-anchor" href="#finally-it-will-call-startactivity-in-activitystarter"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Finally, it will call startActivity in ActivityStarter:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">/** DO NOT call this method directly. Use {@link #startActivityLocked} instead. */
+private int startActivity(IApplicationThread caller, Intent intent, Intent ephemeralIntent,
+        String resolvedType, ActivityInfo aInfo, ResolveInfo rInfo,
+        IVoiceInteractionSession voiceSession, IVoiceInteractor voiceInteractor,
+        IBinder resultTo, String resultWho, int requestCode, int callingPid, int callingUid,
+        String callingPackage, int realCallingPid, int realCallingUid, int startFlags,
+        ActivityOptions options, boolean ignoreTargetSecurity, boolean componentSpecified,
+        ActivityRecord[] outActivity, TaskRecord inTask) {
+
+    ...
+    ...
+
+    boolean abort = !mSupervisor.checkStartAnyActivityPermission(intent, aInfo, resultWho,
+            requestCode, callingPid, callingUid, callingPackage, ignoreTargetSecurity, callerApp,
+            resultRecord, resultStack, options);
+    abort |= !mService.mIntentFirewall.checkStartActivity(intent, callingUid,
+            callingPid, resolvedType, aInfo.applicationInfo);
+
+    ...
+    ...
+}<br></div></div>
+
+<p>Here, you will be granted access to any activity that is started, to confirm
+whether you want to abort, which is generally allowed for applications after M,
+which will be explained later. Then look at checkStartAnyActivityPermission:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">boolean checkStartAnyActivityPermission(Intent intent, ActivityInfo aInfo,
+            String resultWho, int requestCode, int callingPid, int callingUid,
+            String callingPackage, boolean ignoreTargetSecurity, ProcessRecord callerApp,
+            ActivityRecord resultRecord, ActivityStack resultStack, ActivityOptions options) {
+        final int startAnyPerm = mService.checkPermission(START_ANY_ACTIVITY, callingPid,
+                callingUid); //check step 1
+        if (startAnyPerm == PERMISSION_GRANTED) {
+            return true;
+        }
+        final int componentRestriction = getComponentRestrictionForCallingPackage(
+                aInfo, callingPackage, callingPid, callingUid, ignoreTargetSecurity); //check step 2
+        final int actionRestriction = getActionRestrictionForCallingPackage(
+                intent.getAction(), callingPackage, callingPid, callingUid); //check step 3
+        if (componentRestriction == ACTIVITY_RESTRICTION_PERMISSION
+                || actionRestriction == ACTIVITY_RESTRICTION_PERMISSION) {
+            if (resultRecord != null) {
+                resultStack.sendActivityResultLocked(-1,
+                        resultRecord, resultWho, requestCode,
+                        Activity.RESULT_CANCELED, null);
+            }
+            final String msg;
+            if (actionRestriction == ACTIVITY_RESTRICTION_PERMISSION) {
+                msg = &quot;Permission Denial: starting &quot; + intent.toString()
+                        + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                        + &quot;, uid=&quot; + callingUid + &quot;)&quot; + &quot; with revoked permission &quot;
+                        + ACTION_TO_RUNTIME_PERMISSION.get(intent.getAction());
+            } else if (!aInfo.exported) {
+                msg = &quot;Permission Denial: starting &quot; + intent.toString()
+                        + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                        + &quot;, uid=&quot; + callingUid + &quot;)&quot;
+                        + &quot; not exported from uid &quot; + aInfo.applicationInfo.uid;
+            } else {
+                msg = &quot;Permission Denial: starting &quot; + intent.toString()
+                        + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                        + &quot;, uid=&quot; + callingUid + &quot;)&quot;
+                        + &quot; requires &quot; + aInfo.permission;
+            }
+            Slog.w(TAG, msg);
+            throw new SecurityException(msg); //throw an exception for denied state
+        }
+
+        if (actionRestriction == ACTIVITY_RESTRICTION_APPOP) {
+            final String message = &quot;Appop Denial: starting &quot; + intent.toString()
+                    + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                    + &quot;, uid=&quot; + callingUid + &quot;)&quot;
+                    + &quot; requires &quot; + AppOpsManager.permissionToOp(
+                            ACTION_TO_RUNTIME_PERMISSION.get(intent.getAction()));
+            Slog.w(TAG, message);
+            return false;
+        } else if (componentRestriction == ACTIVITY_RESTRICTION_APPOP) {
+            final String message = &quot;Appop Denial: starting &quot; + intent.toString()
+                    + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                    + &quot;, uid=&quot; + callingUid + &quot;)&quot;
+                    + &quot; requires appop &quot; + AppOpsManager.permissionToOp(aInfo.permission);
+            Slog.w(TAG, message);
+            return false;
+        }
+        if (options != null) {
+            if (options.getLaunchTaskId() != INVALID_STACK_ID) {
+                final int startInTaskPerm = mService.checkPermission(START_TASKS_FROM_RECENTS,
+                        callingPid, callingUid);
+                if (startInTaskPerm == PERMISSION_DENIED) {
+                    final String msg = &quot;Permission Denial: starting &quot; + intent.toString()
+                            + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                            + &quot;, uid=&quot; + callingUid + &quot;) with launchTaskId=&quot;
+                            + options.getLaunchTaskId();
+                    Slog.w(TAG, msg);
+                    throw new SecurityException(msg);
+                }
+            }
+            // Check if someone tries to launch an activity on a private display with a different
+            // owner.
+            final int launchDisplayId = options.getLaunchDisplayId();
+            if (launchDisplayId != INVALID_DISPLAY &amp;&amp; !isCallerAllowedToLaunchOnDisplay(callingPid,
+                    callingUid, launchDisplayId, aInfo)) {
+                final String msg = &quot;Permission Denial: starting &quot; + intent.toString()
+                        + &quot; from &quot; + callerApp + &quot; (pid=&quot; + callingPid
+                        + &quot;, uid=&quot; + callingUid + &quot;) with launchDisplayId=&quot;
+                        + launchDisplayId;
+                Slog.w(TAG, msg);
+                throw new SecurityException(msg);
+            }
+        }
+
+        return true;
+    }<br></div></div>
+
+<p>This code is relatively simple, through three check functions, to determine
+whether the state is normal, abnormally will directly give a securityException,
+so that the return state of the check must be normal.</p>
+<h2 id="1-mservicecheckpermissionstartanyactivity-callingpid-callinguid"><a name="1-mservicecheckpermissionstartanyactivity-callingpid-callinguid" class="anchor-navigation-ex-anchor" href="#1-mservicecheckpermissionstartanyactivity-callingpid-callinguid"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 1. mService.checkPermission(START_ANY_ACTIVITY, callingPid, callingUid);</h2>
+<p>Note that the permissions here are START_ANY_ACTIVITY:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;xml&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">&lt;!-- Allows an application to start any activity, regardless of permission
+     protection or exported state.
+     @hide --&gt;
+&lt;permission android:name=&quot;android.permission.START_ANY_ACTIVITY&quot;
+    android:protectionLevel=&quot;signature&quot; /&gt;<br></div></div>
+
+<p>An application that registers this permission can start any activity. If there
+is this permission, then other rights management will be ineffective.</p>
+<h2 id="2-getcomponentrestrictionforcallingpackage"><a name="2-getcomponentrestrictionforcallingpackage" class="anchor-navigation-ex-anchor" href="#2-getcomponentrestrictionforcallingpackage"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 2. getComponentRestrictionForCallingPackage()</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private int getComponentRestrictionForCallingPackage(ActivityInfo activityInfo,
+        String callingPackage, int callingPid, int callingUid, boolean ignoreTargetSecurity) {
+    if (!ignoreTargetSecurity &amp;&amp; mService.checkComponentPermission(activityInfo.permission,
+            callingPid, callingUid, activityInfo.applicationInfo.uid, activityInfo.exported)
+            == PERMISSION_DENIED) {
+        return ACTIVITY_RESTRICTION_PERMISSION;
+    }
+
+    if (activityInfo.permission == null) {
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    final int opCode = AppOpsManager.permissionToOpCode(activityInfo.permission);
+    if (opCode == AppOpsManager.OP_NONE) {
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    if (mService.mAppOpsService.noteOperation(opCode, callingUid,
+            callingPackage) != AppOpsManager.MODE_ALLOWED) {
+        if (!ignoreTargetSecurity) {
+            return ACTIVITY_RESTRICTION_APPOP;
+        }
+    }
+
+    return ACTIVITY_RESTRICTION_NONE;
+}<br></div></div>
+
+<p>The first step is to check through the checkPermission interface after M. If you
+can&apos;t pass it here, you definitely don&apos;t need to go to AppOps.</p>
+<p>Here you can see that for the given permissions, such as PHONE_CALLS, it will go
+through the operation of noteOperation, regardless of whether it is before or
+after M, the only difference may be the logic control inside. If it is not here,
+it will give the return of ACTIVITY_RESTRICTION_APPOP. The future processing
+logic is not much to say here, the code is very clear.</p>
+<h2 id="3-getactionrestrictionforcallingpackage"><a name="3-getactionrestrictionforcallingpackage" class="anchor-navigation-ex-anchor" href="#3-getactionrestrictionforcallingpackage"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. 3. getActionRestrictionForCallingPackage()</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private int getActionRestrictionForCallingPackage(String action,
+        String callingPackage, int callingPid, int callingUid) {
+    if (action == null) {
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    String permission = ACTION_TO_RUNTIME_PERMISSION.get(action);
+    if (permission == null) {
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    final PackageInfo packageInfo;
+    try {
+        packageInfo = mService.mContext.getPackageManager()
+                .getPackageInfo(callingPackage, PackageManager.GET_PERMISSIONS);
+    } catch (PackageManager.NameNotFoundException e) {
+        Slog.i(TAG, &quot;Cannot find package info for &quot; + callingPackage);
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    if (!ArrayUtils.contains(packageInfo.requestedPermissions, permission)) {
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    if (mService.checkPermission(permission, callingPid, callingUid) == PERMISSION_DENIED) {
+        return ACTIVITY_RESTRICTION_PERMISSION;
+    }
+
+    final int opCode = AppOpsManager.permissionToOpCode(permission);
+    if (opCode == AppOpsManager.OP_NONE) {
+        return ACTIVITY_RESTRICTION_NONE;
+    }
+
+    if (mService.mAppOpsService.noteOperation(opCode, callingUid,
+            callingPackage) != AppOpsManager.MODE_ALLOWED) {
+        return ACTIVITY_RESTRICTION_APPOP;
+    }
+
+    return ACTIVITY_RESTRICTION_NONE;
+}<br></div></div>
+
+<p>Here is the action to confirm the permission, and then continue the M through
+the interface checkPermission and AppOps after the permission.</p>
+<h2 id="to-sum-up"><a name="to-sum-up" class="anchor-navigation-ex-anchor" href="#to-sum-up"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. to sum up:</h2>
+<p>Here is just a list of the control process for the rights management of the
+system after android M in startActivity. For the application before M, the
+general checkPemission is granted. As for the default value, you can see the PMS
+or leave a message if you want to know. If you want permission control for the
+pre-M application, and do not change the original system control process, you
+can only control it in AppOps.</p>
+<p>Of course, in addition to the startActivity control control here, there are
+other, such as ContentProvider.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@Override
+public int update(String callingPkg, Uri uri, ContentValues values, String selection,
+        String[] selectionArgs) {
+    validateIncomingUri(uri);
+    uri = maybeGetUriWithoutUserId(uri);
+    if (enforceWritePermission(callingPkg, uri, null) != AppOpsManager.MODE_ALLOWED) {
+        return 0;
+    }
+    final String original = setCallingPackage(callingPkg);
+    try {
+        return ContentProvider.this.update(uri, values, selection, selectionArgs);
+    } finally {
+        setCallingPackage(original);
+    }
+}<br></div></div>
+
+<h2 id="dialog-prompt"><a name="dialog-prompt" class="anchor-navigation-ex-anchor" href="#dialog-prompt"><i class="fa fa-link" aria-hidden="true"></i></a>1.11. Dialog prompt</h2>
+<p>Through the <a href="Android%20Permissions%20-%20Android%20GrantPermissionsActivity%20Detailed.html">android GrantPermissionsActivity
+detailed</a> , there will
+be a dialog box popping up in the application after M, then the application box
+prompt before M can only be controlled in AppOps (previously controlled in the
+checkPermission in AMS, but found a bunch of deadlocks, modified Code is finally
+posted).</p>
+<p>For some reason, only a portion of the code is posted here:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">if (uidState.opModes != null &amp;&amp; uidState.opModes.indexOfKey(switchCode) &gt;= 0) {
+    final int uidMode = uidState.opModes.get(switchCode);
+    if (uidMode != AppOpsManager.MODE_ALLOWED) {
+        if (DEBUG) Log.d(TAG, &quot;noteOperation: (uidState)reject #&quot; + op.mode + &quot; for code &quot;
+        + switchCode + &quot; (&quot; + code + &quot;) uid &quot; + uid + &quot; package &quot;
+        + packageName);
+        op.rejectTime = System.currentTimeMillis();
+        final Op switchOp = switchCode != code ? getOpLocked(ops, switchCode, true) : op;
+        req = enforcePermission(code, uid, packageName, switchOp);
+        if (req == null)
+        return uidMode;
+        isAllowed = false;
+    }
+}<br></div></div>
+
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private PermissionDialogReq enforcePermission(int code, int uid, String packageName, Op op) {
+        if (!isStrictOpEnable()
+            || !isStrictCodeValid(code)
+            || Looper.myLooper() == mLooper
+            || op.mode != AppOpsManager.MODE_NOTED)
+            return null;
+
+        return askOperationLocked(code, uid, packageName, op);
+    }
+
+    private boolean isStrictCodeValid(int code) {
+        return code == AppOpsManager.OP_CHANGE_WIFI_STATE
+            || code == AppOpsManager.OP_BLUETOOTH_ADMIN
+            || code == AppOpsManager.OP_NFC
+            || code == AppOpsManager.OP_SEND_MMS
+            || isRuntimePermission(code);
+    }
+
+    /**
+     * added by wj, just adjust the permission is runtime permission or not
+     * for the application whose SDK version is less than M.
+     */
+    private boolean isRuntimePermission(int code) {
+        String permName = AppOpsManager.opToPermission(code);
+
+        PermissionInfo permissionInfo;
+        try {
+            permissionInfo = mContext.getPackageManager().getPermissionInfo(permName, 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+
+        return (permissionInfo.protectionLevel &amp; PermissionInfo.PROTECTION_MASK_BASE)
+            == PermissionInfo.PROTECTION_DANGEROUS;
+    }<br></div></div>
+
+<p>Based on this, create a custom dialog and complete the implementation.</p>
+<p>The MODE here adds a NOTED to the original ALLOWED and IGNORED, indicating that
+it is prompted every time.</p>
+<p>Additional:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public boolean noteRuntimePermissions(boolean fixedByTheUser, String[] filterPermissions) {
+     final int uid = mPackageInfo.applicationInfo.uid;
+
+     // We toggle permissions only to apps that support runtime
+     // permissions, otherwise we toggle the app op corresponding
+     // to the permission if the permission is granted to the app.
+     for (Permission permission : mPermissions.values()) {
+         if (filterPermissions != null &amp;&amp; !ArrayUtils.contains(filterPermissions, permission.getName())) {
+             continue;
+         }
+
+         if (mAppSupportsRuntimePermissions &amp;&amp; mIsRuntimePermission &amp;&amp; !mIsSendMMS) {
+             // Do not touch permissions fixed by the system.
+             if (permission.isSystemFixed()) {
+                 return false;
+             }
+
+             if (permission.hasAppOp() &amp;&amp; !permission.isAppOpNoted()) {
+                 permission.setAppOpMode(AppOpsManager.MODE_NOTE);
+                 // Disable the app op.
+                 mAppOps.setMode(permission.getOp(), uid, mPackageInfo.packageName, AppOpsManager.MODE_NOTE);
+             }
+
+             // Grant the permission if needed.
+             if (!permission.isGranted()) {
+                 permission.setGranted(true);
+                 mPackageManager.grantRuntimePermission(mPackageInfo.packageName, permission.getName(), mUserHandle);
+             }
+
+             // Update the permission flags.
+             if (!fixedByTheUser) {
+                 // Now the apps can ask for the permission as the user
+                 // no longer has it fixed in a denied state.
+                 if (permission.isUserFixed() || permission.isUserSet()) {
+                     permission.setUserFixed(false);
+                     permission.setUserSet(false);
+                     mPackageManager.updatePermissionFlags(permission.getName(), mPackageInfo.packageName,
+                             PackageManager.FLAG_PERMISSION_USER_FIXED | PackageManager.FLAG_PERMISSION_USER_SET, 0,
+                             mUserHandle);
+                 }
+             }
+         } else {
+             // Legacy apps cannot have a not granted permission but just in case.
+             if (!permission.isGranted()) {
+                 continue;
+             }
+
+             int killUid = -1;
+             int mask = 0;
+
+             // If the permissions has no corresponding app op, then it is a
+             // third-party one and we do not offer toggling of such permissions.
+             if (permission.hasAppOp()) {
+                 if (!permission.isAppOpNoted()) {
+                     permission.setAppOpMode(AppOpsManager.MODE_NOTE);
+                     // Enable the app op.
+                     mAppOps.setMode(permission.getOp(), uid, mPackageInfo.packageName, AppOpsManager.MODE_NOTE);
+                 }
+
+                 // Mark that the permission should not be be granted on upgrade
+                 // when the app begins supporting runtime permissions.
+                 if (permission.shouldRevokeOnUpgrade()) {
+                     permission.setRevokeOnUpgrade(false);
+                     mask |= PackageManager.FLAG_PERMISSION_REVOKE_ON_UPGRADE;
+                 }
+             }
+
+             // Granting a permission explicitly means the user already
+             // reviewed it so clear the review flag on every grant.
+             if (permission.isReviewRequired()) {
+                 permission.resetReviewRequired();
+                 mask |= PackageManager.FLAG_PERMISSION_REVIEW_REQUIRED;
+             }
+
+             if (mask != 0) {
+                 mPackageManager.updatePermissionFlags(permission.getName(), mPackageInfo.packageName, mask, 0,
+                         mUserHandle);
+             }
+
+             if (killUid != -1) {
+                 mActivityManager.killUid(killUid, KILL_REASON_APP_OP_CHANGE);
+             }
+         }
+     }
+
+     return true;
+ }<br></div></div>
+
+<ol>
+<li>AMS checkPermission join processing process (a deadlock will occur, use M
+system source can be)</li>
+</ol>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">/**
+ * added by wj, check permission of application which the target sdk is less than the one of M and
+ * the protection level of permission is dangerous.
+ * @return 0 or 1 indicates the permission has handled by AppOps.
+ */
+private final Object aLock = new Object();
+private int checkPermissionForAppOps(String permission, int uid) {
+    PermissionInfo info = null;
+    try {
+        info = mContext.getPackageManager().getPermissionInfo(permission, 0);
+    } catch (PackageManager.NameNotFoundException e) {
+        //ignore
+    }
+
+    //At first, the permission is dangerous.
+    if (info == null
+        || ((info.protectionLevel &amp; PermissionInfo.PROTECTION_MASK_BASE) != PermissionInfo.PROTECTION_DANGEROUS))
+        return -1;
+
+    String pkgName = null;
+    try {
+        pkgName = AppGlobals.getPackageManager().getNameForUid(uid);
+    } catch (RemoteException e) {
+        //ignore
+    }
+    Slog.d(TAG, &quot;checkPermissionForAppOps, permission = &quot; + permission + &quot;, uid = &quot; + uid
+        + &quot;, packageName = &quot; + pkgName);
+
+    if (pkgName == null)
+        return -1;
+
+    ApplicationInfo ai = null;
+    try {
+        ai = mContext.getPackageManager().getApplicationInfo(pkgName, 0);
+    } catch (PackageManager.NameNotFoundException e) {
+        //ignore
+    }
+
+    if (ai == null || ai.targetSdkVersion &gt;= Build.VERSION_CODES.M)
+        return -1;
+    Slog.d(TAG, &quot;checkPermissionForAppOps, targetSdkVersion = &quot; + ai.targetSdkVersion);
+
+    synchronized(aLock) {
+        AppOpsManager mAppOpsManager = mContext.getSystemService(AppOpsManager.class);
+        int tUid = Binder.getCallingUid() &gt;= uid ? Binder.getCallingUid() : uid;//get application uid but not the one from native
+        if ((tUid &gt;= Process.FIRST_APPLICATION_UID)
+            &amp;&amp; (pkgName.indexOf(&quot;android.uid.systemui&quot;) != 0)
+            &amp;&amp; (pkgName.indexOf(&quot;android.uid.system&quot;) != 0)) {
+            int result = mAppOpsManager.noteOp(AppOpsManager.permissionToOp(permission),
+                tUid, pkgName);
+            return result;
+        }
+    }
+
+    return -1;
+}<br></div></div>
+
+<ol>
+<li><p>after joining the MODE_NOTED interface</p>
+</li>
+<li><p>permission control selection interface</p>
+</li>
+<li><p>dialog box prompt interface</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html" class="navigation navigation-prev " aria-label="Previous page: Android Permissions - The difference between setUidMode and setMode in AppOps">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Android Permissions - Provider permissions detailed.html" class="navigation navigation-next " aria-label="Next page: Android Permissions - Provider permissions detailed">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android Permissions - Application permissions before android M and application permissions after M","level":"1.3.7","depth":2,"next":{"title":"Android Permissions - Provider permissions detailed","level":"1.3.8","depth":2,"path":"Android Permissions - Provider permissions detailed.md","ref":"Android Permissions - Provider permissions detailed.md","articles":[]},"previous":{"title":"Android Permissions - The difference between setUidMode and setMode in AppOps","level":"1.3.6","depth":2,"path":"Android Permissions - The difference between setUidMode and setMode in AppOps.md","ref":"Android Permissions - The difference between setUidMode and setMode in AppOps.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android Permissions - Application permissions before android M and application permissions after M.md","mtime":"2018-09-18T09:59:31.566Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

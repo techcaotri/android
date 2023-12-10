@@ -1,0 +1,1680 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Live555 - Live555 source code analysis_subsession SDP line generation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Live555 - Live555 source code analysis_Subsession SETUP.html" />
+    
+    
+    <link rel="prev" href="Live555 - Live555 source code analysis_servermediasession.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Live555 - Live555 source code analysis_subsession SDP line generation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-sub-session-sdp-line-generation"><b>1. </b>Live555 source code analysis: sub-session SDP line generation</a></li><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-series"><b>1.1. </b>Live555 source code analysis series</a></li></ul></ul></div><a href="#live555-source-code-analysis-sub-session-sdp-line-generation" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="live555-source-code-analysis-sub-session-sdp-line-generation"><a name="live555-source-code-analysis-sub-session-sdp-line-generation" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-sub-session-sdp-line-generation"><i class="fa fa-link" aria-hidden="true"></i></a>1. Live555 source code analysis: sub-session SDP line generation</h1>
+<p> Posted on 2017-09-07 |  In <a href="https://www.wolfcstech.com/categories/live555/" target="_blank">live555</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#live555-source-code-analysis-sub-session-sdp-line-generation"><strong>Live555 source code analysis: sub-session SDP line generation</strong></a><ul>
+<li><a href="#live555-source-code-analysis-series"><strong>Live555 source code analysis series</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>As we saw in the previous <a href="https://www.wolfcstech.com/2017/09/07/live555_src_analysis_servermediasession/" target="_blank">live555 source code analysis: ServerMediaSession</a> , <code>H264VideoFileServerMediaSubsession</code> the
+inheritance hierarchy is as follows:</p>
+<p>     <a href="media/049b64864c6a71113fcafb090ef218d0.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-e48e136a2a125c08.png" target="_self" class="fancybox">
+       <img src="media/049b64864c6a71113fcafb090ef218d0.png" alt="https://www.wolfcstech.com/images/1315506-e48e136a2a125c08.png">
+     </a></p>
+<p>In this inheritance hierarchy, <code>ServerMediaSubsession</code> an operation that can be
+performed on a single subsession of streaming media is defined, which has a life
+cycle as follows:</p>
+<p>     <a href="media/890211008ef5ca58d15c175ccd195cff.png" rel="grouped" title="ServerMediaSubsession life cycle" target="_self" class="fancybox">
+       <img src="media/890211008ef5ca58d15c175ccd195cff.png" alt="ServerMediaSubsession life cycle">
+     </a></p>
+<p>For achieving these operations is the <code>OnDemandServerMediaSubsession</code> complete,
+analysis defined herein and class implementation.</p>
+<p>Let&apos;s take a look at the SDP message line that will be used
+when <code>sdpLines()</code> processing RTSP <code>DESCRIBE</code> messages:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const*
+OnDemandServerMediaSubsession::sdpLines() {
+  if (fSDPLines == NULL) {
+    // We need to construct a set of SDP lines that describe this
+    // subsession (as a unicast stream).  To do so, we first create
+    // dummy (unused) source and &quot;RTPSink&quot; objects,
+    // whose parameters we use for the SDP lines:
+    unsigned estBitrate;
+    FramedSource* inputSource = createNewStreamSource(0, estBitrate);
+    if (inputSource == NULL) return NULL; // file not found
+    struct in_addr dummyAddr;
+    dummyAddr.s_addr = 0;
+    Groupsock* dummyGroupsock = createGroupsock(dummyAddr, 0);
+    unsigned char rtpPayloadType = 96 + trackNumber()-1; // if dynamic
+    RTPSink* dummyRTPSink = createNewRTPSink(dummyGroupsock, rtpPayloadType, inputSource);
+    if (dummyRTPSink != NULL &amp;&amp; dummyRTPSink-&gt;estimatedBitrate() &gt; 0) estBitrate = dummyRTPSink-&gt;estimatedBitrate();
+    setSDPLinesFromRTPSink(dummyRTPSink, inputSource, estBitrate);
+    Medium::close(dummyRTPSink);
+    delete dummyGroupsock;
+    closeStreamSource(inputSource);
+  }
+  fprintf(stderr, &quot;OnDemandServerMediaSubsession::sdpLines(): %s\n&quot;, fSDPLines);
+  return fSDPLines;
+}<br></div></div>
+
+<p>The steps performed by this function are as follows:</p>
+<p>Step 1, to call <code>createNewStreamSource()</code> the function to
+create <code>FramedSource</code>. <code>createNewStreamSource()</code> Functions <code>H264VideoFileServerMediaSubsession</code> are
+defined:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">FramedSource* H264VideoFileServerMediaSubsession::createNewStreamSource(unsigned /*clientSessionId*/, unsigned&amp; estBitrate) {
+  estBitrate = 500; // kbps, estimate
+  // Create the video source:
+  ByteStreamFileSource* fileSource = ByteStreamFileSource::createNew(envir(), fFileName);
+  if (fileSource == NULL) return NULL;
+  fFileSize = fileSource-&gt;fileSize();
+  // Create a framer for the Video Elementary Stream:
+  return H264VideoStreamFramer::createNew(envir(), fileSource);
+}<br></div></div>
+
+<p>Return <code>FramedSource</code> to <code>ByteStreamFileSource</code>. <code>FramedSource</code> Used to get a single
+frame in a video stream with an inheritance hierarchy like this:</p>
+<p>     <a href="media/6af3dfd9e3dca935ca7be4a9b1c55898.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-22b43008629054fc.png" target="_self" class="fancybox">
+       <img src="media/6af3dfd9e3dca935ca7be4a9b1c55898.png" alt="https://www.wolfcstech.com/images/1315506-22b43008629054fc.png">
+     </a></p>
+<p>Step 2, call the <code>createGroupsock()</code> function to create <code>Groupsock</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Groupsock* OnDemandServerMediaSubsession
+::createGroupsock(struct in_addr const&amp; addr, Port port) {
+  fprintf(stderr, &quot;OnDemandServerMediaSubsession::createGroupsock().\n&quot;);
+  // Default implementation; may be redefined by subclasses:
+  return new Groupsock(envir(), addr, port, 255);
+}<br></div></div>
+
+<p>In step 3, calculate the RTP payload type.</p>
+<p>Step 4, call the <code>createNewRTPSink()</code> creation <code>RTPSink</code>, <code>createNewRTPSink()</code> also
+in <code>H264VideoFileServerMediaSubsession</code> implementation:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">RTPSink* H264VideoFileServerMediaSubsession
+::createNewRTPSink(Groupsock* rtpGroupsock,
+    unsigned char rtpPayloadTypeIfDynamic,
+    FramedSource* /*inputSource*/) {
+  return H264VideoRTPSink::createNew(envir(), rtpGroupsock, rtpPayloadTypeIfDynamic);
+}<br></div></div>
+
+<p>Passed in <code>FramedSource</code> has not been
+used. Return <code>RTPSink</code> to<code>H264VideoRTPSink</code>. <code>H264VideoRTPSink</code> The inheritance
+hierarchy is shown in the following figure:</p>
+<p>     <a href="media/6d107a02cbdf3e08b88ef5c093e36c34.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-0b23c6c46d3a5fb1.png" target="_self" class="fancybox">
+       <img src="media/6d107a02cbdf3e08b88ef5c093e36c34.png" alt="https://www.wolfcstech.com/images/1315506-0b23c6c46d3a5fb1.png">
+     </a></p>
+<p>Step 5, call <code>setSDPLinesFromRTPSink()</code> generation SDP line. The first few steps
+are preparing for the execution of this step. This function is implemented as
+follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void OnDemandServerMediaSubsession
+::setSDPLinesFromRTPSink(RTPSink* rtpSink, FramedSource* inputSource, unsigned estBitrate) {
+  fprintf(stderr, &quot;OnDemandServerMediaSubsession::setSDPLinesFromRTPSink().\n&quot;);
+  if (rtpSink == NULL) return;
+  char const* mediaType = rtpSink-&gt;sdpMediaType();
+  unsigned char rtpPayloadType = rtpSink-&gt;rtpPayloadType();
+  AddressString ipAddressStr(fServerAddressForSDP);
+  char* rtpmapLine = rtpSink-&gt;rtpmapLine();
+  char const* rtcpmuxLine = fMultiplexRTCPWithRTP ? &quot;a=rtcp-mux\r\n&quot; : &quot;&quot;;
+  char const* rangeLine = rangeSDPLine();
+  char const* auxSDPLine = getAuxSDPLine(rtpSink, inputSource);
+  if (auxSDPLine == NULL) auxSDPLine = &quot;&quot;;
+  char const* const sdpFmt =
+    &quot;m=%s %u RTP/AVP %d\r\n&quot;
+    &quot;c=IN IP4 %s\r\n&quot;
+    &quot;b=AS:%u\r\n&quot;
+    &quot;%s&quot;
+    &quot;%s&quot;
+    &quot;%s&quot;
+    &quot;%s&quot;
+    &quot;a=control:%s\r\n&quot;;
+  unsigned sdpFmtSize = strlen(sdpFmt)
+    + strlen(mediaType) + 5 /* max short len */ + 3 /* max char len */
+    + strlen(ipAddressStr.val())
+    + 20 /* max int len */
+    + strlen(rtpmapLine)
+    + strlen(rtcpmuxLine)
+    + strlen(rangeLine)
+    + strlen(auxSDPLine)
+    + strlen(trackId());
+  char* sdpLines = new char[sdpFmtSize];
+  sprintf(sdpLines, sdpFmt,
+      mediaType, // m= &lt;media&gt;
+      fPortNumForSDP, // m= &lt;port&gt;
+      rtpPayloadType, // m= &lt;fmt list&gt;
+      ipAddressStr.val(), // c= address
+      estBitrate, // b=AS:&lt;bandwidth&gt;
+      rtpmapLine, // a=rtpmap:... (if present)
+      rtcpmuxLine, // a=rtcp-mux:... (if present)
+      rangeLine, // a=range:... (if present)
+      auxSDPLine, // optional extra SDP line
+      trackId()); // a=control:&lt;track-id&gt;
+  delete[] (char*) rangeLine; delete[] rtpmapLine;
+  fSDPLines = strDup(sdpLines);
+  delete[] sdpLines;
+}<br></div></div>
+
+<p>In this function, you get the data needed to generate an SDP message and then
+generate an SDP message. <code>mediaType</code> From <code>VideoRTPSink</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const* VideoRTPSink::sdpMediaType() const {
+  return &quot;video&quot;;
+}<br></div></div>
+
+<p>It also <code>VideoRTPSink</code> provides the only function of.</p>
+<p><code>rtpPayloadType</code> From <code>RTPSink</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">unsigned char rtpPayloadType() const { return fRTPPayloadType; }<br></div></div>
+
+<p>In front <code>sdpLines()</code> obtained RTP payload types calculated in creating <code>RTPSink</code> the
+calculated value will be passed to it. What is returned here is the value
+calculated earlier. For H.264 video streams, this value is 96.</p>
+<p>The map line comes from <code>RTPSink</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char* RTPSink::rtpmapLine() const {
+  if (rtpPayloadType() &gt;= 96) { // the payload format type is dynamic
+    char* encodingParamsPart;
+    if (numChannels() != 1) {
+      encodingParamsPart = new char[1 + 20 /* max int len */];
+      sprintf(encodingParamsPart, &quot;/%d&quot;, numChannels());
+    } else {
+      encodingParamsPart = strDup(&quot;&quot;);
+    }
+    char const* const rtpmapFmt = &quot;a=rtpmap:%d %s/%d%s\r\n&quot;;
+    unsigned rtpmapFmtSize = strlen(rtpmapFmt)
+      + 3 /* max char len */ + strlen(rtpPayloadFormatName())
+      + 20 /* max int len */ + strlen(encodingParamsPart);
+    char* rtpmapLine = new char[rtpmapFmtSize];
+    sprintf(rtpmapLine, rtpmapFmt,
+        rtpPayloadType(), rtpPayloadFormatName(),
+        rtpTimestampFrequency(), encodingParamsPart);
+    delete[] encodingParamsPart;
+    return rtpmapLine;
+  } else {
+    // The payload format is staic, so there&apos;s no &quot;a=rtpmap:&quot; line:
+    return strDup(&quot;&quot;);
+  }
+}<br></div></div>
+
+<p>For <a href="https://tools.ietf.org/html/rfc3551" target="_blank">RFC 3551 to</a> assign a payload type of
+media type, no map line is required. For a dynamic payload type, the row is
+required, including the payload type, payload format name, timestamp frequency,
+etc. When the number of channels is greater than 1, the number of channels is
+also included.</p>
+<p>The number of channels comes from <code>MultiFramedRTPSink</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">MultiFramedRTPSink(UsageEnvironment&amp; env,
+     Groupsock* rtpgs, unsigned char rtpPayloadType,
+     unsigned rtpTimestampFrequency,
+     char const* rtpPayloadFormatName,
+     unsigned numChannels = 1);<br></div></div>
+
+<p>The payload format name and timestamp frequency are derived from
+the <code>H264or5VideoRTPSink</code> H.264 video stream, the payload format name is &quot;H264&quot;,
+and the timestamp frequency is 90000:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">H264or5VideoRTPSink
+::H264or5VideoRTPSink(int hNumber,
+    UsageEnvironment&amp; env, Groupsock* RTPgs, unsigned char rtpPayloadFormat,
+    u_int8_t const* vps, unsigned vpsSize,
+    u_int8_t const* sps, unsigned spsSize,
+    u_int8_t const* pps, unsigned ppsSize)
+  : VideoRTPSink(env, RTPgs, rtpPayloadFormat, 90000, hNumber == 264 ? &quot;H264&quot; : &quot;H265&quot;),
+    fHNumber(hNumber), fOurFragmenter(NULL), fFmtpSDPLine(NULL) {<br></div></div>
+
+<p>Go back <code>setSDPLinesFromRTPSink()</code>. Then there is the range SDP line, which comes
+from <code>ServerMediaSubsession</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const*
+ServerMediaSubsession::rangeSDPLine() const {
+  // First, check for the special case where we support seeking by &apos;absolute&apos; time:
+  char* absStart = NULL; char* absEnd = NULL;
+  getAbsoluteTimeRange(absStart, absEnd);
+  if (absStart != NULL) {
+    char buf[100];
+    if (absEnd != NULL) {
+      sprintf(buf, &quot;a=range:clock=%s-%s\r\n&quot;, absStart, absEnd);
+    } else {
+      sprintf(buf, &quot;a=range:clock=%s-\r\n&quot;, absStart);
+    }
+    return strDup(buf);
+  }
+  if (fParentSession == NULL) return NULL;
+  // If all of our parent&apos;s subsessions have the same duration
+  // (as indicated by &quot;fParentSession-&gt;duration() &gt;= 0&quot;), there&apos;s no &quot;a=range:&quot; line:
+  if (fParentSession-&gt;duration() &gt;= 0.0) return strDup(&quot;&quot;);
+  // Use our own duration for a &quot;a=range:&quot; line:
+  float ourDuration = duration();
+  if (ourDuration == 0.0) {
+    return strDup(&quot;a=range:npt=0-\r\n&quot;);
+  } else {
+    char buf[100];
+    sprintf(buf, &quot;a=range:npt=0-%.3f\r\n&quot;, ourDuration);
+    return strDup(buf);
+  }
+}<br></div></div>
+
+<p>Final SDP information is required to obtain line AUX SDP, information obtained
+from the video stream need to parse data
+by <code>H264VideoFileServerMediaSubsession</code> the <code>getAuxSDPLine()</code> function obtained:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const* H264VideoFileServerMediaSubsession::getAuxSDPLine(RTPSink* rtpSink, FramedSource* inputSource) {
+  if (fAuxSDPLine != NULL) return fAuxSDPLine; // it&apos;s already been set up (for a previous client)
+  if (fDummyRTPSink == NULL) { // we&apos;re not already setting it up for another, concurrent stream
+    // Note: For H264 video files, the &apos;config&apos; information (&quot;profile-level-id&quot; and &quot;sprop-parameter-sets&quot;) isn&apos;t known
+    // until we start reading the file.  This means that &quot;rtpSink&quot;s &quot;auxSDPLine()&quot; will be NULL initially,
+    // and we need to start reading data from our file until this changes.
+    fDummyRTPSink = rtpSink;
+    // Start reading the file:
+    fDummyRTPSink-&gt;startPlaying(*inputSource, afterPlayingDummy, this);
+    // Check whether the sink&apos;s &apos;auxSDPLine()&apos; is ready:
+    checkForAuxSDPLine(this);
+  }
+  envir().taskScheduler().doEventLoop(&amp;fDoneFlag);
+  return fAuxSDPLine;
+}<br></div></div>
+
+<p>This function on the first call, will pass <code>RTPSink</code> to start the streaming media
+file frame data is read, that is calling <code>RTPSink</code> the <code>startPlaying()</code> function.</p>
+<p><code>startPlaying()</code> Function performs a long call chain, eventually
+calling <code>ByteStreamFileSource</code> the <code>doGetNextFrame()</code> function, the call stack as
+follows:</p>
+<pre><code>#0  ByteStreamFileSource::doGetNextFrame (this=0x6e4f10) at ByteStreamFileSource.cpp:96
+#1  0x00000000004308b4 in FramedSource::getNextFrame (this=0x6e4f10, to=0x7ffff7fd1010 &quot;&quot;, maxSize=150000,
+    afterGettingFunc=0x4740c2 &lt;StreamParser::afterGettingBytes(void*, unsigned int, unsigned int, timeval, unsigned int)&gt;,
+    afterGettingClientData=0x6e5020, onCloseFunc=0x47424c &lt;StreamParser::onInputClosure(void*)&gt;, onCloseClientData=0x6e5020) at FramedSource.cpp:78
+#2  0x0000000000474096 in StreamParser::ensureValidBytes1 (this=0x6e5020, numBytesNeeded=4) at StreamParser.cpp:159
+#3  0x0000000000434fe1 in StreamParser::ensureValidBytes (this=0x6e5020, numBytesNeeded=4) at StreamParser.hh:118
+#4  0x0000000000434d75 in StreamParser::test4Bytes (this=0x6e5020) at StreamParser.hh:54
+#5  0x000000000047918e in H264or5VideoStreamParser::parse (this=0x6e5020) at H264or5VideoStreamFramer.cpp:951
+#6  0x0000000000435de9 in MPEGVideoStreamFramer::continueReadProcessing (this=0x6e4710) at MPEGVideoStreamFramer.cpp:159
+#7  0x0000000000435d51 in MPEGVideoStreamFramer::doGetNextFrame (this=0x6e4710) at MPEGVideoStreamFramer.cpp:142
+#8  0x00000000004308b4 in FramedSource::getNextFrame (this=0x6e4710, to=0x6ff241 &quot;&quot;, maxSize=100000,
+    afterGettingFunc=0x47c788 &lt;H264or5Fragmenter::afterGettingFrame(void*, unsigned int, unsigned int, timeval, unsigned int)&gt;,
+    afterGettingClientData=0x6e5540, onCloseFunc=0x43092e &lt;FramedSource::handleClosure(void*)&gt;, onCloseClientData=0x6e5540) at FramedSource.cpp:78
+#9  0x000000000047c2c0 in H264or5Fragmenter::doGetNextFrame (this=0x6e5540) at H264or5VideoRTPSink.cpp:181
+#10 0x00000000004308b4 in FramedSource::getNextFrame (this=0x6e5540, to=0x6e69cc &quot;&quot;, maxSize=100452,
+    afterGettingFunc=0x45d09c &lt;MultiFramedRTPSink::afterGettingFrame(void*, unsigned int, unsigned int, timeval, unsigned int)&gt;,
+    afterGettingClientData=0x6e5220, onCloseFunc=0x45da86 &lt;MultiFramedRTPSink::ourHandleClosure(void*)&gt;, onCloseClientData=0x6e5220) at FramedSource.cpp:78
+#11 0x000000000045d07b in MultiFramedRTPSink::packFrame (this=0x6e5220) at MultiFramedRTPSink.cpp:224
+#12 0x000000000045cec8 in MultiFramedRTPSink::buildAndSendPacket (this=0x6e5220, isFirstPacket=1 &apos;\001&apos;) at MultiFramedRTPSink.cpp:199
+#13 0x000000000045cd07 in MultiFramedRTPSink::continuePlaying (this=0x6e5220) at MultiFramedRTPSink.cpp:159
+#14 0x000000000047bfe0 in H264or5VideoRTPSink::continuePlaying (this=0x6e5220) at H264or5VideoRTPSink.cpp:127
+#15 0x0000000000405d2a in MediaSink::startPlaying (this=0x6e5220, source=..., afterFunc=0x422a12 &lt;afterPlayingDummy(void*)&gt;, afterClientData=0x6e4aa0)
+    at MediaSink.cpp:78
+#16 0x0000000000422c5f in H264VideoFileServerMediaSubsession::getAuxSDPLine (this=0x6e4aa0, rtpSink=0x6e5220, inputSource=0x6e4710)
+    at H264VideoFileServerMediaSubsession.cpp:92
+#17 0x0000000000464cd4 in OnDemandServerMediaSubsession::setSDPLinesFromRTPSink (this=0x6e4aa0, rtpSink=0x6e5220, inputSource=0x6e4710, estBitrate=500)
+    at OnDemandServerMediaSubsession.cpp:456
+#18 0x000000000046378b in OnDemandServerMediaSubsession::sdpLines (this=0x6e4aa0) at OnDemandServerMediaSubsession.cpp:76
+#19 0x000000000042198b in ServerMediaSession::generateSDPDescription (this=0x6e4900) at ServerMediaSession.cpp:240
+</code></pre><p><code>ByteStreamFileSource</code> The<code>doGetNextFrame()</code> streaming media data to the read start,
+to achieve this function is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void ByteStreamFileSource::doGetNextFrame() {
+  if (feof(fFid) || ferror(fFid) || (fLimitNumBytesToStream &amp;&amp; fNumBytesToStream == 0)) {
+    handleClosure();
+    return;
+  }
+#ifdef READ_FROM_FILES_SYNCHRONOUSLY
+  doReadFromFile();
+#else
+  if (!fHaveStartedReading) {
+    // Await readable data from the file:
+    envir().taskScheduler().turnOnBackgroundReadHandling(fileno(fFid),
+           (TaskScheduler::BackgroundHandlerProc*)&amp;fileReadableHandler, this);
+    fHaveStartedReading = True;
+  }
+#endif
+}<br></div></div>
+
+<p>For asynchronous read, the register is a read document processing
+program <code>fileReadableHandler</code>, for synchronous read, it is
+directly <code>doReadFromFile()</code> read the file data.</p>
+<p>Back <code>H264VideoFileServerMediaSubsession</code> in <code>getAuxSDPLine()</code>. Implementation
+of <code>RTPSink</code> the <code>startPlaying()</code> following, it will pass <code>checkForAuxSDPLine(void* clientData)</code>
+if the end of the check read the video stream metadata:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static void checkForAuxSDPLine(void* clientData) {
+  H264VideoFileServerMediaSubsession* subsess = (H264VideoFileServerMediaSubsession*)clientData;
+  subsess-&gt;checkForAuxSDPLine1();
+}
+void H264VideoFileServerMediaSubsession::checkForAuxSDPLine1() {
+  nextTask() = NULL;
+  char const* dasl;
+  if (fAuxSDPLine != NULL) {
+    // Signal the event loop that we&apos;re done:
+    setDoneFlag();
+  } else if (fDummyRTPSink != NULL &amp;&amp; (dasl = fDummyRTPSink-&gt;auxSDPLine()) != NULL) {
+    fAuxSDPLine = strDup(dasl);
+    fDummyRTPSink = NULL;
+    // Signal the event loop that we&apos;re done:
+    setDoneFlag();
+  } else if (!fDoneFlag) {
+    // try again after a brief delay:
+    int uSecsToDelay = 100000; // 100 ms
+    nextTask() = envir().taskScheduler().scheduleDelayedTask(uSecsToDelay,
+        (TaskFunc*) checkForAuxSDPLine, this);
+  }
+}<br></div></div>
+
+<p>When this function is executed, if it finds that the aux SDP line has not been
+acquired, it will register a timer task and continue checking for a while.</p>
+<p>aux SDP line by <code>RTPSink</code> the <code>auxSDPLine()</code> acquisition, the actual implementation of
+the function is located in <code>H264VideoRTPSink</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const* H264VideoRTPSink::auxSDPLine() {
+  // Generate a new &quot;a=fmtp:&quot; line each time, using our SPS and PPS (if we have them),
+  // otherwise parameters from our framer source (in case they&apos;ve changed since the last time that
+  // we were called):
+  H264or5VideoStreamFramer* framerSource = NULL;
+  u_int8_t* vpsDummy = NULL; unsigned vpsDummySize = 0;
+  u_int8_t* sps = fSPS; unsigned spsSize = fSPSSize;
+  u_int8_t* pps = fPPS; unsigned ppsSize = fPPSSize;
+  if (sps == NULL || pps == NULL) {
+    // We need to get SPS and PPS from our framer source:
+    if (fOurFragmenter == NULL) return NULL; // we don&apos;t yet have a fragmenter (and therefore not a source)
+    framerSource = (H264or5VideoStreamFramer*)(fOurFragmenter-&gt;inputSource());
+    if (framerSource == NULL) return NULL; // we don&apos;t yet have a source
+    framerSource-&gt;getVPSandSPSandPPS(vpsDummy, vpsDummySize, sps, spsSize, pps, ppsSize);
+    if (sps == NULL || pps == NULL) return NULL; // our source isn&apos;t ready
+  }
+  // Set up the &quot;a=fmtp:&quot; SDP line for this stream:
+  u_int8_t* spsWEB = new u_int8_t[spsSize]; // &quot;WEB&quot; means &quot;Without Emulation Bytes&quot;
+  unsigned spsWEBSize = removeH264or5EmulationBytes(spsWEB, spsSize, sps, spsSize);
+  if (spsWEBSize &lt; 4) { // Bad SPS size =&gt; assume our source isn&apos;t ready
+    delete[] spsWEB;
+    return NULL;
+  }
+  u_int32_t profileLevelId = (spsWEB[1]&lt;&lt;16) | (spsWEB[2]&lt;&lt;8) | spsWEB[3];
+  delete[] spsWEB;
+  char* sps_base64 = base64Encode((char*)sps, spsSize);
+  char* pps_base64 = base64Encode((char*)pps, ppsSize);
+  char const* fmtpFmt =
+    &quot;a=fmtp:%d packetization-mode=1&quot;
+    &quot;;profile-level-id=%06X&quot;
+    &quot;;sprop-parameter-sets=%s,%s\r\n&quot;;
+  unsigned fmtpFmtSize = strlen(fmtpFmt)
+    + 3 /* max char len */
+    + 6 /* 3 bytes in hex */
+    + strlen(sps_base64) + strlen(pps_base64);
+  char* fmtp = new char[fmtpFmtSize];
+  sprintf(fmtp, fmtpFmt,
+          rtpPayloadType(),
+      profileLevelId,
+          sps_base64, pps_base64);
+  delete[] sps_base64;
+  delete[] pps_base64;
+  delete[] fFmtpSDPLine; fFmtpSDPLine = fmtp;
+  return fFmtpSDPLine;
+}<br></div></div>
+
+<p>To generate SDP lines, SPS frames and PPS frames of video stream data are
+required. The two frames of data come from two sources, one of which is passed
+by the caller when the object is constructed:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">H264or5VideoRTPSink
+::H264or5VideoRTPSink(int hNumber,
+    UsageEnvironment&amp; env, Groupsock* RTPgs, unsigned char rtpPayloadFormat,
+    u_int8_t const* vps, unsigned vpsSize,
+    u_int8_t const* sps, unsigned spsSize,
+    u_int8_t const* pps, unsigned ppsSize)
+  : VideoRTPSink(env, RTPgs, rtpPayloadFormat, 90000, hNumber == 264 ? &quot;H264&quot; : &quot;H265&quot;),
+    fHNumber(hNumber), fOurFragmenter(NULL), fFmtpSDPLine(NULL) {
+  if (vps != NULL) {
+    fVPSSize = vpsSize;
+    fVPS = new u_int8_t[fVPSSize];
+    memmove(fVPS, vps, fVPSSize);
+  } else {
+    fVPSSize = 0;
+    fVPS = NULL;
+  }
+  if (sps != NULL) {
+    fSPSSize = spsSize;
+    fSPS = new u_int8_t[fSPSSize];
+    memmove(fSPS, sps, fSPSSize);
+  } else {
+    fSPSSize = 0;
+    fSPS = NULL;
+  }
+  if (pps != NULL) {
+    fPPSSize = ppsSize;
+    fPPS = new u_int8_t[fPPSSize];
+    memmove(fPPS, pps, fPPSSize);
+  } else {
+    fPPSSize = 0;
+    fPPS = NULL;
+  }
+}<br></div></div>
+
+<p>The other is obtained from the data source:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class H264or5VideoStreamFramer: public MPEGVideoStreamFramer {
+public:
+  void getVPSandSPSandPPS(u_int8_t*&amp; vps, unsigned&amp; vpsSize,
+      u_int8_t*&amp; sps, unsigned&amp; spsSize,
+      u_int8_t*&amp; pps, unsigned&amp; ppsSize) const {
+    // Returns pointers to copies of the most recently seen VPS (video parameter set)
+    // SPS (sequence parameter set) and PPS (picture parameter set) NAL units.
+    // (NULL pointers are returned if the NAL units have not yet been seen.)
+    vps = fLastSeenVPS; vpsSize = fLastSeenVPSSize;
+    sps = fLastSeenSPS; spsSize = fLastSeenSPSSize;
+    pps = fLastSeenPPS; ppsSize = fLastSeenPPSSize;
+  }<br></div></div>
+
+<p>For the case of obtaining SPS frames and PPS frames from the data source, after
+the data is retrieved from the file, the data is pushed <code>framerSource</code>, and the
+process of pushing the SPS is as follows:</p>
+<pre><code>#0  H264or5VideoStreamFramer::saveCopyOfSPS (this=0x6e4710, from=0x6ff241 &quot;gB\200*\332\001\020\017\036^R\n\f\n\r\241Bj&quot;, size=18)
+    at H264or5VideoStreamFramer.cpp:110
+#1  0x00000000004798c4 in H264or5VideoStreamParser::parse (this=0x6e5020) at H264or5VideoStreamFramer.cpp:1069
+#2  0x0000000000435de9 in MPEGVideoStreamFramer::continueReadProcessing (this=0x6e4710) at MPEGVideoStreamFramer.cpp:159
+#3  0x0000000000435db4 in MPEGVideoStreamFramer::continueReadProcessing (clientData=0x6e4710) at MPEGVideoStreamFramer.cpp:155
+#4  0x0000000000474249 in StreamParser::afterGettingBytes1 (this=0x6e5020, numBytesRead=150000, presentationTime=...) at StreamParser.cpp:191
+#5  0x0000000000474112 in StreamParser::afterGettingBytes (clientData=0x6e5020, numBytesRead=150000, presentationTime=...) at StreamParser.cpp:170
+#6  0x000000000043092a in FramedSource::afterGetting (source=0x6e4f10) at FramedSource.cpp:92
+#7  0x0000000000431494 in ByteStreamFileSource::doReadFromFile (this=0x6e4f10) at ByteStreamFileSource.cpp:182
+#8  0x0000000000431233 in ByteStreamFileSource::fileReadableHandler (source=0x6e4f10) at ByteStreamFileSource.cpp:126
+#9  0x0000000000483a49 in BasicTaskScheduler::SingleStep (this=0x6d9c20, maxDelayTime=0) at BasicTaskScheduler.cpp:171
+#10 0x00000000004864b4 in BasicTaskScheduler0::doEventLoop (this=0x6d9c20, watchVariable=0x6e4bb0 &quot;&quot;) at BasicTaskScheduler0.cpp:80
+#11 0x0000000000422c9c in H264VideoFileServerMediaSubsession::getAuxSDPLine (this=0x6e4aa0, rtpSink=0x6e5220, inputSource=0x6e4710)
+    at H264VideoFileServerMediaSubsession.cpp:98
+#12 0x0000000000464cd4 in OnDemandServerMediaSubsession::setSDPLinesFromRTPSink (this=0x6e4aa0, rtpSink=0x6e5220, inputSource=0x6e4710, estBitrate=500)
+    at OnDemandServerMediaSubsession.cpp:456
+#13 0x000000000046378b in OnDemandServerMediaSubsession::sdpLines (this=0x6e4aa0) at OnDemandServerMediaSubsession.cpp:76
+#14 0x000000000042198b in ServerMediaSession::generateSDPDescription (this=0x6e4900) at ServerMediaSession.cpp:240
+</code></pre><p>The process of pushing PPS is as follows:</p>
+<pre><code>#0  H264or5VideoStreamFramer::saveCopyOfPPS (this=0x6e4710, from=0x6ff241 &quot;h\316\006\342\332\001\020\017\036^R\n\f\n\r\241Bj&quot;, size=4)
+    at H264or5VideoStreamFramer.cpp:119
+#1  0x0000000000479ad9 in H264or5VideoStreamParser::parse (this=0x6e5020) at H264or5VideoStreamFramer.cpp:1090
+#2  0x0000000000435de9 in MPEGVideoStreamFramer::continueReadProcessing (this=0x6e4710) at MPEGVideoStreamFramer.cpp:159
+#3  0x0000000000435d51 in MPEGVideoStreamFramer::doGetNextFrame (this=0x6e4710) at MPEGVideoStreamFramer.cpp:142
+#4  0x00000000004308b4 in FramedSource::getNextFrame (this=0x6e4710, to=0x6ff241 &quot;h\316\006\342\332\001\020\017\036^R\n\f\n\r\241Bj&quot;, maxSize=100000,
+    afterGettingFunc=0x47c788 &lt;H264or5Fragmenter::afterGettingFrame(void*, unsigned int, unsigned int, timeval, unsigned int)&gt;,
+    afterGettingClientData=0x6e5540, onCloseFunc=0x43092e &lt;FramedSource::handleClosure(void*)&gt;, onCloseClientData=0x6e5540) at FramedSource.cpp:78
+#5  0x000000000047c2c0 in H264or5Fragmenter::doGetNextFrame (this=0x6e5540) at H264or5VideoRTPSink.cpp:181
+#6  0x00000000004308b4 in FramedSource::getNextFrame (this=0x6e5540, to=0x6e69cc &quot;gB\200*\332\001\020\017\036^R\n\f\n\r\241Bj&quot;, maxSize=100452,
+    afterGettingFunc=0x45d09c &lt;MultiFramedRTPSink::afterGettingFrame(void*, unsigned int, unsigned int, timeval, unsigned int)&gt;,
+    afterGettingClientData=0x6e5220, onCloseFunc=0x45da86 &lt;MultiFramedRTPSink::ourHandleClosure(void*)&gt;, onCloseClientData=0x6e5220) at FramedSource.cpp:78
+#7  0x000000000045d07b in MultiFramedRTPSink::packFrame (this=0x6e5220) at MultiFramedRTPSink.cpp:224
+#8  0x000000000045cec8 in MultiFramedRTPSink::buildAndSendPacket (this=0x6e5220, isFirstPacket=0 &apos;\000&apos;) at MultiFramedRTPSink.cpp:199
+#9  0x000000000045da83 in MultiFramedRTPSink::sendNext (firstArg=0x6e5220) at MultiFramedRTPSink.cpp:422
+#10 0x0000000000486c1b in AlarmHandler::handleTimeout (this=0x6e5760) at BasicTaskScheduler0.cpp:34
+#11 0x0000000000484d1e in DelayQueue::handleAlarm (this=0x6d9c28) at DelayQueue.cpp:187
+#12 0x0000000000483c4c in BasicTaskScheduler::SingleStep (this=0x6d9c20, maxDelayTime=0) at BasicTaskScheduler.cpp:212
+#13 0x00000000004864b4 in BasicTaskScheduler0::doEventLoop (this=0x6d9c20, watchVariable=0x6e4bb0 &quot;&quot;) at BasicTaskScheduler0.cpp:80
+#14 0x0000000000422c9c in H264VideoFileServerMediaSubsession::getAuxSDPLine (this=0x6e4aa0, rtpSink=0x6e5220, inputSource=0x6e4710)
+    at H264VideoFileServerMediaSubsession.cpp:98
+#15 0x0000000000464cd4 in OnDemandServerMediaSubsession::setSDPLinesFromRTPSink (this=0x6e4aa0, rtpSink=0x6e5220, inputSource=0x6e4710, estBitrate=500)
+    at OnDemandServerMediaSubsession.cpp:456
+#16 0x000000000046378b in OnDemandServerMediaSubsession::sdpLines (this=0x6e4aa0) at OnDemandServerMediaSubsession.cpp:76
+#17 0x000000000042198b in ServerMediaSession::generateSDPDescription (this=0x6e4900) at ServerMediaSession.cpp:240
+</code></pre><p>Both SPS and PPS frame data are required to generate 
+SDP lines. <code>H264VideoRTPSink::auxSDPLine()</code> When the SDP line data is not
+available, it returns null to the caller.</p>
+<p>For <code>H264VideoFileServerMediaSubsession</code> the <code>checkForAuxSDPLine()</code> purposes, in the
+case of the SDP can not get, is scheduled to perform a task timer again, waiting
+for the arrival of a check.</p>
+<p>In <code>H264VideoRTPSink::auxSDPLine()</code>, if the SPS and PPS data have, then it will
+first remove Emulation byte of SPS, SPS then calculated Base64 encoded frame
+data and PPS data frame, and, ultimately SDP line.</p>
+<p>The process of removing the Emulation bytes in SPS is like this:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">unsigned removeH264or5EmulationBytes(u_int8_t* to, unsigned toMaxSize,
+                                     u_int8_t const* from, unsigned fromSize) {
+  unsigned toSize = 0;
+  unsigned i = 0;
+  while (i &lt; fromSize &amp;&amp; toSize+1 &lt; toMaxSize) {
+    if (i+2 &lt; fromSize &amp;&amp; from[i] == 0 &amp;&amp; from[i+1] == 0 &amp;&amp; from[i+2] == 3) {
+      to[toSize] = to[toSize+1] = 0;
+      toSize += 2;
+      i += 3;
+    } else {
+      to[toSize] = from[i];
+      toSize += 1;
+      i += 1;
+    }
+  }
+  return toSize;
+}<br></div></div>
+
+<p>The so-called Emulation byte is due to the Hx264 stream data, through the
+0x00000001 and 0x000001 byte sequences as the segmentation sequence of the frame
+data, in order to prevent the decoder from misinterpreting such sequences in the
+encoded frame data as between frames. Split the sequence and force a 0x03 byte
+to be inserted when two 0x00 bytes of frame data are present. These bytes need
+to be removed first when calculating Base64 for SPS.</p>
+<p><code>H264VideoFileServerMediaSubsession</code> The <code>getAuxSDPLine()</code> after collecting aux SDP
+line, put it back to the caller
+<code>OnDemandServerMediaSubsession::setSDPLinesFromRTPSink()</code>. The aux SDP line is
+usually like this:</p>
+<pre><code>a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=42802A;sprop-parameter-sets=Z0KAKtoBEA8eXlIKDAoNoUJq,aM4G4g==
+</code></pre><p><code>OnDemandServerMediaSubsession::setSDPLinesFromRTPSink()</code> With all the information,
+the final subsession SDP line is generated. The final subsession SDP line is
+usually like this:</p>
+<pre><code>m=video 0 RTP/AVP 96
+c=IN IP4 0.0.0.0
+b=AS:500
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=42802A;sprop-parameter-sets=Z0KAKtoBEA8eXlIKDAoNoUJq,aM4G4g==
+a=control:track1
+</code></pre><p><a href="https://www.wolfcstech.com/about/donate.html" target="_blank">Reward</a></p>
+<p>Done.</p>
+<h2 id="live555-source-code-analysis-series"><a name="live555-source-code-analysis-series" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-series"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Live555 source code analysis series</h2>
+<ol>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_introduction.html">Live555 Source code analysis: Introduction </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_infrastructure.html">live555 Source code analysis: Infrastructure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_mediaserver.html">live555 Source code analysis: MediaSever </a></li>
+<li><a href="Live555%20-%20Wireshark%20capture%20packet%20analysis%20RTSP_RTP_RTCP%20basic%20working%20process.html">Wireshark capture packet analysis RTSP/RTP/RTCP Basic working process </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_rtspserver.html">live555 Source code analysis: RTSPServer </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_describe%20processing.html">live555 Source code analysis: DESCRIBE processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_setup%20processing.html">live555 Source code analysis: SETUP processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20processing.html">live555 Source code analysis :PLAY processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_RTSPServer%20component%20structure.html">live555 Source code analysis: RTSPServer component structure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_servermediasession.html">live555 Source code analysis: </a></li>
+<li><a href="https://www.wolfcstech.com/2017/09/07/live555_src_analysis_subsession_sdp/" target="_blank">ServerMediaSession live555 Source code analysis: sub-session SDP line generation </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_Subsession%20SETUP.html">live555 Source code analysis: sub-session SETUP </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20start.html">live555 Source code analysis: play start</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Live555 - Live555 source code analysis_servermediasession.html" class="navigation navigation-prev " aria-label="Previous page: Live555 - Live555 source code analysis_servermediasession">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html" class="navigation navigation-next " aria-label="Next page: Live555 - Live555 source code analysis_Subsession SETUP">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Live555 - Live555 source code analysis_subsession SDP line generation","level":"1.10.11","depth":2,"next":{"title":"Live555 - Live555 source code analysis_Subsession SETUP","level":"1.10.12","depth":2,"path":"Live555 - Live555 source code analysis_Subsession SETUP.md","ref":"Live555 - Live555 source code analysis_Subsession SETUP.md","articles":[]},"previous":{"title":"Live555 - Live555 source code analysis_servermediasession","level":"1.10.10","depth":2,"path":"Live555 - Live555 source code analysis_servermediasession.md","ref":"Live555 - Live555 source code analysis_servermediasession.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Live555 - Live555 source code analysis_subsession SDP line generation.md","mtime":"2019-03-05T06:21:58.798Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

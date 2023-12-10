@@ -1,0 +1,1630 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android Permissions - Provider permissions detailed · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Android Permissions - Application permissions before android M and application permissions after M.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android Permissions - Provider permissions detailed</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#provider-permissions-detailed"><b>1. </b>Provider permissions detailed</a></li><ul><li><span class="title-icon "></span><a href="#source"><b>1.1. </b>source:</a></li><li><span class="title-icon "></span><a href="#foreword"><b>1.2. </b>Foreword:</a></li><li><span class="title-icon "></span><a href="#example"><b>1.3. </b>Example:</a></li><li><span class="title-icon "></span><a href="#source-code-analysis"><b>1.4. </b>Source code analysis:</a></li><li><span class="title-icon "></span><a href="#in-conclusion"><b>1.5. </b>in conclusion:</a></li><li><span class="title-icon "></span><a href="#example-conclusion"><b>1.6. </b>Example conclusion:</a></li></ul></ul></div><a href="#provider-permissions-detailed" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="provider-permissions-detailed"><a name="provider-permissions-detailed" class="anchor-navigation-ex-anchor" href="#provider-permissions-detailed"><i class="fa fa-link" aria-hidden="true"></i></a>1. Provider permissions detailed</h1>
+<p>Copyright statement: This article is the original article of the blogger, please
+be sure to indicate the author and the original
+link. Https://blog.csdn.net/jingerppp/article/details/82108549</p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#provider-permissions-detailed"><strong>Provider permissions detailed</strong></a><ul>
+<li><a href="#source"><strong>source:</strong></a></li>
+<li><a href="#foreword"><strong>Foreword:</strong></a></li>
+<li><a href="#example"><strong>Example:</strong></a></li>
+<li><a href="#source-code-analysis"><strong>Source code analysis:</strong></a></li>
+<li><a href="#in-conclusion"><strong>in conclusion:</strong></a></li>
+<li><a href="#example-conclusion"><strong>Example conclusion:</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="source"><a name="source" class="anchor-navigation-ex-anchor" href="#source"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. source:</h2>
+<p><a href="https://blog.csdn.net/shift_wwx/article/details/82108549" target="_blank">https://blog.csdn.net/shift_wwx/article/details/82108549</a></p>
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Foreword:</h2>
+<p>There is a blog post &quot; <a href="https://blog.csdn.net/shift_wwx/article/details/24350781" target="_blank">Android Basics Summary:
+ContentProvider</a> &quot;
+that explains the basics of the provider. For the resolution of the provider in
+AndroidManifest.xml, you can see the blog post &quot; <a href="https://blog.csdn.net/shift_wwx/article/details/80430259" target="_blank">How to parse APK with android
+PMS</a> &quot;. This article
+mainly analyzes the provider permissions. If the provider is used by another
+program, you need to set the export property to true, and you need to set the
+readPermission and writePermission. Of course, for the FileProvider that appears
+after SDK 22, this is another case. This article will use the source code to
+analyze the Provider&apos;s permissions management in detail.</p>
+<p>This article is based on the version Android O.</p>
+<h2 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Example:</h2>
+<p>Before the occurrence of an exception log, this article combines this example
+for parsing.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">--------- beginning of crash
+08-24 18:14:43.989 E/AndroidRuntime( 2366): FATAL EXCEPTION: main
+08-24 18:14:43.989 E/AndroidRuntime( 2366): Process: com.android.messaging, PID: 2366
+08-24 18:14:43.989 E/AndroidRuntime( 2366): java.lang.SecurityException: UID 10098 does not have permission to content://com.android.dialer.files/my_cache/my_cache/%2B12543365555_08-11-18_0442AM.amr [user 0]
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.os.Parcel.readException(Parcel.java:2005)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.os.Parcel.readException(Parcel.java:1951)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.IActivityManager$Stub$Proxy.startActivity(IActivityManager.java:4352)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.Instrumentation.execStartActivity(Instrumentation.java:1613)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.Activity.startActivityForResult(Activity.java:4501)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.Activity.startActivityForResult(Activity.java:4459)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.Activity.startActivity(Activity.java:4820)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.Activity.startActivity(Activity.java:4788)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at com.android.messaging.ui.Q.wT(SourceFile:200)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at com.android.messaging.ui.conversationlist.ShareIntentActivity.pR(SourceFile:179)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at com.android.messaging.ui.conversationlist.o.onClick(SourceFile:98)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.os.Handler.dispatchMessage(Handler.java:106)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.os.Looper.loop(Looper.java:164)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at android.app.ActivityThread.main(ActivityThread.java:6518)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at java.lang.reflect.Method.invoke(Native Method)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+08-24 18:14:43.989 E/AndroidRuntime( 2366):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+08-24 18:14:43.989 D/RecurrenceRule(  599): Resolving using anchor 2018-08-24T18:14:43.989+08:00[Asia/Shanghai]
+Log prompts that a process with a uid of 10098 does not have permission to use a
+provider.<br></div></div>
+
+
+<h2 id="source-code-analysis"><a name="source-code-analysis" class="anchor-navigation-ex-anchor" href="#source-code-analysis"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Source code analysis:</h2>
+<p>The debug function startActivity() will eventually be called into AMS, and the
+stack will be printed below:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">08-24 18:14:43.946 E/ActivityManager(  599): WJ Stack:java.lang.Throwable
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityManagerService.checkGrantUriPermissionLocked(ActivityManagerService.java:8975)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityManagerService.checkGrantUriPermissionFromIntentLocked(ActivityManagerService.java:9264)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityManagerService.grantUriPermissionFromIntentLocked(ActivityManagerService.java:9304)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityStarter.startActivityUnchecked(ActivityStarter.java:1203)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:1000)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:577)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:283)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:822)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:4616)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityManagerService.startActivity(ActivityManagerService.java:4603)
+08-24 18:14:43.946 E/ActivityManager(  599):     at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:121)
+08-24 18:14:43.946 E/ActivityManager(  599):     at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2971)
+08-24 18:14:43.946 E/ActivityManager(  599):     at android.os.Binder.execTransact(Binder.java:697)<br></div></div>
+
+<p>GrantUriPermissionFromIntentLocked() is called in AMS:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void grantUriPermissionFromIntentLocked(int callingUid,
+        String targetPkg, Intent intent, UriPermissionOwner owner, int targetUserId) {
+    NeededUriGrants needed = checkGrantUriPermissionFromIntentLocked(callingUid, targetPkg,
+            intent, intent != null ? intent.getFlags() : 0, null, targetUserId);
+    if (needed == null) {
+        return;
+    }
+
+    grantUriPermissionUncheckedFromIntentLocked(needed, owner);
+}<br></div></div>
+
+<p>Here the parameters intent, targetPkg, owner, targetUserId are all passed in by
+ActivityStarter.</p>
+<p>The final function will call checkGrantUriPermissionLocked(), which is the core
+function of the permission processing.</p>
+<p>In fact, the AMS needs to determine the Uri permission for the application. A
+public interface function checkGrantUriPermission() is provided separately.
+Through the code, the function will eventually call
+checkGrantUriPermissionLocked().</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public int checkGrantUriPermission(int callingUid, String targetPkg, Uri uri,
+        final int modeFlags, int userId) {
+    enforceNotIsolatedCaller(&quot;checkGrantUriPermission&quot;);
+    synchronized(this) {
+        return checkGrantUriPermissionLocked(callingUid, targetPkg,
+                new GrantUri(userId, uri, false), modeFlags, -1);
+    }
+}<br></div></div>
+
+<p>Look at the function checkGrantUriPermissionLocked():</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int checkGrantUriPermissionLocked(int callingUid, String targetPkg, GrantUri grantUri,
+        final int modeFlags, int lastTargetUid) {
+    // &#x8981;&#x6C42;Intent &#x7684;flags &#x8BBE;&#x4E3A;FLAG_GRANT_READ_URI_PERMISSION &#x6216;FLAG_GRANT_WRITE_URI_PERMISSION
+    if (!Intent.isAccessUriMode(modeFlags)) {
+        return -1;
+    }
+
+    ...
+    ...
+
+    // &#x8981;&#x6C42;scheme &#x662F;content
+    if (!ContentResolver.SCHEME_CONTENT.equals(grantUri.uri.getScheme())) {
+        if (DEBUG_URI_PERMISSION) Slog.v(TAG_URI_PERMISSION,
+                &quot;Can&apos;t grant URI permission for non-content URI: &quot; + grantUri);
+        return -1;
+    }
+
+    // Bail early if system is trying to hand out permissions directly; it
+    // must always grant permissions on behalf of someone explicit.
+    final int callingAppId = UserHandle.getAppId(callingUid);
+    if ((callingAppId == SYSTEM_UID) || (callingAppId == ROOT_UID)) {
+        if (&quot;com.android.settings.files&quot;.equals(grantUri.uri.getAuthority())) {
+            // Exempted authority for cropping user photos in Settings app
+        } else {
+            Slog.w(TAG, &quot;For security reasons, the system cannot issue a Uri permission&quot;
+                    + &quot; grant to &quot; + grantUri + &quot;; use startActivityAsCaller() instead&quot;);
+            return -1;
+        }
+    }
+
+    ...
+    ...
+
+    // &#x786E;&#x5B9A;targetUid &#x662F;&#x5426;&#x6709;&#x8BE5;permission
+    if (targetUid &gt;= 0) {
+        // First...  does the target actually need this permission?
+        if (checkHoldingPermissionsLocked(pm, pi, grantUri, targetUid, modeFlags)) {
+            // No need to grant the target this permission.
+            if (DEBUG_URI_PERMISSION) Slog.v(TAG_URI_PERMISSION,
+                    &quot;Target &quot; + targetPkg + &quot; already has full permission to &quot; + grantUri);
+            return -1;
+        }
+    }
+
+    ...
+    ...
+
+    /* There is a special cross user grant if:
+     * - The target is on another user.
+     * - Apps on the current user can access the uri without any uid permissions.
+     * In this case, we grant a uri permission, even if the ContentProvider does not normally
+     * grant uri permissions.
+     */
+    boolean specialCrossUserGrant = UserHandle.getUserId(targetUid) != grantUri.sourceUserId
+            &amp;&amp; checkHoldingPermissionsInternalLocked(pm, pi, grantUri, callingUid,
+            modeFlags, false /*without considering the uid permissions*/);
+
+    // Second...  is the provider allowing granting of URI permissions?
+    if (!specialCrossUserGrant) {
+        if (!pi.grantUriPermissions) {
+            throw new SecurityException(&quot;Provider &quot; + pi.packageName
+                    + &quot;/&quot; + pi.name
+                    + &quot; does not allow granting of Uri permissions (uri &quot;
+                    + grantUri + &quot;)&quot;);
+        }
+        if (pi.uriPermissionPatterns != null) {
+            final int N = pi.uriPermissionPatterns.length;
+            boolean allowed = false;
+            for (int i=0; i&lt;N; i++) {
+                if (pi.uriPermissionPatterns[i] != null
+                        &amp;&amp; pi.uriPermissionPatterns[i].match(grantUri.uri.getPath())) {
+                    allowed = true;
+                    break;
+                }
+            }
+            if (!allowed) {
+                throw new SecurityException(&quot;Provider &quot; + pi.packageName
+                        + &quot;/&quot; + pi.name
+                        + &quot; does not allow granting of permission to path of Uri &quot;
+                        + grantUri);
+            }
+        }
+    }
+
+    // &#x786E;&#x8BA4;callingUid &#x662F;&#x5426;&#x6709;&#x8BE5;permission
+    if (!checkHoldingPermissionsLocked(pm, pi, grantUri, callingUid, modeFlags)) {
+        // &#x786E;&#x8BA4;&#x662F;&#x5426;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x8BE5;grant uri permission
+        if (!checkUriPermissionLocked(grantUri, callingUid, modeFlags)) {
+            if (android.Manifest.permission.MANAGE_DOCUMENTS.equals(pi.readPermission)) {
+                throw new SecurityException(
+                        &quot;UID &quot; + callingUid + &quot; does not have permission to &quot; + grantUri
+                                + &quot;; you could obtain access using ACTION_OPEN_DOCUMENT &quot;
+                                + &quot;or related APIs&quot;);
+            } else {
+                throw new SecurityException(
+                        &quot;UID &quot; + callingUid + &quot; does not have permission to &quot; + grantUri);
+            }
+        }
+    }
+    return targetUid;
+}<br></div></div>
+
+<ol>
+<li><p>Intent requirements of flags
+set  <a href="https://developer.android.com/reference/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION" target="_blank">FLAG_GRANT_READ_URI_PERMISSION</a>,  <a href="https://developer.android.com/reference/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION" target="_blank">FLAG_GRANT_WRITE_URI_PERMISSION</a>otherwise
+no deal</p>
+</li>
+<li><p>Ask Uri&apos;s scheme to be content, otherwise it will not be processed.</p>
+</li>
+<li><p>If the provider&apos;s grantUriPermissions property is true, then the
+grant-uri-permission is confirmed, see the <a href="https://developer.android.com/guide/topics/manifest/grant-uri-permission-element" target="_blank">grant-uri-permission document
+in</a> detail. </p>
+</li>
+<li><p>The checkHoldingPermissionsLocked() function determines the required basic
+permissions of the Provider. See below for details.</p>
+</li>
+<li><p>checkUriPermissionLocked() When checking fail above, it will further confirm
+whether it has been previously granted in the provider. See below for details.</p>
+</li>
+</ol>
+<p>First look at checkHoldingPermissionsLocked():</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private final boolean checkHoldingPermissionsLocked(
+            IPackageManager pm, ProviderInfo pi, GrantUri grantUri, int uid, final int modeFlags) {
+        if (DEBUG_URI_PERMISSION) Slog.v(TAG_URI_PERMISSION,
+                &quot;checkHoldingPermissionsLocked: uri=&quot; + grantUri + &quot; uid=&quot; + uid);
+        if (UserHandle.getUserId(uid) != grantUri.sourceUserId) {
+            if (ActivityManager.checkComponentPermission(INTERACT_ACROSS_USERS, uid, -1, true)
+                    != PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        Slog.v(TAG_URI_PERMISSION,
+                &quot;enter checkHoldingPermissionsInternalLocked&quot;);
+        return checkHoldingPermissionsInternalLocked(pm, pi, grantUri, uid, modeFlags, true);
+    }<br></div></div>
+
+<p>For multiple users, you need to first check the INTERACT_ACROSS_USERS
+permission, then call checkHoldingPermissionsInternalLocked():</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private final boolean checkHoldingPermissionsInternalLocked(IPackageManager pm, ProviderInfo pi,
+        GrantUri grantUri, int uid, final int modeFlags, boolean considerUidPermissions) {
+    if (pi.applicationInfo.uid == uid) {
+        return true;
+    } else if (!pi.exported) {
+        return false;
+    }
+
+    boolean readMet = (modeFlags &amp; Intent.FLAG_GRANT_READ_URI_PERMISSION) == 0;
+    boolean writeMet = (modeFlags &amp; Intent.FLAG_GRANT_WRITE_URI_PERMISSION) == 0;
+
+    try {
+        // check if target holds top-level &lt;provider&gt; permissions
+        if (!readMet &amp;&amp; pi.readPermission != null &amp;&amp; considerUidPermissions
+                &amp;&amp; (pm.checkUidPermission(pi.readPermission, uid) == PERMISSION_GRANTED)) {
+            readMet = true;
+        }
+        if (!writeMet &amp;&amp; pi.writePermission != null &amp;&amp; considerUidPermissions
+                &amp;&amp; (pm.checkUidPermission(pi.writePermission, uid) == PERMISSION_GRANTED)) {
+            writeMet = true;
+        }
+
+        // track if unprotected read/write is allowed; any denied
+        // &lt;path-permission&gt; below removes this ability
+        boolean allowDefaultRead = pi.readPermission == null;
+        boolean allowDefaultWrite = pi.writePermission == null;
+
+        // check if target holds any &lt;path-permission&gt; that match uri
+        final PathPermission[] pps = pi.pathPermissions;
+        if (pps != null) {
+            final String path = grantUri.uri.getPath();
+            int i = pps.length;
+            while (i &gt; 0 &amp;&amp; (!readMet || !writeMet)) {
+                i--;
+                PathPermission pp = pps[i];
+                if (pp.match(path)) {
+                    if (!readMet) {
+                        final String pprperm = pp.getReadPermission();
+                        if (DEBUG_URI_PERMISSION) Slog.v(TAG_URI_PERMISSION,
+                                &quot;Checking read perm for &quot; + pprperm + &quot; for &quot; + pp.getPath()
+                                + &quot;: match=&quot; + pp.match(path)
+                                + &quot; check=&quot; + pm.checkUidPermission(pprperm, uid));
+                        if (pprperm != null) {
+                            if (considerUidPermissions &amp;&amp; pm.checkUidPermission(pprperm, uid)
+                                    == PERMISSION_GRANTED) {
+                                readMet = true;
+                            } else {
+                                allowDefaultRead = false;
+                            }
+                        }
+                    }
+                    if (!writeMet) {
+                        final String ppwperm = pp.getWritePermission();
+                        if (DEBUG_URI_PERMISSION) Slog.v(TAG_URI_PERMISSION,
+                                &quot;Checking write perm &quot; + ppwperm + &quot; for &quot; + pp.getPath()
+                                + &quot;: match=&quot; + pp.match(path)
+                                + &quot; check=&quot; + pm.checkUidPermission(ppwperm, uid));
+                        if (ppwperm != null) {
+                            if (considerUidPermissions &amp;&amp; pm.checkUidPermission(ppwperm, uid)
+                                    == PERMISSION_GRANTED) {
+                                writeMet = true;
+                            } else {
+                                allowDefaultWrite = false;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // grant unprotected &lt;provider&gt; read/write, if not blocked by
+        // &lt;path-permission&gt; above
+        if (allowDefaultRead) readMet = true;
+        if (allowDefaultWrite) writeMet = true;
+
+    } catch (RemoteException e) {
+        return false;
+    }
+
+    return readMet &amp;&amp; writeMet;
+}<br></div></div>
+
+<ol>
+<li><p>When the application uid and provider uid are the same, check passes</p>
+</li>
+<li><p>If the <strong>exported</strong> attribute of the provider is false, check does not pass
+directly.</p>
+</li>
+<li><p>When the exported property of the provider is true, in order to protect the
+provider, it is sometimes necessary to add read permission and write permission.
+If the provider sets these two permissions, the application needs to guarantee
+these two permissions when used. The code will pass the function
+checkUidPermission().</p>
+</li>
+</ol>
+<p>Of course, if the provider does not add protection for these two permissions,
+the system considers both read and write are allowed, such as code:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">if (allowDefaultRead) readMet = true;
+if (allowDefaultWrite) writeMet = true;<br></div></div>
+
+<h2 id="in-conclusion"><a name="in-conclusion" class="anchor-navigation-ex-anchor" href="#in-conclusion"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. in conclusion:</h2>
+<p>If you want checkHoldingPermissionsLocked() to pass, you must satisfy one of the
+following points:</p>
+<ol>
+<li><p>The applied uid is the same as the provider uid</p>
+</li>
+<li><p>The provider&apos;s exported is set to true, and the application must have both
+read permission and write permission. If the provider does not add this
+protection, the application has these two permissions by default.</p>
+</li>
+</ol>
+<p>The second case is special. If it is a FileProvider then exported must be false,
+the code is as follows: (see the <em>FileProvider documentation for</em> details )</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public void attachInfo(Context context, ProviderInfo info) {
+    super.attachInfo(context, info);
+
+    // Sanity check our security
+    if (info.exported) {
+        throw new SecurityException(&quot;Provider must not be exported&quot;);
+    }
+    if (!info.grantUriPermissions) {
+        throw new SecurityException(&quot;Provider must grant uri permissions&quot;);
+    }
+
+    mStrategy = getPathStrategy(context, info.authority);
+}<br></div></div>
+
+
+<p>The <strong>checkGrantUriPermissionLocked</strong> () function above <strong>knows</strong> that we can
+finally check if one of the two conditions is met:</p>
+<ol>
+<li><p>checkHoldingPermissionsLocked() function can check pass</p>
+</li>
+<li><p>checkUriPermissionLocked () function can check pass</p>
+</li>
+</ol>
+<p>The check process of checkHoldingPermissionsLocked() is parsed above, and the
+conclusions behind the function are detailed. For the FileProvider is special,
+the exported attribute must be false, the function check must be fail, if the
+function check, only need to ensure that the checkUriPermissionLocked ()
+function can check pass, that is, even if the provider&apos;s exported attribute
+value is false, It is also possible to check the pass. Let&apos;s parse the
+checkUriPermissionLocked() function in detail:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private final boolean checkUriPermissionLocked(GrantUri grantUri, int uid,
+        final int modeFlags) {
+    final boolean persistable = (modeFlags &amp; Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION) != 0;
+    final int minStrength = persistable ? UriPermission.STRENGTH_PERSISTABLE
+            : UriPermission.STRENGTH_OWNED;
+
+    // Root gets to do everything.
+    if (uid == 0) {
+        return true;
+    }
+
+    final ArrayMap&lt;GrantUri, UriPermission&gt; perms = mGrantedUriPermissions.get(uid);
+    if (perms == null) return false;
+
+    // First look for exact match
+    final UriPermission exactPerm = perms.get(grantUri);
+    if (exactPerm != null &amp;&amp; exactPerm.getStrength(modeFlags) &gt;= minStrength) {
+        return true;
+    }
+
+    // No exact match, look for prefixes
+    final int N = perms.size();
+    for (int i = 0; i &lt; N; i++) {
+        final UriPermission perm = perms.valueAt(i);
+        if (perm.uri.prefix &amp;&amp; grantUri.uri.isPathPrefixMatch(perm.uri.uri)
+                &amp;&amp; perm.getStrength(modeFlags) &gt;= minStrength) {
+            return true;
+        }
+    }
+
+    return false;<br></div></div>
+
+<p>The function mainly confirms whether mGrantedUriPermissions has a corresponding
+uid ArrayMap, which means that you must create such an ArrayMap and add it to
+mGrantedUriPermissions.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private final SparseArray&lt;ArrayMap&lt;GrantUri, UriPermission&gt;&gt;
+        mGrantedUriPermissions = new SparseArray&lt;ArrayMap&lt;GrantUri, UriPermission&gt;&gt;();<br></div></div>
+
+<p>And this mGrantedUriPermissions is created in the function
+findOrCreateUriPermissionLocked():</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private UriPermission findOrCreateUriPermissionLocked(String sourcePkg,
+        String targetPkg, int targetUid, GrantUri grantUri) {
+    ArrayMap&lt;GrantUri, UriPermission&gt; targetUris = mGrantedUriPermissions.get(targetUid);
+    if (targetUris == null) {
+        targetUris = Maps.newArrayMap();
+        mGrantedUriPermissions.put(targetUid, targetUris);
+    }
+
+    UriPermission perm = targetUris.get(grantUri);
+    if (perm == null) {
+        perm = new UriPermission(sourcePkg, targetPkg, targetUid, grantUri);
+        targetUris.put(grantUri, perm);
+    }
+
+    return perm;
+}<br></div></div> 
+
+<p>In fact  , you can know from the <em>FileProvider documentation</em> that there are two
+options for general grant uri permission:</p>
+<ol>
+<li>via the interface grantUriPermission() </li>
+</ol>
+<p>Call the method </p>
+<p><a href="https://developer.android.com/reference/android/content/Context.html#grantUriPermission(java.lang.String,%20android.net.Uri,%20int" target="_blank">Context.grantUriPermission(package, Uri,
+mode_flags)</a>) for
+the content:// <a href="https://developer.android.com/reference/android/net/Uri.html" target="_blank">Uri</a>,
+using the desired mode flags. This grants temporary access permission for the
+content URI to the specified package, according to the value of the
+the mode_flags parameter, which you can set
+to<a href="https://developer.android.com/reference/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION" target="_blank">FLAG_GRANT_READ_URI_PERMISSION</a>, <a href="https://developer.android.com/reference/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION" target="_blank">FLAG_GRANT_WRITE_URI_PERMISSION</a> or
+both. The permission remains in effect until you revoke it by
+calling <em>revokeUriPermission()</em> or until the device reboots.</p>
+<ol>
+<li><p>Intent Configuration</p>
+</li>
+<li><p>Put the content URI in
+an <a href="https://developer.android.com/reference/android/content/Intent.html" target="_blank">Intent</a> by
+calling <em>setData()</em>.</p>
+</li>
+<li><p>Next, call the method <em>Intent.setFlags()</em> with
+either <a href="https://developer.android.com/reference/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION" target="_blank">FLAG_GRANT_READ_URI_PERMISSION</a> or<a href="https://developer.android.com/reference/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION" target="_blank">FLAG_GRANT_WRITE_URI_PERMISSION</a> or
+both.</p>
+</li>
+<li><p>Finally, send
+the <a href="https://developer.android.com/reference/android/content/Intent.html" target="_blank">Intent</a> to
+another app. Most often, you do this by calling <em>setResult()</em>.</p>
+</li>
+</ol>
+<p>Permissions granted in
+an <a href="https://developer.android.com/reference/android/content/Intent.html" target="_blank">Intent</a> remain
+in effect while the stack of the
+receiving <a href="https://developer.android.com/reference/android/app/Activity.html" target="_blank">Activity</a> is
+active. When the stack finishes, the permissions are automatically removed.
+Permissions granted to
+one <a href="https://developer.android.com/reference/android/app/Activity.html" target="_blank">Activity</a> in
+a client app are automatically extended to other components of that app.</p>
+<h2 id="example-conclusion"><a name="example-conclusion" class="anchor-navigation-ex-anchor" href="#example-conclusion"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Example conclusion:</h2>
+<p>The exception problem that appears in the instance should be Android&apos;s own
+problem. When sharing the SMS, the SMS itself starts an Activity, which causes
+the targetUid and callingUid of the checkHoldingPermissionsLocked() to be the
+uid of the SMS itself. Finally, the check can not pass. In the first
+startActivity will enter checkGrantUriPermissionLocked (), but encountered
+conditions to filter out, we need to modify the filter to make it:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">if ((callingAppId == SYSTEM_UID) || (callingAppId == ROOT_UID)) {
+    if (&quot;com.android.settings.files&quot;.equals(grantUri.uri.getAuthority())) {
+        // Exempted authority for cropping user photos in Settings app
+    } else {
+        Slog.w(TAG, &quot;For security reasons, the system cannot issue a Uri permission&quot;
+                + &quot; grant to &quot; + grantUri + &quot;; use startActivityAsCaller() instead&quot;);
+        return -1;
+    }
+}<br></div></div>
+
+<p>In fact, through the code you can see that the Android source also has a special
+filter for com.android.settings.files. We only need to refer to this.</p>
+<p>references:</p>
+<p><a href="https://developer.android.com/guide/topics/manifest/provider-element" target="_blank">https://developer.android.com/guide/topics/manifest/provider-element</a></p>
+<p><a href="https://developer.android.com/guide/topics/manifest/grant-uri-permission-element" target="_blank">https://developer.android.com/guide/topics/manifest/grant-uri-permission-element</a></p>
+<p><a href="https://developer.android.com/reference/android/support/v4/content/FileProvider#SpecifyFiles" target="_blank">https://developer.android.com/reference/android/support/v4/content/FileProvider#SpecifyFiles</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Android Permissions - Application permissions before android M and application permissions after M">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android Permissions - Provider permissions detailed","level":"1.3.8","depth":2,"next":{"title":"Android OTA","level":"1.4","depth":1,"ref":"","articles":[{"title":"Android OTA - Android OTA upgrade principle and process analysis 1","level":"1.4.1","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 1.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 1.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 2","level":"1.4.2","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 2.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 2.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 3","level":"1.4.3","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 3.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 3.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 4","level":"1.4.4","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 4.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 4.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 5","level":"1.4.5","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 5.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 5.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 6","level":"1.4.6","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 6.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 6.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 7","level":"1.4.7","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 7.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 7.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 8","level":"1.4.8","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 8.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 8.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 9","level":"1.4.9","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 9.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 9.md","articles":[]}]},"previous":{"title":"Android Permissions - Application permissions before android M and application permissions after M","level":"1.3.7","depth":2,"path":"Android Permissions - Application permissions before android M and application permissions after M.md","ref":"Android Permissions - Application permissions before android M and application permissions after M.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android Permissions - Provider permissions detailed.md","mtime":"2018-09-18T10:20:11.229Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

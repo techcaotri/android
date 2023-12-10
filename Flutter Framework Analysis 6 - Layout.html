@@ -1,0 +1,1809 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter Framework Analysis 6 - Layout · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Flutter Framework Analysis 7 - Drawing.html" />
+    
+    
+    <link rel="prev" href="Flutter Framework Analysis 5 - Animation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Flutter Framework Analysis 6 - Layout</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#flutter-frame-analysis-6----layout"><b>1. </b>Flutter Frame Analysis (6) -- Layout</a></li><ul><li><span class="title-icon "></span><a href="#foreword"><b>1.1. </b>Foreword</a></li><li><span class="title-icon "></span><a href="#overview"><b>1.2. </b>Overview</a></li><li><span class="title-icon "></span><a href="#analysis"><b>1.3. </b>analysis</a></li><ul><li><span class="title-icon "></span><a href="#boxconstraints"><b>1.3.1. </b>BoxConstraints</a></li></ul><li><span class="title-icon "></span><a href="#layout-example"><b>1.4. </b>Layout example</a></li><li><span class="title-icon "></span><a href="#to-sum-up"><b>1.5. </b>to sum up</a></li></ul></ul></div><a href="#flutter-frame-analysis-6----layout" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="flutter-frame-analysis-6----layout"><a name="flutter-frame-analysis-6----layout" class="anchor-navigation-ex-anchor" href="#flutter-frame-analysis-6----layout"><i class="fa fa-link" aria-hidden="true"></i></a>1. Flutter Frame Analysis (6) -- Layout</h1>
+<p>Flutter Framework Analysis and Analysis Series:</p>
+<p><a href="Flutter%20Framework%20Analysis%201%20-%20Overview%20and%20Window.html">&quot;Flutter Framework Analysis (1) - Overview and Window&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%202%20-%20Initialization.html">&quot;Flutter Framework Analysis (2) - Initialization&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%203%20-%20Widget,%20Element%20and%20RenderObject.html">&quot;Flutter Framework Analysis (3) - Widget, Element and RenderObject&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%204%20-%20Flutter%20Framework%20Operation.html">&quot;Flutter Framework Analysis (4) - Flutter Framework Operation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%205%20-%20Animation.html">&quot;Flutter Framework Analysis (5) - Animation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%206%20-%20Layout.html">&quot;Flutter Framework Analysis (6) - Layout&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%207%20-%20Drawing.html">&quot;Flutter Framework Analysis (7) - Drawing&quot;</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#flutter-frame-analysis-6-layout"><strong>Flutter Frame Analysis (6) -- Layout</strong></a><ul>
+<li><a href="#foreword"><strong>Foreword</strong></a></li>
+<li><a href="#overview"><strong>Overview</strong></a></li>
+<li><a href="#analysis"><strong>analysis</strong></a><ul>
+<li><a href="#boxconstraints"><strong>BoxConstraints</strong></a></li>
+</ul>
+</li>
+<li><a href="#layout-example"><strong>Layout example</strong></a></li>
+<li><a href="#to-sum-up"><strong>to sum up</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Foreword</h2>
+<p>The previous article introduced the animation (animate) and build phase of the
+Flutter rendering pipeline. This article will introduce you to the layout stage
+of the rendering pipeline in conjunction with the Flutter source.</p>
+<h2 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Overview</h2>
+<p>Like other frameworks like Android, iOS, h5, etc., the frame needs to determine
+the position and size (size) of each element in the page before the page is
+drawn. For an element in a page, if it contains a child element, the layout of
+the child element is determined by the parent element after knowing the size of
+the child element. So as long as the size and position of the child elements are
+determined, the layout is complete. The layout of the Flutter frame uses the Box
+constraints model. The layout process is shown below:</p>
+<p>     <a href="media/e63395adbab33fa2462c15600838645a.png" rel="grouped" title="https://user-gold-cdn.xitu.io/2019/5/16/16ac1590f37d5e18?imageslim" target="_self" class="fancybox">
+       <img src="media/e63395adbab33fa2462c15600838645a.png" alt="https://user-gold-cdn.xitu.io/2019/5/16/16ac1590f37d5e18?imageslim">
+     </a></p>
+<p>The tree in the figure is the render tree. Each node is
+one <code>RenderObject</code>. Starting from the root node, each parent node initiates the
+layout process of the child node <code>Constraints</code>, which is passed in at startup ,
+that is, &quot;constraint&quot;. Flutter uses the most box constraints. The box constraint
+contains 4 fields: maximum width ( <code>maxWidth</code>) minimum width ( <code>minWidth</code>) maximum
+height ( <code>maxHeight</code>) and minimum height ( <code>minHeight</code>). Once the child node layout
+is complete, it will determine its size ( <code>size</code>). <code>size</code> Contains two fields: width
+( <code>width</code>) and height ( <code>height</code>). The parent node can obtain the size of the child
+node when the child node layout is completed. ( <code>size</code>) The overall layout flow
+can be described as one on the next, that is, the constraint is passed from top
+to bottom, and the upper one refers to the size from bottom to top. In this way,
+Flutter&apos;s layout process only needs to traverse the render tree. How the
+specific layout process works, we analyze it further by analyzing the source
+code.</p>
+<h2 id="analysis"><a name="analysis" class="anchor-navigation-ex-anchor" href="#analysis"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. analysis</h2>
+<p>Recalling &quot;Flutter Framework Analysis (4) - Flutter Framework Run&quot; we know that
+after the vsync signal arrives, the render pipeline starts,
+and <code>window</code> the <code>onDrawFrame()</code> function in the engine callback . This function runs
+Flutter&apos;s &quot;Persistence FRAME CALLBACKS&quot;. The build, layout, and paint phases of
+the render pipeline are all in this callback, <code>WidgetsBinding.drawFrame()</code>. This
+function is added to the &quot;Persistent&quot; callback when the RendererBinding is
+initialized.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void drawFrame() {
+   try {
+    if (renderViewElement != null)
+      buildOwner.buildScope(renderViewElement);
+    super.drawFrame();
+    buildOwner.finalizeTree();
+  } finally {
+     ...
+  }
+}<br></div></div>
+
+<p>This line <code>buildOwner.buildScope(renderViewElement)</code> in the code is the build phase
+of the render pipeline. In this part we explain in &quot;Flutter Framework Analysis
+(4) - Operation of the Flutter Framework&quot;. The next
+function <code>super.drawFrame()</code> will come to the <code>RendererBinding</code> middle.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void drawFrame() {
+  pipelineOwner.flushLayout();
+  pipelineOwner.flushCompositingBits();
+  pipelineOwner.flushPaint();
+  renderView.compositeFrame(); // this sends the bits to the GPU
+  pipelineOwner.flushSemantics(); // this also sends the semantics to the OS.
+}<br></div></div>
+
+<p>The first call inside <code>pipelineOwner.flushLayout()</code> is the layout phase of this
+article. Ok, let&apos;s start from here. Let&apos;s take a
+look <code>PipelineOwner.flushLayout()</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void flushLayout() {
+      while (_nodesNeedingLayout.isNotEmpty) {
+        final List&lt;RenderObject&gt; dirtyNodes = _nodesNeedingLayout;
+        _nodesNeedingLayout = &lt;RenderObject&gt;[];
+        for (RenderObject node in dirtyNodes..sort((RenderObject a, RenderObject b) =&gt; a.depth - b.depth)) {
+          if (node._needsLayout &amp;&amp; node.owner == this)
+            node._layoutWithoutResize();
+        }
+      }
+  }<br></div></div>
+
+<p>This will iterate over the <code>dirtyNodes</code> array. What is placed in this array is the
+need to re-layout <code>RenderObject</code>. <code>dirtyNodes</code> Sort the array according to its depth
+in the render tree before traversing . The ordering here is the same as the
+sorting of the element tree we encountered during the build phase. The upper
+nodes are prioritized after sorting. Because the child nodes are recursively
+processed during the layout, if the upper nodes are processed first, the
+subsequent lower nodes of the layout are avoided. It will then be
+called <code>RenderObject._layoutWithoutResize()</code> to let the node do the layout itself.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void _layoutWithoutResize() {
+    try {
+      performLayout();
+      markNeedsSemanticsUpdate();
+    } catch (e, stack) {
+      ...
+    }
+    _needsLayout = false;
+    markNeedsPaint();
+  }<br></div></div>
+
+<p>In <code>RenderObject</code> it, the function <code>performLayout()</code> needs its subclass to implement
+itself. Because of the variety of layouts, subclasses need to be personalized to
+implement their own layout logic. After the layout is complete, its
+own <code>_needsLayout</code> flag is set to <code>false</code>. Looking back at the previous function, it
+will be called in the loop body, only if it <code>_needsLayout</code> is . We know that layout
+in Flutter, rendering is done by. Most page elements use box constraints. There
+is a subclass that handles this layout. Most of Flutter is ultimately
+rendered by subclasses. There is a definition of the pair in the comments in the
+source code. <code>true</code> <code>_layoutWithoutResize()</code> <code>RenderObject</code> <code>RenderBox</code> <code>Widget</code> <code>RenderBox</code></p>
+<p>|A render object in a 2D Cartesian coordinate system.|
+-</p>
+<p>Translated is a render object in a two-dimensional Cartesian coordinate
+system. Each box has a <code>size</code> property. Contains <code>height</code> and <code>width</code>. Each box has its
+own coordinate system with the coordinates (0,0) in the upper left corner. The
+coordinates of the lower right corner are (width, height).</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">abstract class RenderBox extends RenderObject {
+    ...
+    Size _size;
+    ...
+}<br></div></div>
+
+<p>When we write the Flutter app, we set the size of the component when it is
+created <code>Widget</code>, and the size or similar configuration is passed in. For example,
+the following <code>Widget</code> we have specified that its size is 100x100;</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Container(width: 100, height: 100)&#xFF1B;<br></div></div>
+
+<p>Because the layout is done in the <code>RenderObject</code> inside, here is more
+specific <code>RenderBox</code>. So how is the size of this 100x100 delivered
+to <code>RenderBox</code> it? <code>RenderBox</code> How is the layout done? <code>Container</code> It is
+one <code>StatelessWidget</code>. It does not correspond to any of its
+own <code>RenderObject</code>. According to the parameters passed in the
+construction, <code>Container</code> it will eventually return a combination
+of <code>Align</code>, <code>Padding</code>, <code>ConstrainedBox</code> and so on <code>Widget</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Container({
+   Key key,
+   this.alignment,
+   this.padding,
+   Color color,
+   Decoration decoration,
+   this.foregroundDecoration,
+   double width,
+   double height,
+   BoxConstraints constraints,
+   this.margin,
+   this.transform,
+   this.child,
+ }) : decoration = decoration ?? (color != null ? BoxDecoration(color: color) : null),
+      constraints =
+       (width != null || height != null)
+         ? constraints?.tighten(width: width, height: height)
+           ?? BoxConstraints.tightFor(width: width, height: height)
+         : constraints,
+      super(key: key);
+
+ final BoxConstraints constraints;
+
+ @override
+ Widget build(BuildContext context) {
+   Widget current = child;
+
+   if (child == null &amp;&amp; (constraints == null || !constraints.isTight)) {
+     current = LimitedBox(
+       maxWidth: 0.0,
+       maxHeight: 0.0,
+       child: ConstrainedBox(constraints: const BoxConstraints.expand()),
+     );
+   }
+
+   if (alignment != null)
+     current = Align(alignment: alignment, child: current);
+
+   final EdgeInsetsGeometry effectivePadding = _paddingIncludingDecoration;
+   if (effectivePadding != null)
+     current = Padding(padding: effectivePadding, child: current);
+
+   if (decoration != null)
+     current = DecoratedBox(decoration: decoration, child: current);
+
+   if (foregroundDecoration != null) {
+     current = DecoratedBox(
+       decoration: foregroundDecoration,
+       position: DecorationPosition.foreground,
+       child: current,
+     );
+   }
+
+   if (constraints != null)
+     current = ConstrainedBox(constraints: constraints, child: current);
+
+   if (margin != null)
+     current = Padding(padding: margin, child: current);
+
+   if (transform != null)
+     current = Transform(transform: transform, child: current);
+
+   return current;
+ }<br></div></div>
+
+<p>In this case, one is returned <code>ConstrainedBox</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class ConstrainedBox extends SingleChildRenderObjectWidget {
+
+  ConstrainedBox({
+    Key key,
+    @required this.constraints,
+    Widget child,
+  }) : assert(constraints != null),
+       assert(constraints.debugAssertIsValid()),
+       super(key: key, child: child);
+
+  /// The additional constraints to impose on the child.
+  final BoxConstraints constraints;
+
+  @override
+  RenderConstrainedBox createRenderObject(BuildContext context) {
+    return RenderConstrainedBox(additionalConstraints: constraints);
+  }
+
+  @override
+  void updateRenderObject(BuildContext context, RenderConstrainedBox renderObject) {
+    renderObject.additionalConstraints = constraints;
+  }
+
+}<br></div></div>
+
+<p>And this <code>Widget</code> corresponding will be created <code>RenderConstrainedBox</code>. Then the
+specific layout work is done by it, and from the above code, the size of the
+100x100 is <code>constraints</code> inside.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class RenderConstrainedBox extends RenderProxyBox {
+
+  RenderConstrainedBox({
+    RenderBox child,
+    @required BoxConstraints additionalConstraints,
+  }) :
+       _additionalConstraints = additionalConstraints,
+       super(child);
+
+  BoxConstraints _additionalConstraints;
+
+  @override
+  void performLayout() {
+    if (child != null) {
+      child.layout(_additionalConstraints.enforce(constraints), parentUsesSize: true);
+      size = child.size;
+    } else {
+      size = _additionalConstraints.enforce(constraints).constrain(Size.zero);
+    }
+  }
+}<br></div></div>
+
+<p><code>RenderConstrainedBox</code> Inherited from <code>RenderProxyBox</code>. And <code>RenderProxyBox</code> then
+inherited from <code>RenderBox</code>.</p>
+<p>Here we see the <code>performLayout()</code> implementation. When there is a child node,
+the <code>child.layout()</code> request child node is called to make the layout. The
+constraints on the child node are passed in when calling <code>constraints</code>. This will
+pass the 100x100 constraint. Set your own size to the size of the child node
+after the child node layout is complete. When there is no child node, the
+constraint is converted to the size setting for itself.</p>
+<p>Let&apos;s take a look <code>child.layout()</code>. This function is in the <code>RenderObject</code> class:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void layout(Constraints constraints, { bool parentUsesSize = false }) {
+    RenderObject relayoutBoundary;
+    if (!parentUsesSize || sizedByParent || constraints.isTight || parent is! RenderObject) {
+      relayoutBoundary = this;
+    } else {
+      final RenderObject parent = this.parent;
+      relayoutBoundary = parent._relayoutBoundary;
+    }
+
+    if (!_needsLayout &amp;&amp; constraints == _constraints &amp;&amp; relayoutBoundary == _relayoutBoundary) {
+      return;
+    }
+    _constraints = constraints;
+    _relayoutBoundary = relayoutBoundary;
+
+    if (sizedByParent) {
+      try {
+        performResize();
+      } catch (e, stack) {
+        ...
+      }
+    }
+    try {
+      performLayout();
+      markNeedsSemanticsUpdate();
+
+    } catch (e, stack) {
+      ...
+    }
+    _needsLayout = false;
+    markNeedsPaint();
+  }<br></div></div>
+
+<p>This function is longer and more critical. The first thing to do is to be
+sure <code>relayoutBoundary</code>. There are several conditions in it:</p>
+<ol>
+<li><p><code>parentUsesSize</code>: Whether the parent component needs the size of the child
+component, this is the input parameter when calling, the default is <code>false</code>.</p>
+</li>
+<li><p><code>sizedByParent</code>: This is an <code>RenderObject</code> attribute that
+indicates <code>RenderObject</code> whether the current layout is only affected
+by <code>RenderObject</code> the constraints given by the parent . The default
+is <code>false</code>. Subclasses can be returned if needed <code>true</code>. For
+example <code>RenderErrorBox</code>. When our Flutter app goes wrong, the interface on
+the screen with the yellow background is rendered by it.</p>
+</li>
+<li><p><code>constraints.isTight</code>: Represents whether the constraint is a strict
+constraint. This means that only one size is allowed.</p>
+</li>
+<li><p>The last condition is whether the father node is <code>RenderObject</code>. When any of
+the above conditions are met, it <code>relayoutBoundary</code> is itself, otherwise it
+takes the parent node <code>relayoutBoundary</code>.</p>
+</li>
+</ol>
+<p>Next is another judgment. If the current node does not need to be re-arranged,
+the constraint has not changed, <code>relayoutBoundary</code> and there is no change and it
+returns directly. That is to say, starting from this node, the sub-nodes
+underneath it need not be re-arranged. This will have a performance boost.</p>
+<p>Then there is another judgment, if it <code>sizedByParent</code> is <code>true</code>, it will be
+called <code>performResize()</code>. This function will calculate the
+current <code>RenderObject</code> size based only on the constraints . When this function is
+called, it is usually <code>performLayout()</code> not possible to change the size in
+the next function.</p>
+<p><code>performLayout()</code> It is the place where most nodes do
+layout. Different <code>RenderObject</code> will have different implementations.</p>
+<p>Finally mark the current node needs to be redrawn. The layout process is
+recursive. The top nodes are superimposed with different constraints. The child
+nodes calculate their size according to the constraints. If necessary, the
+parent node will get the size of the child nodes for further processing after
+the child node layout is completed. That is what we said at the beginning.</p>
+<p><code>layout()</code> When we call we need to pass in the constraint, then let&apos;s see what
+happens to this constraint:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">abstract class Constraints {
+  bool get isTight;
+
+  bool get isNormalized;
+}<br></div></div>
+
+<p>This is an abstract class with only two <code>getter</code>. <code>isTight</code> It is the strict
+constraint we said before. Because Flutter is mainly a box constraint. So let&apos;s
+look at <code>Constraints</code> the subclasses:<code>BoxConstraints</code></p>
+<h3 id="boxconstraints"><a name="boxconstraints" class="anchor-navigation-ex-anchor" href="#boxconstraints"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. BoxConstraints</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class BoxConstraints extends Constraints {
+  const BoxConstraints({
+    this.minWidth = 0.0,
+    this.maxWidth = double.infinity,
+    this.minHeight = 0.0,
+    this.maxHeight = double.infinity,
+  });
+
+  final double minWidth;
+
+  final double maxWidth;
+
+  final double minHeight;
+
+  final double maxHeight;
+  ...
+ }<br></div></div>
+
+<p>The box constraint has 4 attributes, maximum width, minimum width, maximum
+height and minimum height. The different combinations of these four attributes
+constitute different constraints.</p>
+<p>When the maximum constraint and the minimum constraint are the same in an axial
+direction, then this axial direction is considered to be tightly constrained.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">BoxConstraints.tight(Size size)
+    : minWidth = size.width,
+      maxWidth = size.width,
+      minHeight = size.height,
+      maxHeight = size.height;
+
+const BoxConstraints.tightFor({
+    double width,
+    double height,
+  }) : minWidth = width != null ? width : 0.0,
+       maxWidth = width != null ? width : double.infinity,
+       minHeight = height != null ? height : 0.0,
+       maxHeight = height != null ? height : double.infinity;
+
+BoxConstraints tighten({ double width, double height }) {
+    return BoxConstraints(minWidth: width == null ? minWidth : width.clamp(minWidth, maxWidth),
+                              maxWidth: width == null ? maxWidth : width.clamp(minWidth, maxWidth),
+                              minHeight: height == null ? minHeight : height.clamp(minHeight, maxHeight),
+                              maxHeight: height == null ? maxHeight : height.clamp(minHeight, maxHeight));
+  }<br></div></div>
+
+<p>When the minimum constraint in a certain axis direction is 0.0, then this axis
+direction is considered to be loose.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">BoxConstraints.loose(Size size)
+   : minWidth = 0.0,
+     maxWidth = size.width,
+     minHeight = 0.0,
+     maxHeight = size.height;
+
+
+ BoxConstraints loosen() {
+   assert(debugAssertIsValid());
+   return BoxConstraints(
+     minWidth: 0.0,
+     maxWidth: maxWidth,
+     minHeight: 0.0,
+     maxHeight: maxHeight,
+   );
+ }<br></div></div>
+
+<p>When the value of the maximum constraint in an axial direction is smaller
+than <code>double.infinity</code> this, the constraint of this axial direction is limited.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">bool get hasBoundedWidth =&gt; maxWidth &lt; double.infinity;
+bool get hasBoundedHeight =&gt; maxHeight &lt; double.infinity;<br></div></div>
+
+<p>When the value of the maximum constraint in the direction of an axis is
+equal <code>double.infinity</code>, the constraint of this axis direction is unlimited. If
+the maximum and minimum constraints are both <code>double.infinity</code>, the constraint
+of this axis direction is exbanding.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">const BoxConstraints.expand({
+    double width,
+    double height,
+  }) : minWidth = width != null ? width : double.infinity,
+       maxWidth = width != null ? width : double.infinity,
+       minHeight = height != null ? height : double.infinity,
+       maxHeight = height != null ? height : double.infinity;<br></div></div>
+
+<p>Finally, the node needs to convert the constraint to size when laying out. The
+dimensions obtained here are considered to satisfy the constraints.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Size constrain(Size size) {
+    Size result = Size(constrainWidth(size.width), constrainHeight(size.height));
+    return result;
+  }
+
+  double constrainWidth([ double width = double.infinity ]) {
+    return width.clamp(minWidth, maxWidth);
+  }
+
+  double constrainHeight([ double height = double.infinity ]) {
+    return height.clamp(minHeight, maxHeight);
+  }<br></div></div>
+
+<h2 id="layout-example"><a name="layout-example" class="anchor-navigation-ex-anchor" href="#layout-example"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Layout example</h2>
+<p>We know that the root node of the render tree is <code>RenderView</code>. In
+the <code>RendererBinding</code> creation RenderViewtime will pass a <code>ViewConfiguration</code> type of
+configuration parameters:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void initRenderView() {
+   assert(renderView == null);
+   renderView = RenderView(configuration: createViewConfiguration(), window: window);
+   renderView.scheduleInitialFrame();
+ }<br></div></div>
+
+<p><code>ViewConfiguration</code> Defined as follows, including a size attribute and a device
+pixel scale attribute:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@immutable
+class ViewConfiguration {
+
+  const ViewConfiguration({
+    this.size = Size.zero,
+    this.devicePixelRatio = 1.0,
+  });
+
+  final Size size;
+
+  final double devicePixelRatio;
+}<br></div></div>
+
+<p><code>ViewConfiguration</code> The instance is <code>createViewConfiguration()</code> created by a
+function :</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">ViewConfiguration createViewConfiguration() {
+    final double devicePixelRatio = window.devicePixelRatio;
+    return ViewConfiguration(
+      size: window.physicalSize / devicePixelRatio,
+      devicePixelRatio: devicePixelRatio,
+    );
+  }<br></div></div>
+
+<p>It can be seen that the size is taken by the physical pixel size of the window
+divided by the device pixel ratio. On Nexus 5, the physical pixel size of the
+full-screen window ( <code>window.physicalSize</code>) is 1080x1776. The device pixel ratio
+( <code>window.devicePixelRatio</code>) is 3.0. The final <code>ViewConfiguration</code> of
+the <code>size</code> property to 360x592.</p>
+<p>Then let&apos;s see how <code>RenderView</code> to do the layout:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+  void performLayout() {
+    _size = configuration.size;
+    if (child != null)
+      child.layout(BoxConstraints.tight(_size));
+  }<br></div></div>
+
+<p>The root node generates a strict box constraint based on the configured size. In
+the case of the Nexus 5, the constraint is that the maximum width and the
+minimum width are both 360, and the maximum height and minimum height are both</p>
+<ol>
+<li><code>layout()</code> Pass this strict constraint when calling the child node .</li>
+</ol>
+<p>If we want to display a 100x100 rectangle in the center of the screen, the code
+is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">runApp(Center(child: Container(width: 100, height: 100, color: Color(0xFFFF9000),)));<br></div></div>
+
+<p>After running, the render tree structure is as follows:</p>
+<p>     <a href="media/1fe700c6adde7fad14fe5c937150de12.png" rel="grouped" title="https://user-gold-cdn.xitu.io/2019/5/22/16adeb8e582f8dd4?imageslim" target="_self" class="fancybox">
+       <img src="media/1fe700c6adde7fad14fe5c937150de12.png" alt="https://user-gold-cdn.xitu.io/2019/5/22/16adeb8e582f8dd4?imageslim">
+     </a></p>
+<p><code>RenderView</code> The child nodes are one <code>RenderPositionedBox</code>. Its layout function is as
+follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+  void performLayout() {
+
+    if (child != null) {
+      child.layout(constraints.loosen(), parentUsesSize: true);
+      size = constraints.constrain(Size(shrinkWrapWidth ? child.size.width * (_widthFactor ?? 1.0) : double.infinity,
+                                            shrinkWrapHeight ? child.size.height * (_heightFactor ?? 1.0) : double.infinity));
+      alignChild();
+    }
+  }<br></div></div>
+
+<p>Here <code>constraints</code> comes from the root node <code>RenderView</code>. We have analyzed before,
+this is a strict constraint of 360x592. When the child node is
+called, <code>layout()</code> it will give the child node a new constraint. This constraint is
+a new constraint after loosening its strict constraint. That is, the constraint
+to the child node is [0-360]x[0-592] . And set it <code>parentUsesSize</code> to <code>true</code>.</p>
+<p>Next is the child nodes <code>RenderConstrainedBox</code> to layout:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+  void performLayout() {
+    if (child != null) {
+      child.layout(_additionalConstraints.enforce(constraints), parentUsesSize: true);
+      size = child.size;
+    } else {
+      size = _additionalConstraints.enforce(constraints).constrain(Size.zero);
+    }
+  }<br></div></div>
+
+<p>Here again <code>RenderDecoratedBox</code>, the layout function of the child node is called.
+What is the constraint on the child node? <code>_additionalConstraints</code> From the size we
+gave us in <code>Container</code> the 100x100 set. From the foregoing analysis, this is a
+strict constraint. The parent node gives [0-360]x[0-592]. <code>enforce()</code> Generate a
+new constraint by calling the function:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">BoxConstraints enforce(BoxConstraints constraints) {
+    return BoxConstraints(
+      minWidth: minWidth.clamp(constraints.minWidth, constraints.maxWidth),
+      maxWidth: maxWidth.clamp(constraints.minWidth, constraints.maxWidth),
+      minHeight: minHeight.clamp(constraints.minHeight, constraints.maxHeight),
+      maxHeight: maxHeight.clamp(constraints.minHeight, constraints.maxHeight),
+    );
+  }<br></div></div>
+
+<p>As can be seen from the above code, the new constraint is a strict constraint of
+100x100. Finally we came to the <code>RenderDecoratedBox</code> layout of the leaf node ( ):</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+  void performLayout() {
+    if (child != null) {
+      child.layout(constraints, parentUsesSize: true);
+      size = child.size;
+    } else {
+      performResize();
+    }
+  }<br></div></div>
+
+<p>Because it is a leaf node, it has no children, so it is a <code>else</code> branch,
+called <code>performResize()</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+  void performResize() {
+    size = constraints.smallest;
+  }<br></div></div>
+
+<p>The default layout when there are no children is to make yourself as small as
+possible under the current constraints. So the size obtained here is 100x100;</p>
+<p>At this point, the &quot;look&quot; process of the layout process is complete. It can be
+seen that this process is the constraint that the parent node generates to the
+child node according to its own configuration, and then lets the child node do
+the layout according to the constraints of the parent node.</p>
+<p>After &quot;getting it done&quot;, then it should be &quot;one on&quot;. Go back to the parent node
+of the leaf node <code>RenderConstrainedBox</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">child.layout(_additionalConstraints.enforce(constraints), parentUsesSize: true);
+      size = child.size;<br></div></div>
+
+<p>I didn&apos;t do it, set the size of my child to my size, how old I am. Going up
+again, it&#x2019;s up to <code>RenderPositionedBox</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">child.layout(constraints.loosen(), parentUsesSize: true);
+      size = constraints.constrain(Size(shrinkWrapWidth ? child.size.width * (_widthFactor ?? 1.0) : double.infinity,
+                                            shrinkWrapHeight ? child.size.height * (_heightFactor ?? 1.0) : double.infinity));
+      alignChild();<br></div></div>
+
+<p>Here <code>shrinkWrapWidth</code> and <code>shrinkWrapHeight</code> both <code>false</code>. The constraint is a strict
+constraint of 360x592, so the final size is 360x592. And the child node is
+100x100, then you need to know where to put the child node inside, so
+call <code>alignChild()</code></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void alignChild() {
+   _resolve();
+   final BoxParentData childParentData = child.parentData;
+   childParentData.offset = _resolvedAlignment.alongOffset(size - child.size);
+ }<br></div></div>
+
+<p>The alignment of the child node inside the parent node is <code>Alignment</code> determined by
+the alignment .</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class Alignment extends AlignmentGeometry {
+  const Alignment(this.x, this.y)
+
+  final double x;
+
+  final double y;
+
+  @override
+  double get _x =&gt; x;
+
+  @override
+  double get _start =&gt; 0.0;
+
+  @override
+  double get _y =&gt; y;
+
+  /// The top left corner.
+  static const Alignment topLeft = Alignment(-1.0, -1.0);
+
+  /// The center point along the top edge.
+  static const Alignment topCenter = Alignment(0.0, -1.0);
+
+  /// The top right corner.
+  static const Alignment topRight = Alignment(1.0, -1.0);
+
+  /// The center point along the left edge.
+  static const Alignment centerLeft = Alignment(-1.0, 0.0);
+
+  /// The center point, both horizontally and vertically.
+  static const Alignment center = Alignment(0.0, 0.0);
+
+  /// The center point along the right edge.
+  static const Alignment centerRight = Alignment(1.0, 0.0);
+
+  /// The bottom left corner.
+  static const Alignment bottomLeft = Alignment(-1.0, 1.0);
+
+  /// The center point along the bottom edge.
+  static const Alignment bottomCenter = Alignment(0.0, 1.0);
+
+  /// The bottom right corner.
+  static const Alignment bottomRight = Alignment(1.0, 1.0);<br></div></div>
+
+<p>It contains two floating point coefficients inside. By combining these two
+coefficients, we can define some common alignments, such as the upper left
+corner <code>Alignment(-1.0, -1.0)</code>. The top is centered <code>Alignment(0.0, -1.0)</code>. In the
+upper right corner is <code>Alignment(1.0, -1.0)</code>. The vertical levels we use are all
+centered <code>Alignment(0.0, 0.0)</code>. From then how <code>Alignment</code> to calculate the offset it
+be? Above, we see that by the <code>Alignment.alongOffset(size - child.size)</code> call.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Offset alongOffset(Offset other) {
+    final double centerX = other.dx / 2.0;
+    final double centerY = other.dy / 2.0;
+    return Offset(centerX + x * centerX, centerY + y * centerY);
+  }<br></div></div>
+
+<p>The input parameter is the size of the parent node minus the size of the child
+node, that is, the space left by the parent node. Take the excess length and
+then divide by 2 to get the median. Then each of the median values
+&#x200B;&#x200B;is <code>Alignment</code> multiplied by the median value to get the offset. Is it very
+clever? Our example is that the vertical level is centered, <code>x</code> and <code>y</code> both are 0. So
+the available offset is [130,246].</p>
+<p>Going back <code>alignChild()</code>, after getting the offset, the parent node
+will <code>childParentData.offset</code> save this offset to the child node by
+setting it. This offset is used in subsequent drawing passes.</p>
+<p>Finally, I returned to the root node <code>RenderView</code>. So far, the &#x201C;one-on-one&#x201D; of the
+layout process has been completed. It can be seen that the second half of the
+process parent node may determine its size according to the size of the child
+node, and it is also possible to determine the position of the child node within
+the child node according to the size of the child node and its own size.</p>
+<h2 id="to-sum-up"><a name="to-sum-up" class="anchor-navigation-ex-anchor" href="#to-sum-up"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. to sum up</h2>
+<p>This article introduces the layout stage of the Flutter rendering pipeline. The
+layout phase is mainly to master the &quot;one-on-one&quot; process. The next step is to
+pass the constraint layer down, and the upper layer is the upper layer. This
+article does not introduce too much of the details of the various layouts, as
+long as you master the layout process, which specific layout is how to achieve
+only need to consult the corresponding <code>RenderObject</code> source code.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Flutter Framework Analysis 5 - Animation.html" class="navigation navigation-prev " aria-label="Previous page: Flutter Framework Analysis 5 - Animation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Flutter Framework Analysis 7 - Drawing.html" class="navigation navigation-next " aria-label="Next page: Flutter Framework Analysis 7 - Drawing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter Framework Analysis 6 - Layout","level":"1.11.6","depth":2,"next":{"title":"Flutter Framework Analysis 7 - Drawing","level":"1.11.7","depth":2,"path":"Flutter Framework Analysis 7 - Drawing.md","ref":"Flutter Framework Analysis 7 - Drawing.md","articles":[]},"previous":{"title":"Flutter Framework Analysis 5 - Animation","level":"1.11.5","depth":2,"path":"Flutter Framework Analysis 5 - Animation.md","ref":"Flutter Framework Analysis 5 - Animation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Flutter Framework Analysis 6 - Layout.md","mtime":"2019-07-23T15:22:53.595Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1376 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Live555 - Live555 source code analysis_RTSPServer component structure · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Live555 - Live555 source code analysis_servermediasession.html" />
+    
+    
+    <link rel="prev" href="Live555 - Live555 source code analysis_play processing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Live555 - Live555 source code analysis_RTSPServer component structure</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-rtspserver-component-structure"><b>1. </b>Live555 source code analysis: RTSPServer component structure</a></li><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-series"><b>1.1. </b>Live555 source code analysis series</a></li></ul></ul></div><a href="#live555-source-code-analysis-rtspserver-component-structure" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="live555-source-code-analysis-rtspserver-component-structure"><a name="live555-source-code-analysis-rtspserver-component-structure" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-rtspserver-component-structure"><i class="fa fa-link" aria-hidden="true"></i></a>1. Live555 source code analysis: RTSPServer component structure</h1>
+<p> Posted on 2017-09-06 |  In <a href="https://www.wolfcstech.com/categories/live555/" target="_blank">live555</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#live555-source-code-analysis-rtspserver-component-structure"><strong>Live555 source code analysis: RTSPServer component structure</strong></a><ul>
+<li><a href="#live555-source-code-analysis-series"><strong>Live555 source code analysis series</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>The previous articles analyzed the processing logic of RTSP in live555. The
+processing logic of RTSP processing related components is a bit complicated.
+This article will review the relationship between them.</p>
+<p>The relationship between RTSP processing related components in live555 is as
+follows:</p>
+<p>     <a href="media/96a03a360a81120f7047b39f5588683d.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-5ae0f80b706b414b.png" target="_self" class="fancybox">
+       <img src="media/96a03a360a81120f7047b39f5588683d.png" alt="https://www.wolfcstech.com/images/1315506-5ae0f80b706b414b.png">
+     </a></p>
+<p>The source of the event and execution process is
+at <code>TaskScheduler</code>. <code>GenericMediaServer</code> When an object is created, it will be
+the <code>TaskScheduler</code> registered handler events on a server socket and the socket
+processing</p>
+<p><code>GenericMediaServer::incomingConnectionHandler(void* instance, int /*mask*/)</code>&#x3002;</p>
+<p>The event handler execution on the server socket is triggered when a client
+connects to the server. At this point the client socket is created based
+on <code>ClientConnection</code> the object,
+and <code>RTSPClientConnection</code>. <code>RTSPClientConnection</code> During the creation of the object,
+the client socket and 
+<code>ClientConnection</code> the handler that handles the event on the socket are processed.</p>
+<p><code>GenericMediaServer::ClientConnection::incomingRequestHandler(void* instance, int /*mask*/)</code> Register to <code>TaskScheduler</code>.</p>
+<p>After the RTSP request data sent by the client arrives,
+the <code>GenericMediaServer::ClientConnection</code> data will be read and handed over to
+<code>RTSPServer::RTSPClientConnection::handleRequestBytes(int newBytesRead)</code> deal
+with.</p>
+<p><code>RTSPServer::RTSPClientConnection</code> Parse the RTSP request, and
+processing <code>OPTIONS</code>, <code>DESCRIBE</code> and the like without <code>SETUP</code> streaming session
+establishment request to process.</p>
+<p><code>RTSPServer::RTSPClientConnection</code> In the process <code>SETUP</code> a request, it will create a
+streaming media session <code>RTSPServer::RTSPClientSession</code>, a specific session
+establishment process will be delegated to the latter process.</p>
+<p>After the session establishment request needs to be processed, it will be handed
+over to <code>RTSPServer::RTSPClientSession</code> treatment.</p>
+<p>Here we take a look at <code>RTSPServer::RTSPClientConnection</code> the full definition:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class RTSPServer: public GenericMediaServer {
+. . . . . .
+public: // should be protected, but some old compilers complain otherwise
+  // The state of a TCP connection used by a RTSP client:
+  class RTSPClientSession; // forward
+  class RTSPClientConnection: public GenericMediaServer::ClientConnection {
+  public:
+    // A data structure that&apos;s used to implement the &quot;REGISTER&quot; command:
+    class ParamsForREGISTER {
+    public:
+      ParamsForREGISTER(char const* cmd/*&quot;REGISTER&quot; or &quot;DEREGISTER&quot;*/,
+            RTSPClientConnection* ourConnection, char const* url, char const* urlSuffix,
+            Boolean reuseConnection, Boolean deliverViaTCP, char const* proxyURLSuffix);
+      virtual ~ParamsForREGISTER();
+    private:
+      friend class RTSPClientConnection;
+      char const* fCmd;
+      RTSPClientConnection* fOurConnection;
+      char* fURL;
+      char* fURLSuffix;
+      Boolean fReuseConnection, fDeliverViaTCP;
+      char* fProxyURLSuffix;
+    };
+  protected: // redefined virtual functions:
+    virtual void handleRequestBytes(int newBytesRead);
+  protected:
+    RTSPClientConnection(RTSPServer&amp; ourServer, int clientSocket, struct sockaddr_in clientAddr);
+    virtual ~RTSPClientConnection();
+    friend class RTSPServer;
+    friend class RTSPClientSession;
+    // Make the handler functions for each command virtual, to allow subclasses to reimplement them, if necessary:
+    virtual void handleCmd_OPTIONS();
+        // You probably won&apos;t need to subclass/reimplement this function; reimplement &quot;RTSPServer::allowedCommandNames()&quot; instead.
+    virtual void handleCmd_GET_PARAMETER(char const* fullRequestStr); // when operating on the entire server
+    virtual void handleCmd_SET_PARAMETER(char const* fullRequestStr); // when operating on the entire server
+    virtual void handleCmd_DESCRIBE(char const* urlPreSuffix, char const* urlSuffix, char const* fullRequestStr);
+    virtual void handleCmd_REGISTER(char const* cmd/*&quot;REGISTER&quot; or &quot;DEREGISTER&quot;*/,
+                    char const* url, char const* urlSuffix, char const* fullRequestStr,
+                    Boolean reuseConnection, Boolean deliverViaTCP, char const* proxyURLSuffix);
+        // You probably won&apos;t need to subclass/reimplement this function;
+        //     reimplement &quot;RTSPServer::weImplementREGISTER()&quot; and &quot;RTSPServer::implementCmd_REGISTER()&quot; instead.
+    virtual void handleCmd_bad();
+    virtual void handleCmd_notSupported();
+    virtual void handleCmd_notFound();
+    virtual void handleCmd_sessionNotFound();
+    virtual void handleCmd_unsupportedTransport();
+    // Support for optional RTSP-over-HTTP tunneling:
+    virtual Boolean parseHTTPRequestString(char* resultCmdName, unsigned resultCmdNameMaxSize,
+                       char* urlSuffix, unsigned urlSuffixMaxSize,
+                       char* sessionCookie, unsigned sessionCookieMaxSize,
+                       char* acceptStr, unsigned acceptStrMaxSize);
+    virtual void handleHTTPCmd_notSupported();
+    virtual void handleHTTPCmd_notFound();
+    virtual void handleHTTPCmd_OPTIONS();
+    virtual void handleHTTPCmd_TunnelingGET(char const* sessionCookie);
+    virtual Boolean handleHTTPCmd_TunnelingPOST(char const* sessionCookie, unsigned char const* extraData, unsigned extraDataSize);
+    virtual void handleHTTPCmd_StreamingGET(char const* urlSuffix, char const* fullRequestStr);
+  protected:
+    void resetRequestBuffer();
+    void closeSocketsRTSP();
+    static void handleAlternativeRequestByte(void*, u_int8_t requestByte);
+    void handleAlternativeRequestByte1(u_int8_t requestByte);
+    Boolean authenticationOK(char const* cmdName, char const* urlSuffix, char const* fullRequestStr);
+    void changeClientInputSocket(int newSocketNum, unsigned char const* extraData, unsigned extraDataSize);
+      // used to implement RTSP-over-HTTP tunneling
+    static void continueHandlingREGISTER(ParamsForREGISTER* params);
+    virtual void continueHandlingREGISTER1(ParamsForREGISTER* params);
+    // Shortcuts for setting up a RTSP response (prior to sending it):
+    void setRTSPResponse(char const* responseStr);
+    void setRTSPResponse(char const* responseStr, u_int32_t sessionId);
+    void setRTSPResponse(char const* responseStr, char const* contentStr);
+    void setRTSPResponse(char const* responseStr, u_int32_t sessionId, char const* contentStr);
+    RTSPServer&amp; fOurRTSPServer; // same as ::fOurServer
+    int&amp; fClientInputSocket; // aliased to ::fOurSocket
+    int fClientOutputSocket;
+    Boolean fIsActive;
+    unsigned char* fLastCRLF;
+    unsigned fRecursionCount;
+    char const* fCurrentCSeq;
+    Authenticator fCurrentAuthenticator; // used if access control is needed
+    char* fOurSessionCookie; // used for optional RTSP-over-HTTP tunneling
+    unsigned fBase64RemainderCount; // used for optional RTSP-over-HTTP tunneling (possible values: 0,1,2,3)
+  };<br></div></div>
+
+<p><code>RTSPServer::RTSPClientConnection</code> inherited from <code>GenericMediaServer::ClientConnection</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class GenericMediaServer: public Medium {
+. . . . . .
+public: // should be protected, but some old compilers complain otherwise
+  // The state of a TCP connection used by a client:
+  class ClientConnection {
+  protected:
+    ClientConnection(GenericMediaServer&amp; ourServer, int clientSocket, struct sockaddr_in clientAddr);
+    virtual ~ ClientConnection ();
+    UsageEnvironment&amp; envir() { return fOurServer.envir(); }
+    void closeSockets();
+    static void incomingRequestHandler(void*, int /*mask*/);
+    void incomingRequestHandler();
+    virtual void handleRequestBytes(int newBytesRead) = 0;
+    void resetRequestBuffer();
+  protected:
+    friend class GenericMediaServer;
+    friend class ClientSession;
+    friend class RTSPServer; // needed to make some broken Windows compilers work; remove this in the future when we end support for Windows
+    GenericMediaServer&amp; fOurServer;
+    int fOurSocket;
+    struct sockaddr_in fClientAddr;
+    unsigned char fRequestBuffer[REQUEST_BUFFER_SIZE];
+    unsigned char fResponseBuffer[RESPONSE_BUFFER_SIZE];
+    unsigned fRequestBytesAlreadySeen, fRequestBufferBytesLeft;
+  };<br></div></div>
+
+<p>From their definitions, it&apos;s not hard to understand that their responsibilities
+are primarily to handle network I/O, handle RTSP requests, and establish
+sessions.</p>
+<p>Let&apos;s look at <code>RTSPServer::RTSPClientSession</code> the definition:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class RTSPServer: public GenericMediaServer {
+. . . . . .
+  // The state of an individual client session (using one or more sequential TCP connections) handled by a RTSP server:
+  class RTSPClientSession: public GenericMediaServer::ClientSession {
+  protected:
+    RTSPClientSession(RTSPServer&amp; ourServer, u_int32_t sessionId);
+    virtual ~RTSPClientSession();
+    friend class RTSPServer;
+    friend class RTSPClientConnection;
+    // Make the handler functions for each command virtual, to allow subclasses to redefine them:
+    virtual void handleCmd_SETUP(RTSPClientConnection* ourClientConnection,
+        char const* urlPreSuffix, char const* urlSuffix, char const* fullRequestStr);
+    virtual void handleCmd_withinSession(RTSPClientConnection* ourClientConnection,
+        char const* cmdName,
+        char const* urlPreSuffix, char const* urlSuffix,
+        char const* fullRequestStr);
+    virtual void handleCmd_TEARDOWN(RTSPClientConnection* ourClientConnection,
+        ServerMediaSubsession* subsession);
+    virtual void handleCmd_PLAY(RTSPClientConnection* ourClientConnection,
+        ServerMediaSubsession* subsession, char const* fullRequestStr);
+    virtual void handleCmd_PAUSE(RTSPClientConnection* ourClientConnection,
+        ServerMediaSubsession* subsession);
+    virtual void handleCmd_GET_PARAMETER(RTSPClientConnection* ourClientConnection,
+        ServerMediaSubsession* subsession, char const* fullRequestStr);
+    virtual void handleCmd_SET_PARAMETER(RTSPClientConnection* ourClientConnection,
+        ServerMediaSubsession* subsession, char const* fullRequestStr);
+  protected:
+    void deleteStreamByTrack(unsigned trackNum);
+    void reclaimStreamStates();
+    Boolean isMulticast() const { return fIsMulticast; }
+    // Shortcuts for setting up a RTSP response (prior to sending it):
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr) { ourClientConnection-&gt;setRTSPResponse(responseStr); }
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr, u_int32_t sessionId) { ourClientConnection-&gt;setRTSPResponse(responseStr, sessionId); }
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr, char const* contentStr) { ourClientConnection-&gt;setRTSPResponse(responseStr, contentStr); }
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr, u_int32_t sessionId, char const* contentStr) { ourClientConnection-&gt;setRTSPResponse(responseStr, sessionId, contentStr); }
+  protected:
+    RTSPServer&amp; fOurRTSPServer; // same as ::fOurServer
+    Boolean fIsMulticast, fStreamAfterSETUP;
+    unsigned char fTCPStreamIdCount; // used for (optional) RTP/TCP
+    Boolean usesTCPTransport() const { return fTCPStreamIdCount &gt; 0; }
+    unsigned fNumStreamStates;
+    struct streamState {
+      ServerMediaSubsession* subsession;
+      int tcpSocketNum;
+      void* streamToken;
+    } * fStreamStates;
+  };<br></div></div>
+
+<p><code>RTSPServer::RTSPClientSession</code> inherited from <code>GenericMediaServer::ClientSession</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// The state of an individual client session (using one or more sequential TCP connections) handled by a server:
+class ClientSession {
+protected:
+  ClientSession(GenericMediaServer&amp; ourServer, u_int32_t sessionId);
+  virtual ~ ClientSession ();
+  UsageEnvironment&amp; envir() { return fOurServer.envir(); }
+  void noteLiveness();
+  static void noteClientLiveness(ClientSession* clientSession);
+  static void livenessTimeoutTask(ClientSession* clientSession);
+protected:
+  friend class GenericMediaServer;
+  friend class ClientConnection;
+  GenericMediaServer&amp; fOurServer;
+  u_int32_t fOurSessionId;
+  ServerMediaSession* fOurServerMediaSession;
+  TaskToken fLivenessCheckTask;
+};<br></div></div>
+
+<p>It will be appreciated <code>RTSPServer::RTSPClientSession</code> for enclosing the entire
+streaming session, an RTSP request that requires processing streaming media
+session has been established, such as <code>PLAY</code> the like.</p>
+<p>Specific interactive streaming media data, such as audio and video files /
+parsed data, RTP/RTCP data package and a transceiver or the like, dependent
+on <code>ServerMediaSession</code> and <code>ServerMediaSubsession</code>.</p>
+<p><a href="https://www.wolfcstech.com/about/donate.html" target="_blank">Reward</a></p>
+<p>Done.</p>
+<h2 id="live555-source-code-analysis-series"><a name="live555-source-code-analysis-series" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-series"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Live555 source code analysis series</h2>
+<ol>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_introduction.html">Live555 Source code analysis: Introduction </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_infrastructure.html">live555 Source code analysis: Infrastructure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_mediaserver.html">live555 Source code analysis: MediaSever </a></li>
+<li><a href="Live555%20-%20Wireshark%20capture%20packet%20analysis%20RTSP_RTP_RTCP%20basic%20working%20process.html">Wireshark capture packet analysis RTSP/RTP/RTCP Basic working process </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_rtspserver.html">live555 Source code analysis: RTSPServer </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_describe%20processing.html">live555 Source code analysis: DESCRIBE processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_setup%20processing.html">live555 Source code analysis: SETUP processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20processing.html">live555 Source code analysis :PLAY processing </a></li>
+<li><a href="https://www.wolfcstech.com/2017/09/06/live555_src_analysis_rtspserver_arch/" target="_blank">live555 Source code analysis: RTSPServer component structure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_servermediasession.html">live555 Source code analysis: </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_subsession%20SDP%20line%20generation.html">ServerMediaSession live555 Source code analysis: sub-session SDP line generation </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_Subsession%20SETUP.html">live555 Source code analysis: sub-session SETUP </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20start.html">live555 Source code analysis: play start</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Live555 - Live555 source code analysis_play processing.html" class="navigation navigation-prev " aria-label="Previous page: Live555 - Live555 source code analysis_play processing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Live555 - Live555 source code analysis_servermediasession.html" class="navigation navigation-next " aria-label="Next page: Live555 - Live555 source code analysis_servermediasession">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Live555 - Live555 source code analysis_RTSPServer component structure","level":"1.10.9","depth":2,"next":{"title":"Live555 - Live555 source code analysis_servermediasession","level":"1.10.10","depth":2,"path":"Live555 - Live555 source code analysis_servermediasession.md","ref":"Live555 - Live555 source code analysis_servermediasession.md","articles":[]},"previous":{"title":"Live555 - Live555 source code analysis_play processing","level":"1.10.8","depth":2,"path":"Live555 - Live555 source code analysis_play processing.md","ref":"Live555 - Live555 source code analysis_play processing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Live555 - Live555 source code analysis_RTSPServer component structure.md","mtime":"2019-03-05T06:20:48.815Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

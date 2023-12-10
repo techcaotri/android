@@ -1,0 +1,1445 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Live555 - Live555 source code analysis_introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Live555 - Live555 source code analysis_infrastructure.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Live555 - Live555 source code analysis_introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-introduction"><b>1. </b>Live555 source code analysis: introduction</a></li><ul><li><span class="title-icon "></span><a href="#source-code-download-and-compilation"><b>1.1. </b>Source code download and compilation</a></li><li><span class="title-icon "></span><a href="#provide-streaming-services-using-live555mediaserver"><b>1.2. </b>Provide streaming services using live555MediaServer</a></li><li><span class="title-icon "></span><a href="#live555-source-structure"><b>1.3. </b>Live555 source structure</a></li><li><span class="title-icon "></span><a href="#usageenvironment-and-basicusageenvironment"><b>1.4. </b>UsageEnvironment and BasicUsageEnvironment</a></li><li><span class="title-icon "></span><a href="#groupsock"><b>1.5. </b>Groupsock</a></li><li><span class="title-icon "></span><a href="#livemedia"><b>1.6. </b>liveMedia</a></li><li><span class="title-icon "></span><a href="#mediaserver-and-proxyserver"><b>1.7. </b>mediaServer and proxyServer</a></li><li><span class="title-icon "></span><a href="#windowsaudioinputdevice"><b>1.8. </b>WindowsAudioInputDevice</a></li><li><span class="title-icon "></span><a href="#testprogs"><b>1.9. </b>testProgs</a></li><li><span class="title-icon "></span><a href="#live555-source-code-analysis-series"><b>1.10. </b>Live555 source code analysis series</a></li></ul></ul></div><a href="#live555-source-code-analysis-introduction" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="live555-source-code-analysis-introduction"><a name="live555-source-code-analysis-introduction" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-introduction"><i class="fa fa-link" aria-hidden="true"></i></a>1. Live555 source code analysis: introduction</h1>
+<p> Posted
+on 2017-08-28 |  In <a href="https://www.wolfcstech.com/categories/live555/" target="_blank">live555</a> |</p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#live555-source-code-analysis-introduction"><strong>Live555 source code analysis: introduction</strong></a><ul>
+<li><a href="#source-code-download-and-compilation"><strong>Source code download and compilation</strong></a></li>
+<li><a href="#provide-streaming-services-using-live555mediaserver"><strong>Provide streaming services using live555MediaServer</strong></a></li>
+<li><a href="#live555-source-structure"><strong>Live555 source structure</strong></a></li>
+<li><a href="#usageenvironment-and-basicusageenvironment"><strong>UsageEnvironment and BasicUsageEnvironment</strong></a></li>
+<li><a href="#groupsock"><strong>Groupsock</strong></a></li>
+<li><a href="#livemedia"><strong>liveMedia</strong></a></li>
+<li><a href="#mediaserver-and-proxyserver"><strong>mediaServer and proxyServer</strong></a></li>
+<li><a href="#windowsaudioinputdevice"><strong>WindowsAudioInputDevice</strong></a></li>
+<li><a href="#testprogs"><strong>testProgs</strong></a></li>
+<li><a href="#live555-source-code-analysis-series"><strong>Live555 source code analysis series</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>Live555 is a streaming media project developed by C++. It is mainly composed of
+several libraries for multimedia streaming. Its official website address
+is <a href="http://www.live555.com/%E3%80%82live555" target="_blank">http://www.live555.com/. Live555</a> uses
+an open standard protocol (RTP/RTCP, RTSP, SIP) to facilitate interoperability
+with other standard streaming components. These libraries can be compiled for
+systems such as Unix-like (including Linux and Mac OS X), Windows, and QNX (and
+other POSIX compatible systems), which can be used to build streaming
+applications. In addition to the library, live555 also includes two streaming
+applications &quot; <a href="http://www.live555.com/mediaServer/" target="_blank">LIVE555 Media Server</a> &quot; and
+&quot; <a href="http://www.live555.com/proxyServer/" target="_blank">LIVE555 Proxy Server</a> &quot;, both of which
+are RTSP server applications.</p>
+<p>Live555&apos;s library can be used to process MPEG, H.265, H.264, H.263+, DV or JPEG
+video, and multiple audio formats. They can also be extended very simply to
+support other audio or video codec formats and can be used to build
+basic <a href="http://www.live555.com/openRTSP/" target="_blank">RTSP</a> or <a href="http://www.live555.com/playSIP/" target="_blank">SIP</a> clients
+and servers.</p>
+<h2 id="source-code-download-and-compilation"><a name="source-code-download-and-compilation" class="anchor-navigation-ex-anchor" href="#source-code-download-and-compilation"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Source code download and compilation</h2>
+<p>The source code of live555 is open, and can be easily studied by all audio and
+video development research enthusiasts, or extended for their actual
+projects. The source code download address
+is <a href="http://www.live555.com/liveMedia/public/" target="_blank">http://www.live555.com/liveMedia/public/</a> :</p>
+<p>     <a href="media/48790c083b70bd298f476af7469fc1e4.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-0708b1e8de87f8ac.png" target="_self" class="fancybox">
+       <img src="media/48790c083b70bd298f476af7469fc1e4.png" alt="https://www.wolfcstech.com/images/1315506-0708b1e8de87f8ac.png">
+     </a></p>
+<p>Among
+them <a href="http://www.live555.com/liveMedia/public/live555-latest.tar.gz" target="_blank">live555-latest.tar.gz</a> is
+the latest version of the source
+code, <a href="http://www.live555.com/liveMedia/public/live.2017.07.18.tar.gz" target="_blank">live.2017.07.18.tar.gz</a> is
+the target version of this series. In addition to the source code,
+live555 also provides a number of audio and video files for development and
+testing, such as the <strong>264</strong> directory for the original H.264 test streams
+files, <strong>265</strong> directory for the original H.265 test streams files.</p>
+<p>Here we use the latest version
+of <a href="http://www.live555.com/liveMedia/public/live555-latest.tar.gz" target="_blank">live555</a> source
+code, <a href="http://www.live555.com/liveMedia/public/live555-latest.tar.gz" target="_blank">live555-latest.tar.gz</a> ,
+and the operating system is 64-bit Ubuntu 16.04. Download the source code and
+extract it with the following command:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Hanpfei0306 \@ThundeRobot :/media/data/osprojects \$ tar xf live555-latest.tar.gz
+Hanpfei0306 \@ThundeRobot :/media/data/osprojects \$ cd live<br></div></div>
+
+
+<p>You can compile live555 with the following command:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Hanpfei0306 \@ThundeRobot :/media/data/osprojects/live \$ ./genMakefiles linux-64bit
+Hanpfei0306 \@ThundeRobot :/media/data/osprojects/live \$ make
+cd liveMedia ; make<br></div></div>
+
+<p>In which the genMakefilesscript is used to generate the Makefile, it needs an
+operating system identifier as a parameter, the contents of the script file
+is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">#!/bin/sh
+usage() {
+    echo &quot;Usage: $0 &lt;os-platform&gt;&quot;
+    exit 1
+}
+if [ $# -ne 1 ]
+then
+    usage $*
+fi
+platform=$1
+subdirs=&quot;liveMedia groupsock UsageEnvironment BasicUsageEnvironment testProgs mediaServer proxyServer&quot;
+
+for subdir in $subdirs
+do
+    /bin/rm -f $subdir/Makefile
+    cat $subdir/Makefile.head config.$platform $subdir/Makefile.tail &gt; $subdir/Makefile
+    chmod a-w $subdir/Makefile
+done
+/bin/rm -f Makefile
+cat Makefile.head config.$1 Makefile.tail &gt; Makefile
+chmod a-w Makefile<br></div></div>
+
+<p>This script combines the predefined Makefile content of multiple files in
+each directory to produce the final Makefile. Platform-specific configuration
+files are predefined under each folder, for example, in the project root
+directory:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">hanpfei0306@ThundeRobot:/media/data/osprojects/live$ ls | grep config
+config.aix
+config.alpha
+config.armeb-uclibc
+config.armlinux
+config.avr32-linux
+config.bfin-linux-uclibc
+config.bfin-uclinux
+config.bsplinux
+config.cris-axis-linux-gnu
+config.cygwin
+config.cygwin-for-vlc
+config.freebsd
+config.iphoneos
+config.iphone-simulator
+config.irix
+config.linux
+config.linux-64bit
+config.linux-gdb
+config.linux-with-shared-libraries
+config.macosx
+config.macosx-32bit
+config.macosx-before-version-10.4
+config.mingw
+config.openbsd
+config.qnx4
+config.solaris-32bit
+config.solaris-64bit
+config.sunos
+config.uClinux<br></div></div>
+
+<p>Provided to the <code>genMakefiles</code> script parameters of the operating system identifier,
+and each OS identifier requires a configuration file, the configuration
+file extension to compile matches the corresponding target operating system. After
+compilation, it produces the various library <code>.a</code> files, libraries, and each
+individual application object files are located in their own directory.</p>
+<p>The executable for the media service application is
+located under <code>live/mediaServer/live555MediaServer</code>.</p>
+<h2 id="provide-streaming-services-using-live555mediaserver"><a name="provide-streaming-services-using-live555mediaserver" class="anchor-navigation-ex-anchor" href="#provide-streaming-services-using-live555mediaserver"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Provide streaming services using live555MediaServer</h2>
+<p>streaming media server application in live555 <code>live555MediaServer</code> can easily be
+used to provide streaming media services. Execute in the directory where the
+streaming media server <code>live555MediaServer</code> is stored:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">$ ./live555MediaServer<br></div></div>
+
+<p>Then you can play the streaming file with a URL in the following format:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">rtsp://10.240.248.20:8554/&lt;filename&gt;<br></div></div>
+
+
+<p>Which <code>&lt;filename&gt;</code> is the streaming media file in the directory of <code>live555MediaServer</code> command, after IP address for the host.</p>
+<p>Once the program <code>live555MediaServer</code> is up and running, you can play streaming
+content using player software such as VLC Media Player and ffplay. Such as:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">$ ffplay rtsp:// 10.240.248.20:8000/raw_h264_stream.264<br></div></div>
+
+
+<p>If you just want to play live555MediaServer itself, then it can also directly
+download the compiled binary files, <a href="http://www.live555.com/mediaServer/" target="_blank">address</a> .</p>
+<h2 id="live555-source-structure"><a name="live555-source-structure" class="anchor-navigation-ex-anchor" href="#live555-source-structure"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Live555 source structure</h2>
+<p>We look at the source code structure of live555. First create an Eclipse C++
+Project for live555 by selecting <code>File -&gt; New -&gt; C++ Project</code> from the menu bar.
+The following dialog pops up:</p>
+<p>     <a href="media/7b01dfdc01be65b5b95541af8db6f0c0.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-e6d9248984b721ee.png" target="_self" class="fancybox">
+       <img src="media/7b01dfdc01be65b5b95541af8db6f0c0.png" alt="https://www.wolfcstech.com/images/1315506-e6d9248984b721ee.png">
+     </a></p>
+<p>Project <code>Name:</code> Column, enter the project name, here live555; invert the
+selection Use default location, then <code>Location:</code> enter the path live555 source
+column; in<code>Project type:</code> the next selection <code>Makefile project -&gt; Empty Project</code>;
+in <code>Toolchains:</code> selecting the next Linux GCC.</p>
+<p>Then click on the bottom right corner of the Finishbutton to create the
+project. The live555 source structure is as follows:</p>
+<p>     <a href="media/059d80be67129802671e6bafa2fd4763.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-b9c143589ed1076b.png" target="_self" class="fancybox">
+       <img src="media/059d80be67129802671e6bafa2fd4763.png" alt="https://www.wolfcstech.com/images/1315506-b9c143589ed1076b.png">
+     </a></p>
+<p>The live555 source code is mainly composed of eight parts: <code>UsageEnvironment</code>,
+<code>BasicUsageEnvironment</code>, <code>groupsock</code>, <code>liveMedia</code>, <code>mediaServer</code>, <code>proxyServer</code>,
+<code>testProgs</code>, <code>WindowsAudioInputDevice</code>.</p>
+<p>The amount of code for each part is shown in the following table:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Submodule</strong></th>
+<th><strong>Number of files</strong></th>
+<th><strong>Code amount (row)</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UsageEnvironment</td>
+<td>3</td>
+<td>162</td>
+<td></td>
+</tr>
+<tr>
+<td>BasicUsageEnvironment</td>
+<td>6</td>
+<td>1187</td>
+<td></td>
+</tr>
+<tr>
+<td>Groupsock</td>
+<td>8</td>
+<td>2672</td>
+<td></td>
+</tr>
+<tr>
+<td>liveMedia</td>
+<td>168</td>
+<td>49552</td>
+<td></td>
+</tr>
+<tr>
+<td>mediaServer</td>
+<td>2</td>
+<td>332</td>
+<td></td>
+</tr>
+<tr>
+<td>proxyServer</td>
+<td>1</td>
+<td>251</td>
+<td></td>
+</tr>
+<tr>
+<td>WindowsAudioInputDevice</td>
+<td>4</td>
+<td>1037</td>
+<td></td>
+</tr>
+<tr>
+<td>testProgs</td>
+<td>32</td>
+<td>6510</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td>224</td>
+<td>61703</td>
+</tr>
+</tbody>
+</table>
+<p>A brief description of each part is as follows.</p>
+<h2 id="usageenvironment-and-basicusageenvironment"><a name="usageenvironment-and-basicusageenvironment" class="anchor-navigation-ex-anchor" href="#usageenvironment-and-basicusageenvironment"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. UsageEnvironment and BasicUsageEnvironment</h2>
+<p>The <em>UsageEnvironment</em> and <em>TaskScheduler</em> classes in <em>UsageEnvironment</em> module are used
+to schedule delayed events, to allocate handlers for asynchronous read events,
+and to output error/warning messages. The &quot;<em>HashTable</em>&quot; class
+in <em>UsageEnvironment</em> also defines an interface for the generic hash table, which
+is used by the rest of the code. The <em>UsageEnvironment</em> contains only abstract classes;
+they must be inherited by other implementations. These subclasses can take
+advantage of specific properties of the environment in which they run, such as
+its GUI and/or scripting environment.</p>
+<p>The <em>BasicUsageEnvironment</em> library defines a set of concrete implementation of the
+classes in <em>UsageEnvironment</em> for simple terminal applications. Read events and
+delay operation using a <code>select()</code> loop processing.</p>
+<h2 id="groupsock"><a name="groupsock" class="anchor-navigation-ex-anchor" href="#groupsock"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Groupsock</h2>
+<p>The classes in this library encapsulate network interfaces and sockets. In
+particular, the &quot;<em>Groupsock</em>&quot; class encapsulates a socket for sending (and/or
+receiving) multicast datagrams.</p>
+<h2 id="livemedia"><a name="livemedia" class="anchor-navigation-ex-anchor" href="#livemedia"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. liveMedia</h2>
+<p>This library is at the heart of live555. It defines a class hierarchy with
+&quot;<a href="http://www.live555.com/liveMedia/doxygen/html/classMedium.html" target="_blank">Medium</a>&quot; as
+the top-level base class for a variety of streaming types and codecs.</p>
+<h2 id="mediaserver-and-proxyserver"><a name="mediaserver-and-proxyserver" class="anchor-navigation-ex-anchor" href="#mediaserver-and-proxyserver"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. mediaServer and proxyServer</h2>
+<p>Under the <code>mediaServer</code> directory is <em>&quot;LIVE555 Media Server&quot;</em>, which is a complete
+RTSP server application. It can convert several media files into streams. As you
+saw earlier, these media files must be in the current working directory. These
+include:</p>
+<ul>
+<li><p>MPEG TS file (file suffix &quot;.ts&quot;)</p>
+</li>
+<li><p>Matroska or WebM files (file suffix &quot;.mkv&quot; or &quot;.webm&quot;)</p>
+</li>
+<li><p>Ogg file (file suffix &quot;.ogg&quot;, &quot;ogv&quot; or &quot;.opus&quot;)</p>
+</li>
+<li><p>MPEG-1 or 2 program stream file (file suffix &quot;.mpg&quot;)</p>
+</li>
+<li><p>MPEG-4 Video Elementary Stream file (file suffix &quot;.m4e&quot;)</p>
+</li>
+<li><p>H.264 Video Elementary Stream file (file suffix named &quot;.264&quot;)</p>
+</li>
+<li><p>H.265 Video Elementary Stream file (file suffix named &quot;.265&quot;)</p>
+</li>
+<li><p>VOB video + audio file (file suffix named &quot;.vob&quot;)</p>
+</li>
+<li><p>DV video file (file suffix is &#x200B;&#x200B;named &quot;.dv&quot;)</p>
+</li>
+<li><p>MPEG-1 or 2 (including layer III - such as &apos;MP3&apos;) audio file (file suffix
+named &quot;.mp3&quot;)</p>
+</li>
+<li><p>WAV (PCM) audio file (file suffix named &quot;.wav&quot;)</p>
+</li>
+<li><p>AMR audio file (file suffix is &#x200B;&#x200B;named &quot;.amr&quot;)</p>
+</li>
+<li><p>AC-3 audio file (file suffix is &#x200B;&#x200B;named &quot;.ac3&quot;)</p>
+</li>
+<li><p>AAC (ADTS format) audio file (file suffix named &quot;.aac&quot;)</p>
+</li>
+</ul>
+<p>Under the <code>proxyServer</code> directory is <em>&quot;LIVE555 Proxy Server&quot;</em>, a unicast RTSP server
+that acts as a &quot;proxy&quot; for one or more &quot;backend&quot; unicast or multicast RTSP/RTP
+streams.</p>
+<h2 id="windowsaudioinputdevice"><a name="windowsaudioinputdevice" class="anchor-navigation-ex-anchor" href="#windowsaudioinputdevice"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. WindowsAudioInputDevice</h2>
+<p>This is an implementation of the &quot;AudioInputDevice&quot; abstract class of the
+&quot;liveMedia&quot; library. It can be used by Windows applications to read PCM audio
+samples from an input device.</p>
+<h2 id="testprogs"><a name="testprogs" class="anchor-navigation-ex-anchor" href="#testprogs"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. testProgs</h2>
+<p>This directory implements some simple programs that use &quot;BasicUsageEnvironment&quot;
+to demonstrate how to use these libraries to develop applications. In addition
+to the test application for the test library, it also includes &quot; <em>openRTSP</em> &quot; -
+the RTSP client for the command line, &quot; <em>playSIP</em> &quot; - the SIP session logger for
+the command line, &quot; <em>vobStreamer</em> &quot; - tools such as the network DVD player.</p>
+<p><a href="https://www.wolfcstech.com/about/donate.html" target="_blank">Reward</a></p>
+<p>Done.</p>
+<h2 id="live555-source-code-analysis-series"><a name="live555-source-code-analysis-series" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-series"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. Live555 source code analysis series</h2>
+<ol>
+<li><a href="https://www.wolfcstech.com/2017/08/28/live555_src_analysis_introduction/" target="_blank">Live555 Source code analysis: Introduction </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_infrastructure.html">live555 Source code analysis: Infrastructure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_mediaserver.html">live555 Source code analysis: MediaSever </a></li>
+<li><a href="Live555%20-%20Wireshark%20capture%20packet%20analysis%20RTSP_RTP_RTCP%20basic%20working%20process.html">Wireshark capture packet analysis RTSP/RTP/RTCP Basic working process </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_rtspserver.html">live555 Source code analysis: RTSPServer </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_describe%20processing.html">live555 Source code analysis: DESCRIBE processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_setup%20processing.html">live555 Source code analysis: SETUP processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20processing.html">live555 Source code analysis :PLAY processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_RTSPServer%20component%20structure.html">live555 Source code analysis: RTSPServer component structure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_servermediasession.html">live555 Source code analysis: </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_subsession%20SDP%20line%20generation.html">ServerMediaSession live555 Source code analysis: sub-session SDP line generation </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_Subsession%20SETUP.html">live555 Source code analysis: sub-session SETUP </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20start.html">live555 Source code analysis: play start</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Live555 - Live555 source code analysis_infrastructure.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Live555 - Live555 source code analysis_infrastructure">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Live555 - Live555 source code analysis_introduction","level":"1.10.1","depth":2,"next":{"title":"Live555 - Live555 source code analysis_infrastructure","level":"1.10.2","depth":2,"path":"Live555 - Live555 source code analysis_infrastructure.md","ref":"Live555 - Live555 source code analysis_infrastructure.md","articles":[]},"previous":{"title":"Live555","level":"1.10","depth":1,"ref":"","articles":[{"title":"Live555 - Live555 source code analysis_introduction","level":"1.10.1","depth":2,"path":"Live555 - Live555 source code analysis_introduction.md","ref":"Live555 - Live555 source code analysis_introduction.md","articles":[]},{"title":"Live555 - Live555 source code analysis_infrastructure","level":"1.10.2","depth":2,"path":"Live555 - Live555 source code analysis_infrastructure.md","ref":"Live555 - Live555 source code analysis_infrastructure.md","articles":[]},{"title":"Live555 - Live555 source code analysis_mediaserver","level":"1.10.3","depth":2,"path":"Live555 - Live555 source code analysis_mediaserver.md","ref":"Live555 - Live555 source code analysis_mediaserver.md","articles":[]},{"title":"Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process","level":"1.10.4","depth":2,"path":"Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.md","ref":"Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.md","articles":[]},{"title":"Live555 - Live555 source code analysis_rtspserver","level":"1.10.5","depth":2,"path":"Live555 - Live555 source code analysis_rtspserver.md","ref":"Live555 - Live555 source code analysis_rtspserver.md","articles":[]},{"title":"Live555 - Live555 source code analysis_describe processing","level":"1.10.6","depth":2,"path":"Live555 - Live555 source code analysis_describe processing.md","ref":"Live555 - Live555 source code analysis_describe processing.md","articles":[]},{"title":"Live555 - Live555 source code analysis_setup processing","level":"1.10.7","depth":2,"path":"Live555 - Live555 source code analysis_setup processing.md","ref":"Live555 - Live555 source code analysis_setup processing.md","articles":[]},{"title":"Live555 - Live555 source code analysis_play processing","level":"1.10.8","depth":2,"path":"Live555 - Live555 source code analysis_play processing.md","ref":"Live555 - Live555 source code analysis_play processing.md","articles":[]},{"title":"Live555 - Live555 source code analysis_RTSPServer component structure","level":"1.10.9","depth":2,"path":"Live555 - Live555 source code analysis_RTSPServer component structure.md","ref":"Live555 - Live555 source code analysis_RTSPServer component structure.md","articles":[]},{"title":"Live555 - Live555 source code analysis_servermediasession","level":"1.10.10","depth":2,"path":"Live555 - Live555 source code analysis_servermediasession.md","ref":"Live555 - Live555 source code analysis_servermediasession.md","articles":[]},{"title":"Live555 - Live555 source code analysis_subsession SDP line generation","level":"1.10.11","depth":2,"path":"Live555 - Live555 source code analysis_subsession SDP line generation.md","ref":"Live555 - Live555 source code analysis_subsession SDP line generation.md","articles":[]},{"title":"Live555 - Live555 source code analysis_Subsession SETUP","level":"1.10.12","depth":2,"path":"Live555 - Live555 source code analysis_Subsession SETUP.md","ref":"Live555 - Live555 source code analysis_Subsession SETUP.md","articles":[]},{"title":"Live555 - Live555 source code analysis_play start","level":"1.10.13","depth":2,"path":"Live555 - Live555 source code analysis_play start.md","ref":"Live555 - Live555 source code analysis_play start.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Live555 - Live555 source code analysis_introduction.md","mtime":"2019-03-05T10:30:10.803Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

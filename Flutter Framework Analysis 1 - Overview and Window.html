@@ -1,0 +1,1297 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter Framework Analysis 1 - Overview and Window · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Flutter Framework Analysis 2 - Initialization.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Flutter Framework Analysis 1 - Overview and Window</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#flutter-framework-analysis-1----overview-and-window"><b>1. </b>Flutter Framework Analysis (1) -- Overview and Window</a></li><ul><li><span class="title-icon "></span><a href="#foreword"><b>1.1. </b>Foreword</a></li><li><span class="title-icon "></span><a href="#overview"><b>1.2. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#window"><b>1.2.1. </b>Window</a></li></ul><li><span class="title-icon "></span><a href="#to-sum-up"><b>1.3. </b>to sum up</a></li></ul></ul></div><a href="#flutter-framework-analysis-1----overview-and-window" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="flutter-framework-analysis-1----overview-and-window"><a name="flutter-framework-analysis-1----overview-and-window" class="anchor-navigation-ex-anchor" href="#flutter-framework-analysis-1----overview-and-window"><i class="fa fa-link" aria-hidden="true"></i></a>1. Flutter Framework Analysis (1) -- Overview and Window</h1>
+<p>Flutter Framework Analysis and Analysis Series:</p>
+<p><a href="Flutter%20Framework%20Analysis%201%20-%20Overview%20and%20Window.html">&quot;Flutter Framework Analysis (1) - Overview and Window&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%202%20-%20Initialization.html">&quot;Flutter Framework Analysis (2) - Initialization&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%203%20-%20Widget,%20Element%20and%20RenderObject.html">&quot;Flutter Framework Analysis (3) - Widget, Element and RenderObject&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%204%20-%20Flutter%20Framework%20Operation.html">&quot;Flutter Framework Analysis (4) - Flutter Framework Operation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%205%20-%20Animation.html">&quot;Flutter Framework Analysis (5) - Animation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%206%20-%20Layout.html">&quot;Flutter Framework Analysis (6) - Layout&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%207%20-%20Drawing.html">&quot;Flutter Framework Analysis (7) - Drawing&quot;</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#flutter-framework-analysis-1-overview-and-window"><strong>Flutter Framework Analysis (1) -- Overview and Window</strong></a><ul>
+<li><a href="#foreword"><strong>Foreword</strong></a></li>
+<li><a href="#overview"><strong>Overview</strong></a><ul>
+<li><a href="#window"><strong>Window</strong></a></li>
+</ul>
+</li>
+<li><a href="#to-sum-up"><strong>to sum up</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Foreword</h2>
+<p>After getting familiar with the development of the Flutter app, our curiosity
+will drive questions about how the Flutter framework works. How does Flutter
+work? <code>Widget</code> What is it? <code>RenderObject</code>: Is it a ghost? <code>runApp()</code> What happened after
+that? <code>setState()</code> How is the page refreshed after the call ? To answer these
+questions, you need to learn the source code of the Flutter framework. For this
+I will write a series of articles based on source code to analyze the Flutter
+framework. This article is the first one, mainly to introduce the overview and
+foundation of the Flutter framework <code>Window</code>.</p>
+<h2 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Overview</h2>
+<p>How is the Flutter app&apos;s page displayed on the screen? What drives the Flutter
+app to refresh the interface, play animations, and respond to touch events? This
+process can be described using the following figure.</p>
+<p>     <a href="media/37634a207d503c6cb09d861ff4690ad2.png" rel="grouped" title="https://user-gold-cdn.xitu.io/2019/3/5/16949bfa3d932c82?imageslim" target="_self" class="fancybox">
+       <img src="media/37634a207d503c6cb09d861ff4690ad2.png" alt="https://user-gold-cdn.xitu.io/2019/3/5/16949bfa3d932c82?imageslim">
+     </a></p>
+<p>There is a rendering pipeline (Rendering pipeline) in the Flutter framework. This
+rendering pipeline is driven by the vertical sync signal (Vsync), and the Vsync
+signal is provided by the system. If your Flutter app is running on Android,
+then the Vsync signal is the Vsync signal of Android that we are familiar
+with. When the Vsync signal arrives, the Flutter framework performs a series of
+actions in the order shown: Animation (Animate), Build, Layout, and Paint, and
+finally generates a scene (Scene) and sends it to the bottom layer. That Scene will be drawn by
+the GPU onto the screen.</p>
+<ul>
+<li><p><strong>Animate</strong> stage: The animation stage is the first stage of the pipeline
+because the animation changes state with each Vsync signal.</p>
+</li>
+<li><p><strong>Build</strong> stage, Flutter, at which the widgets that need to be rebuilt
+will be rebuilt at this time. That is when we are
+familiar <code>StatelessWidget.build()</code> or <code>State.build()</code> called.</p>
+</li>
+<li><p>In the <strong>Layout</strong> phase, the position and size of each display element is
+determined. This is <code>RenderObject.performLayout()</code> the time when it is called.</p>
+</li>
+<li><p>The <strong>Paint</strong> phase, <code>RenderObject.paint()</code> when it is called.</p>
+</li>
+</ul>
+<p>The above is a rough working process of the entire rendering pipeline.</p>
+<p>The Flutter app only needs to trigger the rendering pipeline when the state
+changes. You don&apos;t need to re-render the page when your app does
+nothing. Therefore, the Vsync signal requires the Flutter app to schedule. For
+example, we all know that if one of your pages needs to be changed, it may be
+called <code>State.setState()</code>. The call to the Flutter framework will eventually
+initiate a request to dispatch the Vsync signal to the underlying. Then the
+bottom layer will drive the rendering pipeline to start working when the Vsync
+signal arrives, and finally display the new page to the screen.</p>
+<p>The overall structure of Flutter is shown below:</p>
+<p>     <a href="media/683749cea6e85592e3dbdacf0e3818dd.png" rel="grouped" title="https://user-gold-cdn.xitu.io/2019/3/5/1694a048f61d4b4e?imageslim" target="_self" class="fancybox">
+       <img src="media/683749cea6e85592e3dbdacf0e3818dd.png" alt="https://user-gold-cdn.xitu.io/2019/3/5/1694a048f61d4b4e?imageslim">
+     </a></p>
+<p>It can be seen that the entire Flutter architecture is divided into two
+parts. The upper part of the Framework and the underlying Engine part.</p>
+<ul>
+<li><p>The Framework part is written in the Dart language and is the main part of
+this series.</p>
+</li>
+<li><p>The Engine part is implemented in C++. The engine provides support for the
+framework and is the bridge between the framework and the system
+(Android/iOS).</p>
+</li>
+</ul>
+<p>The Vsync signal that triggers the rendering pipeline is from the engine. The
+scene after rendering is also sent to the engine for display, and the scheduling
+of the Vsync signal is also used by the framework to notify the system through
+the engine. The rendering process is represented by a schematic diagram from the
+perspective of the framework and engine interaction:</p>
+<p>     <a href="media/8490717b27c564114a18ea770f4701ca.png" rel="grouped" title="https://user-gold-cdn.xitu.io/2019/3/5/1694a19f7dd0da57?imageslim" target="_self" class="fancybox">
+       <img src="media/8490717b27c564114a18ea770f4701ca.png" alt="https://user-gold-cdn.xitu.io/2019/3/5/1694a19f7dd0da57?imageslim">
+     </a></p>
+<ul>
+<li><p>The framework notification engine (<code>scheduleFrame</code>) needs to schedule a
+frame.</p>
+</li>
+<li><p>After the system&apos;s Vsync signal arrives, the engine will first call back
+the <code>_beginFrame</code> function of the framework . At this point, the rendering
+pipeline of the frame enters the animation stage (Animate) stage.</p>
+</li>
+<li><p>After the animation phase (Animate) phase is completed. The engine will
+process the microtask queue and then call back the
+framework&apos;s <code>_drawFrame</code> functions. The render pipeline continues to run build,
+layout, and draw in sequence.</p>
+</li>
+<li><p>After the drawing is finished, the frame call <code>render</code> sends the finished scene
+to the engine for display to the screen.</p>
+</li>
+</ul>
+<p>In the front-end development, we all have a concept of a window for the user
+interface. The UI of the program we write is contained in the window, which is
+the root of the framework. The drawing of the interface, the processing of
+events input by the user, etc. are all managed through the window. Flutter is no
+exception. The above framework and engine rendering interaction process is also
+integrated into the window management. So to understand the Flutter framework,
+you have to start with the window of Flutter.</p>
+<h3 id="window"><a name="window" class="anchor-navigation-ex-anchor" href="#window"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Window</h3>
+<p><code>Window</code>From the library in Flutter <code>dart:ui</code>. The relevant source code is in
+the <code>window.dart</code> middle.</p>
+<p>First of all, in Flutter, it Windowis a singleton:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">/// The [Window] singleton. This object exposes the size of the display, the
+
+/// core scheduler API, the input event callback, the graphics drawing API, and
+
+/// other such core services.
+
+final Window window = new Window._();<br></div></div>
+
+
+<p><code>Window</code> The singleton provides screen size, scheduling interface, input event
+callback, graphics rendering interface and other core services to the upper
+layer. In general, the <code>window</code> interface related to the graphical interface in the
+Flutter engine is provided centrally.</p>
+<p><code>Window</code> The api associated with the rendering pipeline is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// The callback after the vcync signal arrives
+
+FrameCallback _onBeginFrame;
+
+VoidCallback _onDrawFrame;
+
+// Request engine to schedule a frame
+
+void scheduleFrame() native &apos;Window_scheduleFrame&apos;;
+
+// After the drawing is completed, the scene is sent to the engine display.
+
+void render(Scene scene) native &apos;Window_render&apos;;<br></div></div>
+
+
+<p>Note the <code>native</code> keyword behind the function name , indicating that this function
+is called to the engine layer. Similar to the jni call in Android.</p>
+<p>In addition to rendering related APIs, <code>window</code> there are some other important APIs
+listed below:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">//Touch event callback
+PointerDataPacketCallback _onPointerDataPacket;
+
+// Get the route of the initial page at startup
+String _defaultRouteName() native &apos;Window_defaultRouteName&apos;;
+
+// Send PlatfromMessage. This is part of the Platform channels mechanism
+String _sendPlatformMessage(String name, PlatformMessageResponseCallback callback,
+  ByteData data) native &apos;Window_sendPlatformMessage&apos;;
+
+//Callback after receiving the platform message
+PlatformMessageCallback _onPlatformMessage;<br></div></div>
+
+<p>There are also APIs related to locale, accessbility that are not listed.</p>
+<h2 id="to-sum-up"><a name="to-sum-up" class="anchor-navigation-ex-anchor" href="#to-sum-up"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. to sum up</h2>
+<p>At this point, Flutter <code>Window</code> will probably introduce it to everyone. It can be
+seen that <code>Window</code> it is not complicated. It is basically just a package of
+interfaces related to the user interface provided on the engine layer. The
+Flutter framework is based on the <code>Window</code> establishment. If you want, you
+can <code>Window</code> replace Flutter :) based on setting up your own set of frameworks
+:). After learning about Flutter&apos;s rendering pipeline and window
+infrastructure. Next, we will use this as a basis to start the journey of the
+wonderful Flutter framework, so stay tuned.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Flutter Framework Analysis 2 - Initialization.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Flutter Framework Analysis 2 - Initialization">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter Framework Analysis 1 - Overview and Window","level":"1.11.1","depth":2,"next":{"title":"Flutter Framework Analysis 2 - Initialization","level":"1.11.2","depth":2,"path":"Flutter Framework Analysis 2 - Initialization.md","ref":"Flutter Framework Analysis 2 - Initialization.md","articles":[]},"previous":{"title":"Flutter","level":"1.11","depth":1,"ref":"","articles":[{"title":"Flutter Framework Analysis 1 - Overview and Window","level":"1.11.1","depth":2,"path":"Flutter Framework Analysis 1 - Overview and Window.md","ref":"Flutter Framework Analysis 1 - Overview and Window.md","articles":[]},{"title":"Flutter Framework Analysis 2 - Initialization","level":"1.11.2","depth":2,"path":"Flutter Framework Analysis 2 - Initialization.md","ref":"Flutter Framework Analysis 2 - Initialization.md","articles":[]},{"title":"Flutter Framework Analysis 3 - Widget, Element and RenderObject","level":"1.11.3","depth":2,"path":"Flutter Framework Analysis 3 - Widget, Element and RenderObject.md","ref":"Flutter Framework Analysis 3 - Widget, Element and RenderObject.md","articles":[]},{"title":"Flutter Framework Analysis 4 - Flutter Framework Operation","level":"1.11.4","depth":2,"path":"Flutter Framework Analysis 4 - Flutter Framework Operation.md","ref":"Flutter Framework Analysis 4 - Flutter Framework Operation.md","articles":[]},{"title":"Flutter Framework Analysis 5 - Animation","level":"1.11.5","depth":2,"path":"Flutter Framework Analysis 5 - Animation.md","ref":"Flutter Framework Analysis 5 - Animation.md","articles":[]},{"title":"Flutter Framework Analysis 6 - Layout","level":"1.11.6","depth":2,"path":"Flutter Framework Analysis 6 - Layout.md","ref":"Flutter Framework Analysis 6 - Layout.md","articles":[]},{"title":"Flutter Framework Analysis 7 - Drawing","level":"1.11.7","depth":2,"path":"Flutter Framework Analysis 7 - Drawing.md","ref":"Flutter Framework Analysis 7 - Drawing.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Flutter Framework Analysis 1 - Overview and Window.md","mtime":"2019-07-23T09:50:48.330Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

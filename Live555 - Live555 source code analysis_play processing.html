@@ -1,0 +1,1792 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Live555 - Live555 source code analysis_play processing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Live555 - Live555 source code analysis_RTSPServer component structure.html" />
+    
+    
+    <link rel="prev" href="Live555 - Live555 source code analysis_setup processing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Live555 - Live555 source code analysis_play processing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-play-processing"><b>1. </b>Live555 Source Code Analysis: PLAY processing</a></li><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-series"><b>1.1. </b>Live555 source code analysis series</a></li></ul></ul></div><a href="#live555-source-code-analysis-play-processing" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="live555-source-code-analysis-play-processing"><a name="live555-source-code-analysis-play-processing" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-play-processing"><i class="fa fa-link" aria-hidden="true"></i></a>1. Live555 Source Code Analysis: PLAY processing</h1>
+<p> Posted on 2017-09-05 |  In <a href="https://www.wolfcstech.com/categories/live555/" target="_blank">live555</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#live555-source-code-analysis-play-processing"><strong>Live555 Source Code Analysis: PLAY processing</strong></a><ul>
+<li><a href="#live555-source-code-analysis-series"><strong>Live555 source code analysis series</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>In the <code>SETUP</code> following request, the client initiates <code>PLAY</code> a request to a server
+request to start transmission of audio and video data. In the <code>PLAY</code> request
+execution, you must have executed <code>SETUP</code> the request, establish a good client
+session, which will request a client session has been established with other
+requirements, through <code>clientSession -&gt; handleCmd_withinSession()</code> the
+implementation of:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">} else if (strcmp(cmdName, &quot;TEARDOWN&quot;) == 0
+    || strcmp(cmdName, &quot;PLAY&quot;) == 0 || strcmp(cmdName, &quot;PAUSE&quot;) == 0
+    || strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0
+    || strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+  if (clientSession != NULL) {
+    clientSession-&gt;handleCmd_withinSession(this, cmdName, urlPreSuffix,
+        urlSuffix, (char const*) fRequestBuffer);
+  } else {
+    handleCmd_sessionNotFound();
+  }
+}<br></div></div>
+
+<p><code>RTSPServer::RTSPClientSession::handleCmd_withinSession()</code> The definition is as
+follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientSession
+::handleCmd_withinSession(RTSPServer::RTSPClientConnection* ourClientConnection,
+    char const* cmdName,
+    char const* urlPreSuffix, char const* urlSuffix,
+    char const* fullRequestStr) {
+  // This will either be:
+  // - a non-aggregated operation, if &quot;urlPreSuffix&quot; is the session (stream)
+  //   name and &quot;urlSuffix&quot; is the subsession (track) name, or
+  // - an aggregated operation, if &quot;urlSuffix&quot; is the session (stream) name,
+  //   or &quot;urlPreSuffix&quot; is the session (stream) name, and &quot;urlSuffix&quot; is empty,
+  //   or &quot;urlPreSuffix&quot; and &quot;urlSuffix&quot; are both nonempty, but when concatenated, (with &quot;/&quot;) form the session (stream) name.
+  // Begin by figuring out which of these it is:
+  ServerMediaSubsession* subsession;
+
+  if (fOurServerMediaSession == NULL) { // There wasn&apos;t a previous SETUP!
+    ourClientConnection-&gt;handleCmd_notSupported();
+    return;
+  } else if (urlSuffix[0] != &apos;\0&apos; &amp;&amp; strcmp(fOurServerMediaSession-&gt;streamName(), urlPreSuffix) == 0) {
+    // Non-aggregated operation.
+    // Look up the media subsession whose track id is &quot;urlSuffix&quot;:
+    ServerMediaSubsessionIterator iter(*fOurServerMediaSession);
+    while ((subsession = iter.next()) != NULL) {
+      if (strcmp(subsession-&gt;trackId(), urlSuffix) == 0) break; // success
+    }
+    if (subsession == NULL) { // no such track!
+      ourClientConnection-&gt;handleCmd_notFound();
+      return;
+    }
+  } else if (strcmp(fOurServerMediaSession-&gt;streamName(), urlSuffix) == 0 ||
+      (urlSuffix[0] == &apos;\0&apos; &amp;&amp; strcmp(fOurServerMediaSession-&gt;streamName(), urlPreSuffix) == 0)) {
+    // Aggregated operation
+    subsession = NULL;
+  } else if (urlPreSuffix[0] != &apos;\0&apos; &amp;&amp; urlSuffix[0] != &apos;\0&apos;) {
+    // Aggregated operation, if &lt;urlPreSuffix&gt;/&lt;urlSuffix&gt; is the session (stream) name:
+    unsigned const urlPreSuffixLen = strlen(urlPreSuffix);
+    if (strncmp(fOurServerMediaSession-&gt;streamName(), urlPreSuffix, urlPreSuffixLen) == 0
+        &amp;&amp; fOurServerMediaSession-&gt;streamName()[urlPreSuffixLen] == &apos;/&apos;
+        &amp;&amp; strcmp(&amp;(fOurServerMediaSession-&gt;streamName())[urlPreSuffixLen + 1], urlSuffix) == 0) {
+      subsession = NULL;
+    } else {
+      ourClientConnection-&gt;handleCmd_notFound();
+      return;
+    }
+  } else { // the request doesn&apos;t match a known stream and/or track at all!
+    ourClientConnection-&gt;handleCmd_notFound();
+    return;
+  }
+
+  if (strcmp(cmdName, &quot;TEARDOWN&quot;) == 0) {
+    handleCmd_TEARDOWN(ourClientConnection, subsession);
+  } else if (strcmp(cmdName, &quot;PLAY&quot;) == 0) {
+    handleCmd_PLAY(ourClientConnection, subsession, fullRequestStr);
+  } else if (strcmp(cmdName, &quot;PAUSE&quot;) == 0) {
+    handleCmd_PAUSE(ourClientConnection, subsession);
+  } else if (strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0) {
+    handleCmd_GET_PARAMETER(ourClientConnection, subsession, fullRequestStr);
+  } else if (strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+    handleCmd_SET_PARAMETER(ourClientConnection, subsession, fullRequestStr);
+  }
+}<br></div></div>
+
+<p>In this function, you will first find the corresponding URL of the
+request <code>ServerMediaSubsession</code>. If the search fails, it will return 404 directly
+and end the processing; then it will be processed by different methods according
+to the specific type of the request.</p>
+<p>Found <code>ServerMediaSubsession</code> stored <code>subsession</code> in. <code>subsession</code> A value of null does
+not mean that the lookup failed. Here by the value NULLshowing the operation
+applied to the <code>fOurServerMediaSession</code> description of the overall streaming media
+session. Path to the resource request can be divided into two parts, namely
+resource prefixes <code>urlPreSuffix</code> and suffixes identify a specific
+track <code>urlSuffix</code>. by live555 <code>ServerMediaSession</code> and <code>ServerMediaSubsession</code> two
+object management streaming media session.</p>
+<p>Depending on the correspondence between the path of the requested resource and
+the state of the streaming session, it is determined whether the operation can
+be supported and the scope of the application is operated.</p>
+<p>Find <code>ServerMediaSubsession</code> later, <code>PLAY</code> the request by
+the <code>RTSPServer::RTSPClientSession::handleCmd_PLAY()</code> function processing:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientSession
+::handleCmd_PLAY(RTSPServer::RTSPClientConnection* ourClientConnection,
+    ServerMediaSubsession* subsession, char const* fullRequestStr) {
+  char* rtspURL = fOurRTSPServer.rtspURL(fOurServerMediaSession,
+      ourClientConnection-&gt;fClientInputSocket);
+  unsigned rtspURLSize = strlen(rtspURL);
+
+  // Parse the client&apos;s &quot;Scale:&quot; header, if any:
+  float scale;
+  Boolean sawScaleHeader = parseScaleHeader(fullRequestStr, scale);
+  // Try to set the stream&apos;s scale factor to this value:
+  if (subsession == NULL /*aggregate op*/) {
+    fOurServerMediaSession-&gt;testScaleFactor(scale);
+  } else {
+    subsession-&gt;testScaleFactor(scale);
+  }
+  char buf[100];
+  char* scaleHeader;
+  if (!sawScaleHeader) {
+    buf[0] = &apos;\0&apos;; // Because we didn&apos;t see a Scale: header, don&apos;t send one back
+  } else {
+    sprintf(buf, &quot;Scale: %f\r\n&quot;, scale);
+  }
+  scaleHeader = strDup(buf);
+
+  // Parse the client&apos;s &quot;Range:&quot; header, if any:
+  float duration = 0.0;
+  double rangeStart = 0.0, rangeEnd = 0.0;
+  char* absStart = NULL; char* absEnd = NULL;
+  Boolean startTimeIsNow;
+  Boolean sawRangeHeader
+    = parseRangeHeader(fullRequestStr, rangeStart, rangeEnd, absStart, absEnd, startTimeIsNow);
+
+  if (sawRangeHeader &amp;&amp; absStart == NULL/*not seeking by &apos;absolute&apos; time*/) {
+    // Use this information, plus the stream&apos;s duration (if known), to create our own &quot;Range:&quot; header, for the response:
+    duration = subsession == NULL /*aggregate op*/
+      ? fOurServerMediaSession-&gt;duration() : subsession-&gt;duration();
+    if (duration &lt; 0.0) {
+      // We&apos;re an aggregate PLAY, but the subsessions have different durations.
+      // Use the largest of these durations in our header
+      duration = -duration;
+    }
+
+    // Make sure that &quot;rangeStart&quot; and &quot;rangeEnd&quot; (from the client&apos;s &quot;Range:&quot; header)
+    // have sane values, before we send back our own &quot;Range:&quot; header in our response:
+    if (rangeStart &lt; 0.0) rangeStart = 0.0;
+    else if (rangeStart &gt; duration) rangeStart = duration;
+    if (rangeEnd &lt; 0.0) rangeEnd = 0.0;
+    else if (rangeEnd &gt; duration) rangeEnd = duration;
+    if ((scale &gt; 0.0 &amp;&amp; rangeStart &gt; rangeEnd &amp;&amp; rangeEnd &gt; 0.0)
+        || (scale &lt; 0.0 &amp;&amp; rangeStart &lt; rangeEnd)) {
+      // &quot;rangeStart&quot; and &quot;rangeEnd&quot; were the wrong way around; swap them:
+      double tmp = rangeStart;
+      rangeStart = rangeEnd;
+      rangeEnd = tmp;
+    }
+  }
+
+  // Create a &quot;RTP-Info:&quot; line.  It will get filled in from each subsession&apos;s state:
+  char const* rtpInfoFmt =
+    &quot;%s&quot; // &quot;RTP-Info:&quot;, plus any preceding rtpInfo items
+    &quot;%s&quot; // comma separator, if needed
+    &quot;url=%s/%s&quot;
+    &quot;;seq=%d&quot;
+    &quot;;rtptime=%u&quot;
+    ;
+  unsigned rtpInfoFmtSize = strlen(rtpInfoFmt);
+  char* rtpInfo = strDup(&quot;RTP-Info: &quot;);
+  unsigned i, numRTPInfoItems = 0;
+
+  // Do any required seeking/scaling on each subsession, before starting streaming.
+  // (However, we don&apos;t do this if the &quot;PLAY&quot; request was for just a single subsession
+  // of a multiple-subsession stream; for such streams, seeking/scaling can be done
+  // only with an aggregate &quot;PLAY&quot;.)
+  for (i = 0; i &lt; fNumStreamStates; ++i) {
+    if (subsession == NULL /* means: aggregated operation */ || fNumStreamStates == 1) {
+      if (fStreamStates[i].subsession != NULL) {
+        if (sawScaleHeader) {
+          fStreamStates[i].subsession-&gt;setStreamScale(fOurSessionId, fStreamStates[i].streamToken, scale);
+        }
+        if (absStart != NULL) {
+          // Special case handling for seeking by &apos;absolute&apos; time:
+          fStreamStates[i].subsession-&gt;seekStream(fOurSessionId, fStreamStates[i].streamToken, absStart, absEnd);
+        } else {
+          // Seeking by relative (NPT) time:
+          u_int64_t numBytes;
+          if (!sawRangeHeader || startTimeIsNow) {
+            // We&apos;re resuming streaming without seeking, so we just do a &apos;null&apos; seek
+            // (to get our NPT, and to specify when to end streaming):
+            fStreamStates[i].subsession-&gt;nullSeekStream(fOurSessionId, fStreamStates[i].streamToken,
+                rangeEnd, numBytes);
+          } else {
+            // We do a real &apos;seek&apos;:
+            double streamDuration = 0.0; // by default; means: stream until the end of the media
+            if (rangeEnd &gt; 0.0 &amp;&amp; (rangeEnd + 0.001) &lt; duration) {
+              // the 0.001 is because we limited the values to 3 decimal places
+              // We want the stream to end early.  Set the duration we want:
+              streamDuration = rangeEnd - rangeStart;
+              if (streamDuration &lt; 0.0) streamDuration = -streamDuration;
+              // should happen only if scale &lt; 0.0
+            }
+            fStreamStates[i].subsession-&gt;seekStream(fOurSessionId, fStreamStates[i].streamToken,
+                rangeStart, streamDuration, numBytes);
+          }
+        }
+      }
+    }
+  }
+
+  // Create the &quot;Range:&quot; header that we&apos;ll send back in our response.
+  // (Note that we do this after seeking, in case the seeking operation changed the range start time.)
+  if (absStart != NULL) {
+    // We&apos;re seeking by &apos;absolute&apos; time:
+    if (absEnd == NULL) {
+      sprintf(buf, &quot;Range: clock=%s-\r\n&quot;, absStart);
+    } else {
+      sprintf(buf, &quot;Range: clock=%s-%s\r\n&quot;, absStart, absEnd);
+    }
+    delete[] absStart; delete[] absEnd;
+  } else {
+    // We&apos;re seeking by relative (NPT) time:
+    if (!sawRangeHeader || startTimeIsNow) {
+      // We didn&apos;t seek, so in our response, begin the range with the current NPT (normal play time):
+      float curNPT = 0.0;
+      for (i = 0; i &lt; fNumStreamStates; ++i) {
+        if (subsession == NULL /* means: aggregated operation */
+        || subsession == fStreamStates[i].subsession) {
+          if (fStreamStates[i].subsession == NULL) continue;
+          float npt = fStreamStates[i].subsession-&gt;getCurrentNPT(fStreamStates[i].streamToken);
+          if (npt &gt; curNPT)
+            curNPT = npt;
+          // Note: If this is an aggregate &quot;PLAY&quot; on a multi-subsession stream,
+          // then it&apos;s conceivable that the NPTs of each subsession may differ
+          // (if there has been a previous seek on just one subsession).
+          // In this (unusual) case, we just return the largest NPT; I hope that turns out OK...
+        }
+      }
+      rangeStart = curNPT;
+    }
+    if (rangeEnd == 0.0 &amp;&amp; scale &gt;= 0.0) {
+      sprintf(buf, &quot;Range: npt=%.3f-\r\n&quot;, rangeStart);
+    } else {
+      sprintf(buf, &quot;Range: npt=%.3f-%.3f\r\n&quot;, rangeStart, rangeEnd);
+    }
+  }
+  char* rangeHeader = strDup(buf);
+
+  // Now, start streaming:
+  for (i = 0; i &lt; fNumStreamStates; ++i) {
+    if (subsession == NULL /* means: aggregated operation */
+    || subsession == fStreamStates[i].subsession) {
+      unsigned short rtpSeqNum = 0;
+      unsigned rtpTimestamp = 0;
+      if (fStreamStates[i].subsession == NULL) continue;
+      fStreamStates[i].subsession-&gt;startStream(fOurSessionId,
+          fStreamStates[i].streamToken,
+          (TaskFunc*) noteClientLiveness, this,
+          rtpSeqNum, rtpTimestamp,
+          RTSPServer::RTSPClientConnection::handleAlternativeRequestByte, ourClientConnection);
+      const char *urlSuffix = fStreamStates[i].subsession-&gt;trackId();
+      char* prevRTPInfo = rtpInfo;
+      unsigned rtpInfoSize = rtpInfoFmtSize
+          + strlen(prevRTPInfo)
+          + 1
+          + rtspURLSize + strlen(urlSuffix)
+          + 5 /*max unsigned short len*/
+          + 10 /*max unsigned (32-bit) len*/
+          + 2 /*allows for trailing \r\n at final end of string*/;
+      rtpInfo = new char[rtpInfoSize];
+      sprintf(rtpInfo, rtpInfoFmt, prevRTPInfo,
+          numRTPInfoItems++ == 0 ? &quot;&quot; : &quot;,&quot;, rtspURL, urlSuffix, rtpSeqNum,
+          rtpTimestamp);
+      delete[] prevRTPInfo;
+    }
+  }
+  if (numRTPInfoItems == 0) {
+    rtpInfo[0] = &apos;\0&apos;;
+  } else {
+    unsigned rtpInfoLen = strlen(rtpInfo);
+    rtpInfo[rtpInfoLen] = &apos;\r&apos;;
+    rtpInfo[rtpInfoLen + 1] = &apos;\n&apos;;
+    rtpInfo[rtpInfoLen + 2] = &apos;\0&apos;;
+  }
+
+  // Fill in the response:
+  snprintf((char*) ourClientConnection-&gt;fResponseBuffer,
+      sizeof ourClientConnection-&gt;fResponseBuffer, &quot;RTSP/1.0 200 OK\r\n&quot;
+          &quot;CSeq: %s\r\n&quot;
+          &quot;%s&quot;
+          &quot;%s&quot;
+          &quot;%s&quot;
+          &quot;Session: %08X\r\n&quot;
+          &quot;%s\r\n&quot;,
+          ourClientConnection-&gt;fCurrentCSeq,
+          dateHeader(),
+          scaleHeader,
+          rangeHeader,
+          fOurSessionId,
+          rtpInfo);
+  delete[] rtpInfo;
+  delete[] rangeHeader;
+  delete[] scaleHeader;
+  delete[] rtspURL;
+}<br></div></div>
+
+<p>Before describing the analysis function, look at a <code>PLAY</code> request / response
+exemplary. <code>PLAY</code> Request example:</p>
+<pre><code>PLAY rtsp://10.240.248.20:8554/video/raw_h264_stream.264/ RTSP/1.0
+Range: npt=0.000-
+CSeq: 4
+User-Agent: Lavf56.40.101
+Session: D10C8C71
+</code></pre><p>PLAY Example of response:</p>
+<pre><code>RTSP/1.0 200 OK
+CSeq: 4
+Date: Sat, Sep 02 2017 08:54:03 GMT
+Range: npt=0.000-
+Session: D10C8C71
+RTP-Info: url=rtsp://10.240.248.20:8554/video/raw_h264_stream.264/track1;seq=12647;rtptime=2457491257
+</code></pre><p>Then look at <code>RTSPServer::RTSPClientSession::handleCmd_PLAY()</code> the specific
+process.</p>
+<p>The first step, parsing <code>Scale:</code> head, provided for the respective sub-session
+Scale streaming media session, and configured to return <code>Scale:</code> the head.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Parse the client&apos;s &quot;Scale:&quot; header, if any:
+float scale;
+Boolean sawScaleHeader = parseScaleHeader(fullRequestStr, scale);
+// Try to set the stream&apos;s scale factor to this value:
+if (subsession == NULL /*aggregate op*/) {
+  fOurServerMediaSession-&gt;testScaleFactor(scale);
+} else {
+  subsession-&gt;testScaleFactor(scale);
+}
+char buf[100];
+char* scaleHeader;
+if (!sawScaleHeader) {
+  buf[0] = &apos;\0&apos;; // Because we didn&apos;t see a Scale: header, don&apos;t send one back
+} else {
+  sprintf(buf, &quot;Scale: %f\r\n&quot;, scale);
+}
+scaleHeader = strDup(buf);<br></div></div>
+
+<p>For parsing the <code>Scale:</code> header <code>parseScaleHeader()</code> is defined as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Boolean parseScaleHeader(char const* buf, float&amp; scale) {
+  // Initialize the result parameter to a default value:
+  scale = 1.0;
+  // First, find &quot;Scale:&quot;
+  while (1) {
+    if (*buf == &apos;\0&apos;) return False; // not found
+    if (_strncasecmp(buf, &quot;Scale:&quot;, 6) == 0) break;
+    ++buf;
+  }
+  char const* fields = buf + 6;
+  while (*fields == &apos; &apos;) ++fields;
+  float sc;
+  if (sscanf(fields, &quot;%f&quot;, &amp;sc) == 1) {
+    scale = sc;
+  } else {
+    return False; // The header is malformed
+  }
+  return True;
+}<br></div></div>
+
+<p>scale It will be set to 1.0 by default.</p>
+<p>Explain the role of the scale value. According to the RTSP specification RFC
+2326 <a href="https://tools.ietf.org/html/rfc2326#section-12.34" target="_blank">12.34 Scale</a> , the
+scale value is used to control the playback speed. A scale value of 1 indicates
+normal playback or recording at a normal forward viewing rate. If not 1, the
+value corresponds to a ratio relative to the normal viewing rate. For example, a
+ratio of 2 indicates twice the normal viewing rate (&quot;fast forward&quot;), while a
+ratio of 0.5 indicates a half of the viewing rate. In other words, a ratio of 2
+plays a time-growth rate that is twice that of a wall clock. For every second of
+elapsed time, 2 seconds of content will be sent. Negative values &#x200B;&#x200B;indicate the
+opposite direction.</p>
+<p>Unless the <code>Speed</code> parameters requires otherwise, the data rate can not be
+changed. 
+The implementation of Scale changes depends on the server and media type. For
+video, the server can, for example, transmit a keyframe or selected
+keyframe. For audio, it can scale the audio while maintaining the tone, or less
+desirable to transmit the audio clip. The server should attempt to provide an
+approximate viewing rate, but can limit the range of scale values &#x200B;&#x200B;it
+supports. The response is to include the actual scale of the server
+selection. If the request contains the Rangeparameters, the new scale will be in
+effect at this time.</p>
+<p>Is applied to the entire streaming media session <code>PLAY</code> request,
+by <code>ServerMediaSession::testScaleFactor(float&amp; scale)</code> setting Scale, applied to
+the specific sub-session <code>PLAY</code> request,
+by <code>ServerMediaSubsessionthe testScaleFactor(float&amp; scale)</code> setting.</p>
+<p>For us <code>H264VideoFileServerMediaSubsession</code>, <code>testScaleFactor(float&amp; scale)</code> implementation or in the <code>ServerMediaSubsession</code> middle:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void ServerMediaSubsession::testScaleFactor(float&amp; scale) {
+  // default implementation: Support scale = 1 only
+  scale = 1;
+}<br></div></div>
+
+<p><code>ServerMediaSession::testScaleFactor(float&amp; scale)</code> The definition is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void ServerMediaSession::testScaleFactor(float&amp; scale) {
+  // First, try setting all subsessions to the desired scale.
+  // If the subsessions&apos; actual scales differ from each other, choose the
+  // value that&apos;s closest to 1, and then try re-setting all subsessions to that
+  // value.  If the subsessions&apos; actual scales still differ, re-set them all to 1.
+  float minSSScale = 1.0;
+  float maxSSScale = 1.0;
+  float bestSSScale = 1.0;
+  float bestDistanceTo1 = 0.0;
+  ServerMediaSubsession* subsession;
+  for (subsession = fSubsessionsHead; subsession != NULL;
+       subsession = subsession-&gt;fNext) {
+    float ssscale = scale;
+    subsession-&gt;testScaleFactor(ssscale);
+    if (subsession == fSubsessionsHead) { // this is the first subsession
+      minSSScale = maxSSScale = bestSSScale = ssscale;
+      bestDistanceTo1 = (float)fabs(ssscale - 1.0f);
+    } else {
+      if (ssscale &lt; minSSScale) {
+        minSSScale = ssscale;
+      } else if (ssscale &gt; maxSSScale) {
+        maxSSScale = ssscale;
+      }
+      float distanceTo1 = (float) fabs(ssscale - 1.0f);
+      if (distanceTo1 &lt; bestDistanceTo1) {
+        bestSSScale = ssscale;
+        bestDistanceTo1 = distanceTo1;
+      }
+    }
+  }
+  if (minSSScale == maxSSScale) {
+    // All subsessions are at the same scale: minSSScale == bestSSScale == maxSSScale
+    scale = minSSScale;
+    return;
+  }
+  // The scales for each subsession differ.  Try to set each one to the value
+  // that&apos;s closest to 1:
+  for (subsession = fSubsessionsHead; subsession != NULL;
+       subsession = subsession-&gt;fNext) {
+    float ssscale = bestSSScale;
+    subsession-&gt;testScaleFactor(ssscale);
+    if (ssscale != bestSSScale) break; // no luck
+  }
+  if (subsession == NULL) {
+    // All subsessions are at the same scale: bestSSScale
+    scale = bestSSScale;
+    return;
+  }
+  // Still no luck.  Set each subsession&apos;s scale to 1:
+  for (subsession = fSubsessionsHead; subsession != NULL;
+       subsession = subsession-&gt;fNext) {
+    float ssscale = 1;
+    subsession-&gt;testScaleFactor(ssscale);
+  }
+  scale = 1;
+}<br></div></div>
+
+<p>In this function, the steps are as follows:</p>
+<p>Step 1: Try to set the scale of all sub-sessions to the value requested by the client, and record the maximum, minimum, and closest value of the scale selected by the sub-session.</p>
+<p>Step 2: During the execution of step 1, all child sessions select the same scale value, and the scale is returned to the caller. </p>
+<p>Step 3: During the execution of step 1, all sub-sessions select different scale values, then try to set the closest scale value to 1 to all. </p>
+<p>Step 4: Step 3 can successfully set the closest scale value to 1 for all child sessions, then return the scale to the caller. </p>
+<p>Step 5: Step 3 cannot set the scale value closest to 1 to all subsessions, and set the scale value of each subsession to 1.</p>
+<p>Go back <code>RTSPServer::RTSPClientSession::handleCmd_PLAY()</code>.</p>
+<p>The second step, to resolve the client&apos;s <code>Range:</code> head, and updated range value
+based on the value scale.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Parse the client&apos;s &quot;Range:&quot; header, if any:
+float duration = 0.0;
+double rangeStart = 0.0, rangeEnd = 0.0;
+char* absStart = NULL; char* absEnd = NULL;
+Boolean startTimeIsNow;
+Boolean sawRangeHeader
+  = parseRangeHeader(fullRequestStr, rangeStart, rangeEnd, absStart, absEnd, startTimeIsNow);
+if (sawRangeHeader &amp;&amp; absStart == NULL/*not seeking by &apos;absolute&apos; time*/) {
+  // Use this information, plus the stream&apos;s duration (if known), to create our own &quot;Range:&quot; header, for the response:
+  duration = subsession == NULL /*aggregate op*/
+    ? fOurServerMediaSession-&gt;duration() : subsession-&gt;duration();
+  if (duration &lt; 0.0) {
+    // We&apos;re an aggregate PLAY, but the subsessions have different durations.
+    // Use the largest of these durations in our header
+    duration = -duration;
+  }
+
+  // Make sure that &quot;rangeStart&quot; and &quot;rangeEnd&quot; (from the client&apos;s &quot;Range:&quot; header)
+  // have sane values, before we send back our own &quot;Range:&quot; header in our response:
+  if (rangeStart &lt; 0.0) rangeStart = 0.0;
+  else if (rangeStart &gt; duration) rangeStart = duration;
+  if (rangeEnd &lt; 0.0) rangeEnd = 0.0;
+  else if (rangeEnd &gt; duration) rangeEnd = duration;
+  if ((scale &gt; 0.0 &amp;&amp; rangeStart &gt; rangeEnd &amp;&amp; rangeEnd &gt; 0.0)
+      || (scale &lt; 0.0 &amp;&amp; rangeStart &lt; rangeEnd)) {
+    // &quot;rangeStart&quot; and &quot;rangeEnd&quot; were the wrong way around; swap them:
+    double tmp = rangeStart;
+    rangeStart = rangeEnd;
+    rangeEnd = tmp;
+  }
+}<br></div></div>
+
+<p>The fourth step is to create a <code>RTP-Info:</code> line:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Create a &quot;RTP-Info:&quot; line.  It will get filled in from each subsession&apos;s state:
+char const* rtpInfoFmt =
+  &quot;%s&quot; // &quot;RTP-Info:&quot;, plus any preceding rtpInfo items
+  &quot;%s&quot; // comma separator, if needed
+  &quot;url=%s/%s&quot;
+  &quot;;seq=%d&quot;
+  &quot;;rtptime=%u&quot;
+  ;
+unsigned rtpInfoFmtSize = strlen(rtpInfoFmt);
+char* rtpInfo = strDup(&quot;RTP-Info: &quot;);
+unsigned i, numRTPInfoItems = 0;<br></div></div>
+
+<p>In the fifth step, before starting the streaming, the required seeking/scaling
+is performed for each sub-session, that is, the playback progress and the
+playback rate are set.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">for (i = 0; i &lt; fNumStreamStates; ++i) {
+  if (subsession == NULL /* means: aggregated operation */ || fNumStreamStates == 1) {
+    if (fStreamStates[i].subsession != NULL) {
+      if (sawScaleHeader) {
+        fStreamStates[i].subsession-&gt;setStreamScale(fOurSessionId, fStreamStates[i].streamToken, scale);
+      }
+      if (absStart != NULL) {
+        // Special case handling for seeking by &apos;absolute&apos; time:
+        fStreamStates[i].subsession-&gt;seekStream(fOurSessionId, fStreamStates[i].streamToken, absStart, absEnd);
+      } else {
+        // Seeking by relative (NPT) time:
+        u_int64_t numBytes;
+        if (!sawRangeHeader || startTimeIsNow) {
+          // We&apos;re resuming streaming without seeking, so we just do a &apos;null&apos; seek
+          // (to get our NPT, and to specify when to end streaming):
+          fStreamStates[i].subsession-&gt;nullSeekStream(fOurSessionId, fStreamStates[i].streamToken,
+              rangeEnd, numBytes);
+        } else {
+          // We do a real &apos;seek&apos;:
+          double streamDuration = 0.0; // by default; means: stream until the end of the media
+          if (rangeEnd &gt; 0.0 &amp;&amp; (rangeEnd + 0.001) &lt; duration) {
+            // the 0.001 is because we limited the values to 3 decimal places
+            // We want the stream to end early.  Set the duration we want:
+            streamDuration = rangeEnd - rangeStart;
+            if (streamDuration &lt; 0.0) streamDuration = -streamDuration;
+            // should happen only if scale &lt; 0.0
+          }
+          fStreamStates[i].subsession-&gt;seekStream(fOurSessionId, fStreamStates[i].streamToken,
+              rangeStart, streamDuration, numBytes);
+        }
+      }
+    }
+  }
+}<br></div></div>
+
+<p>The sixth step, create a response will be sent in <code>Range:</code> the head.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">if (absStart != NULL) {
+  // We&apos;re seeking by &apos;absolute&apos; time:
+  if (absEnd == NULL) {
+    sprintf(buf, &quot;Range: clock=%s-\r\n&quot;, absStart);
+  } else {
+    sprintf(buf, &quot;Range: clock=%s-%s\r\n&quot;, absStart, absEnd);
+  }
+  delete[] absStart; delete[] absEnd;
+} else {
+  // We&apos;re seeking by relative (NPT) time:
+  if (!sawRangeHeader || startTimeIsNow) {
+    // We didn&apos;t seek, so in our response, begin the range with the current NPT (normal play time):
+    float curNPT = 0.0;
+    for (i = 0; i &lt; fNumStreamStates; ++i) {
+      if (subsession == NULL /* means: aggregated operation */
+      || subsession == fStreamStates[i].subsession) {
+        if (fStreamStates[i].subsession == NULL) continue;
+        float npt = fStreamStates[i].subsession-&gt;getCurrentNPT(fStreamStates[i].streamToken);
+        if (npt &gt; curNPT)
+          curNPT = npt;
+        // Note: If this is an aggregate &quot;PLAY&quot; on a multi-subsession stream,
+        // then it&apos;s conceivable that the NPTs of each subsession may differ
+        // (if there has been a previous seek on just one subsession).
+        // In this (unusual) case, we just return the largest NPT; I hope that turns out OK...
+      }
+    }
+    rangeStart = curNPT;
+  }
+  if (rangeEnd == 0.0 &amp;&amp; scale &gt;= 0.0) {
+    sprintf(buf, &quot;Range: npt=%.3f-\r\n&quot;, rangeStart);
+  } else {
+    sprintf(buf, &quot;Range: npt=%.3f-%.3f\r\n&quot;, rangeStart, rangeEnd);
+  }
+}
+char* rangeHeader = strDup(buf);<br></div></div>
+
+<p>A seventh step, start streaming media, and generate the final <code>RTP-Info:</code> row.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Now, start streaming:
+for (i = 0; i &lt; fNumStreamStates; ++i) {
+  if (subsession == NULL /* means: aggregated operation */
+  || subsession == fStreamStates[i].subsession) {
+    unsigned short rtpSeqNum = 0;
+    unsigned rtpTimestamp = 0;
+    if (fStreamStates[i].subsession == NULL) continue;
+    fStreamStates[i].subsession-&gt;startStream(fOurSessionId,
+        fStreamStates[i].streamToken,
+        (TaskFunc*) noteClientLiveness, this,
+        rtpSeqNum, rtpTimestamp,
+        RTSPServer::RTSPClientConnection::handleAlternativeRequestByte, ourClientConnection);
+    const char *urlSuffix = fStreamStates[i].subsession-&gt;trackId();
+    char* prevRTPInfo = rtpInfo;
+    unsigned rtpInfoSize = rtpInfoFmtSize
+        + strlen(prevRTPInfo)
+        + 1
+        + rtspURLSize + strlen(urlSuffix)
+        + 5 /*max unsigned short len*/
+        + 10 /*max unsigned (32-bit) len*/
+        + 2 /*allows for trailing \r\n at final end of string*/;
+    rtpInfo = new char[rtpInfoSize];
+    sprintf(rtpInfo, rtpInfoFmt, prevRTPInfo,
+        numRTPInfoItems++ == 0 ? &quot;&quot; : &quot;,&quot;, rtspURL, urlSuffix, rtpSeqNum,
+        rtpTimestamp);
+    delete[] prevRTPInfo;
+  }
+}
+if (numRTPInfoItems == 0) {
+  rtpInfo[0] = &apos;\0&apos;;
+} else {
+  unsigned rtpInfoLen = strlen(rtpInfo);
+  rtpInfo[rtpInfoLen] = &apos;\r&apos;;
+  rtpInfo[rtpInfoLen + 1] = &apos;\n&apos;;
+  rtpInfo[rtpInfoLen + 2] = &apos;\0&apos;;
+}<br></div></div>
+
+<p>In the eighth step, the final response is generated and the temporarily
+allocated memory is released.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Fill in the response:
+snprintf((char*) ourClientConnection-&gt;fResponseBuffer,
+    sizeof ourClientConnection-&gt;fResponseBuffer, &quot;RTSP/1.0 200 OK\r\n&quot;
+        &quot;CSeq: %s\r\n&quot;
+        &quot;%s&quot;
+        &quot;%s&quot;
+        &quot;%s&quot;
+        &quot;Session: %08X\r\n&quot;
+        &quot;%s\r\n&quot;,
+        ourClientConnection-&gt;fCurrentCSeq,
+        dateHeader(),
+        scaleHeader,
+        rangeHeader,
+        fOurSessionId,
+        rtpInfo);
+delete[] rtpInfo;
+delete[] rangeHeader;
+delete[] scaleHeader;
+delete[] rtspURL;<br></div></div>
+
+<p><a href="https://www.wolfcstech.com/about/donate.html" target="_blank">Reward</a></p>
+<p>Done.</p>
+<h2 id="live555-source-code-analysis-series"><a name="live555-source-code-analysis-series" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-series"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Live555 source code analysis series</h2>
+<ol>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_introduction.html">Live555 Source code analysis: Introduction </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_infrastructure.html">live555 Source code analysis: Infrastructure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_mediaserver.html">live555 Source code analysis: MediaSever </a></li>
+<li><a href="Live555%20-%20Wireshark%20capture%20packet%20analysis%20RTSP_RTP_RTCP%20basic%20working%20process.html">Wireshark capture packet analysis RTSP/RTP/RTCP Basic working process </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_rtspserver.html">live555 Source code analysis: RTSPServer </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_describe%20processing.html">live555 Source code analysis: DESCRIBE processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_setup%20processing.html">live555 Source code analysis: SETUP processing </a></li>
+<li><a href="https://www.wolfcstech.com/2017/09/05/live555_src_analysis_play/" target="_blank">live555 Source code analysis :PLAY processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_RTSPServer%20component%20structure.html">live555 Source code analysis: RTSPServer component structure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_servermediasession.html">live555 Source code analysis: </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_subsession%20SDP%20line%20generation.html">ServerMediaSession live555 Source code analysis: sub-session SDP line generation </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_Subsession%20SETUP.html">live555 Source code analysis: sub-session SETUP </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20start.html">live555 Source code analysis: play start</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Live555 - Live555 source code analysis_setup processing.html" class="navigation navigation-prev " aria-label="Previous page: Live555 - Live555 source code analysis_setup processing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html" class="navigation navigation-next " aria-label="Next page: Live555 - Live555 source code analysis_RTSPServer component structure">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Live555 - Live555 source code analysis_play processing","level":"1.10.8","depth":2,"next":{"title":"Live555 - Live555 source code analysis_RTSPServer component structure","level":"1.10.9","depth":2,"path":"Live555 - Live555 source code analysis_RTSPServer component structure.md","ref":"Live555 - Live555 source code analysis_RTSPServer component structure.md","articles":[]},"previous":{"title":"Live555 - Live555 source code analysis_setup processing","level":"1.10.7","depth":2,"path":"Live555 - Live555 source code analysis_setup processing.md","ref":"Live555 - Live555 source code analysis_setup processing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Live555 - Live555 source code analysis_play processing.md","mtime":"2019-03-05T06:19:52.000Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

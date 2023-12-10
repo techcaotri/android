@@ -1,0 +1,2019 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Live555 - Live555 source code analysis_rtspserver · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Live555 - Live555 source code analysis_describe processing.html" />
+    
+    
+    <link rel="prev" href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Live555 - Live555 source code analysis_rtspserver</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#live555-source-code-analysis-rtspserver"><b>1. </b>Live555 Source code analysis: RTSPServer</a></li><ul><li><span class="title-icon "></span><a href="#rtsp-message-format"><b>1.1. </b>RTSP message format</a></li><li><span class="title-icon "></span><a href="#rtsp-request-processing"><b>1.2. </b>RTSP request processing</a></li><li><span class="title-icon "></span><a href="#processing-of-options-requests"><b>1.3. </b>Processing of OPTIONS requests</a></li><li><span class="title-icon "></span><a href="#processing-of-requests-applied-to-the-entire-server"><b>1.4. </b>Processing of requests applied to the entire server</a></li><li><span class="title-icon "></span><a href="#processing-of-describe-requests"><b>1.5. </b>Processing of DESCRIBE requests</a></li><li><span class="title-icon "></span><a href="#processing-of-setup-requests"><b>1.6. </b>Processing of SETUP requests</a></li><li><span class="title-icon "></span><a href="#processing-of-teardown-play-pause-getparameter-setparameter-requests"><b>1.7. </b>Processing of TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER requests</a></li><li><span class="title-icon "></span><a href="#processing-of-register-deregister-requests"><b>1.8. </b>Processing of REGISTER, DEREGISTER requests</a></li><li><span class="title-icon "></span><a href="#handling-of-error-methods"><b>1.9. </b>Handling of error methods</a></li><li><span class="title-icon "></span><a href="#live555-source-code-analysis-series"><b>1.10. </b>Live555 source code analysis series</a></li></ul></ul></div><a href="#live555-source-code-analysis-rtspserver" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="live555-source-code-analysis-rtspserver"><a name="live555-source-code-analysis-rtspserver" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-rtspserver"><i class="fa fa-link" aria-hidden="true"></i></a>1. Live555 Source code analysis: RTSPServer</h1>
+<p> Posted on 2017-09-03 |  In <a href="https://www.wolfcstech.com/categories/live555/" target="_blank">live555</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#live555-source-code-analysis-rtspserver"><strong>Live555 Source code analysis: RTSPServer</strong></a><ul>
+<li><a href="#rtsp-message-format"><strong>RTSP message format</strong></a></li>
+<li><a href="#rtsp-request-processing"><strong>RTSP request processing</strong></a></li>
+<li><a href="#processing-of-options-requests"><strong>Processing of OPTIONS requests</strong></a></li>
+<li><a href="#processing-of-requests-applied-to-the-entire-server"><strong>Processing of requests applied to the entire server</strong></a></li>
+<li><a href="#processing-of-describe-requests"><strong>Processing of DESCRIBE requests</strong></a></li>
+<li><a href="#processing-of-setup-requests"><strong>Processing of SETUP requests</strong></a></li>
+<li><a href="#processing-of-teardown-play-pause-getparameter-setparameter-requests"><strong>Processing of TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER requests</strong></a></li>
+<li><a href="#processing-of-register-deregister-requests"><strong>Processing of REGISTER, DEREGISTER requests</strong></a></li>
+<li><a href="#handling-of-error-methods"><strong>Handling of error methods</strong></a></li>
+<li><a href="#live555-source-code-analysis-series"><strong>Live555 source code analysis series</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>Live555 uses the RTSP/RTP/RTCP protocol for streaming media, where RTSP is used
+to establish streaming sessions and control streaming sessions. In live555 by
+class <code>RTSPServerSupportingHTTPStreaming::RTSPClientConnectionSupportingHTTPStreaming</code> to
+handle the RTSP request. Request sent by the client in the parent
+<code>class GenericMediaServer::ClientConnectionof incomingRequestHandler(void*, int /*mask*/)</code> receiver functions, and its parent class <code>RTSPServer::RTSPClientConnection</code> function <code>handleRequestBytes()</code> processing.</p>
+<h2 id="rtsp-message-format"><a name="rtsp-message-format" class="anchor-navigation-ex-anchor" href="#rtsp-message-format"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. RTSP message format</h2>
+<p>In particular look at <code>GenericMediaServer::ClientConnection</code> the <code>incomingRequestHandler(void*, int /*mask*/)</code> before implementation of a function, we first look at the format RTSP message.</p>
+<p>The RTSP message is divided into a request message and a response message. The
+format of the request message sent from the client to the server is as follows:</p>
+<pre><code>Request      =       Request-Line
+             *(      general-header
+             |       request-header
+             |       entity-header )
+                     CRLF
+                     [ message-body ]
+</code></pre><p>The first line of the request message is the request line, which contains the
+method to be applied to the resource, the identifier of the resource, which is
+the URL, and the protocol used. The specific format of the request line is as
+follows:</p>
+<pre><code>Request-Line = Method SP Request-URI SP RTSP-Version CRLF
+</code></pre><p>The SP in the above format represents a space, that is, the different elements
+in the request line are separated by spaces and \n\rend with CRLF. The methods
+supported by RTSP mainly include the following:</p>
+<pre><code>Method         =         &quot;DESCRIBE&quot;
+                |         &quot;ANNOUNCE&quot;
+                |         &quot;GET_PARAMETER&quot;
+                |         &quot;OPTIONS&quot;
+                |         &quot;PAUSE&quot;
+                |         &quot;PLAY&quot;
+                |         &quot;RECORD&quot;
+                |         &quot;REDIRECT&quot;
+                |         &quot;SETUP&quot;
+                |         &quot;SET_PARAMETER&quot;
+                |         &quot;TEARDOWN&quot;
+                |         extension-method
+extension-method = token
+</code></pre><p>The format of the URI is:</p>
+<pre><code>Request-URI = &quot;*&quot; | absolute_URI
+</code></pre><p>That is, it can be &quot;*&quot; or a complete URI, where the former indicates that the
+operation applies to all resources.</p>
+<p>The format of the RTSP version number is:</p>
+<pre><code>RTSP-Version = &quot;RTSP&quot; &quot;/&quot; 1*DIGIT &quot;.&quot; 1*DIGIT
+</code></pre><p>That is, the string &quot;RTSP/&quot; is followed by two integers separated by a period
+(&quot;.&quot;).</p>
+<p>After the request line is the header. The headers are divided into three
+categories, namely the generic header, the request header, and the entity
+header. The generic header mainly contains the following:</p>
+<pre><code>general-header     =     Cache-Control
+                   |     Connection
+                   |     Date
+                   |     Via
+</code></pre><p>The request header has the following:</p>
+<pre><code>request-header  =          Accept
+                |          Accept-Encoding
+                |          Accept-Language
+                |          Authorization
+                |          From
+                |          If-Modified-Since
+                |          Range
+                |          Referer
+                |          User-Agent
+</code></pre><p>The entity headers include these:</p>
+<pre><code>entity-header       =    Allow
+                    |    Content-Base
+                    |    Content-Encoding
+                    |    Content-Language
+                    |    Content-Length
+                    |    Content-Location
+                    |    Content-Type
+                    |    Expires
+                    |    Last-Modified
+                    |    extension-header
+extension-header    =    message-header
+</code></pre><p>Each head also ends with a CRLF. After all the headers, you need to add another
+CRLF to separate the header from the message body. At the end of the message
+body, CRLF is also added as the end.</p>
+<p>The request message structure of RTSP is very similar to that of HTTP.</p>
+<p><code>OPTIONS</code> Request message example:</p>
+<pre><code>OPTIONS rtsp://10.240.248.20:8554/raw_h264_stream.264 RTSP/1.0
+CSeq: 1
+User-Agent: Lavf56.40.101
+</code></pre><p><code>DESCRIBE</code> Request message example:</p>
+<pre><code>DESCRIBE rtsp://10.240.248.20:8554/raw_h264_stream.264 RTSP/1.0
+Accept: application/sdp
+CSeq: 2
+User-Agent: Lavf56.40.101
+</code></pre><p><code>SETUP</code> Request message example:</p>
+<pre><code>SETUP rtsp://10.240.248.20:8554/raw_h264_stream.264/track1 RTSP/1.0
+Transport: RTP/AVP/UDP;unicast;client_port=27056-27057
+CSeq: 3
+User-Agent: Lavf56.40.101
+</code></pre><p><code>PLAY</code> Request message example:</p>
+<pre><code>PLAY rtsp://10.240.248.20:8554/raw_h264_stream.264/ RTSP/1.0
+Range: npt=0.000-
+CSeq: 4
+User-Agent: Lavf56.40.101
+Session: 92C91EC2
+</code></pre><p>The response message format is as follows:</p>
+<pre><code>Response    =     Status-Line
+            *(    general-header
+            |     response-header
+            |     entity-header )
+                  CRLF
+                  [ message-body ]
+</code></pre><p>The first line of the response message is the status line, which is described by
+the protocol version number, the numeric status code, and the text format
+associated with the status code. The specific format is defined as follows:</p>
+<pre><code>Status-Line =   RTSP-Version SP Status-Code SP Reason-Phrase CRLF
+</code></pre><p>Following the status line is the header, which is similar to the header of the
+request message, except that the request header is replaced with the response
+header. The response header mainly includes the following:</p>
+<pre><code>response-header  =     Location
+                 |     Proxy-Authenticate
+                 |     Public
+                 |     Retry-After
+                 |     Server
+                 |     Vary
+                 |     WWW-Authenticate
+</code></pre><p>Each head also ends with a CRLF. After all the headers, you need to add another
+CRLF to separate the header from the message body. At the end of the message
+body, CRLF is also added as the end.</p>
+<p><code>OPTIONS</code> Example response message:</p>
+<pre><code>RTSP/1.0 200 OK
+CSeq: 1
+Date: Fri, Sep 01 2017 07:18:16 GMT
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER
+</code></pre><p><code>DESCRIBE</code> Example response message:</p>
+<pre><code>RTSP/1.0 200 OK
+CSeq: 2
+Date: Fri, Sep 01 2017 07:18:16 GMT
+Content-Base: rtsp://10.240.248.20:8554/raw_h264_stream.264/
+Content-Type: application/sdp
+Content-Length: 531
+v=0
+o=- 1504250296129739 1 IN IP4 10.240.248.20
+s=H.264 Video, streamed by the LIVE555 Media Server
+i=raw_h264_stream.264
+t=0 0
+a=tool:LIVE555 Streaming Media v2017.07.18
+a=type:broadcast
+a=control:*
+a=range:npt=0-
+a=x-qt-text-nam:H.264 Video, streamed by the LIVE555 Media Server
+a=x-qt-text-inf:raw_h264_stream.264
+m=video 0 RTP/AVP 96
+c=IN IP4 0.0.0.0
+b=AS:500
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=42802A;sprop-parameter-sets=Z0KAKtoBEA8eXlIKDAoNoUJq,aM4G4g==
+a=control:track1
+RTSPClientConnection[0x8018c0]::handleRequestBytes() read 163 new bytes:SETUP rtsp://10.240.248.20:8554/raw_h264_stream.264/track1 RTSP/1.0
+Transport: RTP/AVP/UDP;unicast;client_port=27056-27057
+CSeq: 3
+User-Agent: Lavf56.40.101
+</code></pre><p>In this response, the message body is an SDP message.</p>
+<p><code>SETUP</code> Example response message:</p>
+<pre><code>RTSP/1.0 200 OK
+CSeq: 3
+Date: Fri, Sep 01 2017 07:18:16 GMT
+Transport: RTP/AVP;unicast;destination=10.240.248.20;source=10.240.248.20;client_port=27056-27057;server_port=6970-6971
+Session: 92C91EC2;timeout=65
+</code></pre><p><code>PLAY</code> Example response message:</p>
+<pre><code>RTSP/1.0 200 OK
+CSeq: 4
+Date: Fri, Sep 01 2017 07:18:16 GMT
+Range: npt=0.000-
+Session: 92C91EC2
+RTP-Info: url=rtsp://10.240.248.20:8554/raw_h264_stream.264/track1;seq=32567;rtptime=2735105232
+</code></pre><p>This is basically the case with the RTSP message format.</p>
+<h2 id="rtsp-request-processing"><a name="rtsp-request-processing" class="anchor-navigation-ex-anchor" href="#rtsp-request-processing"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. RTSP request processing</h2>
+<p>With the knowledge of the RTSP message format, look at <code>RTSPServer</code> the processing
+functions for RTSP messages in live555 <code>RTSPServer::RTSPClientConnection::handleRequestBytes()</code>.</p>
+<p>The definition of this function is a bit long, throwing away the processing of
+HTTP. The processing logic of RTSP is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientConnection::handleRequestBytes(int newBytesRead) {
+  int numBytesRemaining = 0;
+  ++fRecursionCount;
+
+  do {
+    RTSPServer::RTSPClientSession* clientSession = NULL;
+    if (newBytesRead &lt; 0 || (unsigned)newBytesRead &gt;= fRequestBufferBytesLeft) {
+      // Either the client socket has died, or the request was too big for us.
+      // Terminate this connection:
+#ifdef DEBUG
+      fprintf(stderr, &quot;RTSPClientConnection[%p]::handleRequestBytes() read %d new bytes (of %d); terminating connection!\n&quot;, this, newBytesRead, fRequestBufferBytesLeft);
+#endif
+      fIsActive = False;
+      break;
+    }
+
+    Boolean endOfMsg = False;
+    unsigned char* ptr = &amp;fRequestBuffer[fRequestBytesAlreadySeen];
+#ifdef DEBUG
+    ptr[newBytesRead] = &apos;\0&apos;;
+    fprintf(stderr, &quot;RTSPClientConnection[%p]::handleRequestBytes() %s %d new bytes:%s\n&quot;,
+        this, numBytesRemaining &gt; 0 ? &quot;processing&quot; : &quot;read&quot;, newBytesRead, ptr);
+#endif
+    . . . . . .
+
+    unsigned char* tmpPtr = fLastCRLF + 2;
+    if (fBase64RemainderCount == 0) { // no more Base-64 bytes remain to be read/decoded
+      // Look for the end of the message: &lt;CR&gt;&lt;LF&gt;&lt;CR&gt;&lt;LF&gt;
+      if (tmpPtr &lt; fRequestBuffer)
+        tmpPtr = fRequestBuffer;
+      while (tmpPtr &lt; &amp;ptr[newBytesRead - 1]) {
+        if (*tmpPtr == &apos;\r&apos; &amp;&amp; *(tmpPtr + 1) == &apos;\n&apos;) {
+          if (tmpPtr - fLastCRLF == 2) { // This is it:
+            endOfMsg = True;
+            break;
+          }
+          fLastCRLF = tmpPtr;
+        }
+        ++tmpPtr;
+      }
+    }
+    fRequestBufferBytesLeft -= newBytesRead;
+    fRequestBytesAlreadySeen += newBytesRead;
+    if (!endOfMsg) break; // subsequent reads will be needed to complete the request
+
+    // Parse the request string into command name and &apos;CSeq&apos;, then handle the command:
+    fRequestBuffer[fRequestBytesAlreadySeen] = &apos;\0&apos;;
+    char cmdName[RTSP_PARAM_STRING_MAX];
+    char urlPreSuffix[RTSP_PARAM_STRING_MAX];
+    char urlSuffix[RTSP_PARAM_STRING_MAX];
+    char cseq[RTSP_PARAM_STRING_MAX];
+    char sessionIdStr[RTSP_PARAM_STRING_MAX];
+    unsigned contentLength = 0;
+    fLastCRLF[2] = &apos;\0&apos;; // temporarily, for parsing
+    Boolean parseSucceeded = parseRTSPRequestString(
+        (char*) fRequestBuffer,
+        fLastCRLF + 2 - fRequestBuffer,
+        cmdName, sizeof cmdName,
+        urlPreSuffix, sizeof urlPreSuffix,
+        urlSuffix, sizeof urlSuffix,
+        cseq, sizeof cseq,
+        sessionIdStr, sizeof sessionIdStr,
+        contentLength);
+    fLastCRLF[2] = &apos;\r&apos;; // restore its value
+    Boolean playAfterSetup = False;
+    if (parseSucceeded) {
+#ifdef DEBUG
+      fprintf(stderr, &quot;parseRTSPRequestString() succeeded, returning cmdName \&quot;%s\&quot;, urlPreSuffix \&quot;%s\&quot;, urlSuffix \&quot;%s\&quot;, CSeq \&quot;%s\&quot;, Content-Length %u, with %d bytes following the message.\n&quot;, cmdName, urlPreSuffix, urlSuffix, cseq, contentLength, ptr + newBytesRead - (tmpPtr + 2));
+#endif
+      // If there was a &quot;Content-Length:&quot; header, then make sure we&apos;ve received all of the data that it specified:
+      if (ptr + newBytesRead &lt; tmpPtr + 2 + contentLength) break; // we still need more data; subsequent reads will give it to us
+
+      // If the request included a &quot;Session:&quot; id, and it refers to a client session that&apos;s
+      // current ongoing, then use this command to indicate &apos;liveness&apos; on that client session:
+      Boolean const requestIncludedSessionId = sessionIdStr[0] != &apos;\0&apos;;
+      if (requestIncludedSessionId) {
+        clientSession
+          = (RTSPServer::RTSPClientSession*)(fOurRTSPServer.lookupClientSession(sessionIdStr));
+        if (clientSession != NULL) clientSession-&gt;noteLiveness();
+      }
+
+      // We now have a complete RTSP request.
+      // Handle the specified command (beginning with commands that are session-independent):
+      fCurrentCSeq = cseq;
+      if (strcmp(cmdName, &quot;OPTIONS&quot;) == 0) {
+        // If the &quot;OPTIONS&quot; command included a &quot;Session:&quot; id for a session that doesn&apos;t exist,
+        // then treat this as an error:
+        if (requestIncludedSessionId &amp;&amp; clientSession == NULL) {
+          handleCmd_sessionNotFound();
+        } else {
+          // Normal case:
+          handleCmd_OPTIONS();
+        }
+      } else if (urlPreSuffix[0] == &apos;\0&apos; &amp;&amp; urlSuffix[0] == &apos;*&apos;
+          &amp;&amp; urlSuffix[1] == &apos;\0&apos;) {
+        // The special &quot;*&quot; URL means: an operation on the entire server.  This works only for GET_PARAMETER and SET_PARAMETER:
+        if (strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0) {
+          handleCmd_GET_PARAMETER((char const*) fRequestBuffer);
+        } else if (strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+          handleCmd_SET_PARAMETER((char const*) fRequestBuffer);
+        } else {
+          handleCmd_notSupported();
+        }
+      } else if (strcmp(cmdName, &quot;DESCRIBE&quot;) == 0) {
+        handleCmd_DESCRIBE(urlPreSuffix, urlSuffix,
+            (char const*) fRequestBuffer);
+      } else if (strcmp(cmdName, &quot;SETUP&quot;) == 0) {
+        Boolean areAuthenticated = True;
+        if (!requestIncludedSessionId) {
+          // No session id was present in the request.
+          // So create a new &quot;RTSPClientSession&quot; object for this request.
+          // But first, make sure that we&apos;re authenticated to perform this command:
+          char urlTotalSuffix[2 * RTSP_PARAM_STRING_MAX];
+          // enough space for urlPreSuffix/urlSuffix&apos;\0&apos;
+          urlTotalSuffix[0] = &apos;\0&apos;;
+          if (urlPreSuffix[0] != &apos;\0&apos;) {
+            strcat(urlTotalSuffix, urlPreSuffix);
+            strcat(urlTotalSuffix, &quot;/&quot;);
+          }
+          strcat(urlTotalSuffix, urlSuffix);
+          if (authenticationOK(&quot;SETUP&quot;, urlTotalSuffix,
+              (char const*) fRequestBuffer)) {
+            clientSession =
+                (RTSPServer::RTSPClientSession*) fOurRTSPServer.createNewClientSessionWithId();
+          } else {
+            areAuthenticated = False;
+          }
+        }
+        if (clientSession != NULL) {
+          clientSession-&gt;handleCmd_SETUP(this, urlPreSuffix, urlSuffix,
+              (char const*) fRequestBuffer);
+          playAfterSetup = clientSession-&gt;fStreamAfterSETUP;
+        } else if (areAuthenticated) {
+          handleCmd_sessionNotFound();
+        }
+      } else if (strcmp(cmdName, &quot;TEARDOWN&quot;) == 0
+          || strcmp(cmdName, &quot;PLAY&quot;) == 0 || strcmp(cmdName, &quot;PAUSE&quot;) == 0
+          || strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0
+          || strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+        if (clientSession != NULL) {
+          clientSession-&gt;handleCmd_withinSession(this, cmdName, urlPreSuffix,
+              urlSuffix, (char const*) fRequestBuffer);
+        } else {
+          handleCmd_sessionNotFound();
+        }
+      } else if (strcmp(cmdName, &quot;REGISTER&quot;) == 0 || strcmp(cmdName, &quot;DEREGISTER&quot;) == 0) {
+        // Because - unlike other commands - an implementation of this command needs
+        // the entire URL, we re-parse the command to get it:
+        char* url = strDupSize((char*) fRequestBuffer);
+        if (sscanf((char*) fRequestBuffer, &quot;%*s %s&quot;, url) == 1) {
+          // Check for special command-specific parameters in a &quot;Transport:&quot; header:
+          Boolean reuseConnection, deliverViaTCP;
+          char* proxyURLSuffix;
+          parseTransportHeaderForREGISTER((const char*) fRequestBuffer,
+              reuseConnection, deliverViaTCP, proxyURLSuffix);
+          handleCmd_REGISTER(cmdName, url, urlSuffix,
+              (char const*) fRequestBuffer, reuseConnection, deliverViaTCP,
+              proxyURLSuffix);
+          delete[] proxyURLSuffix;
+        } else {
+          handleCmd_bad();
+        }
+        delete[] url;
+      } else {
+        // The command is one that we don&apos;t handle:
+        handleCmd_notSupported();
+      }
+    }
+    . . . . . .
+
+#ifdef DEBUG
+    fprintf(stderr, &quot;sending response: %s&quot;, fResponseBuffer);
+#endif
+    send(fClientOutputSocket, (char const*)fResponseBuffer, strlen((char*)fResponseBuffer), 0);
+
+    if (playAfterSetup) {
+      // The client has asked for streaming to commence now, rather than after a
+      // subsequent &quot;PLAY&quot; command.  So, simulate the effect of a &quot;PLAY&quot; command:
+      clientSession-&gt;handleCmd_withinSession(this, &quot;PLAY&quot;, urlPreSuffix, urlSuffix, (char const*)fRequestBuffer);
+    }
+
+    // Check whether there are extra bytes remaining in the buffer, after the end of the request (a rare case).
+    // If so, move them to the front of our buffer, and keep processing it, because it might be a following, pipelined request.
+    unsigned requestSize = (fLastCRLF+4-fRequestBuffer) + contentLength;
+    numBytesRemaining = fRequestBytesAlreadySeen - requestSize;
+    resetRequestBuffer(); // to prepare for any subsequent request
+    if (numBytesRemaining &gt; 0) {
+      memmove(fRequestBuffer, &amp;fRequestBuffer[requestSize], numBytesRemaining);
+      newBytesRead = numBytesRemaining;
+    }
+  } while (numBytesRemaining &gt; 0);
+  --fRecursionCount;
+  if (!fIsActive) {
+    if (fRecursionCount &gt; 0) closeSockets(); else delete this;
+    // Note: The &quot;fRecursionCount&quot; test is for a pathological situation where we reenter the event loop and get called recursively
+    // while handling a command (e.g., while handling a &quot;DESCRIBE&quot;, to get a SDP description).
+    // In such a case we don&apos;t want to actually delete ourself until we leave the outermost call.
+  }
+}<br></div></div>
+
+
+<p>This function will process the complete RTSP message stored in the buffer from
+the socket one by one through a do-while loop. At the beginning of the loop
+body, <code>RTSPServer::RTSPClientConnection::handleRequestBytes()</code> first find the end
+position of the request message header, which is achieved by the following code:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">unsigned char* tmpPtr = fLastCRLF + 2;
+if (fBase64RemainderCount == 0) { // no more Base-64 bytes remain to be read/decoded
+  // Look for the end of the message: &lt;CR&gt;&lt;LF&gt;&lt;CR&gt;&lt;LF&gt;
+  if (tmpPtr &lt; fRequestBuffer)
+    tmpPtr = fRequestBuffer;
+  while (tmpPtr &lt; &amp;ptr[newBytesRead - 1]) {
+    if (*tmpPtr == &apos;\r&apos; &amp;&amp; *(tmpPtr + 1) == &apos;\n&apos;) {
+      if (tmpPtr - fLastCRLF == 2) { // This is it:
+        endOfMsg = True;
+        break;
+      }
+      fLastCRLF = tmpPtr;
+    }
+    ++tmpPtr;
+  }
+}
+fRequestBufferBytesLeft -= newBytesRead;
+fRequestBytesAlreadySeen += newBytesRead;
+if (!endOfMsg) break; // subsequent reads will be needed to complete the request<br></div></div>
+
+
+<p>A portion of the front RTSP message format, we know, RTSP request message header
+are two continuous &quot;\n \r&quot;, i.e. <code>&lt;CR&gt;&lt;LF&gt;&lt;CR&gt;&lt;LF&gt;</code> the end of the
+message to find the end position, i.e. the position of this sequence is
+found, <code>fLastCRLF</code> points to the beginning of this sequence position.</p>
+<p>If the end position of the request message header is not found, that is, the
+data read from the socket does not contain the complete message header, and some
+of the message has not been read yet, and the loop end processing will be
+skipped.</p>
+<p>After finding the end position of the request message header, it is to parse out
+different elements from the message header. This is mainly through
+the <code>parseRTSPRequestString()</code> function completes:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Parse the request string into command name and &apos;CSeq&apos;, then handle the command:
+fRequestBuffer[fRequestBytesAlreadySeen] = &apos;\0&apos;;
+char cmdName[RTSP_PARAM_STRING_MAX];
+char urlPreSuffix[RTSP_PARAM_STRING_MAX];
+char urlSuffix[RTSP_PARAM_STRING_MAX];
+char cseq[RTSP_PARAM_STRING_MAX];
+char sessionIdStr[RTSP_PARAM_STRING_MAX];
+unsigned contentLength = 0;
+fLastCRLF[2] = &apos;\0&apos;; // temporarily, for parsing
+Boolean parseSucceeded = parseRTSPRequestString(
+    (char*) fRequestBuffer,
+    fLastCRLF + 2 - fRequestBuffer,
+    cmdName, sizeof cmdName,
+    urlPreSuffix, sizeof urlPreSuffix,
+    urlSuffix, sizeof urlSuffix,
+    cseq, sizeof cseq,
+    sessionIdStr, sizeof sessionIdStr,
+    contentLength);
+fLastCRLF[2] = &apos;\r&apos;; // restore its value<br></div></div>
+
+
+<p>This is not to parse out all the elements in the RTSP message header, but to
+parse out several elements in the RTSP message header that determine what to do
+next, including the requested <code>Method</code>, <code>URL</code>, <code>CSeq</code> and <code>SessionId</code>, message body
+length <code>ContentLength</code>, and so on. The parsing success indicates that the message
+is a valid RTSP message, otherwise it is an HTTP message. Here we only look at
+the processing in the case of successful resolution.</p>
+<p>After the parsing succeeds, it will first determine whether the message body is
+complete: at this time <code>(ptr + newBytesRead)</code> points to the end position of the
+data read in the buffer, <code>tmpPtr</code> pointing to the two &quot;\n\r&quot; sequences in the end
+of the message header. that, i.e., the last message header <code>&lt;CR&gt;&lt;LF&gt;</code>, this
+comparison <code>(ptr + newBytesRead)</code> and <code>(tmpPtr + 2 + contentLength)</code> to determine
+whether the message buffer full.</p>
+<p>When the same message is incomplete, it jumps out of the loop and ends
+processing.</p>
+<p>Then, when the processing of the message needs to establish a streaming media
+session, the established streaming media session is first searched, and a
+keep-alive operation is performed for the session.</p>
+<p>Subsequent processing is performed according to the type of RTSP request
+message.</p>
+<h2 id="processing-of-options-requests"><a name="processing-of-options-requests" class="anchor-navigation-ex-anchor" href="#processing-of-options-requests"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Processing of OPTIONS requests</h2>
+<p><code>OPTIONS</code> The request is processed as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">if (strcmp(cmdName, &quot;OPTIONS&quot;) == 0) {
+  // If the &quot;OPTIONS&quot; command included a &quot;Session:&quot; id for a session that doesn&apos;t exist,
+  // then treat this as an error:
+  if (requestIncludedSessionId &amp;&amp; clientSession == NULL) {
+    handleCmd_sessionNotFound();
+  } else {
+    // Normal case:
+    handleCmd_OPTIONS();
+  }
+}<br></div></div>
+
+
+<p>According to the specification, <code>OPTIONS</code> the request may be initiated at any stage
+of the streaming media session, when the request header contains <code>SessionId</code> time
+but can not find the corresponding client session
+configuration, <code>handleCmd_sessionNotFound()</code> processed:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientConnection::handleCmd_sessionNotFound() {
+  setRTSPResponse(&quot;454 Session Not Found&quot;);
+}
+. . . . . .
+void RTSPServer::RTSPClientConnection::setRTSPResponse(
+    char const* responseStr) {
+  snprintf((char*) fResponseBuffer, sizeof fResponseBuffer,
+      &quot;RTSP/1.0 %s\r\n&quot;
+      &quot;CSeq: %s\r\n&quot;
+      &quot;%s\r\n&quot;,
+      responseStr,
+      fCurrentCSeq,
+      dateHeader());
+}<br></div></div>
+
+<p>Wherein the <code>dateHeader()</code> return RTSP Datehead, wherein the current time is the
+time string RTSP header time format:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const* dateHeader() {
+  static char buf[200];
+#if !defined(_WIN32_WCE)
+  time_t tt = time(NULL);
+  strftime(buf, sizeof buf, &quot;Date: %a, %b %d %Y %H:%M:%S GMT\r\n&quot;, gmtime(&amp;tt));
+#else
+. . . . . .
+#endif
+  return buf;
+}<br></div></div>
+
+
+<p><code>handleCmd_sessionNotFound()</code> The process that is the <code>fResponseBuffer</code> response to an
+error message 454 is filled RTSP.</p>
+<p>Normally, the <code>handleCmd_OPTIONS()</code> processing request:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">char const* RTSPServer::allowedCommandNames() {
+  return &quot;OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER&quot;;
+}
+. . . . . .
+void RTSPServer::RTSPClientConnection::handleCmd_OPTIONS() {
+  snprintf((char*) fResponseBuffer, sizeof fResponseBuffer,
+      &quot;RTSP/1.0 200 OK\r\nCSeq: %s\r\n%sPublic: %s\r\n\r\n&quot;, fCurrentCSeq,
+      dateHeader(), fOurRTSPServer.allowedCommandNames());
+}<br></div></div>
+
+
+<p>This is the <code>fResponseBuffer</code> response message filling a successful RTSP, wherein
+the <code>Public</code> header contains all RTSP Methods RTSP server supports.</p>
+<h2 id="processing-of-requests-applied-to-the-entire-server"><a name="processing-of-requests-applied-to-the-entire-server" class="anchor-navigation-ex-anchor" href="#processing-of-requests-applied-to-the-entire-server"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Processing of requests applied to the entire server</h2>
+<p>The special URL &quot;*&quot; indicates that the requested operation is applied to the
+entire server. According to RTSP specification, only two operations can be
+applied to the entire server, i.e., <code>GET_PARAMETER</code>, and <code>SET_PARAMETER</code>.</p>
+<p>It applies to the entire server <code>GET_PARAMETER</code> and <code>SET_PARAMETER</code> process requests
+as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">} else if (urlPreSuffix[0] == &apos;\0&apos; &amp;&amp; urlSuffix[0] == &apos;*&apos;
+    &amp;&amp; urlSuffix[1] == &apos;\0&apos;) {
+  // The special &quot;*&quot; URL means: an operation on the entire server.  This works only for GET_PARAMETER and SET_PARAMETER:
+  if (strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0) {
+    handleCmd_GET_PARAMETER((char const*) fRequestBuffer);
+  } else if (strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+    handleCmd_SET_PARAMETER((char const*) fRequestBuffer);
+  } else {
+    handleCmd_notSupported();
+  }
+}<br></div></div>
+
+
+<p>Here by invoking <code>handleCmd_GET_PARAMETER()</code> and <code>handleCmd_SET_PARAMETER()</code> to
+process <code>GET_PARAMETER</code> and <code>SET_PARAMETER</code> requests:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientConnection
+::handleCmd_GET_PARAMETER(char const* /*fullRequestStr*/) {
+  // By default, we implement &quot;GET_PARAMETER&quot; (on the entire server) just as a &apos;no op&apos;, and send back a dummy response.
+  // (If you want to handle this type of &quot;GET_PARAMETER&quot; differently, you can do so by defining a subclass of &quot;RTSPServer&quot;
+  // and &quot;RTSPServer::RTSPClientConnection&quot;, and then reimplement this virtual function in your subclass.)
+  setRTSPResponse(&quot;200 OK&quot;, LIVEMEDIA_LIBRARY_VERSION_STRING);
+}
+void RTSPServer::RTSPClientConnection
+::handleCmd_SET_PARAMETER(char const* /*fullRequestStr*/) {
+  // By default, we implement &quot;SET_PARAMETER&quot; (on the entire server) just as a &apos;no op&apos;, and send back an empty response.
+  // (If you want to handle this type of &quot;SET_PARAMETER&quot; differently, you can do so by defining a subclass of &quot;RTSPServer&quot;
+  // and &quot;RTSPServer::RTSPClientConnection&quot;, and then reimplement this virtual function in your subclass.)
+  setRTSPResponse(&quot;200 OK&quot;);
+}
+. . . . . .
+void RTSPServer::RTSPClientConnection
+::setRTSPResponse(char const* responseStr, char const* contentStr) {
+  if (contentStr == NULL) contentStr = &quot;&quot;;
+  unsigned const contentLen = strlen(contentStr);
+  snprintf((char*) fResponseBuffer, sizeof fResponseBuffer,
+      &quot;RTSP/1.0 %s\r\n&quot;
+      &quot;CSeq: %s\r\n&quot;
+      &quot;%s&quot;
+      &quot;Content-Length: %d\r\n\r\n&quot;
+      &quot;%s&quot;,
+      responseStr,
+      fCurrentCSeq,
+      dateHeader(),
+      contentLen,
+      contentStr);
+}<br></div></div>
+
+<p>live555 liveMedia library <code>RTSPServer::RTSPClientConnection</code> itself does not
+realize <code>GET_PARAMETER</code> and <code>SET_PARAMETER</code> requests. If the application needs to
+provide two methods to achieve this, we need to inherit <code>RTSPServer</code> and <code>RTSPServer::RTSPClientConnection</code>, and to implement the corresponding virtual functions.</p>
+<p>By default, the processing <code>GET_PARAMETER</code> time, <code>RTSPServer::RTSPClientConnection</code> the repository is
+returned to the client, to <code>SET_PARAMETER</code> request, always return success.</p>
+<h2 id="processing-of-describe-requests"><a name="processing-of-describe-requests" class="anchor-navigation-ex-anchor" href="#processing-of-describe-requests"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Processing of DESCRIBE requests</h2>
+<p><code>DESCRIBE</code> The request is processed as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">} else if (strcmp(cmdName, &quot;DESCRIBE&quot;) == 0) {
+  handleCmd_DESCRIBE(urlPreSuffix, urlSuffix,
+      (char const*) fRequestBuffer);
+}<br></div></div>
+
+
+<p>Here by the <code>handleCmd_DESCRIBE()</code> handler <code>DESCRIBE</code> message.</p>
+<h2 id="processing-of-setup-requests"><a name="processing-of-setup-requests" class="anchor-navigation-ex-anchor" href="#processing-of-setup-requests"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Processing of SETUP requests</h2>
+<p>The <code>SETUP</code> request is processed as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">} else if (strcmp(cmdName, &quot;SETUP&quot;) == 0) {
+  Boolean areAuthenticated = True;
+  if (!requestIncludedSessionId) {
+    // No session id was present in the request.
+    // So create a new &quot;RTSPClientSession&quot; object for this request.
+    // But first, make sure that we&apos;re authenticated to perform this command:
+    char urlTotalSuffix[2 * RTSP_PARAM_STRING_MAX];
+    // enough space for urlPreSuffix/urlSuffix&apos;\0&apos;
+    urlTotalSuffix[0] = &apos;\0&apos;;
+    if (urlPreSuffix[0] != &apos;\0&apos;) {
+      strcat(urlTotalSuffix, urlPreSuffix);
+      strcat(urlTotalSuffix, &quot;/&quot;);
+    }
+    strcat(urlTotalSuffix, urlSuffix);
+    if (authenticationOK(&quot;SETUP&quot;, urlTotalSuffix,
+        (char const*) fRequestBuffer)) {
+      clientSession =
+          (RTSPServer::RTSPClientSession*) fOurRTSPServer.createNewClientSessionWithId();
+    } else {
+      areAuthenticated = False;
+    }
+  }
+  if (clientSession != NULL) {
+    clientSession-&gt;handleCmd_SETUP(this, urlPreSuffix, urlSuffix,
+        (char const*) fRequestBuffer);
+    playAfterSetup = clientSession-&gt;fStreamAfterSETUP;
+  } else if (areAuthenticated) {
+    handleCmd_sessionNotFound();
+  }
+}<br></div></div>
+
+<p>If <code>SETUP</code> the request without <code>SessionID</code>, it means that streaming media session has
+not been created, then there will first attempt to create a streaming media
+session request. The process of creation is as follows:</p>
+<ol>
+<li><p>The request is first authenticated. After authentication requires the full
+path portion of the URL, parses the request header, <code>urlPreSuffix</code> a save
+request path portion of the URL, all portions of the path in front of the
+last component, while urlSuffixthe last part of the path component of the
+URL is saved. Such as a URL 
+<code>rtsp://10.240.248.20:8554/raw_h264_stream.264</code>, <code>urlPreSuffix</code> an empty
+string &quot;&quot;, <code>urlSuffix</code> as <code>&quot;raw_h264_stream.264&quot;</code>, for the
+URL <code>rtsp://10.240.248.20:8000/video/raw_h264_stream.264</code>, <code>urlPreSuffix</code> an
+empty string <code>&quot;video&quot;</code>, <code>urlSuffix</code> is <code>&quot;raw_h264_stream.264&quot;</code>. Thus before
+certification, will again spell out the first full path portion of the URL,
+and then through <code>authenticationOK()</code> the implementation of certification. 
+<em>&#x201C;LIVE555 Media Server&#x201D;</em> does not provide authentication and authentication
+will always succeed. The certification process is not analyzed in detail
+here.</p>
+</li>
+<li><p>When requesting authentication is successful, through the <code>GenericMediaServer::createNewClientSessionWithId()</code>
+creation <code>RTSPServer::RTSPClientSession</code> object. <code>GenericMediaServer</code> In <code>ClientSession</code> several related function the following statement:</p>
+</li>
+</ol>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">virtual ClientSession* createNewClientSession(u_int32_t sessionId) = 0;
+        ClientSession* createNewClientSessionWithId();
+            // Generates a new (unused) random session id, and calls the &quot;createNewClientSession()&quot;
+            // virtual function with this session id as parameter.
+        // Lookup a &quot;ClientSession&quot; object by sessionId (integer, and string):
+        ClientSession* lookupClientSession(u_int32_t sessionId);
+        ClientSession* lookupClientSession(char const* sessionIdStr);<br></div></div>
+
+
+<p><code>createNewClientSession()</code> It is a pure virtual function, <code>createNewClientSessionWithId()</code> and two <code>lookupClientSession()</code> non-virtual functions.</p>
+<p><code>GenericMediaServer::createNewClientSessionWithId()</code> The function is defined as
+follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">GenericMediaServer::ClientSession* GenericMediaServer::createNewClientSessionWithId() {
+  u_int32_t sessionId;
+  char sessionIdStr[8+1];
+  // Choose a random (unused) 32-bit integer for the session id
+  // (it will be encoded as a 8-digit hex number).  (We avoid choosing session id 0,
+  // because that has a special use by some servers.)
+  do {
+    sessionId = (u_int32_t)our_random32();
+    snprintf(sessionIdStr, sizeof sessionIdStr, &quot;%08X&quot;, sessionId);
+  } while (sessionId == 0 || lookupClientSession(sessionIdStr) != NULL);
+  ClientSession* clientSession = createNewClientSession(sessionId);
+  if (clientSession != NULL) fClientSessions-&gt;Add(sessionIdStr, clientSession);
+  return clientSession;
+}
+GenericMediaServer::ClientSession*
+GenericMediaServer::lookupClientSession(u_int32_t sessionId) {
+  char sessionIdStr[8+1];
+  snprintf(sessionIdStr, sizeof sessionIdStr, &quot;%08X&quot;, sessionId);
+  return lookupClientSession(sessionIdStr);
+}
+GenericMediaServer::ClientSession*
+GenericMediaServer::lookupClientSession(char const* sessionIdStr) {
+  return (GenericMediaServer::ClientSession*)fClientSessions-&gt;Lookup(sessionIdStr);
+}<br></div></div>
+
+<p>Created <code>GenericMediaServer::ClientSession</code>,
+the <code>GenericMediaServer::createNewClientSessionWithId()</code> first to find a non-zero,
+and has not been occupied by a random value as <code>SessionID</code>; then
+by <code>createNewClientSession()</code> creating objects function; finally cached objects
+created and returned to the caller.</p>
+<p><code>createNewClientSession()</code> Is a pure virtual function,
+for <code>DynamicRTSPServer -&gt; RTSPServerSupportingHTTPStreaming -&gt; RTSPServer -&gt; GenericMediaServer</code> this
+inheritance hierarchy, it is <code>RTSPServer</code> defined:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">GenericMediaServer::ClientSession*
+RTSPServer::createNewClientSession(u_int32_t sessionId) {
+  return new RTSPClientSession(*this, sessionId);
+}<br></div></div>
+
+
+<p>live555 the <code>GenericMediaServer::ClientSession</code> inheritance hierarchy is as follows:</p>
+<p>     <a href="media/bcf3575c02341c07bbde50a6c595aad3.png" rel="grouped" title="https://www.wolfcstech.com/images/1315506-1ec111f30d81ac1a.png" target="_self" class="fancybox">
+       <img src="media/bcf3575c02341c07bbde50a6c595aad3.png" alt="https://www.wolfcstech.com/images/1315506-1ec111f30d81ac1a.png">
+     </a></p>
+<p>With <code>RTSPServer::RTSPClientSession</code> Thereafter, through its <code>handleCmd_SETUP()</code> process <code>SETUP</code> request. At the same time, according to the settings of the session, set <code>playAfterSetup</code>.</p>
+<p>When not be created <code>RTSPServer::RTSPClientSession</code>, but the authentication is
+successful, the <code>handleCmd_sessionNotFound()</code> return 454 error response to the
+client.</p>
+<p><em>But if the authentication fails, it does not seem to give the client any response.</em></p>
+<h2 id="processing-of-teardown-play-pause-getparameter-setparameter-requests"><a name="processing-of-teardown-play-pause-getparameter-setparameter-requests" class="anchor-navigation-ex-anchor" href="#processing-of-teardown-play-pause-getparameter-setparameter-requests"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Processing of TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER requests</h2>
+<p>The processing of the <code>TEARDOWN</code>, <code>PLAY</code>, <code>PAUSE</code>, <code>GET_PARAMETER</code> and <code>SET_PARAMETER</code> requests are as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">} else if (strcmp(cmdName, &quot;TEARDOWN&quot;) == 0
+    || strcmp(cmdName, &quot;PLAY&quot;) == 0 || strcmp(cmdName, &quot;PAUSE&quot;) == 0
+    || strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0
+    || strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+  if (clientSession != NULL) {
+    clientSession-&gt;handleCmd_withinSession(this, cmdName, urlPreSuffix,
+        urlSuffix, (char const*) fRequestBuffer);
+  } else {
+    handleCmd_sessionNotFound();
+  }
+}<br></div></div>
+
+
+<p>These requests are required to initiate a streaming media session after
+creation, thus directly call client session
+structure <code>RTSPServer::RTSPClientSession</code> of <code>handleCmd_withinSession()</code> to deal
+with. When the session configuration does not exist,
+the <code>handleCmd_sessionNotFound()</code> error message back to the client.</p>
+<p>Here <code>GET_PARAMETER</code> and <code>SET_PARAMETER</code> operation is only applied to a particular
+resource identified by the incoming URL,
+the <code>RTSPServer::RTSPClientSession</code> processing of these two methods, the same as
+seen previously applied to the entire operation of the server:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientSession
+::handleCmd_withinSession( RTSPServer::RTSPClientConnection* ourClientConnection,
+    char const* cmdName,
+    char const* urlPreSuffix, char const* urlSuffix,
+    char const* fullRequestStr) {
+. . . . . .
+  } else if (strcmp(cmdName, &quot;GET_PARAMETER&quot;) == 0) {
+    handleCmd_GET_PARAMETER(ourClientConnection, subsession, fullRequestStr);
+  } else if (strcmp(cmdName, &quot;SET_PARAMETER&quot;) == 0) {
+    handleCmd_SET_PARAMETER(ourClientConnection, subsession, fullRequestStr);
+  }
+}
+. . . . . .
+void RTSPServer::RTSPClientSession
+::handleCmd_GET_PARAMETER(RTSPServer::RTSPClientConnection* ourClientConnection,
+    ServerMediaSubsession* /*subsession*/, char const* /*fullRequestStr*/) {
+  // By default, we implement &quot;GET_PARAMETER&quot; just as a &apos;keep alive&apos;, and send back a dummy response.
+  // (If you want to handle &quot;GET_PARAMETER&quot; properly, you can do so by defining a subclass of &quot;RTSPServer&quot;
+  // and &quot;RTSPServer::RTSPClientSession&quot;, and then reimplement this virtual function in your subclass.)
+  setRTSPResponse(ourClientConnection, &quot;200 OK&quot;, fOurSessionId, LIVEMEDIA_LIBRARY_VERSION_STRING);
+}
+void RTSPServer::RTSPClientSession
+::handleCmd_SET_PARAMETER(RTSPServer::RTSPClientConnection* ourClientConnection,
+              ServerMediaSubsession* /*subsession*/, char const* /*fullRequestStr*/) {
+  // By default, we implement &quot;SET_PARAMETER&quot; just as a &apos;keep alive&apos;, and send back an empty response.
+  // (If you want to handle &quot;SET_PARAMETER&quot; properly, you can do so by defining a subclass of &quot;RTSPServer&quot;
+  // and &quot;RTSPServer::RTSPClientSession&quot;, and then reimplement this virtual function in your subclass.)
+  setRTSPResponse(ourClientConnection, &quot;200 OK&quot;, fOurSessionId);
+}<br></div></div>
+
+
+<p><code>RTSPServer::RTSPClientSession</code> The <code>setRTSPResponse()</code> operation is entrusted
+directly to the <code>RTSPServer::RTSPClientConnection</code> corresponding function is
+complete:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class RTSPClientSession: public GenericMediaServer::ClientSession {
+. . . . . .
+    // Shortcuts for setting up a RTSP response (prior to sending it):
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr) { ourClientConnection-&gt;setRTSPResponse(responseStr); }
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr, u_int32_t sessionId) { ourClientConnection-&gt;setRTSPResponse(responseStr, sessionId); }
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr, char const* contentStr) { ourClientConnection-&gt;setRTSPResponse(responseStr, contentStr); }
+    void setRTSPResponse(RTSPClientConnection* ourClientConnection, char const* responseStr, u_int32_t sessionId, char const* contentStr) { ourClientConnection-&gt;setRTSPResponse(responseStr, sessionId, contentStr); }<br></div></div>
+
+<h2 id="processing-of-register-deregister-requests"><a name="processing-of-register-deregister-requests" class="anchor-navigation-ex-anchor" href="#processing-of-register-deregister-requests"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Processing of REGISTER, DEREGISTER requests</h2>
+<p><code>REGISTER</code> and <code>DEREGISTER</code> standard RTSP specification method is not
+well-defined. Here is a quick look at the live 555 for their handling:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">else if (strcmp(cmdName, &quot;REGISTER&quot;) == 0 || strcmp(cmdName, &quot;DEREGISTER&quot;) == 0) {
+       // Because - unlike other commands - an implementation of this command needs
+       // the entire URL, we re-parse the command to get it:
+       char* url = strDupSize((char*) fRequestBuffer);
+       if (sscanf((char*) fRequestBuffer, &quot;%*s %s&quot;, url) == 1) {
+         // Check for special command-specific parameters in a &quot;Transport:&quot; header:
+         Boolean reuseConnection, deliverViaTCP;
+         char* proxyURLSuffix;
+         parseTransportHeaderForREGISTER((const char*) fRequestBuffer,
+             reuseConnection, deliverViaTCP, proxyURLSuffix);
+         handleCmd_REGISTER(cmdName, url, urlSuffix,
+             (char const*) fRequestBuffer, reuseConnection, deliverViaTCP,
+             proxyURLSuffix);
+         delete[] proxyURLSuffix;
+       } else {
+         handleCmd_bad();
+       }
+       delete[] url;
+     }<br></div></div>
+
+<h2 id="handling-of-error-methods"><a name="handling-of-error-methods" class="anchor-navigation-ex-anchor" href="#handling-of-error-methods"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. Handling of error methods</h2>
+<p>When the method of the RTSP message is not recognized <code>RTSPServer::RTSPClientConnection</code> by
+the <code>handleCmd_notSupported()</code> processed:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientConnection::handleCmd_notSupported() {
+  snprintf((char*) fResponseBuffer, sizeof fResponseBuffer,
+      &quot;RTSP/1.0 405 Method Not Allowed\r\nCSeq: %s\r\n%sAllow: %s\r\n\r\n&quot;,
+      fCurrentCSeq, dateHeader(), fOurRTSPServer.allowedCommandNames());
+}<br></div></div>
+
+<p>Here the <code>fResponseBuffer</code> response message filled with a RTSP 405 error.</p>
+<p>According to the RTSP request message type, the process of performing separate
+processing generates an RTSP response message for the corresponding request and
+puts it into the response buffer. After processing, the contents of this buffer
+will be sent to the client:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">send(fClientOutputSocket, (char const*)fResponseBuffer, strlen((char*)fResponseBuffer), 0);<br></div></div>
+
+
+<p>If the streaming session is configured to start playback immediately after
+<code>SETUP</code>, playback will start immediately:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">if (playAfterSetup) {
+  // The client has asked for streaming to commence now, rather than after a
+  // subsequent &quot;PLAY&quot; command.  So, simulate the effect of a &quot;PLAY&quot; command:
+  clientSession-&gt;handleCmd_withinSession(this, &quot;PLAY&quot;, urlPreSuffix, urlSuffix, (char const*)fRequestBuffer);
+}<br></div></div>
+
+
+<p>At the end of the loop body, the contents of the already processed message are
+removed from the request buffer and the remaining unprocessed data is moved to
+the beginning of the buffer:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">unsigned requestSize = (fLastCRLF+4-fRequestBuffer) + contentLength;
+numBytesRemaining = fRequestBytesAlreadySeen - requestSize;
+resetRequestBuffer(); // to prepare for any subsequent request
+if (numBytesRemaining &gt; 0) {
+  memmove(fRequestBuffer, &amp;fRequestBuffer[requestSize], numBytesRemaining);
+  newBytesRead = numBytesRemaining;
+}<br></div></div>
+
+
+<p>Which <code>resetRequestBuffer()</code> is defined as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void RTSPServer::RTSPClientConnection::resetRequestBuffer() {
+  ClientConnection::resetRequestBuffer();
+
+  fLastCRLF = &amp;fRequestBuffer[-3]; // hack: Ensures that we don&apos;t think we have end-of-msg if the data starts with &lt;CR&gt;&lt;LF&gt;
+  fBase64RemainderCount = 0;
+}<br></div></div>
+
+
+<p><code>ClientConnection::resetRequestBuffer()</code> The definition is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void GenericMediaServer::ClientConnection::resetRequestBuffer() {
+  fRequestBytesAlreadySeen = 0;
+  fRequestBufferBytesLeft = sizeof fRequestBuffer;
+}<br></div></div>
+
+<p>I.e. <code>resetRequestBuffer()</code> reset
+the <code>fRequestBytesAlreadySeen</code>, <code>fRequestBufferBytesLeft</code>, <code>fLastCRLF</code> and <code>fBase64RemainderCount</code> other
+states. Note that <code>newBytesRead</code> is updated, so if there are still data for
+unprocessed incomplete messages in the buffer, these states will be updated
+correctly at the beginning of the next iteration of the loop.</p>
+<p>Finally, the <code>RTSPServer::RTSPClientConnection::handleRequestBytes()</code> last function
+needed closes socket:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">--fRecursionCount;
+if (!fIsActive) {
+  if (fRecursionCount &gt; 0) closeSockets(); else delete this;
+  // Note: The &quot;fRecursionCount&quot; test is for a pathological situation where we reenter the event loop and get called recursively
+  // while handling a command (e.g., while handling a &quot;DESCRIBE&quot;, to get a SDP description).
+  // In such a case we don&apos;t want to actually delete ourself until we leave the outermost call.
+}<br></div></div>
+
+
+<p><a href="https://www.wolfcstech.com/about/donate.html" target="_blank">Reward</a></p>
+<p>Done.</p>
+<h2 id="live555-source-code-analysis-series"><a name="live555-source-code-analysis-series" class="anchor-navigation-ex-anchor" href="#live555-source-code-analysis-series"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. Live555 source code analysis series</h2>
+<ol>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_introduction.html">Live555 Source code analysis: Introduction </a></li>
+<li>[live555 Source code analysis: Infrastructure ]Live555 - Live555 source code analysis_infrastructure.html)</li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_mediaserver.html">live555 Source code analysis: MediaSever </a></li>
+<li><a href="Live555%20-%20Wireshark%20capture%20packet%20analysis%20RTSP_RTP_RTCP%20basic%20working%20process.html">Wireshark capture packet analysis RTSP/RTP/RTCP Basic working process </a></li>
+<li><a href="https://www.wolfcstech.com/2017/09/03/live555_src_analysis_rtspserver/" target="_blank">live555 Source code analysis: RTSPServer </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_describe%20processing.html">live555 Source code analysis: DESCRIBE processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_setup%20processing.html">live555 Source code analysis: SETUP processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20processing.html">live555 Source code analysis :PLAY processing </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_RTSPServer%20component%20structure.html">live555 Source code analysis: RTSPServer component structure </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_servermediasession.html">live555 Source code analysis: </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_subsession%20SDP%20line%20generation.html">ServerMediaSession live555 Source code analysis: sub-session SDP line generation </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_Subsession%20SETUP.html">live555 Source code analysis: sub-session SETUP </a></li>
+<li><a href="Live555%20-%20Live555%20source%20code%20analysis_play%20start.html">live555 Source code analysis: play start</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html" class="navigation navigation-prev " aria-label="Previous page: Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Live555 - Live555 source code analysis_describe processing.html" class="navigation navigation-next " aria-label="Next page: Live555 - Live555 source code analysis_describe processing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Live555 - Live555 source code analysis_rtspserver","level":"1.10.5","depth":2,"next":{"title":"Live555 - Live555 source code analysis_describe processing","level":"1.10.6","depth":2,"path":"Live555 - Live555 source code analysis_describe processing.md","ref":"Live555 - Live555 source code analysis_describe processing.md","articles":[]},"previous":{"title":"Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process","level":"1.10.4","depth":2,"path":"Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.md","ref":"Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Live555 - Live555 source code analysis_rtspserver.md","mtime":"2019-03-05T06:18:58.213Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

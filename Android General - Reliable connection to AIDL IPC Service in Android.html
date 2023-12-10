@@ -1,0 +1,1572 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android General - Reliable connection to AIDL IPC Service in Android · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android General - Reliable connection to AIDL IPC Service in Android</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#reliable-connection-to-aidl-ipc-service-in-android"><b>1. </b>Reliable connection to AIDL IPC Service in Android</a></li><ul><li><span class="title-icon "></span><a href="#android-service-life-cycle"><b>1.1. </b>Android Service life-cycle:</a></li><li><span class="title-icon "></span><a href="#what-is-the-exact-life-cycle-of-a-connection-to-bound-ipc-service"><b>1.2. </b>What is the exact life-cycle of a connection to bound IPC Service:</a></li><li><span class="title-icon "></span><a href="#conclusion"><b>1.3. </b>Conclusion:</a></li></ul></ul></div><a href="#reliable-connection-to-aidl-ipc-service-in-android" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="reliable-connection-to-aidl-ipc-service-in-android"><a name="reliable-connection-to-aidl-ipc-service-in-android" class="anchor-navigation-ex-anchor" href="#reliable-connection-to-aidl-ipc-service-in-android"><i class="fa fa-link" aria-hidden="true"></i></a>1. Reliable connection to AIDL IPC Service in Android</h1>
+<p>By <em>Vasiliy</em>| June 9th, 2016|<a href="https://www.techyourchance.com/category/android-development/" target="_blank">Android
+development</a>|<a href="https://www.techyourchance.com/reliable-connection-aidl-ipc-service-android/#comments" target="_blank">5
+Comments</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#reliable-connection-to-aidl-ipc-service-in-android"><strong>Reliable connection to AIDL IPC Service in Android</strong></a><ul>
+<li><a href="#android-service-life-cycle"><strong>Android Service life-cycle:</strong></a></li>
+<li><a href="#what-is-the-exact-life-cycle-of-a-connection-to-bound-ipc-service"><strong>What is the exact life-cycle of a connection to bound IPC Service:</strong></a></li>
+<li><a href="#conclusion"><strong>Conclusion:</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>The following statement opens the <a href="https://developer.android.com/guide/components/services.html" target="_blank">official Services documentation
+page</a>:</p>
+<p>A Service is an application component that can perform long-running operations
+in the background, and it does not provide a user interface</p>
+<p>There are two mechanisms by which application&#x2019;s logic can interact with Service:
+start it, or bind it. In this post we are only concerned with bound Services.
+The <a href="https://developer.android.com/guide/components/bound-services.html" target="_blank">official documentation on Bound
+Services</a> starts
+with the following statement:</p>
+<p>A bound service is the server in a client-server interface. It allows components
+(such as activities) to bind to the service, send requests, receive responses,
+and perform interprocess communication (IPC)</p>
+<p>We are going to deep dive into bound IPC Services (i.e. Services that run in
+different process), and discuss how exactly we can establish a reliable
+connection to Services in another processes.</p>
+<h2 id="android-service-life-cycle"><a name="android-service-life-cycle" class="anchor-navigation-ex-anchor" href="#android-service-life-cycle"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Android Service life-cycle:</h2>
+<p>Android Service&#x2019;s life-cycle is tricky &#x2013; it can be started, bound, or both.
+Furthermore, Service&#x2019;s life-cycle changes depending on the value it returns from
+its <em>onStartCommand()</em> method, and depending on the flags used
+in <em>bindService()</em> call.</p>
+<p><a href="https://developer.android.com/guide/components/bound-services.html" target="_blank">Official documentation on bound
+services</a> provides
+very basic information which isn&#x2019;t sufficient for developers to implement
+reliable services, and even contains plainly wrong statements (as will be
+discussed later in this post). While many blogs, tutorials and StackOverflow
+questions attempt to provide additional information on Services, almost no
+source discusses how exactly the clients, which bind to Services, perceive
+Services&#x2019; life-cycle, and how to account for that life-cycle on client&#x2019;s side of
+connection. This post attempts to provide that crucial piece of information by
+looking at the connection to bound IPC Services from client&#x2019;s point of view.</p>
+<p><strong>How bound IPC Service connection&#x2019;s life-cycle is different from life-cycle of
+the Service itself:</strong></p>
+<p>From client&#x2019;s point of view, the &#x201C;effective&#x201D; life-cycle of IPC Service is
+shorter than the actual one &#x2013; it starts when the client executes bindService()
+call, and ends when the client calls unbindService(). Client shouldn&#x2019;t be aware
+whether the Service existed before the client attempted to bind to it, or
+whether the Service is going to die once the client unbinds from it [side note:
+clients shouldn&#x2019;t be aware, but sometimes developers force their clients to be
+aware (which is a bad idea); nothing else could explain the popularity of <a href="http://stackoverflow.com/a/5921190/2463035" target="_blank">this
+StackOverflow answer</a>].</p>
+<p>Although the &#x201C;effective&#x201D; life-cycle (as seen from client&#x2019;s point of view) is
+shorter, it does not imply that it is simpler. For instance, there is widely
+accepted knowledge that bound IPC Services can crash or be killed by OS (in
+which case it might, or might not, be restarted by OS &#x2013; will be discussed
+later), but almost no source addresses the question of what implications does
+Service crash have on clients that are bound to it. It turns out (and will be
+discussed shortly), that clients can and should handle this situation
+gracefully, and that service crash, as seen from client&#x2019;s point of view, might
+be both recoverable and irrecoverable error, depending on circumstances.</p>
+<h2 id="what-is-the-exact-life-cycle-of-a-connection-to-bound-ipc-service"><a name="what-is-the-exact-life-cycle-of-a-connection-to-bound-ipc-service" class="anchor-navigation-ex-anchor" href="#what-is-the-exact-life-cycle-of-a-connection-to-bound-ipc-service"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. What is the exact life-cycle of a connection to bound IPC Service:</h2>
+<p>The life-cycle of a connection to bound IPC Service (the &#x201C;effective&#x201D; life-cycle
+of the Service from client&#x2019;s point of view) is summarized in the following
+diagram:</p>
+<p>     <a href="media/8919cced1f6350039edab4f5063acb97.png" rel="grouped" title target="_self" class="fancybox">
+       <img src="media/8919cced1f6350039edab4f5063acb97.png" alt>
+     </a></p>
+<p>In order to make the following discussions clear, let&#x2019;s define three types of
+errors which can occur while the client is being connected to an IPC Service:</p>
+<ul>
+<li><p>Recoverable error: an error from which the client can recover while the
+Service is bound (without making a rebind attempt).</p>
+</li>
+<li><p>Irrecoverable error: an error from which the client can&#x2019;t recover while the
+Service is bound &#x2013; in order to handle irrecoverable error the client will
+need to attempt to rebind the Service (unbind and bind again).</p>
+</li>
+<li><p>Fatal error: an error after which the client should assume that the Service
+won&#x2019;t be available.</p>
+</li>
+</ul>
+<p>Looking at the above diagram, we can see &#x201C;paths&#x201D; having three different colors.
+The color codes mean:</p>
+<ul>
+<li><p>Green: this &#x201C;path&#x201D; corresponds to normal flow &#x2013; the client binds to Serivce,
+uses it and unbinds while either not encountering any errors along the way,
+or handling the encountered errors correctly.</p>
+</li>
+<li><p>Orange: this &#x201C;path&#x201D; corresponds to sub-flow of recoverable errors &#x2013; the
+connection to Service had been lost at some point, but was restored later.</p>
+</li>
+<li><p>Red: this &#x201C;path&#x201D; corresponds to sub-flow of fatal error &#x2013; either the service
+couldn&#x2019;t be bound, or the connection was lost and never restored, and the
+client couldn&#x2019;t handle this irrecoverable error correctly.</p>
+</li>
+</ul>
+<p>It is also important to note, that connection&#x2019;s life-cycle can be &#x201C;terminated&#x201D;
+in either of three states:</p>
+<ul>
+<li><p>STATE_UNBOUND: this would be a terminating state in case the client calls
+unbindService() by itself.</p>
+</li>
+<li><p>STATE_BINDING_FAILED: this would be a terminating state in case the client
+couldn&#x2019;t bind to IPC Service at all. This is a fatal error, and IMHO there
+is no reason to attempt to rebind the Service again.</p>
+</li>
+<li><p>STATE_BOUND_DISCONNECTED: this would be a terminating state in case an
+irrecoverable error took place, but client wasn&#x2019;t designed to handle it
+correctly &#x2013; it remains stuck in this state indefinitely long, or until
+client&#x2019;s life-cycle callback (e.g. onStop()) invoked.</p>
+</li>
+</ul>
+<p><strong>How can we account for connection&#x2019;s life-cycle when writing clients of bound
+IPC Services:</strong></p>
+<p>So far we saw that in addition to a non-trivial life-cycle of bound IPC Service,
+there is also non-trivial life-cycle of client&#x2019;s connection to it, which makes a
+task of writing a reliable client a real challenge.</p>
+<p>Since the states shown in the above diagram are abstract (in a sense that
+framework does not expose them as constants or enums), I began by
+implementing <em>IpcServiceConnector</em> class which wraps the connection, derives its
+state, and exposes this information to the outside world as state constants.
+Actually it does a bit more than that, but let me not repeat myself &#x2013; it is all
+summed up in javadoc in details.</p>
+<p>One important note is that IpcServiceConnector was designed to be used by
+background worker threads rather than main UI thread &#x2013; some of its methods would
+block a calling thread, which is not acceptable in case of UI thread. The
+rationale was simple &#x2013; you can always offload work from UI thread to background
+threads.</p>
+<p>The method that will allow us to implement reliable clients is waitForState()
+(by invoking this method we can make backgrounds thread wait until connection
+transitions to a specific state):</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">/**
+ * Call to this method will block the calling thread until this connector transitions to the
+ * specified state, or until the specified amount of time passes If the connector is already in
+ * the requested state then this method returns immediately.
+
+ *
+ * NOTE: {@link ServiceConnection#onServiceConnected(ComponentName, IBinder)} and
+ * {@link ServiceConnection#onServiceDisconnected(ComponentName)} will be invoked BEFORE
+ * threads which are waiting due to calls to this method are unblocked. This allows you to
+ * use ServiceConnection&apos;s callbacks in order perform the required setup before the execution
+ * of the blocked threads continues.
+
+ *
+ * This method MUST NOT be called from UI thread.
+ * @param targetState IpcServiceConnector&apos;s state in which the calling thread should be
+ *                    unblocked. Should be either of:
+ *                    {@link #STATE_NONE}
+ *                    {@link #STATE_BOUND_WAITING_FOR_CONNECTION}
+ *                    {@link #STATE_BOUND_CONNECTED}
+ *                    {@link #STATE_BOUND_DISCONNECTED}
+ *                    {@link #STATE_UNBOUND}
+ *                    {@link #STATE_BINDING_FAILED}
+ *
+ * @param blockingTimeout the period of time (in milliseconds) after which the calling thread will
+ *                        be unblocked (regardless of the state of this IpcServiceConnector)
+ * @return true if target state was reached; false otherwise
+ */
+@WorkerThread
+public boolean waitForState(int targetState, int blockingTimeout) {
+    ...
+}<br></div></div>
+
+<p>In the tutorial application
+(source <a href="https://github.com/techyourchance/android_ipc_service_connector" target="_blank">here</a>)
+the client is Activity that should display accurate date and time on the screen
+(I chose Activity instead of Service in order to simplify the code; not sure
+that it worked that way though). The date is provided by a Service which is
+exposed through AIDL and running in a separate child process (this is the
+closest we can get to simulating a real IPC Service in a single application).
+Except for fetching from the Service an accurate date and time, the client can
+also make the Service crash by calling a special pre-defined method. This
+functionality is available to app users on special button click:</p>
+<p>     <a href="media/fd71b8f7347f3f35b9852bd512e1b817.png" rel="grouped" title="IPC service connector tutorial screenshot" target="_self" class="fancybox">
+       <img src="media/fd71b8f7347f3f35b9852bd512e1b817.png" alt="IPC service connector tutorial screenshot">
+     </a></p>
+<p>Since client&#x2019;s code is also heavily commented, I will post it here instead of
+repeating myself:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = &quot;MainActivity&quot;;
+
+    private static final int CONNECTION_TIMEOUT = 5000; // ms
+
+    private static final long DATE_REFRESH_INTERVAL = 100; // ms
+
+    private final ServiceConnection mServiceConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            Log.d(TAG, &quot;onServiceConnected()&quot;);
+            mDateProvider = IDateProvider.Stub.asInterface(service);
+            mBtnCrashService.setEnabled(true);
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            Log.d(TAG, &quot;onServiceDisconnected()&quot;);
+            mBtnCrashService.setEnabled(false);
+            mDateProvider = null;
+        }
+    };
+
+    private IpcServiceConnector mIpcServiceConnector;
+    private IDateProvider mDateProvider;
+
+    private final DateMonitor mDateMonitor = new DateMonitor();
+
+    private TextView mTxtDate;
+    private Button mBtnCrashService;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mIpcServiceConnector = new IpcServiceConnector(this, &quot;DateProviderConnector&quot;);
+
+        mTxtDate = (TextView) findViewById(R.id.txt_date);
+        mBtnCrashService = (Button) findViewById(R.id.btn_crash_service);
+
+        mBtnCrashService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    mDateProvider.crashService();
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, &quot;onStart(); binding and connecting to IPC service&quot;);
+        if (!bindDateProviderService()) {
+            // service couldn&apos;t be bound - handle this error by disabling the logic which depends
+            // on this service (in this case we will do it in onResume())
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, &quot;onStop(); unbinding IPC service&quot;);
+        mIpcServiceConnector.unbindIpcService();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (mIpcServiceConnector.isServiceBound()) {
+            Log.d(TAG, &quot;onResume(); starting date monitor&quot;);
+            mDateMonitor.start();
+        } else {
+            Log.e(TAG, &quot;onResume(); IPC service is not bound - aborting date monitoring&quot;);
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, &quot;onPause(); stopping date monitor&quot;);
+        mDateMonitor.stop();
+    }
+
+    private boolean bindDateProviderService() {
+        return mIpcServiceConnector.bindAndConnectToIpcService(
+                new Intent(this, DateProviderService.class),
+                mServiceConnection,
+                Context.BIND_AUTO_CREATE);
+    }
+
+
+    private class DateMonitor {
+
+
+        private final Runnable mConnectionInProgressNotification = new Runnable() {
+            @Override
+            public void run() {
+                mTxtDate.setText(&quot;connecting to IPC service...&quot;);
+            }
+        };
+
+        private final Runnable mDateNotification = new Runnable() {
+            @Override
+            public void run() {
+                mTxtDate.setText(mCurrentDate);
+            }
+        };
+
+        private String mCurrentDate = &quot;-&quot;;
+        private boolean mConnectionFailure = false;
+
+        private final Handler mMainHandler = new Handler(Looper.getMainLooper());
+
+        private Thread mWorkerThread;
+        private Thread mOldWorkerThread;
+
+        public void start() {
+
+            // make sure we stop the worker thread, but keep reference to it
+            if (mWorkerThread != null) {
+                mOldWorkerThread = mWorkerThread;
+                stop();
+            }
+
+            mWorkerThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+
+                    // make this thread wait until the old thread dies
+                    if (mOldWorkerThread != null) {
+                        try {
+                            mOldWorkerThread.join();
+                        } catch (InterruptedException e) {
+                            // set the interrupted status back (it was cleared in join())
+                            Thread.currentThread().interrupt();
+                        }
+                        mOldWorkerThread = null;
+                    }
+
+                    mConnectionFailure = false;
+                    mCurrentDate = &quot;-&quot;;
+
+                    // loop until interrupted
+                    while (!Thread.currentThread().isInterrupted()) {
+
+                        updateDate();
+
+                        try {
+                            Thread.sleep(DATE_REFRESH_INTERVAL);
+                        } catch (InterruptedException e) {
+                            // set the interrupted status back (it was cleared in sleep())
+                            Thread.currentThread().interrupt();
+                        }
+                    }
+                }
+            });
+            mWorkerThread.start();
+        }
+
+        public void stop() {
+            if (mWorkerThread != null) {
+                mWorkerThread.interrupt();
+                mWorkerThread = null;
+            }
+        }
+
+        @WorkerThread
+        private void updateDate() {
+
+            /*
+             We don&apos;t want the date displayed being stuck if we ever need to wait for connection,
+             therefore we show informative notification.
+             The notification should be cancelled if the service is connected
+             */
+            if (!mConnectionFailure) {
+                mMainHandler.postDelayed(mConnectionInProgressNotification, 100);
+            }
+
+            // this call can block the worker thread for up to CONNECTION_TIMEOUT milliseconds
+            if (mIpcServiceConnector.waitForState(IpcServiceConnector.STATE_BOUND_CONNECTED,
+                    CONNECTION_TIMEOUT)) { // IPC service connected
+
+                mConnectionFailure = false;
+                mMainHandler.removeCallbacks(mConnectionInProgressNotification);
+
+                try {
+                    mCurrentDate = mDateProvider.getDate();
+                } catch (RemoteException e) {
+                    // this exception can still be thrown (e.g. service crashed, but the system hasn&apos;t
+                    // notified us yet)
+                    mCurrentDate = &quot;-&quot;;
+                    e.printStackTrace();
+                } catch (NullPointerException e) {
+                    /*
+                     Since mDateProvider is assigned/cleared on UI thread, but is being used on
+                     worker thread, there is a chance of race condition that will result in NPE.
+                     We could either add synchronization, or catch NPE - I chose the latter in
+                     order to simplify the (already complex) example
+                     */
+                    mCurrentDate = &quot;-&quot;;
+                    e.printStackTrace();
+                }
+            } else { // could not connect to IPC service
+                Log.e(TAG, &quot;connection attempt timed out - attempting to rebind to the service&quot;);
+                notifyUserConnectionAttemptFailed();
+
+                /*
+                 Connection error handling here. I just attempt to rebind to the service, but a real
+                 error handling could also employ some extrapolation of cached data, etc.
+                 If this is a fatal error from your application&apos;s point ov view, then unbind from
+                 the service and stop the worker thread.
+                  */
+
+                mConnectionFailure = true;
+
+                mIpcServiceConnector.unbindIpcService();
+                if (!bindDateProviderService()) {
+                    Log.e(TAG, &quot;rebind attempt failed - stopping DateMonitor completely&quot;);
+                    DateMonitor.this.stop();
+                }
+
+                return;
+            }
+
+            mMainHandler.post(mDateNotification);
+        }
+
+        private void notifyUserConnectionAttemptFailed() {
+            MainActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(
+                            MainActivity.this,
+                            &quot;connection attempt timed out - rebinding&quot;,
+                            Toast.LENGTH_LONG)
+                            .show();
+                }
+            });
+        }
+    }
+}<br></div></div>
+
+<p>the main part of the code is an inner class DateMonitor &#x2013; this class spawns a
+new thread, makes sure that IPC Service is connected, queries the Service for a
+data and handles all the errors (except for a single fatal error which would
+occur if initial binding wouldn&#x2019;t succeed).</p>
+<p>I encourage you to download the <a href="https://github.com/techyourchance/android_ipc_service_connector" target="_blank">source of a tutorial
+application</a>,
+install it and play around. You will discover a very interesting system&#x2019;s policy
+concerning bound, but crashing IPC Services. You can also use DDMS in order to
+kill the child process in which the Service runs, thus simulating the Service
+being killed by OS. You might be surprised to find out that the system treats
+killed and crashed Services very differently.</p>
+<p>Happy shell users could kill the child process with a command similar to this
+one:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">adb shell ps | grep childProcess | perl -ane &apos;END {print @F[1]}&apos; | xargs adb shell kill<br></div></div>
+
+<p>and even automate this process in order to see what happens when the Service is
+being killed perpetually (and if you do that &#x2013; please let me know about your
+results in comments).</p>
+<h2 id="conclusion"><a name="conclusion" class="anchor-navigation-ex-anchor" href="#conclusion"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Conclusion:</h2>
+<p>In this post we saw that, though far from trivial, it is possible to implement
+clients that establish reliable, crash and kill tolerant connections to IPC
+Services. This becomes possible once we &#x201C;distill&#x201D; the states of connections to
+bound IPC services, and understand how various transitions between these states
+should be handled. We also discovered that the system treats crashed and killed
+bound IPC Services differently.</p>
+<p>Please leave your comments and questions below, and consider subscribing to our
+newsletter if you liked the post.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android General - Reliable connection to AIDL IPC Service in Android","level":"1.7.1","depth":2,"next":{"title":"Android Binder","level":"1.8","depth":1,"ref":"","articles":[]},"previous":{"title":"Android General","level":"1.7","depth":1,"ref":"","articles":[{"title":"Android General - Reliable connection to AIDL IPC Service in Android","level":"1.7.1","depth":2,"path":"Android General - Reliable connection to AIDL IPC Service in Android.md","ref":"Android General - Reliable connection to AIDL IPC Service in Android.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android General - Reliable connection to AIDL IPC Service in Android.md","mtime":"2018-12-18T02:20:01.914Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

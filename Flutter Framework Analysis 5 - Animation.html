@@ -1,0 +1,1523 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter Framework Analysis 5 - Animation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Flutter Framework Analysis 6 - Layout.html" />
+    
+    
+    <link rel="prev" href="Flutter Framework Analysis 4 - Flutter Framework Operation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Flutter Framework Analysis 5 - Animation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#flutter-frame-analysis-5----animation"><b>1. </b>Flutter Frame Analysis (5) -- Animation</a></li><ul><li><span class="title-icon "></span><a href="#foreword"><b>1.1. </b>Foreword</a></li><li><span class="title-icon "></span><a href="#example"><b>1.2. </b>example</a></li><li><span class="title-icon "></span><a href="#analysis"><b>1.3. </b>analysis</a></li><li><span class="title-icon "></span><a href="#to-sum-up"><b>1.4. </b>to sum up</a></li></ul></ul></div><a href="#flutter-frame-analysis-5----animation" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="flutter-frame-analysis-5----animation"><a name="flutter-frame-analysis-5----animation" class="anchor-navigation-ex-anchor" href="#flutter-frame-analysis-5----animation"><i class="fa fa-link" aria-hidden="true"></i></a>1. Flutter Frame Analysis (5) -- Animation</h1>
+<p>Flutter Framework Analysis and Analysis Series:</p>
+<p><a href="Flutter%20Framework%20Analysis%201%20-%20Overview%20and%20Window.html">&quot;Flutter Framework Analysis (1) - Overview and Window&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%202%20-%20Initialization.html">&quot;Flutter Framework Analysis (2) - Initialization&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%203%20-%20Widget,%20Element%20and%20RenderObject.html">&quot;Flutter Framework Analysis (3) - Widget, Element and RenderObject&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%204%20-%20Flutter%20Framework%20Operation.html">&quot;Flutter Framework Analysis (4) - Flutter Framework Operation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%205%20-%20Animation.html">&quot;Flutter Framework Analysis (5) - Animation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%206%20-%20Layout.html">&quot;Flutter Framework Analysis (6) - Layout&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%207%20-%20Drawing.html">&quot;Flutter Framework Analysis (7) - Drawing&quot;</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#flutter-frame-analysis-5-animation"><strong>Flutter Frame Analysis (5) -- Animation</strong></a><ul>
+<li><a href="#foreword"><strong>Foreword</strong></a></li>
+<li><a href="#example"><strong>example</strong></a></li>
+<li><a href="#analysis"><strong>analysis</strong></a></li>
+<li><a href="#to-sum-up"><strong>to sum up</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Foreword</h2>
+<p>The first four articles introduce the full picture of the Flutter framework, and
+I believe that everyone has an overall understanding of the Flatter
+framework. This series of articles is always described around the various stages
+of the rendering pipeline&apos;s operation. We know that the first thing that runs
+after the Vsync signal comes is the Animate phase. This phase is run
+from <code>window</code> the <code>onBeginFrame</code> function called back from the engine . Then this
+article will introduce the basic principles of animation of the Flutter
+framework.</p>
+<h2 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. example</h2>
+<p>The so-called animation is actually a series of continuously changing pictures
+displayed in a very short time frame by frame, which is an animation in the eyes
+of the human eye. Here we give a simple example to explain how to run an
+animation in Flutter:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">import &apos;package:flutter/material.dart&apos;;
+
+void main() {
+  runApp(MaterialApp(home: LogoAnim()));
+}
+
+class LogoAnim extends StatefulWidget {
+  _LogoAnimState createState() =&gt; _LogoAnimState();
+}
+
+class _LogoAnimState extends State&lt;LogoAnim&gt; with SingleTickerProviderStateMixin {
+  Animation&lt;double&gt; animation;
+  AnimationController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller =
+        AnimationController(duration: const Duration(seconds: 2), vsync: this);
+    animation = Tween&lt;double&gt;(begin: 0, end: 300).animate(controller)
+      ..addListener(() {
+        setState(() {
+        });
+      });
+    controller.forward(from: 0);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 10),
+        height: animation.value,
+        width: animation.value,
+        child: FlutterLogo(),
+      ),
+    );
+  }
+
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+}<br></div></div>
+
+<p>This animation is a Flutter logo that displays a small to large gradient on the
+phone screen. From the above code we can see that there are a few things to do
+to implement an animation in Flutter.</p>
+<ol>
+<li><p>The first thing to apply animation <code>Widget</code> is <code>StatefulWidget</code>. It has Stateto
+be mixed in ( <code>mixin</code>) <code>SingleTickerProviderStateMixin</code>.</p>
+</li>
+<li><p>In order <code>initState()</code> to add animation-related initialization, here we
+instantiate two classes <code>AnimationController</code> and <code>Animation</code>. When
+instantiating, <code>AnimationController</code> we passed in two parameters, one is the
+duration of the animation, the other is <code>State</code> itself, here is actually used
+to mix in <code>SingleTickerProviderStateMixin</code>. When instantiating another
+one <code>Animation</code>, we first instantiate one <code>Tween</code>. This class actually
+represents a linear change from minimum to maximum. So when you instantiate,
+you need to pass in the start and end values. Then call <code>animate()</code> and pass in
+the previous one <code>controller</code>. This call will return the <code>Animation</code> instance we
+need . Obviously we need to know the message when the properties of the
+animation change, so here we will register the
+callback by <code>..addListener()</code> giving the <code>Animation</code> instance. This callback only
+does one thing, and that is called <code>setState()</code> to update the UI. The last is
+to call <code>controller.forward()</code> to start the animation.</p>
+</li>
+<li><p>Note <code>build()</code> that we widgetused it in the function when we
+built it animation.value. So the chain here is that the animation will be
+called after receiving the callback <code>setState()</code>, and <code>setState</code> will <code>build()</code> be
+rebuilt after the last article we know in the construction phase of the
+rendering pipeline <code>Widget</code>. When the reconstruction was completed, it was
+used after the change <code>animation.value</code>. This one frame by one frame loop, our
+animation is moving.</p>
+</li>
+<li><p>Finally <code>dispose()</code>, remember to call the <code>controller.dispose()</code> release
+resource when you are at the end .</p>
+</li>
+</ol>
+<p>Next, let&apos;s dive into the Flutter source to see how the animation works.</p>
+<h2 id="analysis"><a name="analysis" class="anchor-navigation-ex-anchor" href="#analysis"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. analysis</h2>
+<p>First let&apos;s take a look at the mix <code>State</code> in <code>SingleTickerProviderStateMixin</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">mixin SingleTickerProviderStateMixin&lt;T extends StatefulWidget&gt; on State&lt;T&gt; implements TickerProvider {
+  Ticker _ticker;
+
+  @override
+  Ticker createTicker(TickerCallback onTick) {
+    _ticker = Ticker(onTick, debugLabel: &apos;created by $this&apos;);
+    return _ticker;
+  }
+
+  @override
+  void didChangeDependencies() {
+    if (_ticker != null)
+      _ticker.muted = !TickerMode.of(context);
+    super.didChangeDependencies();
+  }
+}<br></div></div>
+
+
+<p>This mixup actually does one thing, implement <code>createTicker()</code> to instantiate
+a <code>Ticker</code> class. In another function <code>didChangeDependencies()</code>, there is such a line
+of code <code>_ticker.muted = !TickerMode.of(context);</code>. This line of code
+means <code>State</code> whether it is <code>mute</code> its own when the animated dependency in the element
+tree changes <code>_ticker</code>. One scene is that when the animation of the current page
+is still playing, the user navigates to another page, and the animation of the
+current page does not need to be played again. Otherwise, the animation may
+continue to play when the page is switched back, and the control place is Here,
+pay attention to <code>TickerMode.of(context)</code> this way, we will see it in many places
+in the Flutter framework, basically <code>InheritedWidget</code> the way to find the
+corresponding one from the ancestors of the element tree .</p>
+<p><code>Ticker</code> As the name implies, it is to provide a vsync signal to the
+animation. Let&apos;s take a look at the source code.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class Ticker {
+
+  TickerFuture _future;
+
+  bool get muted =&gt; _muted;
+  bool _muted = false;
+  set muted(bool value) {
+    if (value == muted)
+      return;
+    _muted = value;
+    if (value) {
+      unscheduleTick();
+    } else if (shouldScheduleTick) {
+      scheduleTick();
+    }
+  }
+
+  bool get isTicking {
+    if (_future == null)
+      return false;
+    if (muted)
+      return false;
+    if (SchedulerBinding.instance.framesEnabled)
+      return true;
+    if (SchedulerBinding.instance.schedulerPhase != SchedulerPhase.idle)
+      return true;
+    return false;
+  }
+
+  bool get isActive =&gt; _future != null;
+
+  Duration _startTime;
+
+  TickerFuture start() {
+    _future = TickerFuture._();
+    if (shouldScheduleTick) {
+      scheduleTick();
+    }
+    if (SchedulerBinding.instance.schedulerPhase.index &gt; SchedulerPhase.idle.index &amp;&amp;
+        SchedulerBinding.instance.schedulerPhase.index &lt; SchedulerPhase.postFrameCallbacks.index)
+      _startTime = SchedulerBinding.instance.currentFrameTimeStamp;
+    return _future;
+  }
+
+  void stop({ bool canceled = false }) {
+    if (!isActive)
+      return;
+
+    final TickerFuture localFuture = _future;
+    _future = null;
+    _startTime = null;
+
+    unscheduleTick();
+    if (canceled) {
+      localFuture._cancel(this);
+    } else {
+      localFuture._complete();
+    }
+  }
+
+
+  final TickerCallback _onTick;
+
+  int _animationId;
+
+  @protected
+  bool get scheduled =&gt; _animationId != null;
+
+  @protected
+  bool get shouldScheduleTick =&gt; !muted &amp;&amp; isActive &amp;&amp; !scheduled;
+
+  void _tick(Duration timeStamp) {
+    _animationId = null;
+
+    _startTime ??= timeStamp;
+    _onTick(timeStamp - _startTime);
+
+    if (shouldScheduleTick)
+      scheduleTick(rescheduling: true);
+  }
+
+  @protected
+  void scheduleTick({ bool rescheduling = false }) {
+    _animationId = SchedulerBinding.instance.scheduleFrameCallback(_tick, rescheduling: rescheduling);
+  }
+
+  @protected
+  void unscheduleTick() {
+    if (scheduled) {
+      SchedulerBinding.instance.cancelFrameCallbackWithId(_animationId);
+      _animationId = null;
+    }
+
+  }
+}<br></div></div>
+
+<p>It can be seen that the <code>Ticker</code> main thing is to do something like controlling a
+timer, having <code>start()</code> and <code>stop()</code> and <code>mute</code>. Also records your current
+status <code>isTicking</code>. What we need to pay attention to is <code>scheduleTick()</code> this
+function:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@protected
+  void scheduleTick({ bool rescheduling = false }) {
+    _animationId = SchedulerBinding.instance.scheduleFrameCallback(_tick, rescheduling: rescheduling);
+  }<br></div></div>
+
+<p>You see, here I ran to what we said in the previous
+article <code>SchedulerBinding</code>. <code>Ticker</code> The callback function that will be passed when
+dispatching here <code>_tick</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int scheduleFrameCallback(FrameCallback callback, { bool rescheduling = false }) {
+    scheduleFrame();
+    _nextFrameCallbackId += 1;
+    _transientCallbacks[_nextFrameCallbackId] = _FrameCallbackEntry(callback, rescheduling: rescheduling);
+    return _nextFrameCallbackId;
+  }<br></div></div>
+
+<p><code>Ticker</code> The callback function <code>_tick</code> was added when scheduling one
+frame <code>transientCallbacks</code>. From the previous analysis of the rendering pipeline,
+we know that it <code>transientCallbacks</code> will be executed once <code>window</code> in
+the <code>onBeginFrame</code> callback after the vsync signal arrives . This means that you
+are now in the animation <code>Animate</code> phase of the render pipeline .</p>
+<p>Then let&apos;s take a look <code>Ticker</code> at <code>_tick</code> what the callback function does:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void _tick(Duration timeStamp) {
+   _animationId = null;
+
+   _startTime ??= timeStamp;
+   _onTick(timeStamp - _startTime);
+
+   if (shouldScheduleTick)
+     scheduleTick(rescheduling: true);
+ }<br></div></div>
+
+<p>Here <code>_onTick</code> is the <code>Ticker</code> incoming time when instantiating . <code>_onTick</code> After being
+called, <code>Ticker</code> if you find that your task has not been completed yet, you must
+continue to beat, then schedule a new frame. So the power of watching animation
+is actually from the vsync signal.</p>
+<p>So what is this <code>_onTick</code> again? This function is <code>Ticker</code> passed in
+when instantiated . From the above analysis, we know that <code>Ticker</code> the
+instantiation is done at <code>TickerProvider.createTicker()</code> the time of the call . Who
+is going to call this function? Yes <code>AnimationController</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">AnimationController({
+    double value,
+    this.duration,
+    this.debugLabel,
+    this.lowerBound = 0.0,
+    this.upperBound = 1.0,
+    this.animationBehavior = AnimationBehavior.normal,
+    @required TickerProvider vsync,
+  }) : _direction = _AnimationDirection.forward {
+    _ticker = vsync.createTicker(_tick);
+    _internalSetValue(value ?? lowerBound);
+  }<br></div></div>
+
+<p>Can be seen in its constructor <code>createTicker()</code>, the parameters passed in
+are <code>_ticker</code>. Then look <code>_ticker</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void _tick(Duration elapsed) {
+    _lastElapsedDuration = elapsed;
+    final double elapsedInSeconds = elapsed.inMicroseconds.toDouble() / Duration.microsecondsPerSecond;
+    _value = _simulation.x(elapsedInSeconds).clamp(lowerBound, upperBound);
+    if (_simulation.isDone(elapsedInSeconds)) {
+      _status = (_direction == _AnimationDirection.forward) ?
+        AnimationStatus.completed :
+        AnimationStatus.dismissed;
+      stop(canceled: false);
+    }
+    notifyListeners();
+    _checkStatusChanged();
+  }<br></div></div>
+
+<p>Do this in the callback, calculate and update the new value based on the
+timestamp after the vsync arrives. The calculation here is one <code>_simulation</code>. Why
+are you calling this name? Because this is used to simulate the change of the
+motion state of an object under different external forces at different points in
+time, this is also the essence of animation.</p>
+<p>After the new value is calculated, it is called <code>notifyListeners()</code> to notify the
+observers. Also remember in the initial example that we <code>animation</code> will pass
+the <code>..addListener()</code> added callback after instantiation ? Here the callback will
+be called, which <code>setState()</code> will be called. The next step is the build phase of
+the render pipeline.</p>
+<p>You may have questions when you see this, and things
+are <code>AnimationController</code> done , what is the example <code>Tween</code> used to do?</p>
+<p>From <code>AnimationController</code> the constructor we can see that it only controls between
+[0.0, 1.0], which means that no matter how the animation moves, it only outputs
+values &#x200B;&#x200B;between 0.0 and 1.0 at any time, but our animation has a rotation angle.
+, color gradients, graphic changes, and more complex combinations, obviously we
+have to find a way to convert the value between 0.0 and 1.0 into the angle,
+position, color, transparency, etc. we need, this conversion is done by various
+kinds <code>Animation</code>, As the example says <code>Tween</code>, its task fades the value from 0 to
+300 during the animation. How to do it? After instantiation <code>Tween</code> we will
+call <code>animate()</code> and pass in the <code>AnimationController</code> instance.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Animation&lt;T&gt; animate(Animation&lt;double&gt; parent) {
+    return _AnimatedEvaluation&lt;T&gt;(parent, this);
+  }<br></div></div>
+
+<p>You see, the entrance is one <code>Animation&lt;double&gt;</code>, here
+is <code>AnimationController</code>. The argument is one <code>Animation&lt;T&gt;</code>. This completes the
+change from [0.0, 1.0] to any type.</p>
+<p>How do you change it? This change is actually happening when it is worthwhile.
+The above example will call this when it <code>State.build()</code> is constructed in
+the function . This is actually
+called <code>.widget</code> <code>animation.value</code> <code>getter</code> <code>_AnimatedEvaluation.value</code></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+ T get value =&gt; _evaluatable.evaluate(parent);<br></div></div>
+
+<p><code>_evaluatable</code> It is a <code>Tween</code>, <code>parent</code> is a <code>AnimationController</code>. So, this conversion
+is <code>Tween</code> done by yourself, and only if it knows what output it needs.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">T evaluate(Animation&lt;double&gt; animation) =&gt; transform(animation.value);<br></div></div>
+
+<p>Going <code>transform()</code> inside again</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+  T transform(double t) {
+    if (t == 0.0)
+      return begin;
+    if (t == 1.0)
+      return end;
+    return lerp(t);
+  }<br></div></div>
+
+<p>See the scope limit? The real conversion is <code>lerp()</code> done again .</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@protected
+  T lerp(double t) {
+    return begin + (end - begin) * t;
+  }<br></div></div>
+
+<p>Very simple linear interpolation.</p>
+<p>You have to understand what the <code>Tween</code> animation in Flutter is doing. Just grasp
+what it does in your own <code>transform()</code> function. From the above, you
+can <code>Tween</code> actually do the animation of linear interpolation. <code>Tween</code> Is linear
+interpolation, then if I want to engage in non-linear interpolation
+animation? Then use it <code>CurvedAnimation</code>. Flutter has a large variety of linear
+interpolation animations and non-linear interpolation animations. You can even
+define your own nonlinear animations by simply rewriting the transformation
+functions:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">import &apos;dart:math&apos;;
+class ShakeCurve extends Curve {
+  @override
+  double transform(double t) =&gt; sin(t * pi * 2);
+}<br></div></div>
+
+<p>Ok, the animation in the framework of the Flutter is analyzed here first.</p>
+<h2 id="to-sum-up"><a name="to-sum-up" class="anchor-navigation-ex-anchor" href="#to-sum-up"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. to sum up</h2>
+<p>This article is the fifth in a series of articles on the Flutter framework
+analysis. This series of articles is mainly based on Flutter&apos;s rendering
+pipeline as a clue to analyze its operation. This article is mainly aimed at the
+animation stage of the rendering pipeline, from a low-level perspective on the
+animation mechanism of Flutter. I hope everyone has a basic understanding of
+Flutter&apos;s animation. All kinds of dazzling animation related <code>widgets</code> on this are
+derived on the basis of this, the so-called Daosheng, one life two, two students
+three, three things. If you master the Tao, you will not be confused by all
+things.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html" class="navigation navigation-prev " aria-label="Previous page: Flutter Framework Analysis 4 - Flutter Framework Operation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Flutter Framework Analysis 6 - Layout.html" class="navigation navigation-next " aria-label="Next page: Flutter Framework Analysis 6 - Layout">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter Framework Analysis 5 - Animation","level":"1.11.5","depth":2,"next":{"title":"Flutter Framework Analysis 6 - Layout","level":"1.11.6","depth":2,"path":"Flutter Framework Analysis 6 - Layout.md","ref":"Flutter Framework Analysis 6 - Layout.md","articles":[]},"previous":{"title":"Flutter Framework Analysis 4 - Flutter Framework Operation","level":"1.11.4","depth":2,"path":"Flutter Framework Analysis 4 - Flutter Framework Operation.md","ref":"Flutter Framework Analysis 4 - Flutter Framework Operation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Flutter Framework Analysis 5 - Animation.md","mtime":"2019-07-23T14:31:14.032Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1492 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android OTA - Android OTA upgrade principle and process analysis 7 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android OTA - Android OTA upgrade principle and process analysis 8.html" />
+    
+    
+    <link rel="prev" href="Android OTA - Android OTA upgrade principle and process analysis 6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android OTA - Android OTA upgrade principle and process analysis 7</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#android-ota-upgrade-principle-and-process-analysis-7---recovery-service-core-installpackage-function"><b>1. </b>Android OTA upgrade principle and process analysis (7)---Recovery service core install_package function</a></li><ul><li><span class="title-icon "></span><a href="#1-the-core-of-the-recovery-service-installpackage-upgrade-updatezip-specific"><b>1.1. </b>1. The core of the Recovery service install_package (upgrade update.zip specific)</a></li><li><span class="title-icon "></span><a href="#2-lets-analyze-this-process-along-with-the-above-flow-chart-and-source-code"><b>1.2. </b>2. Let&apos;s analyze this process along with the above flow chart and source code:</a></li></ul></ul></div><a href="#android-ota-upgrade-principle-and-process-analysis-7---recovery-service-core-installpackage-function" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="android-ota-upgrade-principle-and-process-analysis-7---recovery-service-core-installpackage-function"><a name="android-ota-upgrade-principle-and-process-analysis-7---recovery-service-core-installpackage-function" class="anchor-navigation-ex-anchor" href="#android-ota-upgrade-principle-and-process-analysis-7---recovery-service-core-installpackage-function"><i class="fa fa-link" aria-hidden="true"></i></a>1. Android OTA upgrade principle and process analysis (7)---Recovery service core install_package function</h1>
+<p>July 04, 2016 09:43:20 <a href="https://me.csdn.net/LOVE000520" target="_blank">blast - Bevis </a>reading
+number: 477 Tags: <a href="http://so.csdn.net/so/search/s.do?q=ota&amp;t=blog" target="_blank">ota</a>  </p>
+<p>Personal Category: <a href="https://blog.csdn.net/LOVE000520/article/category/6295486" target="_blank">Android-OTA</a></p>
+<p> <a href="http://lib.csdn.net/base/15" target="_blank">Android</a> system Recovery works using update.zip upgrade process analysis (seven) --- Recovery service core install_package function</p>
+<p>Reprinted from: <a href="http://blog.chinaunix.net/uid-22028566-id-3533856.html" target="_blank">http://blog.chinaunix.net/uid-22028566-id-3533856.html</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#android-ota-upgrade-principle-and-process-analysis-7-recovery-service-core-installpackage-function"><strong>Android OTA upgrade principle and process analysis (7)---Recovery service core install_package function</strong></a><ul>
+<li><a href="#1-the-core-of-the-recovery-service-installpackage-upgrade-updatezip-specific"><strong>1. The core of the Recovery service install_package (upgrade update.zip specific)</strong></a></li>
+<li><a href="#2-lets-analyze-this-process-along-with-the-above-flow-chart-and-source-code"><strong>2. Let&apos;s analyze this process along with the above flow chart and source code:</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="1-the-core-of-the-recovery-service-installpackage-upgrade-updatezip-specific"><a name="1-the-core-of-the-recovery-service-installpackage-upgrade-updatezip-specific" class="anchor-navigation-ex-anchor" href="#1-the-core-of-the-recovery-service-installpackage-upgrade-updatezip-specific"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 1. The core of the Recovery service install_package (upgrade update.zip specific)</h2>
+<p>Unlike wipe_data and wipe_cache in the Recovery service, install_package() is a
+unique part of the upgrade update.zip and is the core part. At this point, we
+really started to process our update.zip package. Let&apos;s start analyzing this
+part. Or look at the legend first:</p>
+<p>     <a href="media/9a28969a27c634763ab56932f3a6f456.jpg" rel="grouped" title="http://my.csdn.net/uploads/201204/16/1334555578_4907.jpg" target="_self" class="fancybox">
+       <img src="media/9a28969a27c634763ab56932f3a6f456.jpg" alt="http://my.csdn.net/uploads/201204/16/1334555578_4907.jpg">
+     </a></p>
+<p>  The source files for this part are located at:
+/gingerbread0919/bootable/recovery/install.c. This is a source file without the
+main function, or the source code is posted as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include &lt;ctype.h&gt;
+#include &lt;errno.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;limits.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;sys/wait.h&gt;
+#include &lt;unistd.h&gt;
+
+#include &quot;common.h&quot;
+#include &quot;install.h&quot;
+#include &quot;mincrypt/rsa.h&quot;
+#include &quot;minui/minui.h&quot;
+#include &quot;minzip/SysUtil.h&quot;
+#include &quot;minzip/Zip.h&quot;
+#include &quot;mtdutils/mounts.h&quot;
+#include &quot;mtdutils/mtdutils.h&quot;
+#include &quot;roots.h&quot;
+#include &quot;verifier.h&quot;
+
+#define ASSUMED_UPDATE_BINARY_NAME  &quot;META-INF/com/google/android/update-binary&quot;
+#define PUBLIC_KEYS_FILE &quot;/res/keys&quot;
+
+// If the package contains an update binary, extract it and run it.
+static int
+try_update_binary(const char *path, ZipArchive *zip) {
+    const ZipEntry* binary_entry =
+            mzFindZipEntry(zip, ASSUMED_UPDATE_BINARY_NAME);
+    if (binary_entry == NULL) {
+        mzCloseZipArchive(zip);
+        return INSTALL_CORRUPT;
+    }
+
+    char* binary = &quot;/tmp/update_binary&quot;;
+    unlink(binary);
+    int fd = creat(binary, 0755);
+    if (fd &lt; 0) {
+        mzCloseZipArchive(zip);
+        LOGE(&quot;Can&apos;t make %s\n&quot;, binary);
+        return 1;
+    }
+    bool ok = mzExtractZipEntryToFile(zip, binary_entry, fd);
+    close(fd);
+    mzCloseZipArchive(zip);
+
+    if (!ok) {
+        LOGE(&quot;Can&apos;t copy %s\n&quot;, ASSUMED_UPDATE_BINARY_NAME);
+        return 1;
+    }
+
+    int pipefd[2];
+    pipe(pipefd);
+
+    // When executing the update binary contained in the package, the
+    // arguments passed are:
+    //
+    //   - the version number for this interface
+    //
+    //   - an fd to which the program can write in order to update the
+    //     progress bar.  The program can write single-line commands:
+    //
+    //        progress &lt;frac&gt; &lt;secs&gt;
+    //            fill up the next &lt;frac&gt; part of of the progress bar
+    //            over &lt;secs&gt; seconds.  If &lt;secs&gt; is zero, use
+    //            set_progress commands to manually control the
+    //            progress of this segment of the bar
+    //
+    //        set_progress &lt;frac&gt;
+    //            &lt;frac&gt; should be between 0.0 and 1.0; sets the
+    //            progress bar within the segment defined by the most
+    //            recent progress command.
+    //
+    //        firmware &lt;&quot;hboot&quot;|&quot;radio&quot;&gt; &lt;filename&gt;
+    //            arrange to install the contents of &lt;filename&gt; in the
+    //            given partition on reboot.
+    //
+    //            (API v2: &lt;filename&gt; may start with &quot;PACKAGE:&quot; to
+    //            indicate taking a file from the OTA package.)
+    //
+    //            (API v3: this command no longer exists.)
+    //
+    //        ui_print &lt;string&gt;
+    //            display &lt;string&gt; on the screen.
+    //
+    //   - the name of the package zip file.
+    //
+
+    char** args = malloc(sizeof(char*) * 5);
+    args[0] = binary;
+    args[1] = EXPAND(RECOVERY_API_VERSION);   // defined in Android.mk
+    args[2] = malloc(10);
+    sprintf(args[2], &quot;%d&quot;, pipefd[1]);
+    args[3] = (char*)path;
+    args[4] = NULL;
+
+    pid_t pid = fork();
+    if (pid == 0) {
+        close(pipefd[0]);
+        execv(binary, args);
+        fprintf(stdout, &quot;E:Can&apos;t run %s (%s)\n&quot;, binary, strerror(errno));
+        _exit(-1);
+    }
+    close(pipefd[1]);
+
+    char buffer[1024];
+    FILE* from_child = fdopen(pipefd[0], &quot;r&quot;);
+    while (fgets(buffer, sizeof(buffer), from_child) != NULL) {
+        char* command = strtok(buffer, &quot; \n&quot;);
+        if (command == NULL) {
+            continue;
+        } else if (strcmp(command, &quot;progress&quot;) == 0) {
+            char* fraction_s = strtok(NULL, &quot; \n&quot;);
+            char* seconds_s = strtok(NULL, &quot; \n&quot;);
+
+            float fraction = strtof(fraction_s, NULL);
+            int seconds = strtol(seconds_s, NULL, 10);
+
+            ui_show_progress(fraction * (1-VERIFICATION_PROGRESS_FRACTION),
+                             seconds);
+        } else if (strcmp(command, &quot;set_progress&quot;) == 0) {
+            char* fraction_s = strtok(NULL, &quot; \n&quot;);
+            float fraction = strtof(fraction_s, NULL);
+            ui_set_progress(fraction);
+        } else if (strcmp(command, &quot;ui_print&quot;) == 0) {
+            char* str = strtok(NULL, &quot;\n&quot;);
+            if (str) {
+                ui_print(&quot;%s&quot;, str);
+            } else {
+                ui_print(&quot;\n&quot;);
+            }
+        } else {
+            LOGE(&quot;unknown command [%s]\n&quot;, command);
+        }
+    }
+    fclose(from_child);
+
+    int status;
+    waitpid(pid, &amp;status, 0);
+    if (!WIFEXITED(status) || WEXITSTATUS(status) != 0) {
+        LOGE(&quot;Error in %s\n(Status %d)\n&quot;, path, WEXITSTATUS(status));
+        return INSTALL_ERROR;
+    }
+
+    return INSTALL_SUCCESS;
+}
+
+// Reads a file containing one or more public keys as produced by
+// DumpPublicKey:  this is an RSAPublicKey struct as it would appear
+// as a C source literal, eg:
+//
+//  &quot;{64,0xc926ad21,{1795090719,...,-695002876},{-857949815,...,1175080310}}&quot;
+//
+// (Note that the braces and commas in this example are actual
+// characters the parser expects to find in the file; the ellipses
+// indicate more numbers omitted from this example.)
+//
+// The file may contain multiple keys in this format, separated by
+// commas.  The last key must not be followed by a comma.
+//
+// Returns NULL if the file failed to parse, or if it contain zero keys.
+static RSAPublicKey*
+load_keys(const char* filename, int* numKeys) {
+    RSAPublicKey* out = NULL;
+    * numKeys = 0;
+
+    FILE* f = fopen(filename, &quot;r&quot;);
+    if (f == NULL) {
+        LOGE(&quot;opening %s: %s\n&quot;, filename, strerror(errno));
+        goto exit;
+    }
+
+    int i;
+    bool done = false;
+    while (!done) {
+        ++ * numKeys;
+        out = realloc(out, *numKeys * sizeof(RSAPublicKey));
+        RSAPublicKey* key = out + (*numKeys - 1);
+        if (fscanf(f, &quot; { %i , 0x%x , { %u&quot;,
+                   &amp;(key-&gt;len), &amp;(key-&gt;n0inv), &amp;(key-&gt;n[0])) != 3) {
+            goto exit;
+        }
+        if (key-&gt;len != RSANUMWORDS) {
+            LOGE(&quot;key length (%d) does not match expected size\n&quot;, key-&gt;len);
+            goto exit;
+        }
+        for (i = 1; i &lt; key-&gt;len; ++i) {
+            if (fscanf(f, &quot; , %u&quot;, &amp;(key-&gt;n[i])) != 1) goto exit;
+        }
+        if (fscanf(f, &quot; } , { %u&quot;, &amp;(key-&gt;rr[0])) != 1) goto exit;
+        for (i = 1; i &lt; key-&gt;len; ++i) {
+            if (fscanf(f, &quot; , %u&quot;, &amp;(key-&gt;rr[i])) != 1) goto exit;
+        }
+        fscanf(f, &quot; } } &quot;);
+
+        // if the line ends in a comma, this file has more keys.
+        switch (fgetc(f)) {
+            case &apos;,&apos;:
+                // more keys to come.
+                break;
+
+            case EOF:
+                done = true;
+                break;
+
+            default:
+                LOGE(&quot;unexpected character between keys\n&quot;);
+                goto exit;
+        }
+    }
+
+    fclose(f);
+    return out;
+
+exit:
+    if (f) fclose(f);
+    free(out);
+    * numKeys = 0;
+    return NULL;
+}
+
+int
+install_package(const char *path)
+{
+    ui_set_background(BACKGROUND_ICON_INSTALLING);
+    ui_print(&quot;Finding update package...\n&quot;);
+    ui_show_indeterminate_progress();
+    LOGI(&quot;Update location: %s\n&quot;, path);
+
+    if (ensure_path_mounted(path) != 0) {
+        LOGE(&quot;Can&apos;t mount %s\n&quot;, path);
+        return INSTALL_CORRUPT;
+    }
+
+    ui_print(&quot;Opening update package...\n&quot;);
+
+    int numKeys;
+    RSAPublicKey* loadedKeys = load_keys(PUBLIC_KEYS_FILE, &amp;numKeys);
+    if (loadedKeys == NULL) {
+        LOGE(&quot;Failed to load keys\n&quot;);
+        return INSTALL_CORRUPT;
+    }
+    LOGI(&quot;%d key(s) loaded from %s\n&quot;, numKeys, PUBLIC_KEYS_FILE);
+
+    // Give verification half the progress bar...
+    ui_print(&quot;Verifying update package...\n&quot;);
+    ui_show_progress(
+            VERIFICATION_PROGRESS_FRACTION,
+            VERIFICATION_PROGRESS_TIME);
+
+    int err;
+    err = verify_file(path, loadedKeys, numKeys);
+    free(loadedKeys);
+    LOGI(&quot;verify_file returned %d\n&quot;, err);
+    if (err != VERIFY_SUCCESS) {
+        LOGE(&quot;signature verification failed\n&quot;);
+        return INSTALL_CORRUPT;
+    }
+
+    /* Try to open the package.
+     */
+    ZipArchive zip;
+    err = mzOpenZipArchive(path, &amp;zip);
+    if (err != 0) {
+        LOGE(&quot;Can&apos;t open %s\n(%s)\n&quot;, path, err != -1 ? strerror(err) : &quot;bad&quot;);
+        return INSTALL_CORRUPT;
+    }
+
+    /* Verify and install the contents of the package.
+     */
+    ui_print(&quot;Installing update...\n&quot;);
+    return try_update_binary(path, &amp;zip);
+}<br></div></div>
+
+<h2 id="2-lets-analyze-this-process-along-with-the-above-flow-chart-and-source-code"><a name="2-lets-analyze-this-process-along-with-the-above-flow-chart-and-source-code" class="anchor-navigation-ex-anchor" href="#2-lets-analyze-this-process-along-with-the-above-flow-chart-and-source-code"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 2. Let&apos;s analyze this process along with the above flow chart and source code:</h2>
+<ol>
+<li><p>ensure_path_mount (): First determine whether the partition where the
+updated update.zip package path is mounted. If not, mount it first.</p>
+</li>
+<li><p>load_keys(): Load the public key source file with the path at
+/res/keys. This file is in the root file system of the Recovery image.</p>
+</li>
+<li><p>verify_file(): Signature verification of the upgrade package update.zip
+package.</p>
+</li>
+<li><p>mzOpenZipArchive(): Open the upgrade package and copy the relevant
+information into a temporary ZipArchinve variable. This step did not extract our
+update.zip package.</p>
+</li>
+<li><p>try_update_binary(): In this function, it is the place to upgrade our
+update.zip. This function first copies the update_binary file to the
+/tmp/update_binary of the memory file system based on the zip package
+information we obtained in the previous step and the absolute path of the
+upgrade package. For later use.</p>
+</li>
+<li><p>pipe(): Creates a pipe for communication between the following child
+process and the parent process.</p>
+</li>
+<li><p>fork(): Create a child process. The child process is mainly responsible for
+executing binary (execv(binary, args), that is, executing our installation
+command script), and the parent process is responsible for accepting the
+commands sent by the child process to update the ui display (displaying the
+current progress). Child-to-parent communication depends on pipes.</p>
+</li>
+<li><p>Among them, after creating a child process, the parent process has two
+effects. One is to update the UI display by accepting commands sent by the child
+process through the pipeline. The second is to wait for the child process to
+exit and return INSTALL SUCCESS. The sub-process sends the following commands
+while parsing the execution script:</p>
+<p><code>progress &lt;frac&gt; &lt;secs&gt;</code>: Sets the progress bar according to the second
+parameter secs (seconds).</p>
+<p><code>set_progress &lt;frac&gt;</code>: Set the progress bar directly, and the value of frac is
+between 0.0 and 0.1.</p>
+<p><code>firmware &lt;&quot;hboot&quot;|&quot;radio&quot;&gt; &lt;filename&gt;</code>: Used when upgrading firmware, it is
+no longer used in API V3.</p>
+<p><code>ui_print &lt;string&gt;</code>: Display the string on the screen, which is the print update
+process.</p>
+<p>The role of execv (binary, args) is to execute the binary program. The
+essence of this program is to parse and execute the commands in the
+updater-script script in the update.zip package. As a result, the Recovery
+service enters the process of actually installing the update.zip package.</p>
+<p>The next article continues to analyze the process of parsing and executing
+the updater-script using update-binary.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html" class="navigation navigation-prev " aria-label="Previous page: Android OTA - Android OTA upgrade principle and process analysis 6">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html" class="navigation navigation-next " aria-label="Next page: Android OTA - Android OTA upgrade principle and process analysis 8">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android OTA - Android OTA upgrade principle and process analysis 7","level":"1.4.7","depth":2,"next":{"title":"Android OTA - Android OTA upgrade principle and process analysis 8","level":"1.4.8","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 8.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 8.md","articles":[]},"previous":{"title":"Android OTA - Android OTA upgrade principle and process analysis 6","level":"1.4.6","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 6.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android OTA - Android OTA upgrade principle and process analysis 7.md","mtime":"2018-09-19T08:44:49.016Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

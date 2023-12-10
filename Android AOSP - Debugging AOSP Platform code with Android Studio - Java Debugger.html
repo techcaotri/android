@@ -1,0 +1,1274 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android AOSP - Modify applications and rebuild emulator image effectively.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#android-aosp---debugging-aosp-platform-code-with-android-studio---java-debugger"><b>1. </b>Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger</a></li><ul><li><span class="title-icon "></span><a href="#live-debugging-session-with-screenshots"><b>1.1. </b>Live Debugging Session (with screenshots)</a></li></ul></ul></div><a href="#android-aosp---debugging-aosp-platform-code-with-android-studio---java-debugger" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="android-aosp---debugging-aosp-platform-code-with-android-studio---java-debugger"><a name="android-aosp---debugging-aosp-platform-code-with-android-studio---java-debugger" class="anchor-navigation-ex-anchor" href="#android-aosp---debugging-aosp-platform-code-with-android-studio---java-debugger"><i class="fa fa-link" aria-hidden="true"></i></a>1. Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger</h1>
+<p><a href="http://ronubo.blogspot.com/2016/01/debugging-aosp-platform-code-with.html" target="_blank">Original link</a></p>
+<p>In my previous post about using <strong>JDWP </strong>I have listed the theory and practice
+of connecting and debugging a remote Java based application in Android,
+using <em>adb</em>, <em>ddms</em>, <em>monitor</em>, and <em>jdwp</em>.
+What all IDE&apos;s do for your application debugging is essentially the same; They
+work, and require no introduction. But what happens when you want to debug
+Android Framework code (Android Platform, AOSP, I don&apos;t know why some people
+refer to it as Framework, it&apos;s just a small component in the platform!)?
+The answer for it is that you need to work hard, figure out all kind of JDWP
+connectivity issues, and then find your IDE specific way to both connect,
+instrument (debug), and show the right source code.</p>
+<p>In this post I will detail the steps to make it work with Android Studio.</p>
+<p>Without too many stories about what I like and mostly dislike about Studio, once
+you have:</p>
+<ol>
+<li><p>Built your AOSP platform 
+<code>*( . build/envsetup.sh &amp;&amp; lunch \&lt;your_config\&gt;-\&lt;variant\&gt; &amp;&amp; make ...)*</code></p>
+</li>
+<li><p>Created the Android Studio project for importing to
+<code>*( mmm development/tools/idegen &amp;&amp;  development/tools/idegen/idegen.sh )*</code></p>
+</li>
+<li><p>Imported the project ( open <em>android.ipr</em> from Android Studio)</p>
+</li>
+</ol>
+<p>You can view sources, and efficiently navigate the Java code, which is nice, but
+you can&apos;t do much with it, despite Android Studio&apos;s announcement that it
+&quot;identified Android Framework code&quot;, because Studio still expects an Application
+to be debugged.</p>
+<p>However, Android Studio <strong>does</strong> allow to connect to a remote Java debugger,
+which is exactly what we need in our case!</p>
+<p>The Application selection and port forwarding processes (e.g. who gets port
+8700, when you need another port) are the same as in my previous post, so I will
+not repeat them, but rather concentrate on the steps to configure Android Studio
+to connect to the target over port 8700 (you can do it on any other port
+forwarded app as well).</p>
+<p>Now what you need to do the get the job done is:</p>
+<ol>
+<li><p>Create a Remote debugging configuration</p>
+</li>
+<li><p>Set the port in it</p>
+</li>
+<li><p>Select the Debuggable process.</p>
+<ol>
+<li><p>I recommend to start <em>monitor</em> and then click on the relevant process.
+This will only attach</p>
+</li>
+<li><p>You can also from within the platform itself set a debuggable process
+(won&apos;t work for the system_process if you want to do live debugging, but
+you can actually also take care of that, if you run it manually (adb
+stop firs)</p>
+</li>
+</ol>
+</li>
+<li><p>Hit <em>debug / Run-Debug / ctrl+alt+F9</em>  - This will attach to the process</p>
+</li>
+<li><p>Set your breakpoints  (you can of course do it before Debug).</p>
+</li>
+</ol>
+<p>Some screenshots and explanations are listed below (and so bloat the post. Sorry
+about that, but it seems to help more than just text.)</p>
+<h2 id="live-debugging-session-with-screenshots"><a name="live-debugging-session-with-screenshots" class="anchor-navigation-ex-anchor" href="#live-debugging-session-with-screenshots"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Live Debugging Session (with screenshots)</h2>
+<p>Objective: Enter a breakpoint in the Phone Dialier application when the user
+dials &quot;1&quot; on the DialPad.
+Means: Show the configuration, show a typical connection error, how to
+workaround it, and get the job done!
+Steps:</p>
+<ol>
+<li><p>First, import the Android.ipr  to Studio. You will see something like this:
+     <a href="media/b1edc7fe4555faa5a540a3ed1a2e5808.png" rel="grouped" title="http://3.bp.blogspot.com/-rC5w-6R6EQo/Vqom0OA-1iI/AAAAAAAAA50/PYLeMbp9anA/s1600/aosp-in-studio.png" target="_self" class="fancybox">
+       <img src="media/b1edc7fe4555faa5a540a3ed1a2e5808.png" alt="http://3.bp.blogspot.com/-rC5w-6R6EQo/Vqom0OA-1iI/AAAAAAAAA50/PYLeMbp9anA/s1600/aosp-in-studio.png">
+     </a></p>
+</li>
+<li><p>Create a new Debug Configuration: On Android Studio&apos;s menu: go to <em>Run, Edit Configurations</em> and then click the <em>Remote</em> configuration, and click the <em>+ sign</em> at the top left part of the window.
+     <a href="media/0aa9f24d67f030eb6aafb21cf01ed75a.png" rel="grouped" title="http://2.bp.blogspot.com/-re3zBbq1ans/VqonRLQlPvI/AAAAAAAAA6A/pGOVJ-XkmMM/s1600/run-debug-configurations.png" target="_self" class="fancybox">
+       <img src="media/0aa9f24d67f030eb6aafb21cf01ed75a.png" alt="http://2.bp.blogspot.com/-re3zBbq1ans/VqonRLQlPvI/AAAAAAAAA6A/pGOVJ-XkmMM/s1600/run-debug-configurations.png">
+     </a></p>
+</li>
+<li><p>This will duplicate the configuration. Give it a meaningful name, and edit
+the port (to 8700, or any port. You can create multiple configurations, and
+debug multiple apps simultaneously).</p>
+<p>I called the new configuration <em>AOSP_Java_Debug  </em>, and set the port to 8700 .</p>
+<p>After editing the settings click OK.
+     <a href="media/5cefef0f0ea1448f3122d767d8dcc633.png" rel="grouped" title="http://3.bp.blogspot.com/-bo82tyoVdTE/Vqon7VBRmGI/AAAAAAAAA6M/WhO7Y7BwLXs/s1600/new-remote-configuration.png" target="_self" class="fancybox">
+       <img src="media/5cefef0f0ea1448f3122d767d8dcc633.png" alt="http://3.bp.blogspot.com/-bo82tyoVdTE/Vqon7VBRmGI/AAAAAAAAA6M/WhO7Y7BwLXs/s1600/new-remote-configuration.png">
+     </a></p>
+</li>
+<li><p>You are now ready to debug. Or are you?
+Well, you are not, because there is a connection error. In the next step will
+explain it.
+     <a href="media/4828aa9dbeab8a4cb8c25d9618d26ca3.png" rel="grouped" title="http://4.bp.blogspot.com/-LgbD-gg_u_o/Vqooba4CGEI/AAAAAAAAA6Y/K8C6uzWSwTg/s640/first-failure-no-process-listenting.png" target="_self" class="fancybox">
+       <img src="media/4828aa9dbeab8a4cb8c25d9618d26ca3.png" alt="http://4.bp.blogspot.com/-LgbD-gg_u_o/Vqooba4CGEI/AAAAAAAAA6Y/K8C6uzWSwTg/s640/first-failure-no-process-listenting.png">
+     </a></p>
+</li>
+<li><p>The previous error message told us Android Studio could not connect to port
+8700 on the localhost, which is the DDMS port on our host. Let&apos;s see if it is
+bluffing, by checking what is the status of port 8700 in <em>netstat . </em>We can see
+that no one is listening on this port.
+     <a href="media/1d1935ecce4f2ad3cf09eb6ea9420d33.png" rel="grouped" title="http://4.bp.blogspot.com/-b5i26d_8l4E/Vqoozqtxo3I/AAAAAAAAA6k/ihiKq8-wCNM/s640/nothing-on-port-8700.png" target="_self" class="fancybox">
+       <img src="media/1d1935ecce4f2ad3cf09eb6ea9420d33.png" alt="http://4.bp.blogspot.com/-b5i26d_8l4E/Vqoozqtxo3I/AAAAAAAAA6k/ihiKq8-wCNM/s640/nothing-on-port-8700.png">
+     </a></p>
+</li>
+<li><p>In order to listen on the port, we need DDMS. So the next thing to do is to open <em>monitor </em>from the Android SDK. You could also open DDMS directly from your AOSP build.
+If you want to take care of port forwarding yourself, or not deal with port 8700 - you are more than welcome to do so. After opening <em>monitor </em>you will be in the following state as in the following diagram. Click the process you would like to debug, and you will see that there is a <em>/ 8700 </em>next to its debugging port (that&apos;s the other number in the last column,
+The rest of the column describe the package or &quot;nice name&quot; (set when starting
+app_process/zygotte, I won&apos;t get to that here), and the <strong>PID</strong> (Process id) of
+the app.</p>
+<p><strong>Important for Native debugging: </strong>If you want to use GDB on the native part - <em>--attach</em> to this PID!
+     <a href="media/053ba9a39db3ad63ec59f2440a62a79c.png" rel="grouped" title="http://3.bp.blogspot.com/-QWqdFbicQKI/VqopT04_eNI/AAAAAAAAA6w/ua-Lxx_z9NE/s1600/Now-there-is%2Ba-process-listening-on-port-8700.png" target="_self" class="fancybox">
+       <img src="media/053ba9a39db3ad63ec59f2440a62a79c.png" alt="http://3.bp.blogspot.com/-QWqdFbicQKI/VqopT04_eNI/AAAAAAAAA6w/ua-Lxx_z9NE/s1600/Now-there-is%2Ba-process-listening-on-port-8700.png">
+     </a></p>
+</li>
+<li><p>Let&apos;s set a breakpoint at the relevant line (Just click next to it in the pane)
+     <a href="media/395cddad168aae9cff90d7d6fe2add96.png" rel="grouped" title="http://4.bp.blogspot.com/-uZNgtoneOG0/VqoqOXn-4JI/AAAAAAAAA68/W92P5lyesg0/s1600/breakpoint-when-we-press-1.png" target="_self" class="fancybox">
+       <img src="media/395cddad168aae9cff90d7d6fe2add96.png" alt="http://4.bp.blogspot.com/-uZNgtoneOG0/VqoqOXn-4JI/AAAAAAAAA68/W92P5lyesg0/s1600/breakpoint-when-we-press-1.png">
+     </a></p>
+</li>
+<li><p>Now let&apos;s connect our debugger. Hit the debug button. Now when you try to debug - you will see you are connected (&quot; <em>Connected to the target VM, address: &apos;localhost:8700&apos; , transport: &apos;socket&apos;</em> &quot;). Sweet!
+     <a href="media/30d112f30e1d29b61dffd7201d2dc662.png" rel="grouped" title="http://3.bp.blogspot.com/-78AW9OyRNJw/VqoquoOMWeI/AAAAAAAAA7I/xy2qwRh0PiY/s1600/hit-debug-now-we-are-connected.png" target="_self" class="fancybox">
+       <img src="media/30d112f30e1d29b61dffd7201d2dc662.png" alt="http://3.bp.blogspot.com/-78AW9OyRNJw/VqoquoOMWeI/AAAAAAAAA7I/xy2qwRh0PiY/s1600/hit-debug-now-we-are-connected.png">
+     </a></p>
+</li>
+<li><p>Let&apos;s open the debugged app, and reach our breakpoint. Note the green bug in
+the monitor/DDMS, it means that we are connected. You will also see a
+corresponding message in the Logcat.
+     <a href="media/8f7dfe0c6d0a69b051a969f7b1399ad4.png" rel="grouped" title="http://1.bp.blogspot.com/--m4reXwj8OQ/VqorH8kVP3I/AAAAAAAAA7U/KBUqdp7K-Uk/s1600/open-phone-app-you-can-see-the-green-bug.png" target="_self" class="fancybox">
+       <img src="media/8f7dfe0c6d0a69b051a969f7b1399ad4.png" alt="http://1.bp.blogspot.com/--m4reXwj8OQ/VqorH8kVP3I/AAAAAAAAA7U/KBUqdp7K-Uk/s1600/open-phone-app-you-can-see-the-green-bug.png">
+     </a>
+     <a href="media/388f8eb10b5079d7949358169e004f88.png" rel="grouped" title="http://4.bp.blogspot.com/-LX67vxBRN8w/VqorTRnOV-I/AAAAAAAAA7g/O8kFJuw337M/s400/now-press-1-and-see-the-breakpoint.png" target="_self" class="fancybox">
+       <img src="media/388f8eb10b5079d7949358169e004f88.png" alt="http://4.bp.blogspot.com/-LX67vxBRN8w/VqorTRnOV-I/AAAAAAAAA7g/O8kFJuw337M/s400/now-press-1-and-see-the-breakpoint.png">
+     </a></p>
+</li>
+<li><p>When we press &quot;1&quot; , we will reach our breakpoint. Disregard the &apos;Connection Refused&apos; error message - it was 7 minutes ago - before we opened the monitor!
+     <a href="media/8f2b5ccbac845a2cb067ca534d5392b4.png" rel="grouped" title="http://4.bp.blogspot.com/--WpTqgD3MyY/VqoriDAfhrI/AAAAAAAAA7s/s7MK4mIqoeE/s1600/voila-disregard-the-connection-refused-it-was-7-minutes-ago.png" target="_self" class="fancybox">
+       <img src="media/8f2b5ccbac845a2cb067ca534d5392b4.png" alt="http://4.bp.blogspot.com/--WpTqgD3MyY/VqoriDAfhrI/AAAAAAAAA7s/s7MK4mIqoeE/s1600/voila-disregard-the-connection-refused-it-was-7-minutes-ago.png">
+     </a></p>
+</li>
+<li><p>Now you can proceed debugging. If you single step, you will hear an annoying beep that will not go away until you have resumed / finished the business logic of the button. That&apos;s a good sign - you have felt progress in several senses!
+     <a href="media/bd52083dc32fc0bf71c5b572d233196c.png" rel="grouped" title="http://1.bp.blogspot.com/-EpQsTvvOFzY/VqoryIpcKQI/AAAAAAAAA74/563thdS_254/s1600/you-should-here-a-stuck-beep-well-done.png" target="_self" class="fancybox">
+       <img src="media/bd52083dc32fc0bf71c5b572d233196c.png" alt="http://1.bp.blogspot.com/-EpQsTvvOFzY/VqoryIpcKQI/AAAAAAAAA74/563thdS_254/s1600/you-should-here-a-stuck-beep-well-done.png">
+     </a></p>
+</li>
+<li><p>After resuming, you will see &quot;1&quot; pressed. Hooray!</p>
+</li>
+</ol>
+<p>Documenting is harder than actually doing, so just get doing it, and if you
+found the explanation helpful - please let me know. I really wrote this post
+because I didn&apos;t find any normal answer to that over the internet, am being
+asked about it in my Android Internals/Security/Advanced Native Programming
+classes (\@see  <a href="http://www.thepscg.com/" target="_blank">http://www.thepscg.com</a> ) and outside
+of them, so I am pretty sure it will interest a reader or two.</p>
+<p>Next in line - Native debugging (come on, just use gdb and gdbserver. I am
+willing to give you the pleasure of using ndk-debug et. al...)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Android AOSP - Modify applications and rebuild emulator image effectively">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger","level":"1.6.1","depth":2,"next":{"title":"Android AOSP - Modify applications and rebuild emulator image effectively","level":"1.6.2","depth":2,"path":"Android AOSP - Modify applications and rebuild emulator image effectively.md","ref":"Android AOSP - Modify applications and rebuild emulator image effectively.md","articles":[]},"previous":{"title":"Android AOSP","level":"1.6","depth":1,"ref":"","articles":[{"title":"Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger","level":"1.6.1","depth":2,"path":"Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.md","ref":"Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.md","articles":[]},{"title":"Android AOSP - Modify applications and rebuild emulator image effectively","level":"1.6.2","depth":2,"path":"Android AOSP - Modify applications and rebuild emulator image effectively.md","ref":"Android AOSP - Modify applications and rebuild emulator image effectively.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.md","mtime":"2018-10-04T02:12:36.117Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

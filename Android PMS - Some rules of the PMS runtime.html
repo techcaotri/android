@@ -1,0 +1,1284 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android PMS - Some rules of the PMS runtime · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android PMS - Android 6 PMS Analysis.html" />
+    
+    
+    <link rel="prev" href="Android PMS - Explore the Android PMS service.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android PMS - Some rules of the PMS runtime</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#some-rules-of-the-pms-runtime"><b>1. </b>Some rules of the PMS runtime</a></li><ul><li><span class="title-icon "></span><a href="#apk-file-path"><b>1.1. </b>APK file path</a></li><ul><li><span class="title-icon "></span><a href="#systempriv-app"><b>1.1.1. </b>/system/priv-app</a></li><li><span class="title-icon "></span><a href="#systemapp"><b>1.1.2. </b>/system/app</a></li><li><span class="title-icon "></span><a href="#vendorapp"><b>1.1.3. </b>/vendor/app</a></li><li><span class="title-icon "></span><a href="#oemapp"><b>1.1.4. </b>/oem/app</a></li><li><span class="title-icon "></span><a href="#dataapp"><b>1.1.5. </b>/data/app</a></li></ul><li><span class="title-icon "></span><a href="#how-to-install-apk"><b>1.2. </b>How to install APK</a></li><ul><li><span class="title-icon "></span><a href="#system-application-installation"><b>1.2.1. </b>System application installation</a></li><li><span class="title-icon "></span><a href="#download-apk-from-the-app-store-that-comes-with-the-device"><b>1.2.2. </b>Download apk from the app store that comes with the device</a></li><li><span class="title-icon "></span><a href="#adb-command-installation"><b>1.2.3. </b>ADB command installation</a></li></ul><li><span class="title-icon "></span><a href="#third-party-application-installation"><b>1.3. </b>Third-party application installation</a></li><li><span class="title-icon "></span><a href="#apk-data-storage-location"><b>1.4. </b>Apk data storage location</a></li><ul><li><span class="title-icon "></span><a href="#dataapp_1"><b>1.4.1. </b>/data/app</a></li><li><span class="title-icon "></span><a href="#datadata"><b>1.4.2. </b>/data/data/</a></li></ul><li><span class="title-icon "></span><a href="#pms-configuration-file"><b>1.5. </b>PMS configuration file</a></li><li><span class="title-icon "></span><a href="#system-hardware-features-and-permissions"><b>1.6. </b>System hardware features and permissions</a></li><li><span class="title-icon "></span><a href="#multi-user-management"><b>1.7. </b>Multi-user management</a></li><li><span class="title-icon "></span><a href="#dynamic-management-of-permissions"><b>1.8. </b>Dynamic management of permissions</a></li></ul></ul></div><a href="#some-rules-of-the-pms-runtime" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="some-rules-of-the-pms-runtime"><a name="some-rules-of-the-pms-runtime" class="anchor-navigation-ex-anchor" href="#some-rules-of-the-pms-runtime"><i class="fa fa-link" aria-hidden="true"></i></a>1. Some rules of the PMS runtime</h1>
+<p><a href="http://www.iloveandroid.net/tags/Android%E6%A0%B8%E5%BF%83%E6%9C%8D%E5%8A%A1/" target="_blank">Android core service</a>
+<a href="http://www.iloveandroid.net/categories/Android%E5%BA%95%E5%B1%82%E5%BC%80%E5%8F%91/" target="_blank">Android underlying development</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#some-rules-of-the-pms-runtime"><strong>Some rules of the PMS runtime</strong></a><ul>
+<li><a href="#apk-file-path"><strong>APK file path</strong></a><ul>
+<li><a href="#systempriv-app"><strong>/system/priv-app</strong></a></li>
+<li><a href="#systemapp"><strong>/system/app</strong></a></li>
+<li><a href="#vendorapp"><strong>/vendor/app</strong></a></li>
+<li><a href="#oemapp"><strong>/oem/app</strong></a></li>
+<li><a href="#dataapp"><strong>/data/app</strong></a></li>
+</ul>
+</li>
+<li><a href="#how-to-install-apk"><strong>How to install APK</strong></a><ul>
+<li><a href="#system-application-installation"><strong>System application installation</strong></a></li>
+<li><a href="#download-apk-from-the-app-store-that-comes-with-the-device"><strong>Download apk from the app store that comes with the device</strong></a></li>
+<li><a href="#adb-command-installation"><strong>ADB command installation</strong></a></li>
+</ul>
+</li>
+<li><a href="#third-party-application-installation"><strong>Third-party application installation</strong></a></li>
+<li><a href="#apk-data-storage-location"><strong>Apk data storage location</strong></a><ul>
+<li><a href="#dataapp"><strong>/data/app</strong></a></li>
+<li><a href="#datadata"><strong>/data/data/</strong></a></li>
+</ul>
+</li>
+<li><a href="#pms-configuration-file"><strong>PMS configuration file</strong></a></li>
+<li><a href="#system-hardware-features-and-permissions"><strong>System hardware features and permissions</strong></a></li>
+<li><a href="#multi-user-management"><strong>Multi-user management</strong></a></li>
+<li><a href="#dynamic-management-of-permissions"><strong>Dynamic management of permissions</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>The previous introduction of how to use the pm command reflects the functions
+provided by the PMS from the side. Then before you really analyze the source
+code, you should also understand some of the default rules of the PMS.</p>
+<p>This article mainly introduces the directories and files related to PMS, and the
+rules for PMS to operate them.</p>
+<h2 id="apk-file-path"><a name="apk-file-path" class="anchor-navigation-ex-anchor" href="#apk-file-path"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. APK file path</h2>
+<p>APKs fall into two main categories:</p>
+<ol>
+<li><p>System comes with APK</p>
+</li>
+<li><p>User Installed Third Party APK</p>
+</li>
+</ol>
+<p>For the APK that comes with the system, you can find it from the following path:</p>
+<h3 id="systempriv-app"><a name="systempriv-app" class="anchor-navigation-ex-anchor" href="#systempriv-app"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. /system/priv-app</h3>
+<p>This path stores some of the underlying applications of the system, such as
+Setting, systemUI, and so on. The app in this directory has higher system
+permissions and if you want to use</p>
+<p><code>Android:protectionLevel=signatureOrSystem</code></p>
+<p>Then the app must be placed in the priv-app directory.</p>
+<h3 id="systemapp"><a name="systemapp" class="anchor-navigation-ex-anchor" href="#systemapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. /system/app</h3>
+<p>The system app permissions stored in this directory are relatively low, and when
+you have root privileges, it is possible to uninstall these apps.</p>
+<h3 id="vendorapp"><a name="vendorapp" class="anchor-navigation-ex-anchor" href="#vendorapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. /vendor/app</h3>
+<p>This directory stores the vendor&apos;s app.</p>
+<h3 id="oemapp"><a name="oemapp" class="anchor-navigation-ex-anchor" href="#oemapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. /oem/app</h3>
+<p>This directory stores oem-specific apps.</p>
+<h3 id="dataapp"><a name="dataapp" class="anchor-navigation-ex-anchor" href="#dataapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. /data/app</h3>
+<p>User-installed third-party app</p>
+<p>When the PMS is started, the apks in these directories are also parsed one by
+one in the above order.</p>
+<h2 id="how-to-install-apk"><a name="how-to-install-apk" class="anchor-navigation-ex-anchor" href="#how-to-install-apk"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. How to install APK</h2>
+<h3 id="system-application-installation"><a name="system-application-installation" class="anchor-navigation-ex-anchor" href="#system-application-installation"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. System application installation</h3>
+<p>When the PMS is started, there is no installation interface.</p>
+<h3 id="download-apk-from-the-app-store-that-comes-with-the-device"><a name="download-apk-from-the-app-store-that-comes-with-the-device" class="anchor-navigation-ex-anchor" href="#download-apk-from-the-app-store-that-comes-with-the-device"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Download apk from the app store that comes with the device</h3>
+<p>After downloading the APK, call the Packagemanager interface to install, there
+is no installation interface.</p>
+<h3 id="adb-command-installation"><a name="adb-command-installation" class="anchor-navigation-ex-anchor" href="#adb-command-installation"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. ADB command installation</h3>
+<p>The adb command is actually installed via the pm command, and there is no
+installation interface.</p>
+<h2 id="third-party-application-installation"><a name="third-party-application-installation" class="anchor-navigation-ex-anchor" href="#third-party-application-installation"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Third-party application installation</h2>
+<p>Installed through the APK file in the SD card, there is an installation
+interface, and the interface of the installation and uninstallation process is
+handled by the packageinstaller.apk application.</p>
+<p>Prior to ANdroid 5.0, the Android system would monitor the few paths mentioned
+above for storing apk. Once a new apk is found, it will be installed. After 5.0,
+this strategy is not taken. The apk in this write path is only scanned when the
+system is started.</p>
+<h2 id="apk-data-storage-location"><a name="apk-data-storage-location" class="anchor-navigation-ex-anchor" href="#apk-data-storage-location"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Apk data storage location</h2>
+<p>After apk is installed, the generated data is stored in the /data file.</p>
+<h3 id="dataapp_1"><a name="dataapp_1" class="anchor-navigation-ex-anchor" href="#dataapp_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. /data/app</h3>
+<p>The third-party apk installed by the user, as well as the native library on
+which the app depends, are placed here.</p>
+<p>In Android 6.0, this directory has a folder &quot;oat&quot; for storing this app, the oat
+file of this app generated by dex2oat when running for the first time. In
+previous versions of Android, the oat file of the app installed by the user was
+stored in</p>
+<p><code>/data/dalvik-cache</code></p>
+<p>in. At 6.0, this directory only stores the oat file of the apk that comes with
+the system.</p>
+<h3 id="datadata"><a name="datadata" class="anchor-navigation-ex-anchor" href="#datadata"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. /data/data/</h3>
+<p>Is the sandbox directory of all apps installed by the current user of the
+system. The directory is actually</p>
+<p><code>/data/user/user ID</code></p>
+<p>A reference to this directory. As the user switches, &quot;/data/data/&quot; is also
+mapped to different users.</p>
+<h2 id="pms-configuration-file"><a name="pms-configuration-file" class="anchor-navigation-ex-anchor" href="#pms-configuration-file"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. PMS configuration file</h2>
+<p>The PMS will generate some configuration files to record the apps currently
+installed on the system. These files are stored in:</p>
+<p><code>/data/system/</code></p>
+<ol>
+<li>Packages.xml</li>
+</ol>
+<p>Record all installed application information in the system, including basic
+information, signatures and permissions.</p>
+<p>As shown below:</p>
+<p>     <a href="media/812ad676d6cbe189f7e21fcaf7b25e16.png" rel="grouped" title="http://7xj6ce.com1.z0.glb.clouddn.com/PMS-1.png" target="_self" class="fancybox">
+       <img src="media/812ad676d6cbe189f7e21fcaf7b25e16.png" alt="http://7xj6ce.com1.z0.glb.clouddn.com/PMS-1.png">
+     </a></p>
+<p>When the file is manipulated, the backup file packages-backup.xml is always
+created. When the normal operation is completed, the backup is
+deleted. Otherwise, when the PMS is started next time, once the backup file is
+found, the backup file will be resolved first.</p>
+<p>When an app is upgraded to overwrite the installation, it will use
+updated-packages to indicate that when the package name of the old and new
+versions of the app changes, the renamed-package record will be used.</p>
+<ol>
+<li>Packages-stoped.xml</li>
+</ol>
+<p>Records information about apps in the system that are forcibly stopped. It is
+also possible to have a backup file of packages-stoped-backup.xml. When the
+backup file exists, the backup file is preferred. Because the original file may
+have been corrupted.</p>
+<ol>
+<li>Packages.list</li>
+</ol>
+<p>Save the application&apos;s data directory and uid information.</p>
+<p>Such as:</p>
+<p><code>Com.qihoo.appstore 10067 0 /data/data/com.qihoo.appstore default 3002,3003,3001</code></p>
+<p>The first column is the package name of the app.</p>
+<p>10067 User ID for this app.</p>
+<p>The 0 in the third column indicates the system user ID to which this app
+belongs.</p>
+<p>The fourth column is the sandbox directory for this app.</p>
+<p>Default is seinfo, which is used by SEAndroid related mechanisms.</p>
+<p>The last column records the permission group in which the app is located, which
+means that it has permissions.</p>
+<h2 id="system-hardware-features-and-permissions"><a name="system-hardware-features-and-permissions" class="anchor-navigation-ex-anchor" href="#system-hardware-features-and-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. System hardware features and permissions</h2>
+<p>When the PMS starts, it will</p>
+<p><code>/system/etc/permissions/</code></p>
+<p>Read the hardware features and settings related permissions of the current
+Android device.</p>
+<p>The so-called hardware features can be understood in a narrow sense as which
+peripherals are supported by the current device, such as camera, NFC, wifi, usb,
+and so on.</p>
+<p>Because the files in the directory are parsed, you can view information such as
+features and permissions through the pm command.</p>
+<h2 id="multi-user-management"><a name="multi-user-management" class="anchor-navigation-ex-anchor" href="#multi-user-management"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Multi-user management</h2>
+<p>PMS also manages multiple users. Because when installing apk, the PMS can be
+assigned to a specific user or to all users.</p>
+<h2 id="dynamic-management-of-permissions"><a name="dynamic-management-of-permissions" class="anchor-navigation-ex-anchor" href="#dynamic-management-of-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Dynamic management of permissions</h2>
+<p>Dynamic authorization and cancellation of applications in the app are allowed in
+Android M.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android PMS - Explore the Android PMS service.html" class="navigation navigation-prev " aria-label="Previous page: Android PMS - Explore the Android PMS service">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Android PMS - Android 6 PMS Analysis.html" class="navigation navigation-next " aria-label="Next page: Android PMS - Android 6 PMS Analysis">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android PMS - Some rules of the PMS runtime","level":"1.5.2","depth":2,"next":{"title":"Android PMS - Android 6 PMS Analysis","level":"1.5.3","depth":2,"path":"Android PMS - Android 6 PMS Analysis.md","ref":"Android PMS - Android 6 PMS Analysis.md","articles":[]},"previous":{"title":"Android PMS - Explore the Android PMS service","level":"1.5.1","depth":2,"path":"Android PMS - Explore the Android PMS service.md","ref":"Android PMS - Explore the Android PMS service.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android PMS - Some rules of the PMS runtime.md","mtime":"2018-09-20T05:05:08.627Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

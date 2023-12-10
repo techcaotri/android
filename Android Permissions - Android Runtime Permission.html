@@ -1,0 +1,1698 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android Permissions - Android Runtime Permission · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android Permissions - Android grantRuntimePermission Detailed.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android Permissions - Android Runtime Permission</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#android-runtime-permission"><b>1. </b>Android Runtime Permission</a></li><ul><li><span class="title-icon "></span><a href="#foreword"><b>1.1. </b>Foreword:</a></li><li><span class="title-icon "></span><a href="#runtime-permission-forward-compatibility"><b>1.2. </b>Runtime permission forward compatibility</a></li><li><span class="title-icon "></span><a href="#use-of-system-permissions"><b>1.3. </b>Use of system permissions</a></li><li><span class="title-icon "></span><a href="#use-of-permissions"><b>1.4. </b>Use of permissions:</a></li><li><span class="title-icon "></span><a href="#permission-level"><b>1.5. </b>Permission level:</a></li><li><span class="title-icon "></span><a href="#automatic-adjustment-of-permissions"><b>1.6. </b>Automatic adjustment of permissions:</a></li><li><span class="title-icon "></span><a href="#authorization-level-classification"><b>1.7. </b>Authorization level classification:</a></li><li><span class="title-icon "></span><a href="#special-permissions"><b>1.8. </b>Special permissions:</a></li><li><span class="title-icon "></span><a href="#dangerous-permission"><b>1.9. </b>Dangerous Permission:</a></li><li><span class="title-icon "></span><a href="#permission-group"><b>1.10. </b>Permission group:</a></li><li><span class="title-icon "></span><a href="#use-rights"><b>1.11. </b>Use rights</a></li><li><span class="title-icon "></span><a href="#check-permission-status"><b>1.12. </b>Check permission status:</a></li><li><span class="title-icon "></span><a href="#request-for-access"><b>1.13. </b>request for access:</a></li><li><span class="title-icon "></span><a href="#prompt-the-user-why-you-need"><b>1.14. </b>Prompt the user why you need:</a></li><li><span class="title-icon "></span><a href="#about-automatic-authorization"><b>1.15. </b>About automatic authorization:</a></li><li><span class="title-icon "></span><a href="#permission-flags"><b>1.16. </b>Permission flags:</a></li><li><span class="title-icon "></span><a href="#allow-permissions"><b>1.17. </b>Allow permissions:</a></li><li><span class="title-icon "></span><a href="#prohibited-permissions"><b>1.18. </b>Prohibited permissions:</a></li></ul></ul></div><a href="#android-runtime-permission" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="android-runtime-permission"><a name="android-runtime-permission" class="anchor-navigation-ex-anchor" href="#android-runtime-permission"><i class="fa fa-link" aria-hidden="true"></i></a>1. Android Runtime Permission</h1>
+<p>Column: <a href="https://blog.csdn.net/column/details/22869.html" target="_blank">android source code
+analysis</a>
+Copyright statement: This article is the original article of the blogger, please
+be sure to indicate the author and the original
+link. Https://blog.csdn.net/jingerppp/article/details/80194908</p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#android-runtime-permission"><strong>Android Runtime Permission</strong></a><ul>
+<li><a href="#foreword"><strong>Foreword:</strong></a></li>
+<li><a href="#runtime-permission-forward-compatibility"><strong>Runtime permission forward compatibility</strong></a></li>
+<li><a href="#use-of-system-permissions"><strong>Use of system permissions</strong></a></li>
+<li><a href="#use-of-permissions"><strong>Use of permissions:</strong></a></li>
+<li><a href="#permission-level"><strong>Permission level:</strong></a></li>
+<li><a href="#automatic-adjustment-of-permissions"><strong>Automatic adjustment of permissions:</strong></a></li>
+<li><a href="#authorization-level-classification"><strong>Authorization level classification:</strong></a></li>
+<li><a href="#special-permissions"><strong>Special permissions:</strong></a></li>
+<li><a href="#dangerous-permission"><strong>Dangerous Permission:</strong></a></li>
+<li><a href="#permission-group"><strong>Permission group:</strong></a></li>
+<li><a href="#use-rights"><strong>Use rights</strong></a></li>
+<li><a href="#check-permission-status"><strong>Check permission status:</strong></a></li>
+<li><a href="#request-for-access"><strong>request for access:</strong></a></li>
+<li><a href="#prompt-the-user-why-you-need"><strong>Prompt the user why you need:</strong></a></li>
+<li><a href="#about-automatic-authorization"><strong>About automatic authorization:</strong></a></li>
+<li><a href="#permission-flags"><strong>Permission flags:</strong></a></li>
+<li><a href="#allow-permissions"><strong>Allow permissions:</strong></a></li>
+<li><a href="#prohibited-permissions"><strong>Prohibited permissions:</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Foreword:</h2>
+<p>There are some drawbacks to permission management before Android 6.0:</p>
+<ul>
+<li><p>The permission system will only be asked once during installation, and the
+user can optionally grant application-related permissions. But once
+installed, the application will access everything within the privilege
+without the user&apos;s knowledge.</p>
+</li>
+<li><p>Prior to Android 6.0, the permissions were called install time permission.
+After the application was installed, the user could not modify the
+authorization of the permission, nor allowed the individual authorization
+and revocation of the permission.</p>
+</li>
+</ul>
+<p>The Android app permissions mode in Android 6.0 and higher is designed to make
+permissions easier to understand, more useful, and more secure. This mode moves
+Android apps that require <em>dangerous</em> permissions from install-time permissions
+mode to runtime permissions mode:</p>
+<ul>
+<li><p>Permissions for installation (Android 5.1 and lower, or application target
+SDK is 22 or lower). Users grant <em>dangerous</em> permissions to apps when they
+install or update apps. OEM/operators can pre-install pre-authorized
+applications without notifying users.</p>
+</li>
+<li><p>Runtime permissions (Android 6.0 and higher, or application target SDK 23 or
+higher). The user grants <em>dangerous</em> permissions to the app while the app is
+running. The app decides when to apply for permissions (for example, when an
+app launches or when a user accesses a particular feature), but must allow
+the user to grant/deny access to the app to access a specific permission
+group. OEMs/operators can pre-install applications, but may not grant
+permissions in advance.</p>
+</li>
+</ul>
+<h2 id="runtime-permission-forward-compatibility"><a name="runtime-permission-forward-compatibility" class="anchor-navigation-ex-anchor" href="#runtime-permission-forward-compatibility"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Runtime permission forward compatibility</h2>
+<ul>
+<li><p>If the application before M is installed on M or higher, the permission will
+be installed before the old mode management, which is the install time
+permission model. It should be noted that on the M system, the user can
+authorize and revoke the permission in the settings. The application
+software may crash if there is no corresponding permission.</p>
+</li>
+<li><p>If the application after M is installed on a version before M, the
+permission has no runtime, and the previous install time permission will be
+installed.</p>
+</li>
+</ul>
+<h2 id="use-of-system-permissions"><a name="use-of-system-permissions" class="anchor-navigation-ex-anchor" href="#use-of-system-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Use of system permissions</h2>
+<h2 id="use-of-permissions"><a name="use-of-permissions" class="anchor-navigation-ex-anchor" href="#use-of-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Use of permissions:</h2>
+<p>The basic Android app does not associate permissions by default, which means it
+can&apos;t perform any actions that adversely affect the user experience or any data
+on the device. To take advantage of protected device features, you must include
+one or more \<uses-permission\> tags in your app manifest
+(AndroidManifest.xml). 
+For example, an app that needs to monitor incoming SMS messages should specify:</uses-permission\></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;xml&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    package=&quot;com.android.app.myapp&quot; &gt;
+    &lt;uses-permission android:name=&quot;android.permission.RECEIVE_SMS&quot; /&gt;
+    ...
+&lt;/manifest&gt;<br></div></div>
+
+<h2 id="permission-level"><a name="permission-level" class="anchor-navigation-ex-anchor" href="#permission-level"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Permission level:</h2>
+<p>These permissions are automatically granted if your app lists <em>normal</em> permissions
+in its manifest (that is, permissions that do not pose a significant risk to
+user privacy or device operations). If your app lists <em>dangerous</em> permissions in
+its manifest (that is, permissions that may affect user privacy or the normal
+operation of the device), the system will ask the user to explicitly grant those
+permissions. The way Android makes requests depends on the system version, which
+is the target of the app:</p>
+<ul>
+<li><p>If the device is running Android 6.0 (API level 23) or higher and the
+targetSdkVersion of the app is 23 or higher, the app requests permissions
+from the user at runtime. Users can call permissions at any time, so the
+application needs to check if it has the required permissions each time it
+runs. For more information on requesting permissions in an app, see the
+Using System Permissions Training Guide.</p>
+</li>
+<li><p>If the device is running Android 5.1 (API level 22) or lower and the
+targetSdkVersion of the app is 22 or lower, the user is asked to grant
+permissions when the user installs the app. If you add a new privilege to a
+newer app version, the user will be asked to grant it when the app is
+updated. Once users install an app, the only way they can revoke permissions
+is to uninstall the app.</p>
+</li>
+</ul>
+<p>Often, a privilege failure causes a SecurityException to be thrown back into the
+app. But there is no guarantee that every place will be like this. For example,
+the sendBroadcast(Intent) method checks for permissions when data is passed to
+each recipient, and after the method call returns, you won&apos;t receive an
+exception even if the permissions fail. However, in almost all cases, permission
+failures are logged to the system log. 
+See Manifest.permission for permissions provided by the Android system. In
+addition, any application can define and enforce its own permissions, so this is
+not an exhaustive list of all possible permissions. 
+It is possible to implement specific permissions in multiple locations during
+program execution:</p>
+<ul>
+<li><p>Prevents the app from performing certain functions when the system is
+called.</p>
+</li>
+<li><p>Prevents the app from launching activities from other apps when the activity
+is started.</p>
+</li>
+<li><p>Control who can receive your broadcast and send a broadcast to you when
+sending and receiving broadcasts.</p>
+</li>
+<li><p>When accessing and manipulating content providers.</p>
+</li>
+<li><p>Bind to a service or start a service.</p>
+</li>
+</ul>
+<h2 id="automatic-adjustment-of-permissions"><a name="automatic-adjustment-of-permissions" class="anchor-navigation-ex-anchor" href="#automatic-adjustment-of-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Automatic adjustment of permissions:</h2>
+<p>Over time, new restrictions may be added to the platform, and to use a specific
+API, your app may have to request permissions that were not previously
+needed. Because existing apps assume that they have access to these API apps at
+will, Android may apply new permission requests to the app manifest to avoid
+breaking the app on the new platform version. Android will determine if the app
+requires permission based on the value provided by the targetSdkVersion
+property. If the value is lower than the version in which the permission was
+added, Android will add the permission.</p>
+<p>For example, <code>WRITE_EXTERNAL_STORAGE</code> permission was added to API level 4 to
+restrict access to shared storage. If your targetSdkVersion is 3 or lower, this
+permission will be added to apps on the updated Android version device.</p>
+<p>To avoid this and remove the default permissions you don&apos;t need, always update
+targetSdkVersion to the highest version. The permissions added by each version
+can be viewed in the Build.VERSION_CODES document.</p>
+<h2 id="authorization-level-classification"><a name="authorization-level-classification" class="anchor-navigation-ex-anchor" href="#authorization-level-classification"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Authorization level classification:</h2>
+<p>The hierarchical classification mentioned here is actually the attribute in the
+permission:</p>
+<p><code>android:protectionLevel</code></p>
+<p>Divided into several categories: <em>Normal</em>, <em>Dangerous</em>, <em>Signature</em>, <em>SigatureOrSystem</em></p>
+<ul>
+<li><p><em>Normal</em> Permission refers to the permissions of the data and resources other
+than the app&apos;s sandbox (each process has a separate sandbox). These
+permissions generally do not pose a risk to the user&apos;s private information.
+For example, setting Time zone permissions (<code>SET_TIME_ZONE</code>). For such
+permissions, the system will automatically assign it after the app is
+applied.</p>
+</li>
+<li><p><em>Dangerous</em> Permission refers to behavioral rights that may pose a risk to the
+user&apos;s private information or may affect the user&apos;s data. For example, read
+the user&apos;s contacts. For Dangerous Permission, the app must display the
+permission of the user to use it. The Runtime Permission mechanism is for
+this kind of <em>dangerous</em> permission.</p>
+</li>
+<li><p><em>Signature</em> permission: A permission requester can only use the permission if
+it is signed with the same certificate as [Permission Identifier]. If the
+certificates match, the system automatically grants these permissions
+without notification or requesting users.</p>
+</li>
+<li><p><em>SignatureOrSystem</em>: The SDK version 23 was called
+&quot; signature|privileged&quot; before . In addition to the above Signature
+Permission, this type of permission includes permissions that are only given
+to applications within the Android System Image. Android does not recommend
+the app to use this class, because Signature Permission can meet most of the
+requirements, regardless of whether the app is built in the System Image.</p>
+</li>
+</ul>
+<h2 id="special-permissions"><a name="special-permissions" class="anchor-navigation-ex-anchor" href="#special-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Special permissions:</h2>
+<p>The above describes the meaning of the attribute android:protectionLevel in the
+permission, there are some special permissions, these permissions are more
+sensitive, must be specially treated when
+used. <a href="https://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW" target="_blank"><code>SYSTEM_ALERT_WINDOW</code></a></p>
+<p>And <code>WRITE_SETTINGS</code> this is the more sensitive permissions.</p>
+<p>For example <code>WRITE_SETTINGS</code>:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;xml&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">&lt;permission android:name=&quot;android.permission.WRITE_SETTINGS&quot;
+    android:label=&quot;@string/permlab_writeSettings&quot;
+    android:description=&quot;@string/permdesc_writeSettings&quot;
+    android:protectionLevel=&quot;signature|preinstalled|appop|pre23&quot; /&gt;<br></div></div>
+
+<p>The official explanation is as follows:</p>
+<ol>
+<li><p>Note: If the app targets API level 23 or higher, the app user must
+explicitly grant this</p>
+</li>
+<li><p>permission to the app through a permission management screen.</p>
+</li>
+<li><p>The app requests the user&apos;s approval by sending an intent with action
+<code>ACTION_MANAGE_WRITE_SETTINGS</code>.</p>
+</li>
+<li><p>The app can check whether it has this authorization by calling
+Settings.System.canWrite().</p>
+</li>
+</ol>
+<h2 id="dangerous-permission"><a name="dangerous-permission" class="anchor-navigation-ex-anchor" href="#dangerous-permission"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. Dangerous Permission:</h2>
+<p>Android 6.0 and later requires <em>dangerous</em> permissions to use runtime permissions
+mode. Dangerous privilege is a higher-risk privilege (such as <code>READ_CALENDAR</code>)
+that allows an authoritative app to access user private data or gain control of
+a device that can adversely affect users. To see a list of <em>dangerous</em>
+permissions, run the following command:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">adb shell pm list permissions -g -d<br></div></div>
+
+<p>Android 6.0 and later does not change the behavior of general permissions (all
+non-dangerous permissions including general, system, and signed
+permissions). Regular permissions are lower-risk permissions (such as
+<code>SET_WALLPAPER</code>), which allow applications that request authorization to access
+quarantined application-level features with minimal risk to other applications,
+systems, or users. In Android 5.1 and earlier, when the app is installed, the
+app is automatically granted general permissions to the app that is requesting
+authorization, and there is no need to prompt the user for approval.</p>
+<h2 id="permission-group"><a name="permission-group" class="anchor-navigation-ex-anchor" href="#permission-group"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. Permission group:</h2>
+<p>All <em>dangerous</em> Android system permissions belong to the permission group. If the
+device is running Android 6.0 (API level 23) and the targetSdkVersion of the app
+is 23 or higher, the following behavior occurs when the user requests <em>dangerous</em>
+permissions:</p>
+<ul>
+<li><p>If the app requests the <em>dangerous</em> permissions listed in its manifest, and
+the app does not currently have any permissions in the permissions group,
+the user will be presented with a dialog box describing the permission
+groups that the app will access. The dialog does not describe the specific
+permissions within the group. For example, if an application requests
+READ_CONTACTS permission, the system dialog only describes the contact
+information that the application needs to access the device. If the user
+approves, the app will be granted permission to the app.</p>
+</li>
+<li><p>If an app requests a dangerous privilege listed in its manifest, and the app
+already has another dangerous privilege in the same privilege group, the
+privilege is granted immediately without any interaction with the user. For
+example, if an application has requested and was granted <code>READ_CONTACTS</code>
+permission, then it <code>WRITE_CONTACTS</code>, the <strong>system will grant the permission
+immediately</strong> .</p>
+</li>
+</ul>
+<p>Any permission can belong to a permission group, including <em>normal</em> permissions
+and application-defined permissions. However, the permission group only affects
+the user experience when the permissions are dangerous. A permission group with
+<em>normal</em> permissions can be ignored. 
+If the device is running Android 5.1 (API level 22) or lower and the
+targetSdkVersion of the app is 22 or lower, the user is asked to grant
+permissions during installation. Again, the system only tells the user what
+permissions group the application needs, without telling the specific
+permissions. (Note that in the domestic CTA, these group permissions must be
+subdivided)</p>
+<p><strong>Permission Table</strong></p>
+<table style="box-sizing: inherit; border-width: 0px; border-collapse: collapse; font-stretch: normal; font-size: 14px; line-height: 20px; font-family: Roboto, sans-serif; margin: 0px; width: 837.091px; color: rgb(33, 33, 33);">
+  <tbody style="box-sizing: inherit;">
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <th scope="col" style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; font-weight: 500; font-stretch: normal; font-size: 16px; line-height: 24px; font-family: Roboto, sans-serif; height: 48px; padding: 8px; vertical-align: middle; color: rgb(255, 255, 255);">Permission Group</th>
+      <th scope="col" style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; font-weight: 500; font-stretch: normal; font-size: 16px; line-height: 24px; font-family: Roboto, sans-serif; height: 48px; padding: 8px; vertical-align: middle; color: rgb(255, 255, 255);">Permissions</th>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">CALENDAR</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_CALENDAR</code></li>
+        </ul>
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">WRITE_CALENDAR</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><a href="https://developer.android.com/reference/android/Manifest.permission_group#CALL_LOG" style="box-sizing: inherit; color: rgb(3, 155, 229); outline-width: 0px; text-decoration-line: none; margin-top: 0px; margin-bottom: 0px;" target="_blank"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(3, 155, 229); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">CALL_LOG</code></a></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><a href="https://developer.android.com/reference/android/Manifest.permission#READ_CALL_LOG" style="box-sizing: inherit; color: rgb(3, 155, 229); outline-width: 0px; text-decoration-line: none;" target="_blank"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(3, 155, 229); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_CALL_LOG</code></a></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><a href="https://developer.android.com/reference/android/Manifest.permission#WRITE_CALL_LOG" style="box-sizing: inherit; color: rgb(3, 155, 229); outline-width: 0px; text-decoration-line: none;" target="_blank"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(3, 155, 229); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">WRITE_CALL_LOG</code></a></li>
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><a href="https://developer.android.com/reference/android/Manifest.permission#PROCESS_OUTGOING_CALLS" style="box-sizing: inherit; color: rgb(3, 155, 229); outline-width: 0px; text-decoration-line: none;" target="_blank"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(3, 155, 229); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">PROCESS_OUTGOING_CALLS</code></a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">CAMERA</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">CAMERA</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">CONTACTS</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_CONTACTS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">WRITE_CONTACTS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">GET_ACCOUNTS</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">LOCATION</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">ACCESS_FINE_LOCATION</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">ACCESS_COARSE_LOCATION</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">MICROPHONE</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">RECORD_AUDIO</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">PHONE</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_PHONE_STATE</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_PHONE_NUMBERS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">CALL_PHONE</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">ANSWER_PHONE_CALLS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">ADD_VOICEMAIL</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">USE_SIP</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">SENSORS</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">BODY_SENSORS</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">SMS</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">SEND_SMS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">RECEIVE_SMS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_SMS</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">RECEIVE_WAP_PUSH</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">RECEIVE_MMS</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="box-sizing: inherit; background-color: rgb(120, 144, 156); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(207, 216, 220);">
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal; margin-top: 0px; margin-bottom: 0px;">STORAGE</code></td>
+      <td style="box-sizing: inherit; border-width: 0px; margin: 0px; text-align: left; color: rgb(33, 33, 33); padding: 7px 8px 8px; background-color: rgba(255, 255, 255, 0.95); vertical-align: top;">
+        <ul style="box-sizing: inherit; margin: 0px; padding-left: 20px; list-style-type: disc; list-style-position: outside;">
+          <li style="box-sizing: inherit; margin: 0px 0px 8px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">READ_EXTERNAL_STORAGE</code></li>
+          <li style="box-sizing: inherit; margin: 8px 0px 0px; padding: 0px;"><code style="box-sizing: inherit; background-position: 0px 50%; color: rgb(33, 33, 33); font-weight: 500; font-stretch: normal; font-size: 14px; line-height: 1; font-family: &apos;Roboto Mono&apos;, monospace; padding: 0px; word-break: normal;">WRITE_EXTERNAL_STORAGE</code></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="use-rights"><a name="use-rights" class="anchor-navigation-ex-anchor" href="#use-rights"><i class="fa fa-link" aria-hidden="true"></i></a>1.11. Use rights</h2>
+<h2 id="check-permission-status"><a name="check-permission-status" class="anchor-navigation-ex-anchor" href="#check-permission-status"><i class="fa fa-link" aria-hidden="true"></i></a>1.12. Check permission status:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">// Check if a uid and pid have permission
+// If you return PackageManager#PERMISSION_GRANTED, the permission has been allowed
+// If you return PackageManager#PERMISSION_DENIED, this permission is not allowed
+public int checkPermission(String permission, int pid, int uid)
+// Same as checkPermission, which is provided to the current process call
+public int checkCallingPermission(String permission)
+// Same as checkPermission, the difference between this and checkCallingPermission is that there is no need to determine if the caller is the current process.
+public int checkCallingOrSelfPermission(String permission)
+// Same as checkPermission, mainly when a return is not PackageManager.PERMISSION_GRANTED will throw a SecurityException
+public void enforcePermission(String permission, int pid, int uid, String message)
+//With enforcePermission
+public void enforceCallingPermission(String permission, String message)
+//With enforcePermission
+public void enforceCallingOrSelfPermission(String permission, String message)<br></div></div>
+
+<p>Detailed source code can see ContextImpl.java</p>
+<p>It should be noted that there is still a lot to go before switching to PMS:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public int checkPermission(String permission, int pid, int uid, IBinder callerToken) {
+        if (permission == null) { //The passed permission cannot be null
+            throw new IllegalArgumentException(&quot;permission is null&quot;);
+        }
+
+        try {
+            return ActivityManager.getService().checkPermissionWithToken(//&#x8BE6;&#x7EC6;&#x770B;AMS
+                    permission, pid, uid, callerToken);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }<br></div></div>
+
+<h2 id="request-for-access"><a name="request-for-access" class="anchor-navigation-ex-anchor" href="#request-for-access"><i class="fa fa-link" aria-hidden="true"></i></a>1.13. request for access:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public final void requestPermissions(@NonNull String[] permissions, int requestCode) {
+        if (requestCode &lt; 0) {
+            throw new IllegalArgumentException(&quot;requestCode should be &gt;= 0&quot;);
+        }
+        if (mHasCurrentPermissionsRequest) {
+            Log.w(TAG, &quot;Can reqeust only one set of permissions at a time&quot;);
+            // Dispatch the callback with empty arrays which means a cancellation.
+            onRequestPermissionsResult(requestCode, new String[0], new int[0]);
+            return;
+        }
+        Intent intent = getPackageManager().buildRequestPermissionsIntent(permissions);
+        startActivityForResult(REQUEST_PERMISSIONS_WHO_PREFIX, intent, requestCode, null);
+        mHasCurrentPermissionsRequest = true;
+    }<br></div></div>
+
+<p>Call this function, the system will call up a dialog box to prompt the user
+whether to give the appropriate permissions. After the user allows or denies the
+corresponding permission, the app&apos;s onRequestPermissionsResult(int, String[],
+int[]) will be called, telling the app that the corresponding permission is
+authorized or denied. Detailed code can be seen in Activity.java, here you need
+to pay attention to:</p>
+<p>1, requestCode is used to match, but must be non-negative</p>
+<p>2, buildRequestPermissionsIntent</p>
+<p>Note the function here, here is the invoke place where the dialog box needs to
+pop up during the request permission.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public Intent buildRequestPermissionsIntent(@NonNull String[] permissions) {
+        if (ArrayUtils.isEmpty(permissions)) {
+           throw new IllegalArgumentException(&quot;permission cannot be null or empty&quot;);
+        }
+        Intent intent = new Intent(ACTION_REQUEST_PERMISSIONS); //Note the Action here
+        intent.putExtra(EXTRA_REQUEST_PERMISSIONS_NAMES, permissions); //Extra passed the permission name
+        intent.setPackage(getPermissionControllerPackageName());//Note that the system directly specifies the packageName
+        return intent;
+    }<br></div></div>
+
+<p>Here in build intent, the system will have a place to receive, look at the
+GrantPermissionsActivity in PackageIntaller ( <a href="Android%20Permissions%20-%20Android%20GrantPermissionsActivity%20Detailed.html">click here for
+details, https://blog.csdn.net/shift_wwx/article/details/80263467</a>):</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;xml&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">&lt;activity android:name=&quot;.permission.ui.GrantPermissionsActivity&quot;
+                android:configChanges=&quot;orientation|keyboardHidden|screenSize&quot;
+                android:excludeFromRecents=&quot;true&quot;
+                android:theme=&quot;@style/GrantPermissions&quot;
+                android:visibleToInstantApps=&quot;true&quot;&gt;
+            &lt;intent-filter android:priority=&quot;1&quot;&gt;
+                &lt;action android:name=&quot;android.content.pm.action.REQUEST_PERMISSIONS&quot; /&gt;
+                &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;<br></div></div>
+
+<p>3, onRequestPermissionResult There are 3 ways to trigger, here is one, and the
+other is through:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private void dispatchRequestPermissionsResult(int requestCode, Intent data) {
+        mHasCurrentPermissionsRequest = false;
+        // If the package installer crashed we may have not data - best effort.
+        String[] permissions = (data != null) ? data.getStringArrayExtra(
+                PackageManager.EXTRA_REQUEST_PERMISSIONS_NAMES) : new String[0];
+        final int[] grantResults = (data != null) ? data.getIntArrayExtra(
+                PackageManager.EXTRA_REQUEST_PERMISSIONS_RESULTS) : new int[0];
+        onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    private void dispatchRequestPermissionsResultToFragment(int requestCode, Intent data,
+            Fragment fragment) {
+        // If the package installer crashed we may have not data - best effort.
+        String[] permissions = (data != null) ? data.getStringArrayExtra(
+                PackageManager.EXTRA_REQUEST_PERMISSIONS_NAMES) : new String[0];
+        final int[] grantResults = (data != null) ? data.getIntArrayExtra(
+                PackageManager.EXTRA_REQUEST_PERMISSIONS_RESULTS) : new int[0];
+        fragment.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }<br></div></div>
+
+<h2 id="prompt-the-user-why-you-need"><a name="prompt-the-user-why-you-need" class="anchor-navigation-ex-anchor" href="#prompt-the-user-why-you-need"><i class="fa fa-link" aria-hidden="true"></i></a>1.14. Prompt the user why you need:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">/**
+     * Gets whether you should show UI with rationale for requesting a permission.
+     * You should do this only if you do not have the permission and the context in
+     * which the permission is requested does not clearly communicate to the user
+     * what would be the benefit from granting this permission.
+     * &lt;p&gt;
+     * For example, if you write a camera app, requesting the camera permission
+     * would be expected by the user and no rationale for why it is requested is
+     * needed. If however, the app needs location for tagging photos then a non-tech
+     * savvy user may wonder how location is related to taking photos. In this case
+     * you may choose to show UI with rationale of requesting this permission.
+     * &lt;/p&gt;
+     *
+     * @param permission A permission your app wants to request.
+     * @return Whether you can show permission rationale UI.
+     *
+     * @see #checkSelfPermission(String)
+     * @see #requestPermissions(String[], int)
+     * @see #onRequestPermissionsResult(int, String[], int[])
+     */
+    public boolean shouldShowRequestPermissionRationale(@NonNull String permission) {
+        return getPackageManager().shouldShowRequestPermissionRationale(permission);
+    }<br></div></div>
+
+<p>Returns true If the app previously requested this permission, but the user
+refused, the permission can still be requested at this time. 
+Returns false if the previous user refused to grant this permission and the
+&quot;Don&apos;t ask again&quot; option was selected in the system dialog. 
+Returns false if the device policy prevents the app from having this
+privilege. This is usually set in the DevicePolicyManager.</p>
+<ul>
+<li><p>The first time after the application is installed, it will return false
+directly.</p>
+</li>
+<li><p>The first time the permission is requested, the user rejects it. The next
+time shouldShowRequestPermissionRationale() returns true, this time can show
+some instructions on why this permission is needed;</p>
+</li>
+<li><p>The second time the permission is requested, the user rejects and selects
+the option &quot;No longer alert&quot;: shouldShowRequestPermissionRationale() returns
+false;</p>
+</li>
+<li><p>The system&apos;s system settings prohibit the current application from obtaining
+authorization for this permission, and
+shouldShowRequestPermissionRationale() returns false;</p>
+</li>
+</ul>
+<h2 id="about-automatic-authorization"><a name="about-automatic-authorization" class="anchor-navigation-ex-anchor" href="#about-automatic-authorization"><i class="fa fa-link" aria-hidden="true"></i></a>1.15. About automatic authorization:</h2>
+<ul>
+<li><p>App with <code>PRIVATE_FLAG_PRIVILEGED</code> &amp; <code>FLAG_PERSISTENT</code> flag will be
+automatically authorized.</p>
+</li>
+<li><p>The system default base app will be automatically given the corresponding
+permission. For example, the default phone book app will automatically have
+the CONTACT related permission.</p>
+</li>
+</ul>
+<p>Automatic authorization is implemented by the function grantDefaultPermissions()
+\@DefaultPermissionGrantPolicy.Java. This function is called when system ready
+and when creating a new user. The DefaultPermissionGrantPolicy.java file is a
+new class added to M in the PMS to implement the related functions of automatic
+authorization.</p>
+<h2 id="permission-flags"><a name="permission-flags" class="anchor-navigation-ex-anchor" href="#permission-flags"><i class="fa fa-link" aria-hidden="true"></i></a>1.16. Permission flags:</h2>
+<p><code>PackageManager.FLAG_PERMISSION_USER_SET</code>: The permissions are set by the user.
+The application can also request <code>PackageManager.FLAG_PERMISSION_USER_FIXED</code> at runtime . The permissions are set
+by the user, but the application can no longer request this permission (users
+check &quot;never ask again&quot;).</p>
+<p><code>PackageManager.FLAG_PERMISSION_POLICY_FIXED</code>: The permissions set by device
+policy cannot be modified by both user and app.</p>
+<p><code>PackageManager.FLAG_PERMISSION_REVOKE_ON_UPGRADE</code>: If the permission is marked
+with this flag, it means that the permission of the deny after the app is
+upgraded will still be deny. This flag will be used in the following
+cases. Applicable to the previous version of the L app, installed on the M
+device, if its <em>dangerous</em> permission is revoked, such as through the permission
+management in the settings or device policy settings, then the APP is upgraded
+to apply to the new permission of M After the mode, the permission is still
+revoked after the upgrade. That is, the <em>dangerous</em> permission is revoked after
+the upgrade, and is still revoked after the upgrade.</p>
+<p><code>PackageManager.FLAG_PERMISSION_SYSTEM_FIXED</code>: The automatic authorization
+permission obtained by the system app.</p>
+<p><code>PackageManager.FLAG_PERMISSION_GRANTED_BY_DEFAULT</code>: The  default system basic
+function app gets the auto-authorization permission.</p>
+<p><code>PackageManager.FLAG_PERMISSION_REVIEW_REQUIRED</code>: A permission review is required before the app
+runs</p>
+<h2 id="allow-permissions"><a name="allow-permissions" class="anchor-navigation-ex-anchor" href="#allow-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.17. Allow permissions:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public void grantRuntimePermission(String packageName, String name, final int userId) {
+        grantRuntimePermission(packageName, name, userId, false /* Only if not fixed by policy */);
+    }<br></div></div>
+
+<p>Detailed source code, you can see the specific implementation of the PMS, or
+another blog</p>
+<h2 id="prohibited-permissions"><a name="prohibited-permissions" class="anchor-navigation-ex-anchor" href="#prohibited-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>1.18. Prohibited permissions:</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@Override
+    public void revokeRuntimePermission(String packageName, String name, int userId) {
+        revokeRuntimePermission(packageName, name, userId, false /* Only if not fixed by policy */);
+    }<br></div></div>
+
+<p>After reading the <em>grantRuntimePermission specification</em>, the code for
+revokeRuntimePermission is much simpler. The final result is to modify the
+mGranted property in PermissionStates and write its properties to
+runtime-permissions.xml.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Android Permissions - Android grantRuntimePermission Detailed">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android Permissions - Android Runtime Permission","level":"1.3.1","depth":2,"next":{"title":"Android Permissions - Android grantRuntimePermission Detailed","level":"1.3.2","depth":2,"path":"Android Permissions - Android grantRuntimePermission Detailed.md","ref":"Android Permissions - Android grantRuntimePermission Detailed.md","articles":[]},"previous":{"title":"Android Permissions","level":"1.3","depth":1,"ref":"","articles":[{"title":"Android Permissions - Android Runtime Permission","level":"1.3.1","depth":2,"path":"Android Permissions - Android Runtime Permission.md","ref":"Android Permissions - Android Runtime Permission.md","articles":[]},{"title":"Android Permissions - Android grantRuntimePermission Detailed","level":"1.3.2","depth":2,"path":"Android Permissions - Android grantRuntimePermission Detailed.md","ref":"Android Permissions - Android grantRuntimePermission Detailed.md","articles":[]},{"title":"Android Permissions - Android GrantPermissionsActivity Detailed","level":"1.3.3","depth":2,"path":"Android Permissions - Android GrantPermissionsActivity Detailed.md","ref":"Android Permissions - Android GrantPermissionsActivity Detailed.md","articles":[]},{"title":"Android Permissions - AppOps control for Normal permission","level":"1.3.4","depth":2,"path":"Android Permissions - AppOps control for Normal permission.md","ref":"Android Permissions - AppOps control for Normal permission.md","articles":[]},{"title":"Android Permissions - Android native permission control process","level":"1.3.5","depth":2,"path":"Android Permissions - Android native permission control process.md","ref":"Android Permissions - Android native permission control process.md","articles":[]},{"title":"Android Permissions - The difference between setUidMode and setMode in AppOps","level":"1.3.6","depth":2,"path":"Android Permissions - The difference between setUidMode and setMode in AppOps.md","ref":"Android Permissions - The difference between setUidMode and setMode in AppOps.md","articles":[]},{"title":"Android Permissions - Application permissions before android M and application permissions after M","level":"1.3.7","depth":2,"path":"Android Permissions - Application permissions before android M and application permissions after M.md","ref":"Android Permissions - Application permissions before android M and application permissions after M.md","articles":[]},{"title":"Android Permissions - Provider permissions detailed","level":"1.3.8","depth":2,"path":"Android Permissions - Provider permissions detailed.md","ref":"Android Permissions - Provider permissions detailed.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android Permissions - Android Runtime Permission.md","mtime":"2018-10-01T02:55:28.559Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

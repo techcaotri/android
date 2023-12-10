@@ -1,0 +1,2352 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android OTA - Android OTA upgrade principle and process analysis 1 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android OTA - Android OTA upgrade principle and process analysis 2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Android OTA - Android OTA upgrade principle and process analysis 1</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#android-ota-upgrade-principle-and-process-analysis-1---production-of-updatezip-package"><b>1. </b>Android OTA upgrade principle and process analysis (1) --production of update.zip package</a></li><ul><li><span class="title-icon "></span><a href="#1--the-directory-structure-of-updatezip-package"><b>1.1. </b>1.  the directory structure of update.zip package</a></li><li><span class="title-icon "></span><a href="#2-updatezip-package-directory-structure"><b>1.2. </b>2. update.zip package directory structure.</a></li><li><span class="title-icon "></span><a href="#3-analysis-of-the-generation-process-of-android-upgrade-package-updatezip"><b>1.3. </b>3. Analysis of the generation process of Android upgrade package update.zip</a></li><li><span class="title-icon "></span><a href="#4-android-ota-incremental-package-updatezip-generation"><b>1.4. </b>4. Android OTA incremental package update.zip generation</a></li></ul></ul></div><a href="#android-ota-upgrade-principle-and-process-analysis-1---production-of-updatezip-package" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="android-ota-upgrade-principle-and-process-analysis-1---production-of-updatezip-package"><a name="android-ota-upgrade-principle-and-process-analysis-1---production-of-updatezip-package" class="anchor-navigation-ex-anchor" href="#android-ota-upgrade-principle-and-process-analysis-1---production-of-updatezip-package"><i class="fa fa-link" aria-hidden="true"></i></a>1. Android OTA upgrade principle and process analysis (1) --production of update.zip package</h1>
+<p>July 04, 2016 09:54:21 <a href="https://me.csdn.net/LOVE000520" target="_blank">blast - Bevis </a>reading number: 1072 tags: <a href="http://so.csdn.net/so/search/s.do?q=ota&amp;t=blog" target="_blank">ota</a>more  </p>
+<p>Personal Category: <a href="https://blog.csdn.net/LOVE000520/article/category/6295486" target="_blank">Android-OTA</a></p>
+<p><a href="http://blog.csdn.net/love000520/article/details/51818655" target="_blank">Android </a> <a href="http://blog.csdn.net/love000520/article/details/51818655" target="_blank">OTA upgrade principle and process analysis (2) --- update.zip differential package problem solving</a></p>
+<p>Reprinted from: <a href="http://blog.chinaunix.net/uid-22028566-id-3533848.html" target="_blank">http://blog.chinaunix.net/uid-22028566-id-3533848.html</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+<ul>
+<li><a href="#android-ota-upgrade-principle-and-process-analysis-1-production-of-updatezip-package"><strong>Android OTA upgrade principle and process analysis (1) --production of update.zip package</strong></a><ul>
+<li><a href="#1-the-directory-structure-of-updatezip-package"><strong>1.  the directory structure of update.zip package</strong></a></li>
+<li><a href="#2-updatezip-package-directory-structure"><strong>2. update.zip package directory structure.</strong></a></li>
+<li><a href="#3-analysis-of-the-generation-process-of-android-upgrade-package-updatezip"><strong>3. Analysis of the generation process of Android upgrade package update.zip</strong></a></li>
+<li><a href="#4-android-ota-incremental-package-updatezip-generation"><strong>4. Android OTA incremental package update.zip generation</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>This and future pages will understand how the Recovery mode service works in the <a href="http://lib.csdn.net/base/15" target="_blank">Android</a> system by analyzing the
+update.zip package in the specific <a href="http://lib.csdn.net/base/15" target="_blank">Android</a> system
+upgrade process. Let&apos;s start with the creation of the update.zip package, then
+the startup mode analysis of the Android system, how Recovery works, how to
+choose system update from our upper layer to restart the Recovery service, and
+how to handle the update.zip package in the Recovery service. Upgraded, a series
+of questions about how our installation script updater-script is parsed and
+executed. The Android source code used in the analysis process is
+gingerbread0919 (standard on the tcc88xx development board), and the test
+development board is tcc88xx. This is the document summarized in the work. Of
+course, I have referenced a lot of content on the Internet. If there is a
+similarity, it is a coincidence. There are also many unresolved problems in the
+analysis process. I hope that everyone will advise you.</p>
+<h2 id="1--the-directory-structure-of-updatezip-package"><a name="1--the-directory-structure-of-updatezip-package" class="anchor-navigation-ex-anchor" href="#1--the-directory-structure-of-updatezip-package"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 1.  the directory structure of update.zip package</h2>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">\|----boot.img 
+          \|----system/ 
+          \|----recovery/ 
+                \`\|----recovery-from-boot.p 
+                \`\|---- Etc/ 
+                        \`\|----install-recovery.sh 
+          \|---META-INF/ 
+              \`\|CERT.RSA 
+              \`\|CERT.SF 
+              \`\|MANIFEST.MF 
+              \`\|----com/ 
+                     \`\|---- Google/ 
+                             \`\|----android/ 
+                                    \`\|----update-binary 
+                                    \`\|----updater-script 
+                             \`\|----android/
+                                    \`\|----metadata<br></div></div>
+
+<h2 id="2-updatezip-package-directory-structure"><a name="2-updatezip-package-directory-structure" class="anchor-navigation-ex-anchor" href="#2-updatezip-package-directory-structure"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 2. update.zip package directory structure.</h2>
+<p>The above is the standard directory structure of the update.zip package we
+created with the command make otapackage. </p>
+<ol>
+<li>boot.img is the file needed to update the boot partition. This boot.img mainly includes kernel+ramdisk.</li>
+<li>The contents of the system/ directory will be placed in the system partition of the system after the upgrade. Mainly used to update some applications of the system or some libraries that the application will use. You can copy all the files in the Android source code compilation out/target/product/tcc8800/system/ to this directory instead.</li>
+<li>Recovery-directory recovery-from-boot.p is the patch of boot.img and recovery.img, mainly used to update the recovery partition, where install-recovery.sh in the etc/ directory is the update script. </li>
+<li>update-binary is a binary file, equivalent to a script interpreter, able to identify the operation described in the updater-script. This file is generated after the Android source code is compiled out/target/product/tcc8800/system bin/updater, and the updater can be renamed to update-binary. 
+The name of the file in the specific update package is determined by the value of the macro ASSUMED_UPDATE_BINARY_NAME in bootable/recovery/install.c in the source code. </li>
+<li>updater-script: This file is a script file that describes the update process. We can write this script to suit our specific needs, depending on the situation. The file name is determined by the value of the macro SCRIPT_NAME in the bootable/recovery/updater/updater.c file in the source code. </li>
+<li>The  metadata file is metadata describing device information and environment variables. It mainly includes some compile options, signature public key, timestamp and device model. </li>
+<li>we can also add the userdata directory in the package to update the user data part of the system. This part will be stored in the /data directory of the system after the update.</li>
+<li><p>update.zip package signature: update.zip update package needs to be signed after the completion of the production, otherwise there will be an error message when the upgrade fails. And the signature uses an encrypted public key that is consistent with the target board. The specific path generated by the encryption of the public key and the three files needed for encryption after the Android source code is compiled is:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">out/host/linux-x86/framework/signapk.jar 
+              build/target/product/security/testkey.x509.pem      
+              build/target/product/security/testkey.pk8 &#x3002;<br></div></div>
+
+<p>The update.zip package we created with the command make otapackage
+is already signed. If you do the update.zip package yourself, you must manually
+sign it.
+The specific encryption method:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">$ java &#x2013;jar
+gingerbread/out/host/linux/framework/signapk.jar &#x2013;w
+gingerbread/build/target/product/security/testkey.x509.pem
+gingerbread/build/target/product/security/testkey .pk8 update.zip
+update_signed.zip<br></div></div>
+
+<p>The above command is executed in the path where the update.zip package
+is located, where the reference to the signapk.jar testkey.x509.pem and
+testkey.pk8 files uses an absolute path. Update.zip is the package we have
+already made, and the update_signed.zip package is the signed package that was
+generated after the command was executed.</p>
+</li>
+<li>MANIFEST.MF: This manifest file defines the data related to the
+composition of the package. A mainfest.xml file similar to an Android app. </li>
+<li>CERT.RSA: A signature block file associated with a signature file
+that stores the public signature used to sign the JAR file. </li>
+<li>CERT.SF: This is the signature file of the JAR file, where the
+prefix CERT represents the signer. 
+In addition, in the specific upgrade, the update.zip package will be
+roughly divided into three steps:
+1 Check whether the SF file matches the RSA file.
+2 Verify that MANIFEST.MF is consistent with the digest in the signature file.
+3 The files in the inspection package are consistent with those described in MANIFEST.</li>
+</ol>
+<h2 id="3-analysis-of-the-generation-process-of-android-upgrade-package-updatezip"><a name="3-analysis-of-the-generation-process-of-android-upgrade-package-updatezip" class="anchor-navigation-ex-anchor" href="#3-analysis-of-the-generation-process-of-android-upgrade-package-updatezip"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. 3. Analysis of the generation process of Android upgrade package update.zip</h2>
+<ol>
+<li><p>There are two ways to make the update.zip package, namely manual
+creation and command generation.
+The first type of manual production : manually create the directory we
+need according to the directory structure of update.zip. Then copy the
+corresponding file to the appropriate directory, for example, we add an
+application to the system. You can copy the newly added application to our newly
+created update/system/app/ (the system directory is the system directory
+generated after copying the compiled source code). After packaging and signing,
+copy it to the SD card and you can use it. This method has not been tested
+successfully in the actual tcc8800 development board. The signature part did not
+pass and may be related to a specific development board.
+The second method of production : command production. The Android
+source code system provides us with the command to make the update.zip brush
+package, namely make otapackage. This command is executed after the source code
+is compiled and in the root directory of the source. Specific operation mode:
+execute in the source root directory</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">&#x2460;\$ . build/envsetup.sh&#x3002; 
+             &#x2461;\$ lunch Then select the configuration you need (eg 17).
+             &#x2462;\$ make otapackage&#x3002;<br></div></div>
+
+<p>After compiling the source code, it is best to perform the above steps
+1 and 2 to prevent the execution of 3 when the error message is not found. After
+the command is executed, the upgrade package is located at
+out/target/product/full_tcc8800_evm_target_files-eng.mumu.20120309.111059.zip.
+Rename the package to update.zip and copy it to the SD card for use.
+This approach (ie full upgrade) has been tested successfully in the tcc8800 development board.</p>
+</li>
+<li><p>Use the make otapackage command to generate a process analysis of update.zip. 
+Executing the make otapackage command in the source root directory to generate the update.zip package is mainly divided into two steps. The first step is to compile and generate an update original package (zip format) according to the Makefile. The second step is to run a python script and take the zip package prepared in the previous step as input, and finally generate the upgrade package we need. The two processes are further analyzed below.</p>
+</li>
+</ol>
+<p>The first step : compile the Makefile. The location of the
+corresponding Makefile is: build/core/Makefile.Starting with the 884 lines of
+the file (tcc8800, gingerbread0919), a zip package will be generated, which will
+be used to make the OTA package or filesystem image. First paste the
+corresponding Makefile in this section as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}"># -----------------------------------------------------------------
+# A zip of the directories that map to the target filesystem.
+# This zip can be used to create an OTA package or filesystem image
+# as a post-build step.
+#
+name := $(TARGET_PRODUCT)
+ifeq ($(TARGET_BUILD_TYPE),debug)
+  name := $(name)_debug
+endif
+name := $(name)-target_files-$(FILE_NAME_TAG)
+
+intermediates := $(call intermediates-dir-for,PACKAGING,target_files)
+BUILT_TARGET_FILES_PACKAGE := $(intermediates)/$(name).zip
+$(BUILT_TARGET_FILES_PACKAGE): intermediates := $(intermediates)
+$(BUILT_TARGET_FILES_PACKAGE): \
+        zip_root := $(intermediates)/$(name)
+
+# $(1): Directory to copy
+# $(2): Location to copy it to
+# The &quot;ls -A&quot; is to prevent &quot;acp s/* d&quot; from failing if s is empty.
+define package_files-copy-root
+  if [ -d &quot;$(strip $(1))&quot; -a &quot;$(ls -A $(1))&quot; ]; then \
+    mkdir -p $(2) &amp;&amp; \
+    $(ACP) -rd $(strip $(1))/* $(2); \
+  be
+endef
+
+built_ota_tools: = \
+    $(call intermediates-dir-for,EXECUTABLES,applypatch)/applypatch \
+    $(call intermediates-dir-for,EXECUTABLES,applypatch_static)/applypatch_static \
+    $(call intermediates-dir-for,EXECUTABLES,check_prereq)/check_prereq \
+    $(call intermediates-dir-for,EXECUTABLES,updater)/updater
+$(BUILT_TARGET_FILES_PACKAGE): PRIVATE_OTA_TOOLS := $(built_ota_tools)
+
+$(BUILT_TARGET_FILES_PACKAGE): PRIVATE_RECOVERY_API_VERSION := $(RECOVERY_API_VERSION)
+
+ifeq ($(TARGET_RELEASETOOLS_EXTENSIONS),)
+# default to common dir for device vendor
+$(BUILT_TARGET_FILES_PACKAGE): tool_extensions := $(TARGET_DEVICE_DIR)/../common
+else
+$(BUILT_TARGET_FILES_PACKAGE): tool_extensions := $(TARGET_RELEASETOOLS_EXTENSIONS)
+endif
+
+# Depending on the various images guarantees that the underlying
+# directories are up-to-date.
+$(BUILT_TARGET_FILES_PACKAGE): \
+        $(INSTALLED_BOOTIMAGE_TARGET) \
+        $(INSTALLED_RADIOIMAGE_TARGET) \
+        $(INSTALLED_RECOVERYIMAGE_TARGET) \
+        $(INSTALLED_SYSTEMIMAGE) \
+        $(INSTALLED_USERDATAIMAGE_TARGET) \
+        $(INSTALLED_ANDROID_INFO_TXT_TARGET) \
+        $ (built_ota_tools) \
+        $(APKCERTS_FILE) \
+        $(HOST_OUT_EXECUTABLES)/fs_config \
+        | $(ACP)
+    @echo &quot;Package target files: $@&quot;
+    $(hide) rm -rf $@ $(zip_root)
+    $(hide) mkdir -p $(dir $@) $(zip_root)
+    @# Components of the recovery image
+    $(hide) mkdir -p $(zip_root)/RECOVERY
+    $(hide) $(call package_files-copy-root, \
+        $(TARGET_RECOVERY_ROOT_OUT),$(zip_root)/RECOVERY/RAMDISK)
+ifdef INSTALLED_KERNEL_TARGET
+    $(hide) $(ACP) $(INSTALLED_KERNEL_TARGET) $(zip_root)/RECOVERY/kernel
+endif
+ifdef INSTALLED_2NDBOOTLOADER_TARGET
+    $(hide) $(ACP) \
+        $(INSTALLED_2NDBOOTLOADER_TARGET) $(zip_root)/RECOVERY/second
+endif
+ifdef BOARD_KERNEL_CMDLINE
+    $(hide) echo &quot;$(BOARD_KERNEL_CMDLINE)&quot; &gt; $(zip_root)/RECOVERY/cmdline
+endif
+ifdef BOARD_KERNEL_BASE
+    $(hide) echo &quot;$(BOARD_KERNEL_BASE)&quot; &gt; $(zip_root)/RECOVERY/base
+endif
+ifdef BOARD_KERNEL_PAGESIZE
+    $(hide) echo &quot;$(BOARD_KERNEL_PAGESIZE)&quot; &gt; $(zip_root)/RECOVERY/pagesize
+endif
+    @# Components of the boot image
+    $(hide) mkdir -p $(zip_root)/BOOT
+    $(hide) $(call package_files-copy-root, \
+        $(TARGET_ROOT_OUT),$(zip_root)/BOOT/RAMDISK)
+ifdef INSTALLED_KERNEL_TARGET
+    $(hide) $(ACP) $(INSTALLED_KERNEL_TARGET) $(zip_root)/BOOT/kernel
+endif
+ifdef INSTALLED_2NDBOOTLOADER_TARGET
+    $(hide) $(ACP) \
+        $(INSTALLED_2NDBOOTLOADER_TARGET) $(zip_root)/BOOT/second
+endif
+ifdef BOARD_KERNEL_CMDLINE
+    $(hide) echo &quot;$(BOARD_KERNEL_CMDLINE)&quot; &gt; $(zip_root)/BOOT/cmdline
+endif
+ifdef BOARD_KERNEL_BASE
+    $(hide) echo &quot;$(BOARD_KERNEL_BASE)&quot; &gt; $(zip_root)/BOOT/base
+endif
+ifdef BOARD_KERNEL_PAGESIZE
+    $(hide) echo &quot;$(BOARD_KERNEL_PAGESIZE)&quot; &gt; $(zip_root)/BOOT/pagesize
+endif
+    $(hide) $(foreach t,$(INSTALLED_RADIOIMAGE_TARGET),\
+                mkdir -p $(zip_root)/RADIO; \
+                $(ACP) $(t) $(zip_root)/RADIO/$(notdir $(t));)
+    @# Contents of the system image
+    $(hide) $(call package_files-copy-root, \
+        $(SYSTEMIMAGE_SOURCE_DIR),$(zip_root)/SYSTEM)
+    @# Contents of the data image
+    $(hide) $(call package_files-copy-root, \
+        $(TARGET_OUT_DATA),$(zip_root)/DATA)
+    @# Extra contents of the OTA package
+    $(hide) mkdir -p $(zip_root)/OTA/bin
+    $(hide) $(ACP) $(INSTALLED_ANDROID_INFO_TXT_TARGET) $(zip_root)/OTA/
+    $(hide) $(ACP) $(PRIVATE_OTA_TOOLS) $(zip_root)/OTA/bin/
+    @# Files that do not end up in any images, but are necessary to
+    @# build them.
+    $(hide) mkdir -p $(zip_root)/META
+    $(hide) $(ACP) $(APKCERTS_FILE) $(zip_root)/META/apkcerts.txt
+    $(hide) echo &quot;$(PRODUCT_OTA_PUBLIC_KEYS)&quot; &gt; $(zip_root)/META/otakeys.txt
+    $(hide) echo &quot;recovery_api_version=$(PRIVATE_RECOVERY_API_VERSION)&quot; &gt; $(zip_root)/META/misc_info.txt
+ifdef BOARD_FLASH_BLOCK_SIZE
+    $(hide) echo &quot;blocksize=$(BOARD_FLASH_BLOCK_SIZE)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+endif
+ifdef BOARD_BOOTIMAGE_PARTITION_SIZE
+    $(hide) echo &quot;boot_size=$(BOARD_BOOTIMAGE_PARTITION_SIZE)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+endif
+ifdef BOARD_RECOVERYIMAGE_PARTITION_SIZE
+    $(hide) echo &quot;recovery_size=$(BOARD_RECOVERYIMAGE_PARTITION_SIZE)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+endif
+ifdef BOARD_SYSTEMIMAGE_PARTITION_SIZE
+    $(hide) echo &quot;system_size=$(BOARD_SYSTEMIMAGE_PARTITION_SIZE)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+endif
+ifdef BOARD_USERDATAIMAGE_PARTITION_SIZE
+    $(hide) echo &quot;userdata_size=$(BOARD_USERDATAIMAGE_PARTITION_SIZE)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+endif
+    $(hide) echo &quot;tool_extensions=$(tool_extensions)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+ifdef mkyaffs2_extra_flags
+    $(hide) echo &quot;mkyaffs2_extra_flags=$(mkyaffs2_extra_flags)&quot; &gt;&gt; $(zip_root)/META/misc_info.txt
+endif
+    @# Zip everything up, preserving symlinks
+    $(hide) (cd $(zip_root) &amp;&amp; zip -qry ../$(notdir $@) .)
+    @# Run fs_config on all the system files in the zip, and save the output
+    $(hide) zipinfo -1 $@ | awk -F/ &apos;BEGIN { OFS=&quot;/&quot; } /^SYSTEM\// {$1 = &quot;system&quot;; print}&apos; | $(HOST_OUT_EXECUTABLES)/fs_config &gt; $(zip_root)/META/filesystem_config.txt
+    $(hide) (cd $(zip_root) &amp;&amp; zip -q ../$(notdir $@) META/filesystem_config.txt)
+
+
+target-files-package: $(BUILT_TARGET_FILES_PACKAGE)
+
+
+ifneq ($(TARGET_SIMULATOR),true)
+ifneq ($(TARGET_PRODUCT),sdk)
+ifneq ($(TARGET_DEVICE),generic)
+ifneq ($(TARGET_NO_KERNEL),true)
+ifneq ($(recovery_fstab),)<br></div></div>
+
+<p>According to the Makefile above, you can analyze the generation process of this
+package:</p>
+<p>First create a root_zip root directory, and then create the
+following other directories in this directory.</p>
+<ol>
+<li>Create a RECOVERY directory and populate the contents of the
+directory, including the kernel image and the image of the recovery root file
+system. This directory is ultimately used to generate recovery.img.</li>
+<li>Create and populate the BOOT directory. Contains kernel and
+cmdline and pagesize size, etc., which is ultimately used to generate boot.img. </li>
+<li>Fill the SYSTEM directory with the system image. </li>
+<li>Fill the data image with DATA. </li>
+<li>Additional content needed to generate the OTA package. It mainly
+includes some bin commands. </li>
+<li>Create a META directory and add some text files to the directory,
+such as apkcerts.txt (describe the authentication certificate used by the apk
+file), misc_info.txt (describe the block size of the flash memory and the
+partitions of boot, recovery, system, userdata, etc.) Size information). </li>
+<li>Use the reserved connection option to compress the root_zip
+directory we obtained above. </li>
+<li>Use fs_config (build/tools/fs_config) to configure the permissions
+of all system files (system/subdirectories, files) in the above zip
+package. Fs_config contains a header file #include
+&quot;private/android_filesystem_config.h&quot;. In this header file, the permissions and
+owners of each file in the system directory are set in a hard-coded
+manner. After the configuration is completed, the configured information is
+output to META/filesystem_config.txt as text. And once again zip into the
+original package we ultimately need.</li>
+</ol>
+<p>The second step : The above zip package is just the original
+package generated during the compilation process. This original zip package has
+two functions in the actual compilation process, one is used to generate the OTA
+update upgrade package, and the other is used to generate the system image. In
+the compilation process, if the OTA update upgrade package is generated, it will
+be called (the specific location is in lines 1037 to 1058 of the Makefile).
+A <a href="http://lib.csdn.net/base/11" target="_blank">Python</a> script named ota_from_target_files
+is located at /build/tools/releasetools/ota_from_target_files. The function of
+this script is to take the zip original package generated in the first step as
+input, and finally generate the available OTA upgrade zip package.</p>
+<p>  Below we analyze the process of using this script to generate the
+final OTA upgrade package.</p>
+<p>  (a) First look at the help documentation at the beginning of
+this script. code show as below:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">#!/usr/bin/env python
+#
+# Copyright (C) 2008 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+&quot;&quot;&quot;
+Given a target-files zipfile, produces an OTA package that installs
+that build.  An incremental OTA is produced if -i is given, otherwise
+a full OTA is produced.
+
+Usage:  ota_from_target_files [flags] input_target_files output_ota_package
+
+  -b  (--board_config)  &lt;file&gt;
+      Deprecated.
+
+  -k  (--package_key)  &lt;key&gt;
+      Key to use to sign the package (default is
+      &quot;build/target/product/security/testkey&quot;).
+
+  -i  (--incremental_from)  &lt;file&gt;
+      Generate an incremental OTA using the given target-files zip as
+      the starting build.
+
+  -w  (--wipe_user_data)
+      Generate an OTA package that will wipe the user data partition
+      when installed.
+
+  -n  (--no_prereq)
+      Omit the timestamp prereq check normally included at the top of
+      the build scripts (used for developer OTA packages which
+      legitimately need to go back and forth).
+
+  -e  (--extra_script)  &lt;file&gt;
+      Insert the contents of file at the end of the update script.
+
+&quot;&quot;&quot;<br></div></div>
+
+<p>Let&apos;s briefly translate their use and the role of the options.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Usage: ota_from_target_files [flags] input_target_files
+output_ota_package 
+                        -b Obsolete. 
+                        -k used by the -k signature 
+                        -i Use this option when generating incremental OTA
+packages. We will use this option later to generate the OTA delta package. 
+                        -w Whether to clear the userdata partition- 
+                        n Whether to check the timestamp during the upgrade, the
+default is to check, that is, by default, it can only be upgraded based on the
+old version. 
+                        -e Is there an extra run script - 
+                        the format required to generate the script
+(updater-script) during the execution process. There are currently two types,
+amend and edify. A different interpreter will be used for the upgrade of the
+previous two versions. By default, scripts of both formats are generated at the
+same time. 
+                        -p defines the path to some executable files used by the
+script. 
+                        -s defines the path to the extra run script. 
+                        -x defines the key-value pairs that may be used by
+additional running scripts. 
+                        -v executes the executed command during execution. 
+                        -h command help<br></div></div>
+
+<p>  (b) Below we analyze how the ota_from_target_files python
+script generates the final zip package. Let me first post the code for this
+script as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">import sys
+
+if sys.hexversion &lt; 0x02040000:
+  print &gt;&gt; sys.stderr, &quot;Python 2.4 or newer is required.&quot;
+  sys.exit(1)
+
+import copy
+import errno
+import  the
+import re
+import sha
+import subprocess
+import tempfile
+import time
+import zipfile
+
+import common
+import edify_generator
+
+OPTIONS = common.OPTIONS
+OPTIONS.package_key = &quot;build/target/product/security/testkey&quot;
+OPTIONS.incremental_source = None
+OPTIONS.require_verbatim = set()
+OPTIONS.prohibit_verbatim = set((&quot;system/build.prop&quot;,))
+OPTIONS.patch_threshold = 0.95
+OPTIONS.wipe_user_data = False
+OPTIONS.omit_prereq = False
+OPTIONS.extra_script = None
+OPTIONS.worker_threads = 3
+
+def MostPopularKey(d, default):
+  &quot;&quot;&quot;Given a dict, return the key corresponding to the largest
+  value.  Returns &apos;default&apos; if the dict is empty.&quot;&quot;&quot;
+  x = [(v, k) for (k, v) in d.iteritems()]
+  if not x: return default
+  x.sort()
+  return x[-1][1]
+
+
+def IsSymlink(info):
+  &quot;&quot;&quot;Return true if the zipfile.ZipInfo object passed in represents a
+  symlink.&quot;&quot;&quot;
+  return (info.external_attr &gt;&gt; 16) == 0120777
+
+
+class Item:
+  &quot;&quot;&quot;Items represent the metadata (user, group, mode) of files and
+  directories in the system image.&quot;&quot;&quot;
+  ITEMS = {}
+  def __init__(self, name, dir=False):
+    self.name = name
+    self.uid = None
+    self.gid = None
+    self.mode = None
+    self .dir = dir
+
+    if name:
+      self.parent = Item.Get(os.path.dirname(name), dir=True)
+      self.parent.children.append(self)
+    else:
+      self.parent = None
+    if  you:
+      self.children = []
+
+  def Dump(self, indent=0):
+    if self.uid is not None:
+      print &quot;%s%s %d %d %o&quot; % (&quot;  &quot;*indent, self.name, self.uid, self.gid, self.mode)
+    else:
+      print &quot;%s%s %s %s %s&quot; % (&quot;  &quot;*indent, self.name, self.uid, self.gid, self.mode)
+    if self .dir:
+      print &quot;%s%s&quot; % (&quot;  &quot;*indent, self.descendants)
+      print &quot;%s%s&quot; % (&quot;  &quot;*indent, self.best_subtree)
+      for i in self.children:
+        i.Dump(indent=indent+1)
+
+  @classmethod
+  def Get(cls, name, dir=False):
+    if name not in cls.ITEMS:
+      cls.ITEMS[name] = Item(name, dir=dir)
+    return cls.ITEMS[name]
+
+  @classmethod
+  def GetMetadata(cls, input_zip):
+
+    try:
+      # See if the target_files contains a record of what the uid,
+      # gid, and mode is supposed to be.
+      output = input_zip.read(&quot;META/filesystem_config.txt&quot;)
+    except KeyError:
+      # Run the external &apos;fs_config&apos; program to determine the desired
+      # uid, gid, and mode for every Item object.  Note this uses the
+      # one in the client now, which might not be the same as the one
+      # used when this target_files was built.
+      p = common.Run([&quot;fs_config&quot;], stdin=subprocess.PIPE,
+                     stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+      suffix = { False: &quot;&quot;, True: &quot;/&quot; }
+      input = &quot;&quot;.join([&quot;%s%s\n&quot; % (i.name, suffix[i.dir])
+                       for i in cls.ITEMS.itervalues() if i.name])
+      output, error = p.communicate(input)
+      assert not error
+
+    for line in output.split(&quot;\n&quot;):
+      if not line: continue
+      name, uid, gid, mode = line.split()
+      i = cls.ITEMS.get(name, None)
+      if i is not None:
+        i.uid = int (uid)
+        i.gid = you (wealth)
+        i.mode = int(mode, 8)
+        if i.dir:
+          i.children.sort(key=lambda i: i.name)
+
+    # set metadata for the files generated by this script.
+    i = cls.ITEMS.get(&quot;system/recovery-from-boot.p&quot;, None)
+    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    i = cls.ITEMS.get(&quot;system/etc/install-recovery.sh&quot;, None)
+    if i: i.uid, i.gid, i.mode = 0, 0, 0544
+
+  def CountChildMetadata(self):
+    &quot;&quot;&quot;Count up the (uid, gid, mode) tuples for all children and
+    determine the best strategy for using set_perm_recursive and
+    set_perm to correctly chown/chmod all the files to their desired
+    values.  Recursively calls itself for all descendants.
+
+    Returns a dict of {(uid, gid, dmode, fmode): count} counting up
+    all descendants of this node.  (dmode or fmode may be None.)  Also
+    sets the best_subtree of each directory Item to the (uid, gid,
+    dmode, fmode) tuple that will match the most descendants of that
+    Item.
+    &quot;&quot;&quot;
+
+    assert self .dir
+    d = self.descendants = {(self.uid, self.gid, self.mode, None): 1}
+    for i in self.children:
+      if i.dir:
+        for k, v in i.CountChildMetadata().iteritems():
+          d[k] = d.get(k, 0) + v
+      else:
+        k = (i.uid, i.gid, None, i.mode)
+        d[k] = d.get(k, 0) + 1
+
+    # Find the (uid, gid, dmode, fmode) tuple that matches the most
+    # descendants.
+
+    # First, find the (uid, gid) pair that matches the most
+    # descendants.
+    and = {}
+    for (uid, gid, _, _), count in d.iteritems():
+      and [(uid, gid)] = ug.get ((uid, gid),  0 ) + count
+    and = MostPopularKey (and, ( 0 ,  0 ))
+
+    # Now find the dmode and fmode that match the most descendants
+    # with that (uid, gid), and choose those.
+    best_dmode = (0, 0755)
+    best_fmode = (0, 0644)
+    for k, count in d.iteritems():
+      if  k [: 2 ]! = and:  continue
+      if k[2] is not None and count &gt;= best_dmode[0]: best_dmode = (count, k[2])
+      if k[3] is not None and count &gt;= best_fmode[0]: best_fmode = (count, k[3])
+    self.best_subtree = ug + (best_dmode[1], best_fmode[1])
+
+    return d
+
+  def  SetPermissions ( self , script):
+    &quot;&quot;&quot;Append set_perm/set_perm_recursive commands to &apos;script&apos; to
+    set all permissions, users, and groups for the tree of files
+    rooted at &apos;self&apos;.&quot;&quot;&quot;
+
+    self.CountChildMetadata()
+
+    def recurse(item, current):
+      # current is the (uid, gid, dmode, fmode) tuple that the current
+      # item (and all its children) have already been set to.  We only
+      # need to issue set_perm/set_perm_recursive commands if we&apos;re
+      # supposed to be something different.
+      if item.dir:
+        if current != item.best_subtree:
+          script.SetPermissionsRecursive(&quot;/&quot;+item.name, *item.best_subtree)
+          current = item.best_subtree
+
+        if item.uid != current[0] or item.gid != current[1] or \
+           item.mode != current[2]:
+          script.SetPermissions(&quot;/&quot;+item.name, item.uid, item.gid, item.mode)
+
+        for i in item.children:
+          recurse(i, current)
+      else:
+        if item.uid != current[0] or item.gid != current[1] or \
+               item.mode != current[3]:
+          script.SetPermissions(&quot;/&quot;+item.name, item.uid, item.gid, item.mode)
+
+    recurse(self, (-1, -1, -1, -1))
+
+
+def CopySystemFiles(input_zip, output_zip=None,
+                    substitute=None):
+  &quot;&quot;&quot;Copies files underneath system/ in the input zip to the output
+  zip.  Populates the Item class with their metadata, and returns a
+  list of symlinks.  output_zip may be None, in which case the copy is
+  skipped (but the other side effects still happen).  substitute is an
+  optional dict of {output filename: contents} to be output instead of
+  certain input files.
+  &quot;&quot;&quot;
+
+  symlinks = []
+
+  for info in input_zip.infolist():
+    if info.filename.startswith(&quot;SYSTEM/&quot;):
+      basefilename = info.filename[7:]
+      if IsSymlink(info):
+        symlinks.append((input_zip.read(info.filename),
+                         &quot;/system/&quot; + basefilename))
+      else:
+        info2 = copy.copy(info)
+        fn = info2.filename = &quot;system/&quot; + basefilename
+        if substitute and fn in substitute and substitute[fn] is None:
+          continue
+        if output_zip is not None:
+          if substitute and fn in substitute:
+            data = substitute[fn]
+          else:
+            data = input_zip.read(info.filename)
+          output_zip.writestr(info2, data)
+        if fn.endswith(&quot;/&quot;):
+          Item.Get(fn[:-1], dir=True)
+        else:
+          Item.Get(fn, dir=False)
+
+  symlinks.sort()
+  return symlinks
+
+
+def SignOutput(temp_zip_name, output_zip_name):
+  key_passwords = common.GetKeyPasswords([OPTIONS.package_key])
+  pw = key_passwords[OPTIONS.package_key]
+
+  common.SignFile(temp_zip_name, output_zip_name, OPTIONS.package_key, pw,
+                  whole_file=True)
+
+
+def AppendAssertions(script, input_zip):
+  device = GetBuildProp(&quot;ro.product.device&quot;, input_zip)
+  script.AssertDevice(device)
+
+
+def MakeRecoveryPatch(output_zip, recovery_img, boot_img):
+  &quot;&quot;&quot;Generate a binary patch that creates the recovery image starting
+  with the boot image.  (Most of the space in these images is just the
+  kernel, which is identical for the two, so the resulting patch
+  should be efficient.)  Add it to the output zip, along with a shell
+  script that is run from init.rc on first boot to actually do the
+  patching and install the new recovery image.
+
+  recovery_img and boot_img should be File objects for the
+  corresponding images.
+
+  Returns an Item for the shell script, which must be made
+  executable.
+  &quot;&quot;&quot;
+
+  d = common.Difference(recovery_img, boot_img)
+  _, _, patch = d.ComputePatch()
+  common.ZipWriteStr(output_zip, &quot;recovery/recovery-from-boot.p&quot;, patch)
+  Item.Get(&quot;system/recovery-from-boot.p&quot;, dir=False)
+
+  boot_type, boot_device = common.GetTypeAndDevice(&quot;/boot&quot;, OPTIONS.info_dict)
+  recovery_type, recovery_device = common.GetTypeAndDevice(&quot;/recovery&quot;, OPTIONS.info_dict)
+
+  # Images with different content will have a different first page, so
+  # we check to see if this recovery has already been installed by
+  # testing just the first 2k.
+  HEADER_SIZE = 2048
+  header_sha1 = sha.sha(recovery_img.data[:HEADER_SIZE]).hexdigest()
+  sh = &quot;&quot;&quot;#!/system/bin/sh
+if ! applypatch -c %(recovery_type)s:%(recovery_device)s:%(header_size)d:%(header_sha1)s; then
+  log -t recovery &quot;Installing new recovery image&quot;
+  applypatch %(boot_type)s:%(boot_device)s:%(boot_size)d:%(boot_sha1)s %(recovery_type)s:%(recovery_device)s %(recovery_sha1)s %(recovery_size)d %(boot_sha1)s:/system/recovery-from-boot.p
+else
+  log -t recovery &quot;Recovery image already installed&quot;
+be
+&quot;&quot;&quot; % { &apos;boot_size&apos;: boot_img.size,
+        &apos;boot_sha1&apos;: boot_img.sha1,
+        &apos;header_size&apos;: HEADER_SIZE,
+        &apos;header_sha1&apos;: header_sha1,
+        &apos;recovery_size&apos;: recovery_img.size,
+        &apos;recovery_sha1&apos;: recovery_img.sha1,
+        &apos;boot_type&apos;: boot_type,
+        &apos;boot_device&apos;: boot_device,
+        &apos;recovery_type&apos;: recovery_type,
+        &apos;recovery_device&apos;: recovery_device,
+        }
+  common.ZipWriteStr(output_zip, &quot;recovery/etc/install-recovery.sh&quot;, sh)
+  return Item.Get(&quot;system/etc/install-recovery.sh&quot;, dir=False)
+
+
+def WriteFullOTAPackage(input_zip, output_zip):
+  # TODO: how to determine this?  We don&apos;t know what version it will
+  # be installed on top of.  For now, we expect the API just won&apos;t
+  # change very often.
+  script = edify_generator.EdifyGenerator(3, OPTIONS.info_dict)
+
+  metadata = {&quot;post-build&quot;: GetBuildProp(&quot;ro.build.fingerprint&quot;, input_zip),
+              &quot;pre-device&quot;: GetBuildProp(&quot;ro.product.device&quot;, input_zip),
+              &quot;post-timestamp&quot;: GetBuildProp(&quot;ro.build.date.utc&quot;, input_zip),
+              }
+
+  device_specific = common.DeviceSpecificParams(
+      input_zip=input_zip,
+      input_version=OPTIONS.info_dict[&quot;recovery_api_version&quot;],
+      output_zip=output_zip,
+      script=script,
+      input_tmp=OPTIONS.input_tmp,
+      metadata=metadata,
+      info_dict=OPTIONS.info_dict)
+
+  if not OPTIONS.omit_prereq:
+    ts = GetBuildProp(&quot;ro.build.date.utc&quot;, input_zip)
+    script.AssertOlderBuild(ts)
+
+  AppendAssertions(script, input_zip)
+  device_specific.FullOTA_Assertions()
+
+  script.ShowProgress(0.5, 0)
+
+  if OPTIONS.wipe_user_data:
+    script.FormatPartition(&quot;/data&quot;)
+
+  script.FormatPartition(&quot;/system&quot;)
+  script.Mount(&quot;/system&quot;)
+  script.UnpackPackageDir(&quot;recovery&quot;, &quot;/system&quot;)
+  script.UnpackPackageDir(&quot;system&quot;, &quot;/system&quot;)
+
+  symlinks = CopySystemFiles(input_zip, output_zip)
+  script.MakeSymlinks(symlinks)
+
+  boot_img = common.File(&quot;boot.img&quot;, common.BuildBootableImage(
+      os.path.join(OPTIONS.input_tmp, &quot;BOOT&quot;)))
+  recovery_img = common.File(&quot;recovery.img&quot;, common.BuildBootableImage(
+      os.path.join(OPTIONS.input_tmp, &quot;RECOVERY&quot;)))
+  MakeRecoveryPatch(output_zip, recovery_img, boot_img)
+
+  Item.GetMetadata(input_zip)
+  Item.Get(&quot;system&quot;).SetPermissions(script)
+
+  common.CheckSize(boot_img.data, &quot;boot.img&quot;, OPTIONS.info_dict)
+  common.ZipWriteStr(output_zip, &quot;boot.img&quot;, boot_img.data)
+  script.ShowProgress(0.2, 0)
+
+  script.ShowProgress(0.2, 10)
+  script.WriteRawImage(&quot;/boot&quot;, &quot;boot.img&quot;)
+
+  script.ShowProgress(0.1, 0)
+  device_specific.FullOTA_InstallEnd()
+
+  if OPTIONS.extra_script is not None:
+    script.AppendExtra(OPTIONS.extra_script)
+
+  script.UnmountAll()
+  script.AddToZip(input_zip, output_zip)
+  WriteMetadata(metadata, output_zip)
+
+
+def WriteMetadata(metadata, output_zip):
+  common.ZipWriteStr(output_zip, &quot;META-INF/com/android/metadata&quot;,
+                     &quot;&quot;.join([&quot;%s=%s\n&quot; % kv
+                              for kv in sorted(metadata.iteritems())]))
+
+
+
+
+def LoadSystemFiles(z):
+  &quot;&quot;&quot;Load all the files from SYSTEM/... in a given target-files
+  ZipFile, and return a dict of {filename: File object}.&quot;&quot;&quot;
+  out = {}
+  for info in z.infolist():
+    if info.filename.startswith(&quot;SYSTEM/&quot;) and not IsSymlink(info):
+      fn = &quot;system/&quot; + info.filename[7:]
+      data = z.read(info.filename)
+      out[fn] = common.File(fn, data)
+  return out
+
+
+def GetBuildProp(property, z):
+  &quot;&quot;&quot;Return the fingerprint of the build of a given target-files
+  ZipFile object.&quot;&quot;&quot;
+  bp = z.read(&quot;SYSTEM/build.prop&quot;)
+  if not property:
+    return bp
+  m = re.search(re.escape(property) + r&quot;=(.*)\n&quot;, bp)
+  if not m:
+    raise common.ExternalError(&quot;couldn&apos;t find %s in build.prop&quot; % (property,))
+  return m.group(1).strip()
+
+
+def WriteIncrementalOTAPackage(target_zip, source_zip, output_zip):
+  source_version = OPTIONS.source_info_dict[&quot;recovery_api_version&quot;]
+  target_version = OPTIONS.target_info_dict[&quot;recovery_api_version&quot;]
+
+  if source_version == 0:
+    print (&quot;WARNING: generating edify script for a source that &quot;
+           &quot;can&apos;t install it.&quot;)
+  script = edify_generator.EdifyGenerator(source_version, OPTIONS.info_dict)
+
+  metadata = {&quot;pre-device&quot;: GetBuildProp(&quot;ro.product.device&quot;, source_zip),
+              &quot;post-timestamp&quot;: GetBuildProp(&quot;ro.build.date.utc&quot;, target_zip),
+              }
+
+  device_specific = common.DeviceSpecificParams(
+      source_zip=source_zip,
+      source_version=source_version,
+      target_zip=target_zip,
+      target_version=target_version,
+      output_zip=output_zip,
+      script=script,
+      metadata=metadata,
+      info_dict=OPTIONS.info_dict)
+
+  print &quot;Loading target...&quot;
+  target_data = LoadSystemFiles(target_zip)
+  print &quot;Loading source...&quot;
+  source_data = LoadSystemFiles(source_zip)
+
+  verbatim_targets = []
+  patch_list = []
+  diffs = []
+  largest_source_size = 0
+  for fn in sorted(target_data.keys()):
+    tf = target_data[fn]
+    assert fn == tf.name
+    sf = source_data.get(fn, None)
+
+    if sf is None or fn in OPTIONS.require_verbatim:
+      # This file should be included verbatim
+      if fn in OPTIONS.prohibit_verbatim:
+        raise common.ExternalError(&quot;\&quot;%s\&quot; must be sent verbatim&quot; % (fn,))
+      print &quot;send&quot;, fn, &quot;verbatim&quot;
+      tf.AddToZip(output_zip)
+      verbatim_targets.append((fn, tf.size))
+    elif tf.sha1 != sf.sha1:
+      # File is different; consider sending as a patch
+      diffs.append(common.Difference(tf, sf))
+    else:
+      # Target file identical to source.
+      pass
+
+  common.ComputeDifferences(diffs)
+
+  for diff in diffs:
+    tf, sf, d = diff.GetPatch()
+    if d is None or len(d) &gt; tf.size * OPTIONS.patch_threshold:
+      # patch is almost as big as the file; don&apos;t bother patching
+      tf.AddToZip(output_zip)
+      verbatim_targets.append((tf.name, tf.size))
+    else:
+      common.ZipWriteStr(output_zip, &quot;patch/&quot; + tf.name + &quot;.p&quot;, d)
+      patch_list.append((tf.name, tf, sf, tf.size, sha.sha(d).hexdigest()))
+      largest_source_size = max(largest_source_size, sf.size)
+
+  source_fp = GetBuildProp(&quot;ro.build.fingerprint&quot;, source_zip)
+  target_fp = GetBuildProp(&quot;ro.build.fingerprint&quot;, target_zip)
+  metadata[&quot;pre-build&quot;] = source_fp
+  metadata[&quot;post-build&quot;] = target_fp
+
+  script.Mount(&quot;/system&quot;)
+  script.AssertSomeFingerprint(source_fp, target_fp)
+
+  source_boot = common.File(&quot;/tmp/boot.img&quot;,
+                            common.BuildBootableImage(
+                                os.path.join(OPTIONS.source_tmp, &quot;BOOT&quot;)))
+  target_boot = common.File(&quot;/tmp/boot.img&quot;,
+                            common.BuildBootableImage(
+                                os.path.join(OPTIONS.target_tmp, &quot;BOOT&quot;)))
+  updating_boot = (source_boot.data != target_boot.data)
+
+  source_recovery = common.File(&quot;system/recovery.img&quot;,
+                                common.BuildBootableImage(
+                                    os.path.join(OPTIONS.source_tmp, &quot;RECOVERY&quot;)))
+  target_recovery = common.File(&quot;system/recovery.img&quot;,
+                                common.BuildBootableImage(
+                                    os.path.join(OPTIONS.target_tmp, &quot;RECOVERY&quot;)))
+  updating_recovery = (source_recovery.data != target_recovery.data)
+
+  # Here&apos;s how we divide up the progress bar:
+  #  0.1 for verifying the start state (PatchCheck calls)
+  #  0.8 for applying patches (ApplyPatch calls)
+  #  0.1 for unpacking verbatim files, symlinking, and doing the
+  #      device-specific commands.
+
+  AppendAssertions(script, target_zip)
+  device_specific.IncrementalOTA_Assertions()
+
+  script.Print(&quot;Verifying current system...&quot;)
+
+  script.ShowProgress(0.1, 0)
+  total_verify_size = float(sum([i[2].size for i in patch_list]) + 1)
+  if updating_boot:
+    total_verify_size += source_boot.size
+  so_far = 0
+
+  for fn, tf, sf, size, patch_sha in patch_list:
+    script.PatchCheck(&quot;/&quot;+fn, tf.sha1, sf.sha1)
+    so_far += sf.size
+    script.SetProgress(so_far / total_verify_size)
+
+  if updating_boot:
+    d = common.Difference(target_boot, source_boot)
+    _, _, d = d.ComputePatch()
+    print &quot;boot      target: %d  source: %d  diff: %d&quot; % (
+        target_boot.size, source_boot.size, len(d))
+
+    common.ZipWriteStr(output_zip, &quot;patch/boot.img.p&quot;, d)
+
+    boot_type, boot_device = common.GetTypeAndDevice(&quot;/boot&quot;, OPTIONS.info_dict)
+
+    script.PatchCheck(&quot;%s:%s:%d:%s:%d:%s&quot; %
+                      (boot_type, boot_device,
+                       source_boot.size, source_boot.sha1,
+                       target_boot.size, target_boot.sha1))
+    so_far += source_boot.size
+    script.SetProgress(so_far / total_verify_size)
+
+  if patch_list or updating_recovery or updating_boot:
+    script.CacheFreeSpaceCheck(largest_source_size)
+
+  device_specific.IncrementalOTA_VerifyEnd()
+
+  script.Comment(&quot;---- start making changes here ----&quot;)
+
+  if OPTIONS.wipe_user_data:
+    script.Print(&quot;Erasing user data...&quot;)
+    script.FormatPartition(&quot;/data&quot;)
+
+  script.Print(&quot;Removing unneeded files...&quot;)
+  script.DeleteFiles([&quot;/&quot;+i[0] for i in verbatim_targets] +
+                     [&quot;/&quot;+i for i in sorted(source_data)
+                            if i not in target_data] +
+                     [&quot;/system/recovery.img&quot;])
+
+  script.ShowProgress(0.8, 0)
+  total_patch_size = float(sum([i[1].size for i in patch_list]) + 1)
+  if updating_boot:
+    total_patch_size += target_boot.size
+  so_far = 0
+
+  script.Print(&quot;Patching system files...&quot;)
+  for fn, tf, sf, size, _ in patch_list:
+    script.ApplyPatch(&quot;/&quot;+fn, &quot;-&quot;, tf.size, tf.sha1, sf.sha1, &quot;patch/&quot;+fn+&quot;.p&quot;)
+    so_far += tf.size
+    script.SetProgress(so_far / total_patch_size)
+
+  if updating_boot:
+    # Produce the boot image by applying a patch to the current
+    # contents of the boot partition, and write it back to the
+    # partition.
+    script.Print(&quot;Patching boot image...&quot;)
+    script.ApplyPatch(&quot;%s:%s:%d:%s:%d:%s&quot;
+                      % (boot_type, boot_device,
+                         source_boot.size, source_boot.sha1,
+                         target_boot.size, target_boot.sha1),
+                      &quot;-&quot;,
+                      target_boot.size, target_boot.sha1,
+                      source_boot.sha1, &quot;patch/boot.img.p&quot;)
+    so_far += target_boot.size
+    script.SetProgress(so_far / total_patch_size)
+    print &quot;boot image changed; including.&quot;
+  else:
+    print &quot;boot image unchanged; skipping.&quot;
+
+  if updating_recovery:
+    # Is it better to generate recovery as a patch from the current
+    # boot image, or from the previous recovery image?  For large
+    # updates with significant kernel changes, probably the former.
+    # For small updates where the kernel hasn&apos;t changed, almost
+    # certainly the latter.  We pick the first option.  Future
+    # complicated schemes may let us effectively use both.
+    #
+    # A wacky possibility: as long as there is room in the boot
+    # partition, include the binaries and image files from recovery in
+    # the boot image (though not in the ramdisk) so they can be used
+    # as fodder for constructing the recovery image.
+    MakeRecoveryPatch(output_zip, target_recovery, target_boot)
+    script.DeleteFiles([&quot;/system/recovery-from-boot.p&quot;,
+                        &quot;/system/etc/install-recovery.sh&quot;])
+    print &quot;recovery image changed; including as patch from boot.&quot;
+  else:
+    print &quot;recovery image unchanged; skipping.&quot;
+
+  script.ShowProgress(0.1, 10)
+
+  target_symlinks = CopySystemFiles(target_zip, None)
+
+  target_symlinks_d = dict([(i[1], i[0]) for i in target_symlinks])
+  temp_script = script.MakeTemporary()
+  Item.GetMetadata(target_zip)
+  Item.Get(&quot;system&quot;).SetPermissions(temp_script)
+
+  # Note that this call will mess up the tree of Items, so make sure
+  # we&apos;re done with it.
+  source_symlinks = CopySystemFiles(source_zip, None)
+  source_symlinks_d = dict([(i[1], i[0]) for i in source_symlinks])
+
+  # Delete all the symlinks in source that aren&apos;t in target.  This
+  # needs to happen before verbatim files are unpacked, in case a
+  # symlink in the source is replaced by a real file in the target.
+  to_delete = []
+  for dest, link in source_symlinks:
+    if link not in target_symlinks_d:
+      to_delete.append(link)
+  script.DeleteFiles(to_delete)
+
+  if verbatim_targets:
+    script.Print(&quot;Unpacking new files...&quot;)
+    script.UnpackPackageDir(&quot;system&quot;, &quot;/system&quot;)
+
+  if updating_recovery:
+    script.Print(&quot;Unpacking new recovery...&quot;)
+    script.UnpackPackageDir(&quot;recovery&quot;, &quot;/system&quot;)
+
+  script.Print(&quot;Symlinks and permissions...&quot;)
+
+  # Create all the symlinks that don&apos;t already exist, or point to
+  # somewhere different than what we want.  Delete each symlink before
+  # creating it, since the &apos;symlink&apos; command won&apos;t overwrite.
+  to_create = []
+  for dest, link in target_symlinks:
+    if link in source_symlinks_d:
+      if dest != source_symlinks_d[link]:
+        to_create.append((dest, link))
+    else:
+      to_create.append((dest, link))
+  script.DeleteFiles([i[1] for i in to_create])
+  script.MakeSymlinks(to_create)
+
+  # Now that the symlinks are created, we can set all the
+  # permissions.
+  script.AppendScript(temp_script)
+
+  # Do device-specific installation (eg, write radio image).
+  device_specific.IncrementalOTA_InstallEnd()
+
+  if OPTIONS.extra_script is not None:
+    scirpt.AppendExtra(OPTIONS.extra_script)
+
+  script.AddToZip(target_zip, output_zip)
+  WriteMetadata(metadata, output_zip)
+
+
+def main(argv):
+
+  def option_handler(o, a):
+    if o in (&quot;-b&quot;, &quot;--board_config&quot;):
+      pass   # deprecated
+    elif o in (&quot;-k&quot;, &quot;--package_key&quot;):
+      OPTIONS.package_key = a
+    elif o in (&quot;-i&quot;, &quot;--incremental_from&quot;):
+      OPTIONS.incremental_source = a
+    elif o in (&quot;-w&quot;, &quot;--wipe_user_data&quot;):
+      OPTIONS.wipe_user_data = True
+    elif o in (&quot;-n&quot;, &quot;--no_prereq&quot;):
+      OPTIONS.omit_prereq = True
+    elif o in (&quot;-e&quot;, &quot;--extra_script&quot;):
+      OPTIONS.extra_script = a
+    elif o in (&quot;--worker_threads&quot;):
+      OPTIONS.worker_threads = int(a)
+    else:
+      return False
+    return True
+
+  args = common.ParseOptions(argv, __doc__,
+                             extra_opts=&quot;b:k:i:d:wne:&quot;,
+                             extra_long_opts=[&quot;board_config=&quot;,
+                                              &quot;package_key=&quot;,
+                                              &quot;incremental_from=&quot;,
+                                              &quot;wipe_user_data&quot;,
+                                              &quot;no_prereq&quot;,
+                                              &quot;extra_script=&quot;,
+                                              &quot;worker_threads=&quot;],
+                             extra_option_handler=option_handler)
+
+  if len(args) != 2:
+    common.Usage(__doc__)
+    sys.exit(1)
+
+  if OPTIONS.extra_script is not None:
+    OPTIONS.extra_script = open(OPTIONS.extra_script).read()
+
+  print &quot;unzipping target target-files...&quot;
+  OPTIONS.input_tmp = common.UnzipTemp(args[0])
+
+  OPTIONS.target_tmp = OPTIONS.input_tmp
+  input_zip = zipfile.ZipFile(args[0], &quot;r&quot;)
+  OPTIONS.info_dict = common.LoadInfoDict(input_zip)
+  if OPTIONS.verbose:
+    print &quot;--- target info ---&quot;
+    common.DumpInfoDict(OPTIONS.info_dict)
+
+  if OPTIONS.device_specific is None:
+    OPTIONS.device_specific = OPTIONS.info_dict.get(&quot;tool_extensions&quot;, None)
+  if OPTIONS.device_specific is not None:
+    OPTIONS.device_specific = os.path.normpath(OPTIONS.device_specific)
+    print &quot;using device-specific extensions in&quot;, OPTIONS.device_specific
+
+  if OPTIONS.package_key:
+    temp_zip_file = tempfile.NamedTemporaryFile()
+    output_zip = zipfile.ZipFile(temp_zip_file, &quot;w&quot;,
+                                 compression=zipfile.ZIP_DEFLATED)
+  else:
+    output_zip = zipfile.ZipFile(args[1], &quot;w&quot;,
+                                 compression=zipfile.ZIP_DEFLATED)
+
+  if OPTIONS.incremental_source is None:
+    WriteFullOTAPackage(input_zip, output_zip)
+  else:
+    print &quot;unzipping source target-files...&quot;
+    OPTIONS.source_tmp = common.UnzipTemp(OPTIONS.incremental_source)
+    source_zip = zipfile.ZipFile(OPTIONS.incremental_source, &quot;r&quot;)
+    OPTIONS.target_info_dict = OPTIONS.info_dict
+    OPTIONS.source_info_dict = common.LoadInfoDict(source_zip)
+    if OPTIONS.verbose:
+      print &quot;--- source info ---&quot;
+      common.DumpInfoDict(OPTIONS.source_info_dict)
+    WriteIncrementalOTAPackage(input_zip, source_zip, output_zip)
+
+  output_zip.close()
+  if OPTIONS.package_key:
+    SignOutput(temp_zip_file.name, args[1])
+    temp_zip_file.close()
+
+  common.Cleanup()
+
+  print &quot;done.&quot;
+
+
+if __name__ == &apos;__main__&apos;:
+  try:
+    common.CloseInheritedPipes()
+    main(sys.argv[1:])
+  except common.ExternalError, e:
+    print
+    print &quot;   ERROR: %s&quot; % (e,)
+    print
+    sys.exit(1)<br></div></div>  
+
+<p> The main function main is the entry function of python. Let&apos;s look at the main
+function. Let&apos;s take a look at the flow in the main function (the last script)
+to know the execution of the script.</p>
+<ol>
+<li>At the beginning of the main function, first save the
+user-set option option into the OPTIONS variable, which is a class in
+python. Then it is judged whether there are any additional scripts, and if so,
+it is read into the OPTIONS variable. </li>
+<li>Unzip the input zip package, which is the original zip
+package we generated above. Then determine if device-specific extensions are
+used, and if they are used, they are read into the OPTIONS variable. </li>
+<li>Determine whether to sign, and then determine whether
+there is an incremental source of new content, and if so, decompress the
+incremental source package into a temporary variable (source_zip). Since then,
+all the preparations have been completed, and the most important function in the
+script, WriteFullOTAPackage(input_zip,output_zip), will be called. </li>
+<li>The processing of the WriteFullOTAPackage function is
+to get the generator of the script first. The default format is edify. Then get
+the metadata metadata, which comes from some environment variables of
+Android. Then get the device configuration parameters such as the version of the
+api function. Then determine if the timestamp is ignored. </li>
+<li>After the WriteFullOTAPackage function has finished
+preparing, it will start to generate the upgrade script file
+(updater-script). After generating the script file, write the metadata metadata
+obtained in the previous step to the output package out_zip.</li>
+<li>A complete update.zip upgrade package is now
+available. The generated location is:
+out/target/product/tcc8800/full_tcc8800_evm-ota-eng.mumu.20120315.155326.zip. Copy
+the upgrade package to the SD card and you can use it to upgrade. </li>
+</ol>
+<h2 id="4-android-ota-incremental-package-updatezip-generation"><a name="4-android-ota-incremental-package-updatezip-generation" class="anchor-navigation-ex-anchor" href="#4-android-ota-incremental-package-updatezip-generation"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 4. Android OTA incremental package update.zip generation</h2>
+<p>The update.zip upgrade package generated in the above process is an
+upgrade package for all systems. The size is more than 80M. For mobile phone
+users, the traffic used to upgrade is very large. And in the actual upgrade, we
+only hope to be able to upgrade the part of our changes. This requires an
+incremental package to upgrade. The process of generating an incremental package
+also requires the participation of ota_from_target_files.py mentioned above.</p>
+<p>  The following is the process of making an update.zip delta package.</p>
+<ol>
+<li><p>In the source root directory, execute the following command in
+turn: </p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">\$ build/envsetup.sh 
+      \$ lunch Select 17 
+      \$ make 
+      \$ make otapackage After<br></div></div>
+
+<p>executing the above command, we will generate our first system
+upgrade package under out/target/product/tcc8800/ . Let&apos;s name it A.zip </p>
+</li>
+<li><p>Modify the parts we need to change in the source code, such as
+modifying the kernel configuration, adding new drivers, and so on. Execute the
+above command again after modification. A second update.zip upgrade package
+generated by us will be generated. Name it B.zip.</p>
+</li>
+<li><p>In the above we looked at the help of the ota_from_target_files.py
+script, where the option -i is used to generate the differential delta
+package. The usage is based on the above A.zip and B.zip packages as input and
+the update.zip package as output. The generated update.zip is the last
+incremental package we need.</p>
+<p>The specific use is: copy the above two packages to the source
+root directory, and then execute the following command.</p>
+</li>
+</ol>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">\$ ./build/tools/releasetools/ota_from_target_files -i A.zip B.zip update.zip<br></div></div>
+
+<p>  An error that did not find recovery_api_version occurred when
+executing the above command. The reason is that if you use the option i when
+executing the above script, WriteIncrementalOTAPackage will be called to search
+for misc_info.txt from the META directory in the A and B packages to read the
+value of recovery_api_version. However, there is no such directory in the
+update.zip package generated when executing the make otapackage command.</p>
+<p>  At this point we need to use the original zip package generated by
+the make otapackage. The location of this package is in
+the out/target/product/tcc8800/ obj /PACKAGING/target_files_intermediates/
+directory . It is the intermediate production after the command make otapackage,
+which is the most original upgrade package. We rename the generated packages of
+the two compilations to A.zip and B.zip respectively, and copy them to the SD
+card root directory to execute the above commands repeatedly:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">\$ ./build/tools/releasetools/ota_form_target_files -i A.zip B.zip update.zip<br></div></div>
+
+<p>  When the above command is about to be executed,
+IncrementalOTA<em>InstallEnd will be called at
+_device/telechips/common/releasetools.py</em>, and <em>RADIO/bootloader.img</em> in the package will be read in this function.</p>
+<p>  There is no such directory and bootloader.img in the package. So the execution failed and the corresponding update.zip could not be generated. May be related to our unmodified bootloader. This issue has been resolved in the next blog.</p>
+<p>  In the next article, explain the reasons for the failure to make incremental packages and the solution.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Android OTA - Android OTA upgrade principle and process analysis 2">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android OTA - Android OTA upgrade principle and process analysis 1","level":"1.4.1","depth":2,"next":{"title":"Android OTA - Android OTA upgrade principle and process analysis 2","level":"1.4.2","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 2.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 2.md","articles":[]},"previous":{"title":"Android OTA","level":"1.4","depth":1,"ref":"","articles":[{"title":"Android OTA - Android OTA upgrade principle and process analysis 1","level":"1.4.1","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 1.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 1.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 2","level":"1.4.2","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 2.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 2.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 3","level":"1.4.3","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 3.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 3.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 4","level":"1.4.4","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 4.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 4.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 5","level":"1.4.5","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 5.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 5.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 6","level":"1.4.6","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 6.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 6.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 7","level":"1.4.7","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 7.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 7.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 8","level":"1.4.8","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 8.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 8.md","articles":[]},{"title":"Android OTA - Android OTA upgrade principle and process analysis 9","level":"1.4.9","depth":2,"path":"Android OTA - Android OTA upgrade principle and process analysis 9.md","ref":"Android OTA - Android OTA upgrade principle and process analysis 9.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Android OTA - Android OTA upgrade principle and process analysis 1.md","mtime":"2018-09-19T06:44:44.087Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

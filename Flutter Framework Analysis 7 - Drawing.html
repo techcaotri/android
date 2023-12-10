@@ -1,0 +1,1759 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter Framework Analysis 7 - Drawing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Flutter Framework Analysis 6 - Layout.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Flutter Framework Analysis 7 - Drawing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#flutter-frame-analysis-7----drawing"><b>1. </b>Flutter Frame Analysis (7) -- Drawing</a></li><ul><li><span class="title-icon "></span><a href="#foreword"><b>1.1. </b>Foreword</a></li><li><span class="title-icon "></span><a href="#overview"><b>1.2. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#layer"><b>1.2.1. </b>Layer</a></li></ul><li><span class="title-icon "></span><a href="#analysis"><b>1.3. </b>analysis</a></li><ul><li><span class="title-icon "></span><a href="#pipelineownerflushcompositingbits"><b>1.3.1. </b>pipelineOwner.flushCompositingBits()</a></li><li><span class="title-icon "></span><a href="#pipelineownerflushpaint"><b>1.3.2. </b>pipelineOwner.flushPaint()</a></li><li><span class="title-icon "></span><a href="#renderviewcompositeframe"><b>1.3.3. </b>renderView.compositeFrame()</a></li></ul><li><span class="title-icon "></span><a href="#to-sum-up"><b>1.4. </b>to sum up</a></li></ul></ul></div><a href="#flutter-frame-analysis-7----drawing" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="flutter-frame-analysis-7----drawing"><a name="flutter-frame-analysis-7----drawing" class="anchor-navigation-ex-anchor" href="#flutter-frame-analysis-7----drawing"><i class="fa fa-link" aria-hidden="true"></i></a>1. Flutter Frame Analysis (7) -- Drawing</h1>
+<p><strong>Flutter Framework Analysis and Analysis Series:</strong></p>
+<p><a href="Flutter%20Framework%20Analysis%201%20-%20Overview%20and%20Window.html">&quot;Flutter Framework Analysis (1) - Overview and Window&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%202%20-%20Initialization.html">&quot;Flutter Framework Analysis (2) - Initialization&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%203%20-%20Widget,%20Element%20and%20RenderObject.html">&quot;Flutter Framework Analysis (3) - Widget, Element and RenderObject&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%204%20-%20Flutter%20Framework%20Operation.html">&quot;Flutter Framework Analysis (4) - Flutter Framework Operation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%205%20-%20Animation.html">&quot;Flutter Framework Analysis (5) - Animation&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%206%20-%20Layout.html">&quot;Flutter Framework Analysis (6) - Layout&quot;</a></p>
+<p><a href="Flutter%20Framework%20Analysis%207%20-%20Drawing.html">&quot;Flutter Framework Analysis (7) - Drawing&quot;</a></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#flutter-frame-analysis-7-drawing"><strong>Flutter Frame Analysis (7) -- Drawing</strong></a><ul>
+<li><a href="#foreword"><strong>Foreword</strong></a></li>
+<li><a href="#overview"><strong>Overview</strong></a><ul>
+<li><a href="#layer"><strong>Layer</strong></a></li>
+</ul>
+</li>
+<li><a href="#analysis"><strong>analysis</strong></a><ul>
+<li><a href="#pipelineownerflushcompositingbits"><strong>pipelineOwner.flushCompositingBits()</strong></a></li>
+<li><a href="#pipelineownerflushpaint"><strong>pipelineOwner.flushPaint()</strong></a></li>
+<li><a href="#renderviewcompositeframe"><strong>renderView.compositeFrame()</strong></a></li>
+</ul>
+</li>
+<li><a href="#to-sum-up"><strong>to sum up</strong></a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="foreword"><a name="foreword" class="anchor-navigation-ex-anchor" href="#foreword"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Foreword</h2>
+<p>This article will introduce you to the painting phase of the final step of the
+rendering pipeline in conjunction with the Flutter source. The content of this
+article may be far from the framework knowledge that you need to know to develop
+the Flutter app. The place that may need attention at present
+is <code>RepaintBoundary</code> this Widget, and its
+corresponding <code>RenderObject</code> is <code>RenderRepaintBoundary</code>. The <code>Widget</code> role of this in
+the introduction of the rendering pipeline drawing stage I believe that everyone
+will have a clearer understanding.</p>
+<h2 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Overview</h2>
+<p>We all know that the render tree in the Flutter framework is responsible for
+layout and rendering. At the time of rendering, Flutter will traverse
+the <code>RenderObject</code> subtrees that need to be redrawn to draw one by one. The Flutter
+app page we saw on the screen was actually composed of different layers of
+compsite. These layers are organized in the form of trees, another important
+tree we saw in Flutter: the layer tree.</p>
+<p>     <a href="media/23f3bce0d273ad44b8036113b28af369.png" rel="grouped" title="https://user-gold-cdn.xitu.io/2019/5/29/16b025ac75af91c3?imageslim" target="_self" class="fancybox">
+       <img src="media/23f3bce0d273ad44b8036113b28af369.png" alt="https://user-gold-cdn.xitu.io/2019/5/29/16b025ac75af91c3?imageslim">
+     </a></p>
+<p>The above image is a schematic diagram of the Flutter frame rendering
+mechanism. The content in the green box above can be considered as the focus of
+this series of articles. That is where the Flutter frame rendering pipeline
+runs. It can be seen that the entire rendering pipeline is running in the UI
+thread, driven by the Vsync signal, and the layer tree is output after the frame
+rendering is completed. The layer tree is sent to the engine. The engine
+dispatches the layer tree to the GPU thread, composing the layer tree in the GPU
+thread, and then rendering it to the GPU display by the Skia 2D rendering
+engine. The layer tree is mentioned here because the final output of the
+rendering pipeline drawing stage we are about to analyze is such a layer
+tree. So the drawing phase is not as simple as calling a <code>paint()</code> function, but
+many places involve the management of the layer tree.</p>
+<h3 id="layer"><a name="layer" class="anchor-navigation-ex-anchor" href="#layer"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Layer</h3>
+<p>The layers in Flutter are <code>Layer</code> represented by classes .</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">abstract class Layer extends AbstractNode with DiagnosticableTreeMixin {
+
+  @override
+  ContainerLayer get parent =&gt; super.parent;
+
+  Layer get nextSibling =&gt; _nextSibling;
+  Layer _nextSibling;
+
+  Layer get previousSibling =&gt; _previousSibling;
+  Layer _previousSibling;
+}<br></div></div>
+
+<p>A class <code>Layer</code> is an abstract class, and the <code>RenderObject</code> same, inherited
+from <code>AbstractNode</code>. Indicates that it is also a tree structure. The
+attribute <code>parent</code> represents its parent node and the type is <code>ContainerLayer</code>. This
+class inherits from <code>Layer</code>. Only <code>ContainerLayer</code> layers of types and their
+subclasses can have children, and other types of <code>Layer</code> subclasses are leaf
+layers. <code>nextSibling</code> and <code>previousSibling</code> a front and a rear sibling node of the
+same layer, the layer that is used by children who are doubly linked list of
+storage.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class ContainerLayer extends Layer {
+  Layer _firstChild;
+  Layer _lastChild;
+
+  void append(Layer child) {
+    adoptChild(child);
+    child._previousSibling = lastChild;
+    if (lastChild != null)
+      lastChild._nextSibling = child;
+    _lastChild = child;
+    _firstChild ??= child;
+  }
+
+  void _removeChild(Layer child) {
+    if (child._previousSibling == null) {
+      _firstChild = child._nextSibling;
+    } else {
+      child._previousSibling._nextSibling = child.nextSibling;
+    }
+    if (child._nextSibling == null) {
+      _lastChild = child.previousSibling;
+    } else {
+      child.nextSibling._previousSibling = child.previousSibling;
+    }
+    child._previousSibling = null;
+    child._nextSibling = null;
+    dropChild(child);
+  }
+
+  void removeAllChildren() {
+    Layer child = firstChild;
+    while (child != null) {
+      final Layer next = child.nextSibling;
+      child._previousSibling = null;
+      child._nextSibling = null;
+      dropChild(child);
+      child = next;
+    }
+    _firstChild = null;
+    _lastChild = null;
+  }
+
+}<br></div></div>
+
+
+<p><code>ContainerLayer</code> added header and tail two child node properties and provides
+methods for adding and deleting child nodes.</p>
+<p><code>ContainerLayer</code> Subclasses <code>OffsetLayer</code>, <code>ClipRectLayer</code> and so on.</p>
+<p>The leaf type of the layer
+has <code>TextureLayer</code>, <code>PlatformViewLayer</code>, <code>PerformanceOverlayLayer</code>, <code>PictureLayer</code> and so
+on, most <code>RenderObject</code> of the drawn target layers in the frame are <code>PictureLayer</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class PictureLayer extends Layer {
+
+    final Rect canvasBounds;
+
+    ui.Picture _picture;
+}<br></div></div>
+
+<p>The attribute <code>canvasBounds</code> represents the boundary of the layer canvas, but this
+attribute is suggestive. The attribute <code>picture</code> comes from the <code>dart:ui</code> library.</p>
+<h2 id="analysis"><a name="analysis" class="anchor-navigation-ex-anchor" href="#analysis"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. analysis</h2>
+<p>Going back to the <code>drawFrame()</code> function we are familiar with ,
+the <code>pipelineOwner.flushLayout()</code> rendering pipeline enters the paint phase after
+the call is completed.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void drawFrame() {
+  pipelineOwner.flushLayout();
+  pipelineOwner.flushCompositingBits();
+  pipelineOwner.flushPaint();
+  renderView.compositeFrame(); // this sends the bits to the GPU
+  pipelineOwner.flushSemantics(); // this also sends the semantics to the OS.
+}<br></div></div>
+
+<p>The first call to the drawing phase is <code>pipelineOwner.flushCompositingBits()</code>.</p>
+<h3 id="pipelineownerflushcompositingbits"><a name="pipelineownerflushcompositingbits" class="anchor-navigation-ex-anchor" href="#pipelineownerflushcompositingbits"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. pipelineOwner.flushCompositingBits()</h3>
+<p>This call is used to update <code>RenderObject</code> the <code>_needsCompositing</code> flag bits in
+the render tree .</p>
+<p>Before we introduce this call, let&apos;s first understand some <code>RenderObject</code> of the
+flags.</p>
+<p><code>bool _needsCompositing</code>: The logo itself or a child node has a composite
+layer. If the current node needs to be synthesized, then all ancestor nodes also
+need to be synthesized.</p>
+<p><code>bool _needsCompositingBitsUpdate</code>: Flags whether the current node needs to be
+updated <code>_needsCompositing</code>. This flag is set by
+the <code>markNeedsCompositingBitsUpdate()</code> function below .</p>
+<p><code>bool get isRepaintBoundary =&gt; false;</code>: Flags whether the current node is redrawn
+from the parent node. When this flag is set <code>true</code>, the child node does not
+necessarily need to be redrawn when the parent node is redrawn. Similarly, the
+parent node does not necessarily need to be redrawn when it is redrawn. This
+flag is <code>true</code> the <code>RenderObject</code> root node of the render tree <code>RenderView</code>, we are
+familiar <code>RenderRepaintBoundary</code>, <code>TextureBox</code> and so on.</p>
+<p><code>bool get alwaysNeedsCompositing =&gt; false;</code>: Flags whether the current node
+always needs to be composited. This flag <code>true</code> means that the current node will
+always open a composite layer when it is drawn. For example <code>TextureBox</code>, and what
+we are familiar with showing runtime performance <code>RenderPerformanceOverlay</code>.</p>
+<p>In the construction phase of the rendering pipeline, in some cases the nodes in
+the render tree need to be re-updated <code>_needsCompositing</code>, such as the addition
+and deletion of nodes in the render tree. This tagging is done by a
+function <code>markNeedsCompositingBitsUpdate()</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void markNeedsCompositingBitsUpdate() {
+    if (_needsCompositingBitsUpdate)
+      return;
+    _needsCompositingBitsUpdate = true;
+    if (parent is RenderObject) {
+      final RenderObject parent = this.parent;
+      if (parent._needsCompositingBitsUpdate)
+        return;
+      if (!isRepaintBoundary &amp;&amp; !parent.isRepaintBoundary) {
+        parent.markNeedsCompositingBitsUpdate();
+        return;
+      }
+    }
+    if (owner != null)
+      owner._nodesNeedingCompositingBitsUpdate.add(this);
+  }<br></div></div>
+
+
+<p>This call will look up from the current node and set
+the <code>_needsCompositingBitsUpdate</code> flag bits of all parent nodes true. Until you or
+the parent node <code>isRepaintBoundary</code> is true. Finally, I will add myself
+to PipelineOwnerthe <code>_nodesNeedingCompositingBitsUpdate</code> list. The function
+call <code>pipelineOwner.flushCompositingBits()</code> is used to process this list.</p>
+<p><code>flushCompositingBits()</code> The source code is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void flushCompositingBits() {
+
+    _nodesNeedingCompositingBitsUpdate.sort((RenderObject a, RenderObject b) =&gt; a.depth - b.depth);
+    for (RenderObject node in _nodesNeedingCompositingBitsUpdate) {
+      if (node._needsCompositingBitsUpdate &amp;&amp; node.owner == this)
+        node._updateCompositingBits();
+    }
+    _nodesNeedingCompositingBitsUpdate.clear();
+  }<br></div></div>
+
+<p>First sort the list <code>_nodesNeedingCompositingBitsUpdate</code> by the depth of the nodes
+in the tree. Then traversing the call <code>node._updateCompositingBits()</code></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void _updateCompositingBits() {
+    if (!_needsCompositingBitsUpdate)
+      return;
+    final bool oldNeedsCompositing = _needsCompositing;
+    _needsCompositing = false;
+    visitChildren((RenderObject child) {
+      child._updateCompositingBits();
+      if (child.needsCompositing)
+        _needsCompositing = true;
+    });
+    if (isRepaintBoundary || alwaysNeedsCompositing)
+      _needsCompositing = true;
+    if (oldNeedsCompositing != _needsCompositing)
+      markNeedsPaint();
+    _needsCompositingBitsUpdate = false;
+  }<br></div></div>
+
+<p>What this does is look down from the current node, if a child
+node <code>isRepaintBoundary</code> is <code>true</code> or <code>alwaysNeedsCompositing</code> is <code>true</code> it
+set <code>_needsCompositing</code> to <code>true</code>. If the child node has this flag <code>true</code>, then the
+flag of the parent node will also be set to <code>true</code>. If <code>_needsCompositing</code> a change
+has occurred, the <code>markNeedsPaint()</code> notification render pipeline will be called
+and the <code>RenderObject</code> redraw will need to be redrawn. Why do you want to redraw
+it? The reason is that the layer where the <code>RenderObject</code> is located may
+have changed.</p>
+<h3 id="pipelineownerflushpaint"><a name="pipelineownerflushpaint" class="anchor-navigation-ex-anchor" href="#pipelineownerflushpaint"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. pipelineOwner.flushPaint()</h3>
+<p>The function <code>flushPaint()</code> handles <code>_nodesNeedingPaint</code> the nodes that were
+previously added to the list . <code>RenderObject</code> Called when something needs to be
+redrawn <code>markNeedsPaint()</code></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void markNeedsPaint() {
+    if (_needsPaint)
+      return;
+    _needsPaint = true;
+    if (isRepaintBoundary) {
+      if (owner != null) {
+        owner._nodesNeedingPaint.add(this);
+        owner.requestVisualUpdate();
+      }
+    } else if (parent is RenderObject) {
+      final RenderObject parent = this.parent;
+      parent.markNeedsPaint();
+    } else {
+      if (owner != null)
+        owner.requestVisualUpdate();
+    }
+  }<br></div></div>
+
+<p>The <code>markNeedsPaint()</code> first thing the function does is set its own flag
+bit <code>_needsPaint</code> to <code>true</code>. Then it will look up the nearest
+one <code>isRepaintBoundary</code> for <code>true</code> the ancestor node. Until you find such a node, the
+node will be added to this <code>_nodesNeedingPaint</code> list, that is to say, not any one
+needs to be repainted <code>RenderObject</code> will be added to this list, but up looking
+until you find the nearest one <code>isRepaintBoundary</code> to <code>true</code> take into This list, in
+other words, is only <code>isRepaintBoundary</code> for <code>true</code> this type of node in this
+list . That is to say, the starting point of redrawing starts from &quot;repainting
+the boundary&quot;.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void flushPaint() {
+    try {
+      final List&lt;RenderObject&gt; dirtyNodes = _nodesNeedingPaint;
+      _nodesNeedingPaint = &lt;RenderObject&gt;[];
+      // Sort the dirty nodes in reverse order (deepest first).
+      for (RenderObject node in dirtyNodes..sort((RenderObject a, RenderObject b) =&gt; b.depth - a.depth)) {
+        if (node._needsPaint &amp;&amp; node.owner == this) {
+          if (node._layer.attached) {
+            PaintingContext.repaintCompositedChild(node);
+          } else {
+            node._skippedPaintingOnLayer();
+          }
+        }
+      }
+    } finally {
+      ...
+    }
+  }<br></div></div>
+
+<p>When dealing with nodes that need to be redrawn, these nodes will be sorted
+first. It should be noted that, <code>flushLayout()</code> unlike the previous sorting, the
+sorting here is the node with deep depth. In the loop body, it will determine
+whether the current node&apos;s <code>_layer</code> properties are in <code>attached</code> the state. If
+it <code>_layer.attached</code> is <code>true</code>, call
+to <code>PaintingContext.repaintCompositedChild(node);</code> do the drawing, otherwise the
+call <code>node._skippedPaintingOnLayer()</code> will set itself and <code>_needsPaint</code> all the nodes
+between the upper drawing boundaries <code>true</code>. This will be drawn directly the next
+time it <code>_layer.attached</code> changes <code>true</code>.</p>
+<p>It can also be seen from the above code that redrawing the boundary is
+equivalent to doing the block processing of Flutter&apos;s drawing. The redrawing
+starts from the upper layer redrawing the boundary to the lower layer redrawing
+the boundary, and <code>RenderObject</code> both need to be redrawn. Outside the boundary, you
+may not need to redraw, which is also a performance consideration, try to avoid
+unnecessary drawing. So how to make reasonable arrangements <code>RepaintBoundary</code> is
+one of the directions we need to consider when doing the performance
+optimization of the Flutter app.</p>
+<p>The <code>_layer</code> attribute here is the layer we said before. This
+attribute <code>RenderObject</code> has a value only if it is drawn . The
+general <code>RenderObject</code> property is <code>null</code>.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static void _repaintCompositedChild(
+   RenderObject child, {
+   bool debugAlsoPaintedParent = false,
+   PaintingContext childContext,
+ }) {
+   if (child._layer == null) {
+     child._layer = OffsetLayer();
+   } else {
+     child._layer.removeAllChildren();
+   }
+   childContext ??= PaintingContext(child._layer, child.paintBounds);
+   child._paintWithContext(childContext, Offset.zero);
+   childContext.stopRecordingIfNeeded();
+ }<br></div></div>
+
+<p>The layer property that the function <code>_repaintCompositedChild()</code> will check
+first <code>RenderObject</code>. If it is empty, create a new <code>OffsetLayer</code> instance. If the
+layer already exists, clear the child.</p>
+<p>If not <code>PaintingContext</code>, create a new one and let it start drawing. Let&apos;s take a
+look at <code>PaintingContext</code> this class first :</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">class PaintingContext extends ClipContext {
+  @protected
+  PaintingContext(this._containerLayer, this.estimatedBounds)
+
+  final ContainerLayer _containerLayer;
+
+  final Rect estimatedBounds;
+
+  PictureLayer _currentLayer;
+  ui.PictureRecorder _recorder;
+  Canvas _canvas;
+
+  @override
+  Canvas get canvas {
+    if (_canvas == null)
+      _startRecording();
+    return _canvas;
+  }
+
+  void _startRecording() {
+    _currentLayer = PictureLayer(estimatedBounds);
+    _recorder = ui.PictureRecorder();
+    _canvas = Canvas(_recorder);
+    _containerLayer.append(_currentLayer);
+  }
+
+   void stopRecordingIfNeeded() {
+    if (!_isRecording)
+      return;
+    _currentLayer.picture = _recorder.endRecording();
+    _currentLayer = null;
+    _recorder = null;
+    _canvas = null;
+  }<br></div></div>
+
+<p>The <code>PaintingContext</code> literal meaning of the class is the drawing context, and its
+property <code>_containerLayer</code> is the container layer, which comes from the
+constructor. That <code>PaintingContext</code> is, it is associated with the container
+layer. Then there is <code>PictureLayer</code> the type
+of <code>_currentLayer</code> property, <code>ui.PictureRecorder</code> the type of <code>_recorder</code> property and we
+are familiar with <code>Canvas</code> the type of property <code>_canvas</code>. The
+function <code>_startRecording()</code> instantiates these properties. <code>_recorder</code> Used to record
+drawing commands and <code>_canvas</code> bind a recorder. Finally, it <code>_currentLayer</code> will be
+added as a child node <code>_containerLayer</code>. There will be an end when there is a
+start, which is <code>stopRecordingIfNeeded()</code> used to end the recording of the current
+drawing. At the end, the drawn <code>Picture</code> values will be assigned to the current
+one <code>PictureLayer.picture</code>.</p>
+<p>Once you have <code>PaintingContext</code> it, you can call
+to <code>RenderObject._paintWithContext()</code> start drawing. This function will be called
+directly to the familiar one <code>RenderObject.paint(context, offset)</code>. We know that
+the function <code>paint()</code> is <code>RenderObject</code> implemented by the subclass itself. From the
+previous source analysis we know that the starting point for drawing is &quot;draw
+the boundary&quot;. Here we take a familiar &quot;draw boundary&quot;, <code>RenderRepaintBoundary</code> for
+example, to take a look at the drawing process, its implementation of the
+drawing function in the <code>RenderProxyBoxMixin</code> class:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+ void paint(PaintingContext context, Offset offset) {
+   if (child != null)
+     context.paintChild(child, offset);
+ }<br></div></div>
+
+<p>This call is back to <code>PaintingContext</code> the <code>paintChild()</code> method:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void paintChild(RenderObject child, Offset offset) {
+    if (child.isRepaintBoundary) {
+      stopRecordingIfNeeded();
+      _compositeChild(child, offset);
+    } else {
+      child._paintWithContext(this, offset);
+    }
+  }<br></div></div>
+
+<p>This will check if the child node is drawing the boundary. If it is not, it is
+normal drawing, then call <code>_paintWithContext()</code> it down and
+continue <code>PictureLayer</code> drawing to the current one . If so, stop the current
+drawing first. Then call <code>_compositeChild(child, offset);</code></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void _compositeChild(RenderObject child, Offset offset) {
+    if (child._needsPaint) {
+      repaintCompositedChild(child, debugAlsoPaintedParent: true);
+    }
+    child._layer.offset = offset;
+    appendLayer(child._layer);
+  }<br></div></div>
+
+<p>If the sub-draw boundary is marked as needing to be redrawn, then it is
+called <code>repaintCompositedChild()</code> to regenerate the layer and redraw. If this
+sub-draw boundary is <strong>not</strong>marked as needing to be redrawn, the rebuild layer
+and redraw are skipped. Finally, you only need to add the sublayer to the
+current container layer.</p>
+<p>The above is the drawing process when the child nodes are drawing the boundary.
+If the child nodes are ordinary ones <code>RenderObject</code>? Here is an example of the
+drawing of the Flutter app error control:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void _compositeChild(RenderObject child, Offset offset) {
+    if (child._needsPaint) {
+      repaintCompositedChild(child, debugAlsoPaintedParent: true);
+    }
+    child._layer.offset = offset;
+    appendLayer(child._layer);
+  }<br></div></div>
+
+<p>This looks like a normal drawing, we will use <code>PaintingContext</code> the
+canvas canvasfrom the drawing to draw the rectangle, draw the text and so on. As
+can be seen from the previous analysis, the drawing here is done on
+one <code>PictureLayer</code> layer.</p>
+<p>So far <code>pipelineOwner.flushPaint();</code> this function is called and ran over, through
+analysis we can know, it is mainly drawn work done in this function. Next, let&apos;s
+take a look at the last important function call of the drawing process:</p>
+<h3 id="renderviewcompositeframe"><a name="renderviewcompositeframe" class="anchor-navigation-ex-anchor" href="#renderviewcompositeframe"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. renderView.compositeFrame()</h3>
+<p>Here <code>renderView</code> is the root node of the render tree we said earlier. This
+function call mainly sends the entire layer tree generator <code>scene</code> to the engine
+for display.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void compositeFrame() {
+    try {
+      final ui.SceneBuilder builder = ui.SceneBuilder();
+      final ui.Scene scene = layer.buildScene(builder);
+      if (automaticSystemUiAdjustment)
+        _updateSystemChrome();
+      _window.render(scene);
+      scene.dispose();
+    } finally {
+      Timeline.finishSync();
+    }
+  }<br></div></div>
+
+<p><code>ui.SceneBuilder()</code> Finally call the Native method <code>SceneBuilder_constructor</code>. This
+means that the <code>ui.SceneBuilder</code> instance was created by the engine. The next step
+is to call the <code>layer.buildScene(builder)</code> method, which returns
+an <code>ui.Scene</code> instance. Since <code>compositeFrame()</code> the caller of
+the method is <code>renderView</code>. So here <code>layer</code> is <code>renderView</code> the attribute from which we
+said earlier that only the boundary node is drawn layer. So the root
+node <code>renderView</code> of the render tree is also a drawing boundary. So <code>layer</code> where
+did this come from? In the article <a href="Flutter%20Framework%20Analysis%202%20-%20Initialization.html">&quot;Flutter Framework Analysis (2) - Initialization&quot;</a>
+we have said that during the framework initialization
+process, <code>renderView</code> the first frame will be dispatched:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void scheduleInitialFrame() {
+    scheduleInitialLayout();
+    scheduleInitialPaint(_updateMatricesAndCreateNewRootLayer());
+    owner.requestVisualUpdate();
+  }
+
+  Layer _updateMatricesAndCreateNewRootLayer() {
+    _rootTransform = configuration.toMatrix();
+    final ContainerLayer rootLayer = TransformLayer(transform: _rootTransform);
+    rootLayer.attach(this);
+    return rootLayer;
+  }
+
+  void scheduleInitialPaint(ContainerLayer rootLayer) {
+    _layer = rootLayer;
+    owner._nodesNeedingPaint.add(this);
+  }<br></div></div>
+
+<p>In the method <code>_updateMatricesAndCreateNewRootLayer()</code>, we see that one is
+instantiated here <code>TransformLayer</code>. <code>TransformLayer</code> inherited
+from <code>OffsetLayer</code>. <code>Matrix4</code> The parameters of the type are required to be
+constructed transform. This <code>Matrix4</code> is actually the <code>Matrix</code> same thing we saw in
+Android . Represents matrix transformation. Here <code>transform</code> comes from what we
+have said before <code>ViewConfiguration</code>, it is to convert the device pixel ratio into
+a matrix form. In the end, this <code>layer</code> connection is over <code>renderView</code>. So
+here <code>TransformLayer</code> is actually the root node of the layer tree.</p>
+<p>Go back to our drawing process. <code>layer.buildScene(builder);</code> This call we naturally
+go <code>TransformLayer</code> there to find, but this method is the parent
+class <code>OffsetLayer</code> inside, we are all of the layers to operate from the beginning
+of this call, eventually converted to layer tree scene scene:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">ui.Scene buildScene(ui.SceneBuilder builder) {
+    List&lt;PictureLayer&gt; temporaryLayers;
+    updateSubtreeNeedsAddToScene();
+    addToScene(builder);
+    final ui.Scene scene = builder.build();
+    return scene;
+  }<br></div></div>
+
+<p>The function call <code>updateSubtreeNeedsAddToScene();</code> will traverse the layer tree to
+set the <code>_subtreeNeedsAddToScene</code> flag bit. If there are any sub-layers to add or
+delete, the sub-layer and its ancestor layer will
+be <code>_subtreeNeedsAddToScene</code> marked. Then call <code>addToScene(builder);</code></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">@override
+   @override
+  ui.EngineLayer addToScene(ui.SceneBuilder builder, [ Offset layerOffset = Offset.zero ]) {
+    _lastEffectiveTransform = transform;
+    final Offset totalOffset = offset + layerOffset;
+    if (totalOffset != Offset.zero) {
+      _lastEffectiveTransform = Matrix4.translationValues(totalOffset.dx, totalOffset.dy, 0.0)
+        ..multiply(_lastEffectiveTransform);
+    }
+    builder.pushTransform(_lastEffectiveTransform.storage);
+    addChildrenToScene(builder);
+    builder.pop();
+    return null; // this does not return an engine layer yet.
+  }<br></div></div>
+
+<p><code>builder.pushTransform</code> will call to the engine layer. This is equivalent to
+telling the engine that I want to add a transform layer. Then call
+to <code>addChildrenToScene(builder)</code> add the sub-layer to the scene, and then push the
+transformation layer of the previous stack onto the stack.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void addChildrenToScene(ui.SceneBuilder builder, [ Offset childOffset = Offset.zero ]) {
+    Layer child = firstChild;
+    while (child != null) {
+      if (childOffset == Offset.zero) {
+        child._addToSceneWithRetainedRendering(builder);
+      } else {
+        child.addToScene(builder, childOffset);
+      }
+      child = child.nextSibling;
+    }
+  }<br></div></div>
+
+<p>This is the call to traverse the add sublayer. Mainly still called down layer by
+layer <code>addToScene()</code>. Different layers of this method will have different
+implementations. For the container class layer, the main thing is to do three
+things: 1. Add the effect of your own layer and then push the stack, 2. Add the
+sublayer, 3. Stack .</p>
+<p>After all layers have been processed. Going back <code>renderView.compositeFrame()</code>, it
+will be visible that the scene that was processed will
+be <code>_window.render(scene);</code> sent to the engine for display.</p>
+<p>At this point, the paint phase of the render pipeline is finished.</p>
+<p>Wait, it seems that something is missing. In the process of analyzing and
+drawing, we see that the main call <code>pipelineOwner.flushCompositingBits()</code> is to
+update the <code>_needsCompositing</code> flag of the node in the render tree . But we all
+finished the process, and it seems that we have not seen where the logo is
+used. This flag is definitely used where it is, otherwise we have to use such a
+big update to use it? Go back and study the code...</p>
+<p>Some of this flag will be used <code>RenderObject</code> in its <code>paint()</code> function, and it is
+reflected in <code>PaintingContext</code> the call of these functions:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void pushClipRect(bool needsCompositing, Offset offset, Rect clipRect, PaintingContextCallback painter, { Clip clipBehavior = Clip.hardEdge }) {
+    final Rect offsetClipRect = clipRect.shift(offset);
+    if (needsCompositing) {
+      pushLayer(ClipRectLayer(clipRect: offsetClipRect, clipBehavior: clipBehavior), painter, offset, childPaintBounds: offsetClipRect);
+    } else {
+      clipRectAndPaint(offsetClipRect, clipBehavior, offsetClipRect, () =&gt; painter(this, offset));
+    }
+  }
+
+  void pushClipRRect(bool needsCompositing, Offset offset, Rect bounds, RRect clipRRect, PaintingContextCallback painter, { Clip clipBehavior = Clip.antiAlias }) {
+    final Rect offsetBounds = bounds.shift(offset);
+    final RRect offsetClipRRect = clipRRect.shift(offset);
+    if (needsCompositing) {
+      pushLayer(ClipRRectLayer(clipRRect: offsetClipRRect, clipBehavior: clipBehavior), painter, offset, childPaintBounds: offsetBounds);
+    } else {
+      clipRRectAndPaint(offsetClipRRect, clipBehavior, offsetBounds, () =&gt; painter(this, offset));
+    }
+  }
+
+
+  void pushClipPath(bool needsCompositing, Offset offset, Rect bounds, Path clipPath, PaintingContextCallback painter, { Clip clipBehavior = Clip.antiAlias }) {
+    final Rect offsetBounds = bounds.shift(offset);
+    final Path offsetClipPath = clipPath.shift(offset);
+    if (needsCompositing) {
+      pushLayer(ClipPathLayer(clipPath: offsetClipPath, clipBehavior: clipBehavior), painter, offset, childPaintBounds: offsetBounds);
+    } else {
+      clipPathAndPaint(offsetClipPath, clipBehavior, offsetBounds, () =&gt; painter(this, offset));
+    }
+  }
+
+  void pushTransform(bool needsCompositing, Offset offset, Matrix4 transform, PaintingContextCallback painter) {
+    final Matrix4 effectiveTransform = Matrix4.translationValues(offset.dx, offset.dy, 0.0)
+      ..multiply(transform)..translate(-offset.dx, -offset.dy);
+    if (needsCompositing) {
+      pushLayer(
+        TransformLayer(transform: effectiveTransform),
+        painter,
+        offset,
+        childPaintBounds: MatrixUtils.inverseTransformRect(effectiveTransform, estimatedBounds),
+      );
+    } else {
+      canvas
+        ..save()
+        ..transform(effectiveTransform.storage);
+      painter(this, offset);
+      canvas
+        ..restore();
+    }
+  }<br></div></div>
+
+<p><code>needsCompositing</code> As the parameters of these functions, we can see from the code
+its main function is to control these types of special drawing operations of the
+specific implementation, if <code>needsCompositing</code> is <code>true</code>, then, will be
+called <code>pushLayer</code>, the parameters we had seen various layers</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;dart&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void pushLayer(ContainerLayer childLayer, PaintingContextCallback painter, Offset offset, { Rect childPaintBounds }) {
+   stopRecordingIfNeeded();
+   appendLayer(childLayer);
+   final PaintingContext childContext = createChildContext(childLayer, childPaintBounds ?? estimatedBounds);
+   painter(childContext, offset);
+   childContext.stopRecordingIfNeeded();
+ }
+
+ @protected
+ PaintingContext createChildContext(ContainerLayer childLayer, Rect bounds) {
+   return PaintingContext(childLayer, bounds);
+ }<br></div></div>
+
+<p>The process is basically the same as adding a layer when we redraw it.</p>
+<p>And if it <code>needsCompositing</code> is <code>false</code>, then it is <code>canvas</code> a variety of changes. If
+you are interested, you can go and see the source code. I won&apos;t go into details
+here.</p>
+<h2 id="to-sum-up"><a name="to-sum-up" class="anchor-navigation-ex-anchor" href="#to-sum-up"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. to sum up</h2>
+<p>So far, the paint phase of the Flutter frame rendering pipeline has been
+analyzed. The drawing process is not as straightforward as the previous build,
+layout process, just traverse the element tree or the render tree. Another tree,
+layer tree, layer tree appears in the render phase. The entire drawing process
+is a process of converting the render tree into a suitable layer tree and
+finally generating a scene.</p>
+<p>Finally, on the basis of understanding the rendering process, it is recommended
+that you take a look at this video from Google engineers: <a href="https://link.juejin.im/?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FRNhdYtoQ8RQcjIXJReGZWA" target="_blank">Learn more about
+Flutter&apos;s high-performance graphics
+rendering</a>.
+I believe that after reading this video, you will have a better understanding of
+the rendering of the Flutter framework and some performance issues you may
+encounter.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Flutter Framework Analysis 6 - Layout.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Flutter Framework Analysis 6 - Layout">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter Framework Analysis 7 - Drawing","level":"1.11.7","depth":2,"previous":{"title":"Flutter Framework Analysis 6 - Layout","level":"1.11.6","depth":2,"path":"Flutter Framework Analysis 6 - Layout.md","ref":"Flutter Framework Analysis 6 - Layout.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Flutter Framework Analysis 7 - Drawing.md","mtime":"2019-07-24T04:16:35.130Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

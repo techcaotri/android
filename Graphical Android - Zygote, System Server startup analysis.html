@@ -1,0 +1,2467 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Graphical Android - Zygote, System Server startup analysis · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="@gitbook-ng/gitbook 3.3.6">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-wide-page/wide.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Graphical Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                <a href="Graphical Android - Zygote, System Server startup analysis.html">
+            
+                    
+                    Graphical Android - Zygote, System Server startup analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Android Permissions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Android Permissions - Android Runtime Permission.html">
+            
+                <a href="Android Permissions - Android Runtime Permission.html">
+            
+                    
+                    Android Permissions - Android Runtime Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                <a href="Android Permissions - Android grantRuntimePermission Detailed.html">
+            
+                    
+                    Android Permissions - Android grantRuntimePermission Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                <a href="Android Permissions - Android GrantPermissionsActivity Detailed.html">
+            
+                    
+                    Android Permissions - Android GrantPermissionsActivity Detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Android Permissions - AppOps control for Normal permission.html">
+            
+                <a href="Android Permissions - AppOps control for Normal permission.html">
+            
+                    
+                    Android Permissions - AppOps control for Normal permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Android Permissions - Android native permission control process.html">
+            
+                <a href="Android Permissions - Android native permission control process.html">
+            
+                    
+                    Android Permissions - Android native permission control process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                <a href="Android Permissions - The difference between setUidMode and setMode in AppOps.html">
+            
+                    
+                    Android Permissions - The difference between setUidMode and setMode in AppOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                <a href="Android Permissions - Application permissions before android M and application permissions after M.html">
+            
+                    
+                    Android Permissions - Application permissions before android M and application permissions after M
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Android Permissions - Provider permissions detailed.html">
+            
+                <a href="Android Permissions - Provider permissions detailed.html">
+            
+                    
+                    Android Permissions - Provider permissions detailed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Android OTA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 1.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 2.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 3.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 4.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 5.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 6.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 7.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 8.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                <a href="Android OTA - Android OTA upgrade principle and process analysis 9.html">
+            
+                    
+                    Android OTA - Android OTA upgrade principle and process analysis 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Android Package Manager Service (PMS)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Android PMS - Explore the Android PMS service.html">
+            
+                <a href="Android PMS - Explore the Android PMS service.html">
+            
+                    
+                    Android PMS - Explore the Android PMS service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Android PMS - Some rules of the PMS runtime.html">
+            
+                <a href="Android PMS - Some rules of the PMS runtime.html">
+            
+                    
+                    Android PMS - Some rules of the PMS runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Android PMS - Android 6 PMS Analysis.html">
+            
+                <a href="Android PMS - Android 6 PMS Analysis.html">
+            
+                    
+                    Android PMS - Android 6 PMS Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 1.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis article 2.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis article 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                <a href="Android PMS - Android 6 PMS analysis of the next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS analysis of the next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                <a href="Android PMS - Android 6 PMS install APK prelude.html">
+            
+                    
+                    Android PMS - Android 6 PMS install APK prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Android PMS - Android 6 PMS installation APK.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                <a href="Android PMS - Android 6 PMS installation APK next article.html">
+            
+                    
+                    Android PMS - Android 6 PMS installation APK next article
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                <a href="Android PMS - Android 6 PMS Uninstall APK.html">
+            
+                    
+                    Android PMS - Android 6 PMS Uninstall APK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="Android PMS - Android 6 PMS daemon installd.html">
+            
+                <a href="Android PMS - Android 6 PMS daemon installd.html">
+            
+                    
+                    Android PMS - Android 6 PMS daemon installd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                <a href="Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger.html">
+            
+                    
+                    Android AOSP - Debugging AOSP Platform code with Android Studio - Java Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                <a href="Android AOSP - Modify applications and rebuild emulator image effectively.html">
+            
+                    
+                    Android AOSP - Modify applications and rebuild emulator image effectively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android General
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                <a href="Android General - Reliable connection to AIDL IPC Service in Android.html">
+            
+                    
+                    Android General - Reliable connection to AIDL IPC Service in Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Android Binder
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Android Activity Manager Service (AMS)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Live555
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Live555 - Live555 source code analysis_introduction.html">
+            
+                <a href="Live555 - Live555 source code analysis_introduction.html">
+            
+                    
+                    Live555 - Live555 source code analysis_introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                <a href="Live555 - Live555 source code analysis_infrastructure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_mediaserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_mediaserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                <a href="Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process.html">
+            
+                    
+                    Live555 - Wireshark capture packet analysis RTSP_RTP_RTCP basic working process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                <a href="Live555 - Live555 source code analysis_rtspserver.html">
+            
+                    
+                    Live555 - Live555 source code analysis_rtspserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="Live555 - Live555 source code analysis_describe processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_describe processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_describe processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="Live555 - Live555 source code analysis_setup processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_setup processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_setup processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="Live555 - Live555 source code analysis_play processing.html">
+            
+                <a href="Live555 - Live555 source code analysis_play processing.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                <a href="Live555 - Live555 source code analysis_RTSPServer component structure.html">
+            
+                    
+                    Live555 - Live555 source code analysis_RTSPServer component structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                <a href="Live555 - Live555 source code analysis_servermediasession.html">
+            
+                    
+                    Live555 - Live555 source code analysis_servermediasession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                <a href="Live555 - Live555 source code analysis_subsession SDP line generation.html">
+            
+                    
+                    Live555 - Live555 source code analysis_subsession SDP line generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                <a href="Live555 - Live555 source code analysis_Subsession SETUP.html">
+            
+                    
+                    Live555 - Live555 source code analysis_Subsession SETUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Live555 - Live555 source code analysis_play start.html">
+            
+                <a href="Live555 - Live555 source code analysis_play start.html">
+            
+                    
+                    Live555 - Live555 source code analysis_play start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Flutter
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                <a href="Flutter Framework Analysis 1 - Overview and Window.html">
+            
+                    
+                    Flutter Framework Analysis 1 - Overview and Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Flutter Framework Analysis 2 - Initialization.html">
+            
+                <a href="Flutter Framework Analysis 2 - Initialization.html">
+            
+                    
+                    Flutter Framework Analysis 2 - Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                <a href="Flutter Framework Analysis 3 - Widget, Element and RenderObject.html">
+            
+                    
+                    Flutter Framework Analysis 3 - Widget, Element and RenderObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                <a href="Flutter Framework Analysis 4 - Flutter Framework Operation.html">
+            
+                    
+                    Flutter Framework Analysis 4 - Flutter Framework Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="Flutter Framework Analysis 5 - Animation.html">
+            
+                <a href="Flutter Framework Analysis 5 - Animation.html">
+            
+                    
+                    Flutter Framework Analysis 5 - Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="Flutter Framework Analysis 6 - Layout.html">
+            
+                <a href="Flutter Framework Analysis 6 - Layout.html">
+            
+                    
+                    Flutter Framework Analysis 6 - Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="Flutter Framework Analysis 7 - Drawing.html">
+            
+                <a href="Flutter Framework Analysis 7 - Drawing.html">
+            
+                    
+                    Flutter Framework Analysis 7 - Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Graphical Android - Zygote, System Server startup analysis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#graphical-android---zygote-system-server-startup-analysis"><b>1. </b>Graphical Android - Zygote, System Server startup analysis</a></li><li><span class="title-icon "></span><a href="#1-appprocess"><b>2. </b>1. App_Process</a></li><li><span class="title-icon "></span><a href="#2-androidruntime"><b>3. </b>2. AndroidRuntime</a></li><li><span class="title-icon "></span><a href="#3-zygoteinit"><b>4. </b>3. ZygoteInit</a></li><li><span class="title-icon "></span><a href="#4-system-server-startup-process"><b>5. </b>4. System Server startup process</a></li><li><span class="title-icon "></span><a href="#5-fork"><b>6. </b>5. Fork</a></li><li><span class="title-icon "></span><a href="#6-after-work"><b>7. </b>6. After work</a></li><li><span class="title-icon "></span><a href="#summary"><b>8. </b>Summary</a></li></ul></div><a href="#graphical-android---zygote-system-server-startup-analysis" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="graphical-android---zygote-system-server-startup-analysis"><a name="graphical-android---zygote-system-server-startup-analysis" class="anchor-navigation-ex-anchor" href="#graphical-android---zygote-system-server-startup-analysis"><i class="fa fa-link" aria-hidden="true"></i></a>1. Graphical Android - Zygote, System Server startup analysis</h1>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:undefined orderedList:0 -->
+<ul>
+<li><a href="#graphical-android-zygote-system-server-startup-analysis"><em>Graphical Android - Zygote, System Server startup analysis</em></a></li>
+<li><a href="#1-appprocess">1. App_Process</a></li>
+<li><a href="#2-androidruntime">2. AndroidRuntime</a></li>
+<li><a href="#3-zygoteinit">3. ZygoteInit</a></li>
+<li><a href="#4-system-server-startup-process">4. System Server startup process</a></li>
+<li><a href="#5-fork">5. Fork</a></li>
+<li><a href="#6-after-work">6. After work</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+<!-- /TOC -->
+<p>Init is the starting point for all Linux programs, and Zygote is on Android,
+just as its English meaning is the &apos;incubation pool&apos; of all Java programs (known
+to the brothers who have played with the Star Wars). Can be seen with ps output</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">\&gt;adb shell ps \| grep -E &apos;init\|926&apos;
+
+root 1 0 656 372 00000000 0805d546 S /init
+
+root 926 1 685724 43832 ffffffff b76801e0 S zygote
+
+system 1018 926 795924 62720 ffffffff b767fff6 S system_server
+
+u0_a6 1241 926 717704 39252 ffffffff b76819eb S com.android.systemui
+
+u0_a37 1325 926 698280 29024 ffffffff b76819eb S com.android.inputmethod.latin
+
+radio 1349 926 711284 30116 ffffffff b76819eb S com.android.phone
+
+u0_a7 1357 926 720792 41444 ffffffff b76819eb S com.android.launcher
+
+u0_a5 1523 926 703576 26416 ffffffff b76819eb S com.android.providers.calendar
+
+u0_a25 1672 926 693716 21328 ffffffff b76819eb S com.android.musicfx
+
+u0_a17 2040 926 716888 33992 ffffffff b76819eb S android.process.acore
+
+u0_a21 2436 926 716060 23904 ffffffff b76819eb S com.android.calendar<br></div></div>
+
+<p>Init is the parent process of zygote, and system_server and all other
+applications ending in com.xxx are from zygote fork. This article will
+illustrate the startup process of Zygote, system server and android application
+by means of a diagram (with a small amount of code).</p>
+<p>Less nonsense, open two big pictures to open our Zygote tour. The first picture
+is the structure diagram of all the classes related to Zygote, and the other is
+the flow chart started by Zygote.</p>
+<p>     <a href="media/f0f6cc48c83d5fddf7c92d9214d86686.png" rel="grouped" title="Zyogote class structure diagram" target="_self" class="fancybox">
+       <img src="media/f0f6cc48c83d5fddf7c92d9214d86686.png" alt="Zyogote class structure diagram">
+     </a></p>
+<p>According to the figure, we decompose the startup process of Zygote according
+to the serial number in Figure 1.</p>
+<h1 id="1-appprocess"><a name="1-appprocess" class="anchor-navigation-ex-anchor" href="#1-appprocess"><i class="fa fa-link" aria-hidden="true"></i></a>2. 1. App_Process</h1>
+<ul>
+<li>APP_Process: An application that launches zygote and other Java programs.
+The code is located in frameworks/base/cmds/app_process/app_main.cpp,
+specified in init.rc.</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">\#init.rc
+
+service zygote /system/bin/app_process -Xzygote /system/bin --zygote
+--start-system-server
+
+code show as below<br></div></div>
+
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">...
+else if (strcmp(arg, &quot;--zygote&quot;) == 0) {
+    zygote = true;
+    niceName = &quot;zygote&quot;;
+} else if (strcmp(arg, &quot;--start-system-server&quot;) == 0) {
+    startSystemServer = true;
+} else if (strcmp(arg, &quot;--application&quot;) == 0) {
+    application = true;
+}
+...
+if (zygote) {
+   runtime.start(&quot;com.android.internal.os.ZygoteInit&quot;,
+        startSystemServer ? &quot;start-system-server&quot; : &quot;&quot;);
+} else if (className) {
+   // Remainder of args get passed to startup class main()
+   runtime.mClassName = className;
+   ...
+   runtime.start(&quot;com.android.internal.os.RuntimeInit&quot;,
+         application ? &quot;application&quot; : &quot;tool&quot;);
+} else {
+}<br></div></div>
+
+<p> As you can see, there are three application types defined in app_process:</p>
+<pre><code>   1.  Zygote:  com.android.internal.os.ZygoteInit
+
+   2. System Server, not started separately, but started by Zygote
+
+   3. Other Java programs that specify the class name, such as the commonly
+</code></pre><p>used am. /system/bin/am is actually a shell program, its real implementation is </p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">exec app_process \$base/bin com.android.commands.am.Am &quot;\$\@&quot;<br></div></div>
+
+<p>These Java applications are all started with AppRuntime.start(className). As you
+can see from the first big picture, AppRuntime is a subclass of AndroidRuntime.
+It mainly implements several callback functions, and the start() method is
+implemented in the AndroidRuntime method class. What is AnroidRuntime? We will
+start right away.</p>
+<p>It should be noted that Zygote is not the first program launched by Init. It can
+be seen from the PID. Before it, the important System Daemon (background
+process) implemented by Native may be up first, such as ServiceManager (service
+DNS service).</p>
+<h1 id="2-androidruntime"><a name="2-androidruntime" class="anchor-navigation-ex-anchor" href="#2-androidruntime"><i class="fa fa-link" aria-hidden="true"></i></a>3. 2. AndroidRuntime</h1>
+<p>First of all, what is Runtime? Take a look at several explanations given by the wiki:      </p>
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase" target="_blank">Run time (program lifecycle
+phase)</a>)<em>,
+the period during which a computer program is executing</em></p>
+</li>
+<li><p><a href="http://en.wikipedia.org/wiki/Runtime_library" target="_blank">Runtime library</a><em>, a program
+library designed to implement functions built into a programming language</em></p>
+<p>I tend to refer to the latter here and see a further explanation:</p>
+<p> <em>In </em><a href="http://en.wikipedia.org/wiki/Computer_programming" target="_blank">computer programming</a><em>, a runtime
+library is the </em><a href="http://en.wikipedia.org/wiki/API" target="_blank">API</a><em> used by
+a </em><a href="http://en.wikipedia.org/wiki/Compiler" target="_blank">compiler</a><em> to invoke some of the
+behaviors of a </em><a href="http://en.wikipedia.org/wiki/Runtime_system" target="_blank">runtime system</a><em>.
+The runtime system implements the execution model and other fundamental
+behaviors of a </em><a href="http://en.wikipedia.org/wiki/Programming_language" target="_blank">programming
+language</a><em>. The compiler
+inserts calls to the runtime library into the executable binary. During
+execution (</em><a href="http://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase" target="_blank">run
+time</a>)<em>) of
+that </em><a href="http://en.wikipedia.org/wiki/Computer_program" target="_blank">computer program</a><em>,
+execution of those calls to the runtime library cause communication between the
+application and the</em><a href="http://en.wikipedia.org/wiki/Runtime_system" target="_blank">runtime
+system</a><em>. This often includes
+functions for input and output, or for memory management.</em></p>
+<p> The generalization is that Runtime is the base library that supports the
+running of the program, it is bound to the language. such as:</p>
+</li>
+<li><p>C Runtime: It is C standard lib, which is what we often say
+libc. (Interestingly, the wiki will automatically redirect the &quot;C runtime&quot;
+to the &quot;C Standard Library&quot;).</p>
+</li>
+<li><p>Java Runtime: Again, the wiki redirects it to the &quot;Java Virtual Machine&quot;,
+which of course includes the Java support library (.jar).</p>
+</li>
+<li><p>AndroidRuntime: Obviously, it is the runtime environment required to run the
+Android app. This environment includes the following:</p>
+<ul>
+<li><p>Dalvik VM: Android Java VM, which explains running Java programs in Dex
+format. Each process runs a virtual machine (what is running a virtual
+machine? To put it bluntly, it is some C code, constantly interpreting
+the Dex format Bytecode, converting them to Machine code, and then
+executing, Of course, most Java virtual machines now support JIT, which
+means that bytecode may have been converted to machine code before
+running, which greatly improves performance. A common understanding in
+the past is that Java programs are static than C, C++, etc. The compiled
+language is slow, but with the intervention and development of JIT, this
+is completely a past tense. The dynamic operation of JIT allows the
+virtual machine to optimize the generation of machine code according to
+the runtime environment. In some cases, Java can even It runs faster
+than C/C++ and has platform-independent features, which is one of the
+reasons why Java is so popular today.)</p>
+</li>
+<li><p>Android&apos;s Java class libraries, mostly from Apache Hamony, open source
+Java API implementations, such as java.lang, java.util, java.net. But
+removed AWT, Swing and other components.</p>
+</li>
+<li><p>JNI: Interface between C and Java intermodulation.</p>
+</li>
+<li><p>Libc: Android also has a lot of C code, naturally, libc, note that
+Android&apos;s libc is called bionic C.</p>
+<p>OK, then let&apos;s first take a look at how AndroidRuntime is built.     </p>
+</li>
+</ul>
+</li>
+</ul>
+<p>     <a href="media/b7b0c8b268af1aa5ae25bd46497f7493.png" rel="grouped" title="AndroidRuntime Sequence" target="_self" class="fancybox">
+       <img src="media/b7b0c8b268af1aa5ae25bd46497f7493.png" alt="AndroidRuntime Sequence">
+     </a></p>
+<p>The above figure shows the general flow of Zygote startup. The entry is
+AndroidRuntime.start(). There are two ways to start depending on the parameters
+passed in. One is &quot;com.android.internal.os.RuntimeInit&quot;, the other is &quot;
+com.android.internal.os.ZygoteInit&quot;, corresponding to the two classes
+RuntimeInit and ZygoteInit, which are represented by green and pink
+respectively. The main difference between the two classes is the Java side. It
+is obvious that ZygoteInit does a lot more than RuntimeInit, such as &quot;preload&quot;,
+&quot;gc&quot; and so on. But on the Native side, they all do the same thing, startVM()
+and startReg(), let&apos;s start here.</p>
+<p>As you can see from the class diagram, JavaVM and JNIEnv are the only two
+levels between the link between AndroidRuntim and Dalvik VM. It hides the
+implementation details in Dalvik. In fact, it is two function pointer structures
+that provide access to native code. The interface of the Java resource. JNIEnv
+is relative to the thread. The pointer to JNIEnv can finally correspond to the
+Thread structure inside Dalvik VM. All calls are completed in this structure
+context. The JavaVM corresponds to DVMGlobal, a process-only structure. It
+internally maintains a thread queue threadList, which stores each Thread
+structure object, as well as a list of objects of various states, and a
+structure that stores the GC, etc. . This article can&apos;t go deeper, just a brief
+introduction.</p>
+<ul>
+<li><strong>  JavaVM and JNIENV</strong></li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Struct _JavaVM {
+         const  struct JNIInvokeInterface* functions; // function pointer of C
+
+    #if defined(__cplusplus)    ...
+        jint GetEnv(void** env, jint version)
+        { return functions-&gt;GetEnv(this, env, version); }
+    #endif /*__cplusplus*/
+    };
+
+    struct JNIInvokeInterface {
+        void*       reserved0;
+        ...
+        jint        (*DestroyJavaVM)(JavaVM*);
+        jint        (*AttachCurrentThread)(JavaVM*, JNIEnv**, void*);
+        jint        (*DetachCurrentThread)(JavaVM*);
+        jint        (*GetEnv)(JavaVM*, void**, jint);
+        jint        (*AttachCurrentThreadAsDaemon)(JavaVM*, JNIEnv**, void*);
+    };<br></div></div>
+
+
+<blockquote>
+<p>  The most common interface inside is GetEnv(), which returns a JNIEnv
+  object corresponding to each DVM thread. The definition of JNIEnv is very
+  long. Interested students can find it in Jni.h. Here we only see how this
+  object gets static jint GetEnv(JavaVM* vm, void** env, jint version) {</p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Thread* self = dvmThreadSelf() ; //Get the current thread object.
+    If (version &lt; JNI_VERSION_1_1 || version &gt; JNI_VERSION_1_6) {
+        Return JNI_EVERSION ;
+    } //Check the version number, Android 4.3 corresponds to 1.6     ...
+         *env = (void*) dvmGetThreadJNIEnv(self) ;   //It&apos;s very simple, see the bottom line
+        dvmChangeStatus(self, THREAD_NATIVE) ;
+     return (*env ! = NULL) ? JNI_OK : JNI_EDETACHED ;
+ }
+
+INLINE JNIEnv* dvmGetThreadJNIEnv(Thread* self) { return self-&gt;jniEnv; }<br></div></div>
+
+<blockquote>
+<p>  Very simple, the original is to read from the structure object of the
+  current thread, it seems that there is no JavaVM, why is the parameter
+  passed in? I don&apos;t know, maybe Google is reserved for future expansion? But
+  no matter what, to get the call to GetEnv, you still need JavaVM. Students
+  who want to write JNI code in the future can refer to the following code to
+  see how to get JavaVM and JniENV.</p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">JNIEnv * AndroidRuntime :: getJNIEnv ()
+{
+    JNIEnv * env;
+    JavaVM* vm = AndroidRuntime::getJavaVM();
+    assert(vm != NULL);
+
+    if (vm-&gt;GetEnv((void**) &amp;env, JNI_VERSION_1_4) != JNI_OK)
+        return NULL;
+    return env;
+}<br></div></div>
+
+<blockquote>
+<p>  At this point, we know that JavaVM and JNIEnv are native (C/C++) code for
+  intermodulation with Java code, and that must be the Java virtual machine
+  and the corresponding Java application on the Java side. What is the Java
+  virtual machine in the end, how is it created? The answer starts with the
+  AndroidRuntime::startVM() function. startVM</p>
+</blockquote>
+<ul>
+<li><strong>startVM ()</strong></li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int AndroidRuntime :: startVm (JavaVM ** pJavaVM, JNIEnv ** pEnv)
+{
+    property_get(&quot;dalvik.vm.checkjni&quot;, propBuf, &quot;&quot;);
+    ...
+    initArgs.version = JNI_VERSION_1_4;
+    ...
+     //Create a VM and return JavaVM and JniEnv, pEnv corresponds to the current thread.
+    If (JNI_CreateJavaVM(pJavaVM, pEnv, &amp;initArgs) &lt; 0 ) {
+        ALOGE(&quot;JNI_CreateJavaVM failed\n&quot;);
+        goto bail;
+    }
+    ...
+}
+
+Jint JNI_CreateJavaVM(JavaVM ** p_vm, JNIEnv** p_env, void * vm_args) {
+     memset( &amp;gDvm, 0 , sizeof (gDvm)); /* This is the real VM structure */
+    JavaVMExt * pVM = (JavaVMExt*) Calloc ( 1 , sizeof (JavaVMExt));
+    pVM -&gt; funcTable = &amp; gInvokeInterface; / / initialization function pointer
+    pVM-&gt;envList = NULL;
+    ...
+    gDvmJni.jniVm = (JavaVM* ) pVM; //The JavaVM that the native code contacts is just JniVm.
+    JNIEnvExt * pEnv = (JNIEnvExt* ) dvmCreateJNIEnv(NULL); //Create JNIEnv, because the next virtual machine initialization needs to access C/C++ implementation
+    /* &#x5F00;&#x59CB;&#x521D;&#x59CB;&#x5316;. */
+    gDvm.initializing = true;
+    std::string status =
+            dvmStartup(argc, argv.get(), args-&gt;ignoreUnrecognized, (JNIEnv*)pEnv);
+    gDvm.initializing = false;
+
+    dvmChangeStatus(NULL, THREAD_NATIVE);
+    *p_env = (JNIEnv*) pEnv;
+    *p_vm = (JavaVM*) pVM;
+    return JNI_OK;<br></div></div>
+
+
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">std::string dvmStartup(int argc, const char* const argv[],
+        bool ignoreUnrecognized, JNIEnv* pEnv)
+{
+    /*
+     * Check input and prepare initialization parameters
+     */
+    int cc = processOptions(argc, argv, ignoreUnrecognized);
+    ...
+
+
+    /* The actual initialization begins, initializes each internal module, and creates a series of threads */
+     if (! dvmAllocTrackerStartup()) {
+         return  &quot; dvmAllocTrackerStartup failed &quot; ;
+    }
+
+    if (!dvmGcStartup()) {
+        return &quot;dvmGcStartup failed&quot;;
+    }
+
+    if (!dvmThreadStartup()) {
+        return &quot;dvmThreadStartup failed&quot;;
+    }
+
+    if (!dvmInlineNativeStartup()) {
+        return &quot;dvmInlineNativeStartup&quot;;
+    }
+
+    if (!dvmRegisterMapStartup()) {
+        return &quot;dvmRegisterMapStartup failed&quot;;
+    }
+
+    if (!dvmInstanceofStartup()) {
+        return &quot;dvmInstanceofStartup failed&quot;;
+    }
+
+    if (!dvmClassStartup()) {
+        return &quot;dvmClassStartup failed&quot;;
+    }
+
+    if (!dvmNativeStartup()) {
+        return &quot;dvmNativeStartup failed&quot;;
+    }
+
+    if (!dvmInternalNativeStartup()) {
+        return &quot;dvmInternalNativeStartup failed&quot;;
+    }
+
+    if (!dvmJniStartup()) {
+        return &quot;dvmJniStartup failed&quot;;
+    }
+
+    if (!dvmProfilingStartup()) {
+        return &quot;dvmProfilingStartup failed&quot;;
+    }
+
+    if (!dvmInitClass(gDvm.classJavaLangClass)) {
+        return &quot;couldn&apos;t initialized java.lang.Class&quot;;
+    }
+
+    if (!registerSystemNatives(pEnv)) {
+        return &quot;couldn&apos;t register system natives&quot;;
+    }
+
+    if (!dvmCreateStockExceptions()) {
+        return &quot;dvmCreateStockExceptions failed&quot;;
+    }
+
+    if (!dvmPrepMainThread()) {
+        return &quot;dvmPrepMainThread failed&quot;;
+    }
+
+    if (dvmReferenceTableEntries(&amp;dvmThreadSelf()-&gt;internalLocalRefTable) != 0)
+    {
+        ALOGW(&quot;Warning: tracked references remain post-initialization&quot;);
+        dvmDumpReferenceTable(&amp;dvmThreadSelf()-&gt;internalLocalRefTable, &quot;MAIN&quot;);
+    }
+
+    if (!dvmDebuggerStartup()) {
+        return &quot;dvmDebuggerStartup failed&quot;;
+    }
+
+    if (!dvmGcStartupClasses()) {
+        return &quot;dvmGcStartupClasses failed&quot;;
+    }
+
+    if (gDvm.zygote) {
+        if (!initZygote()) {
+            return &quot;initZygote failed&quot;;
+        }
+    } else {
+        if (!dvmInitAfterZygote()) {
+            return &quot;dvmInitAfterZygote failed&quot;;
+        }
+    }
+    return &quot;&quot;;
+}<br></div></div>
+
+<blockquote>
+<p>  There are too many details about the startup of the Java virtual machine
+  that cannot be expanded here. Here we only need to know that it does the
+  following things:</p>
+<ol>
+<li>Read a series of startup parameters from the property. </li>
+<li>Create and initialize the structure global object (per process) gDVM, and
+corresponding to JavaVM and JNIEnv internal structure JavaVMExt, JNIEnvExt. </li>
+<li>Initialize the java virtual machine and create a virtual machine
+thread. &quot;ps -t&quot;, you can find that each Android application has the
+following threads</li>
+</ol>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">&gt;   U0_a46 1284 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S GC //Garbage
+&gt;   Collection
+
+&gt;   u0_a46 1285 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S Signal Catcher
+
+&gt;   U0_a46 1286 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S JDWP //Java
+&gt;   debugging
+
+&gt;   u0_a46 1287 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S Compiler //JIT
+
+&gt;   u0_a46 1288 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S
+&gt;   ReferenceQueueD
+
+&gt;   u0_a46 1289 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S
+&gt;   FinalizerDaemon //Finalizer&#x76D1;&#x62A4;
+
+&gt;   u0_a46 1290 1281 714900 57896 20 0 0 0 fg ffffffff 00000000 S
+&gt;   FinalizerWatchd //<br></div></div>
+
+<blockquote>
+<ol>
+<li><p>Register the JNI of the system through which the Java program accesses
+the underlying resources.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">loadJniLibrary(&quot;javacore&quot;);
+loadJniLibrary(&quot;nativehelper&quot;);<br></div></div>
+</li>
+<li><p>Make final preparations for the startup of Zygote, including setting the
+SID/UID, and mounting the file system. </p>
+</li>
+<li><p>Return the JavaVM to the Native code so that it can access the Java
+interface up. </p>
+<p>In addition to the system&apos;s JNI interface (&quot;javacore&quot;, &quot;nativehelper&quot;), the
+android framework also has a large number of Native implementations, and
+Android will do all of these interfaces one-time through start_reg().</p>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li><strong>startReg ()</strong></li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int AndroidRuntime::startReg(JNIEnv* env){
+    androidSetCreateThreadFunc((android_create_thread_fn) javaCreateThreadEtc); // Create threads that the JVM can access must pass through a specific interface.
+
+    Env -&gt; PushLocalFrame( 200 );
+
+    if (register_jni_procs(gRegJNI, NELEM(gRegJNI), env) &lt; 0)    {
+        env-&gt;PopLocalFrame(NULL);
+        return -1;
+    }
+    env-&gt;PopLocalFrame(NULL);
+    return 0;
+}<br></div></div>
+
+
+<blockquote>
+<p>  The Android native layer has two ways to create a Thread:</p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">#threads.cpp
+status_t Thread::run(const char* name, int32_t priority, size_t stack)
+{
+   ...
+   if (mCanCallJava) {
+        res = createThreadEtc(_threadLoop, this, name, priority, stack, &amp;mThread);
+   } else {
+        res = androidCreateRawThreadEtc(_threadLoop,this, name, priority, stack, &amp;mThread);
+    }
+   ...
+}<br></div></div>
+
+
+<blockquote>
+<p>  The difference between them is whether they can call Java-side
+  functions. The normal thread is a simple wrapper around pthread_create.</p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int androidCreateRawThreadEtc(android_thread_func_t entryFunction,
+                               void *userData,
+                               const char* threadName,
+                               int32_t threadPriority,
+                               size_t threadStackSize,
+                               android_thread_id_t *threadId)
+{
+    ...
+    int result = pthread_create(&amp;thread, &amp;attr,android_pthread_entry)entryFunction, userData);
+    ...
+}<br></div></div>
+
+
+<blockquote>
+<p>  The thread that can access the Java side needs to be bound with
+  the JVM. The following is the concrete implementation function.          </p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">#AndroidRuntime.cpp
+int AndroidRuntime::javaCreateThreadEtc(
+                                android_thread_func_t entryFunction,
+                                void* userData,
+                                const char* threadName,
+                                int32_t threadPriority,
+                                size_t threadStackSize,
+                                android_thread_id_t* threadId)
+{
+     Args[ 0 ] = ( void *) entryFunction; // Precedent entryFunc in args[0]
+     args[ 1 ] = userData;
+     args[2] = (void*) strdup(threadName);
+     result =AndroidCreateRawThreadEtc(AndroidRuntime::javaThreadShell, args, threadName, threadPriority, threadStackSize, threadId); //entryFunc&#x53D8;&#x6210;javaThreadShell.
+    return result;
+}<br></div></div>
+
+
+
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int AndroidRuntime::javaThreadShell(void* args) {
+
+    void* start = ((void**)args)[0];
+    void* userData = ((void **)args)[1];
+    char* name = (char*) ((void **)args)[2];        // we own this storage
+
+    JNIEnv* env;
+    /* &#x8DDF; VM &#x7ED1;&#x5B9A; */
+    if (javaAttachThread(name, &amp;env) != JNI_OK)
+        return -1;
+
+    /* Run the real &apos;entryFunc&apos; */
+    result = (* (android_thread_func_t) start)(userData);
+
+
+    /* unhook us */
+    javaDetachThread ();
+    ...
+    return result;
+}<br></div></div>
+
+
+<blockquote>
+<p>  What does attachVM() do? The space is limited and cannot be expanded.
+  Here you only need to know the following points:</p>
+</blockquote>
+<ul>
+<li><p>There is a Java virtual machine in a process. There are many threads inside
+the Java virtual machine, such as the GC listed above, FinalizeDaemon, and
+user-created threads.</p>
+<ul>
+<li><p>Each Java thread maintains a JNIEnvExt object that holds a pointer to
+the DVM internal Thread object. That is, all calls from native to Java
+will reference this object.</p>
+</li>
+<li><p>All threads created by the JVM will be recorded inside the VM, but
+currently, we have not entered the Java world. The locally created
+thread VM is naturally unknown, so we need to notify the VM to create
+the corresponding internal data structure through attach.</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>  Take a look at the code below, you know, in fact, one of the important
+  things that Attach() does is to create thread and JNIEnvExt.</p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">bool dvmAttachCurrentThread(const JavaVMAttachArgs* pArgs, bool isDaemon)
+{
+    Thread* self = NULL;
+    ...
+    self = allocThread(gDvm.stackSize);
+    ...
+    self-&gt;jniEnv = dvmCreateJNIEnv(self);
+    ...
+    gDvm.threadList-&gt;next = self;
+    ...
+    threadObj = dvmAllocObject(gDvm.classJavaLangThread, ALLOC_DEFAULT);
+    vmThreadObj = dvmAllocObject(gDvm.classJavaLangVMThread, ALLOC_DEFAULT);
+    ...
+    self-&gt;threadObj = threadObj;
+    ...
+}<br></div></div>
+
+
+<blockquote>
+<p>  When you are finished, you will start registering the local JNI
+  interface function - register_jni_procs(). This function is actually a
+  traversal call to a global array gRegJni[]. This array expansion can get the
+  following results.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static const RegJNIRec gRegJNI[] = {
+   {register_android_debug_JNITest},
+   {register_com_android_internal_os_RuntimeInit}.
+    ...
+}<br></div></div>
+
+<p>  Each register_xxx is a function pointer</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">int jniRegisterNativeMethods(
+      C_JNIEnv* env,
+      const char* className,
+      const JNINativeMethod* gMethods,
+      int numMethods);<br></div></div>
+
+<p>  What happens to RegisterNativeMethods inside the VM? Again, you only need
+  to know the following points: </p>
+<pre><code> gRegJni []
+</code></pre></blockquote>
+<p> Ok, after a lot of hard work, the Android runtime environment is ready, let&apos;s
+review what the AndroidRuntime initialization has done.</p>
+<ol>
+<li><p>Created Dalvik VM.</p>
+</li>
+<li><p>Get Native access to Java&apos;s two interface objects, JavaVM and JNIENV.</p>
+</li>
+<li><p>Registered a batch (see gRegJni[]) native interface to the VM.</p>
+</li>
+</ol>
+<p>These operations are relatively time-consuming tasks. If each process does the
+same work, it will affect the startup speed. This is why we need to create
+Android applications through Zygote, because the Linux fork copy_on_write
+mechanism allows the child processes to Mapping these initialized memory spaces
+directly into their own process space does not require repetitive work, which
+increases the speed at which applications can be launched.</p>
+<p>Can it be that the Android system only needs a basic runtime environment? The
+answer is obviously No. AndriodRuntime only provides the basic support of the
+language level, we need to quickly incubate and run the application on a
+multi-tasking, multi-user graphical operating system. This is Zygote, which is
+why in Figure 2, ZygoteInit does more than RuntimeInit. Then, let us really
+enter the world of Zygote.</p>
+<h1 id="3-zygoteinit"><a name="3-zygoteinit" class="anchor-navigation-ex-anchor" href="#3-zygoteinit"><i class="fa fa-link" aria-hidden="true"></i></a>4. 3. ZygoteInit</h1>
+<p>When the VM is ready, you can run the Java code. The system will enter the
+Java world for the first time. Remember the parameters of Runtime.start() that
+are set in app_main.cpp. That is the Java class we want to run. . Android
+supports two classes as a starting point, one is
+&apos; com.android.internal.os.ZygoteInit &apos;, and the other is
+&apos;com.android.internal.os.RuntimeInit&apos;.</p>
+<p>In addition, a ZygoteInit() static method is defined in the Runtime_Init
+class. It is created when Zygote creates a new application process, which does
+the same thing as the main() function of the RuntimeInit class:</p>
+<ul>
+<li><p>redirectLogStreams(): Redirects System.out and System.err output to
+Android&apos;s Log system (defined in android.util.Log).</p>
+</li>
+<li><p>commonInit(): Initializes the system properties. The most important point is
+to set up a handler for the uncaught exception. When the code has any
+unknown exceptions, it will execute it. The classmates who have debugged the
+Android code often see &quot;** * FATAL EXCEPTION IN SYSTEM PROCESS&quot; Printed
+here:</p>
+</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">Runtime_init.java
+...
+Thread.setDefaultUncaughtExceptionHandler(new UncaughtHandler());
+...
+
+private static class UncaughtHandler implements Thread.UncaughtExceptionHandler {
+        public void uncaughtException(Thread t, Throwable e) {
+            try {
+                // Don&apos;t re-enter -- avoid infinite loops if crash-reporting crashes.
+                if (mCrashing) return;
+                mCrashing = true;
+                if (mApplicationObject == null) {
+                    Slog.e(TAG, &quot;*** FATAL EXCEPTION IN SYSTEM PROCESS: &quot; + t.getName(), e);
+                } else {
+                    Slog.e(TAG, &quot;FATAL EXCEPTION: &quot; + t.getName(), e);
+                }
+                ActivityManagerNative.getDefault().handleApplicationCrash(
+                        mApplicationObject, new ApplicationErrorReport.CrashInfo(e));
+            } catch (Throwable t2) {
+              ...
+            } finally {
+                Process.killProcess(Process.myPid());
+                System.exit(10);
+            }
+        }
+    }<br></div></div>
+
+
+<p>Next, RuntimeInit::main() and RuntimeInit::ZygoteInit() call
+nativeFinishInit() and nativeZygoteInit() respectively, and then start to part
+ways. RuntimeInit&apos;s nativeFinishInit() will eventually call the onStarted()
+function in app_main.cpp. , which calls the main() function of the Java class,
+and then ends the process exit.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">virtual void onStarted()
+{
+    sp&lt;ProcessState&gt; proc = ProcessState::self();
+    proc-&gt;startThreadPool();
+
+    AndroidRuntime * ar = AndroidRuntime :: getRuntime ();
+    ar-&gt;callMain(mClassName, mClass, mArgC, mArgV);
+
+    IPCThreadState::self()-&gt;stopProcess();
+}<br></div></div>
+
+
+<pre><code> RuntimeInit::ZygoteInit() will be transferred to onZygoteInit() of
+</code></pre><p>app_main.cpp</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">virtual void onZygoteInit()
+     {
+         // Re-enable tracing now that we&apos;re no longer in Zygote.
+         atrace_set_tracing_enabled(true);
+
+         sp&lt;ProcessState&gt; proc = ProcessState::self();
+         proc-&gt;startThreadPool();
+     }<br></div></div>
+
+
+<p>It just starts a ThreadPool, and the rest of the work goes back to the Java
+side and is done by RuntimeInit::applicationInit().</p>
+<p>So, we might as well understand RuntimeInit::main(),
+RuntimeInit::ZygoteInit(), ZygoteInit::main(), RuntimeInit&apos;s main() method
+provides a standard Java program runtime, and RuntimeInit&apos;s ZygoteInit() It is
+the method of closing the Android application. It is called when Zygote creates
+a new application process. This part of the code is implemented in the
+ZygoteInit class. In addition to the differences described above, the ZygoteInit
+class has done a few more things, let us analyze them one by one.</p>
+<ol>
+<li><p>registerZygoteSocket();</p>
+</li>
+<li><p>startSystemServer();</p>
+</li>
+<li><p>runSelectLoopMode();</p>
+</li>
+</ol>
+<p><strong>     RegisterZygoteSocket()</strong></p>
+<p>In fact, the simple thing to do is to initialize the socket of the server
+(that is, Zygote). It is worth mentioning that the socket type used here is
+LocalSocket, which is a package of Android&apos;s Local Socket for Linux. Local
+Socket is a Socket-based interprocess communication method provided by Linux.
+For the server, the only difference is that bind to a local file descriptor (fd)
+instead of an IP address and port number. In many places in Android, Local
+Socket is used to communicate between processes. Search init.rc, you will see
+many such statements:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">socket adbd stream 660 system system
+    socket vold stream 0660 root mount
+    socket netd stream 0660 root system
+    socket dnsproxyd stream 0660 root inet
+    socket mdns stream 0660 root system
+    socket rild stream 660 root radio
+    socket rild-debug stream 660 radio system
+    socket zygote stream 660 root system
+    socket installd stream 600 system system
+    socket racoon stream 600 system system
+    socket mtpd stream 600 system system
+    socket dumpstate stream 0660 shell log
+    socket mdnsd stream 0660 mdnsr inet<br></div></div>
+
+
+<p>When init resolves to such a statement, it will do a few things:</p>
+<ol>
+<li>Call create_socket() (system/core/init/util.c), create a Socket
+fd, and put this fd with a file (/dev/socket/xxx, xxx is the name listed above,
+for example, zygote) Bind, set the relevant users, groups and permissions
+according to the definition in init.rc. Finally return this fd. </li>
+<li><p>Register the socket name (with the &apos;ANDROID<em>SOCKET</em>&apos; prefix)
+(such as zygote) and fd into the environment variable of the init process, so
+that all other processes (all processes are init subprocesses) can be obtained
+by getenv(name) To this fd.</p>
+<pre><code>ZygoteInit completes the configuration of the Socket Server side with the following code:
+</code></pre></li>
+</ol>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private static final String ANDROID_SOCKET_ENV = &quot;ANDROID_SOCKET_zygote&quot;;
+private static void registerZygoteSocket() {
+
+             String env = System.getenv(ANDROID_SOCKET_ENV);
+              fileDesc = Integer.parseInt(env);
+              ...
+              sServerSocket = new LocalServerSocket(
+                        createFileDescriptor(fileDesc));
+              ...
+}<br></div></div>
+
+
+<p>After the server is created, the corresponding client connection request can
+be made. As we mentioned earlier, AndroidRuntime a series of complex
+initialization work can help the child process to simplify the process through
+fork. Yes, Zygote creates a Socket server to respond to this fork request. Who
+is the request? Who is the child process of Zygote fork? The answer is
+ActivityManagerService and Android Application. What is the process like
+this? The answer is in the startup process of Andriod System Server. </p>
+<p><strong>Preload</strong></p>
+<pre><code>Preload() does two things:  
+</code></pre><div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static void preload() {
+       preloadClasses();
+       preloadResources();
+   }<br></div></div>
+
+<p>This is the two most time-consuming things in the Android startup
+process. preloadClassess loads all classes defined by preloaded-classes in
+framework.jar into memory. Preloaded-classes can be found in framework/base
+after compiling Android. The preloadResources loads the system&apos;s Resource (not
+the resource defined in the user apk) into memory.</p>
+<p>The resource is preloaded into the Zygoted process address space. All fork
+children will share this space without reloading, which greatly reduces the
+application startup time, but in turn increases the system startup time. System
+startup can be accelerated by adjusting the number of preload classes and
+resources.</p>
+<p><strong>GC  </strong></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static  void gc () {
+         final VMRuntime runtime = VMRuntime.getRuntime ();
+        System.gc();
+        runtime.runFinalizationSync();
+        System.gc();
+        runtime.runFinalizationSync();
+        System.gc();
+        runtime.runFinalizationSync();
+    }<br></div></div>
+
+<p>Why did you adjust System.gc() and runFinalizationSync() three times? This
+is because the gc() call simply tells the VM to do garbage collection, whether
+to recycle, and when to recycle it. GC recycling has a complex state machine
+control that allows as many resources as possible to be recycled through
+multiple calls. Gc() must be completed before the fork (the next
+StartSystemServer will have a fork operation), so that the child process that
+will be copied in the future will have as little garbage memory as possible.</p>
+<p><strong>Start SystemServer</strong></p>
+<p>Think of the zygote parameter in init.rc, &quot;--start-system-server&quot;, System
+Server is the first Java process of Zygote fork, this process is very important,
+because they have a lot of system threads, provide all cores System service, we
+can use &apos;ps -t |grep \<system server pid\>&apos; to see which threads are there,
+exclude the several Java virtual machine threads listed above, and</system></p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;sh&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">system    1176  1163  774376 51144 00000000 b76c4ab6 S SensorService
+system    1177  1163  774376 51144 00000000 b76c49eb S er.ServerThread
+system    1178  1163  774376 51144 00000000 b76c49eb S UI
+system    1179  1163  774376 51144 00000000 b76c49eb S WindowManager
+system    1180  1163  774376 51144 00000000 b76c49eb S ActivityManager
+system    1182  1163  774376 51144 00000000 b76c4d69 S ProcessStats
+system    1183  1163  774376 51144 00000000 b76c2bb6 S FileObserver
+system    1184  1163  774376 51144 00000000 b76c49eb S PackageManager
+system    1185  1163  774376 51144 00000000 b76c49eb S AccountManagerS
+system    1187  1163  774376 51144 00000000 b76c49eb S PackageMonitor
+system    1188  1163  774376 51144 00000000 b76c4ab6 S UEventObserver
+system    1189  1163  774376 51144 00000000 b76c4d69 S BatteryUpdateTi
+system    1190  1163  774376 51144 00000000 b76c49eb S PowerManagerSer
+system    1191  1163  774376 51144 00000000 b76c2ff6 S AlarmManager
+system    1192  1163  774376 51144 00000000 b76c4d69 S SoundPool
+system    1193  1163  774376 51144 00000000 b76c4d69 S SoundPoolThread
+system    1194  1163  774376 51144 00000000 b76c49eb S InputDispatcher
+system    1195  1163  774376 51144 00000000 b76c49eb S InputReader
+system    1196  1163  774376 51144 00000000 b76c49eb S BluetoothManage
+system    1197  1163  774376 51144 00000000 b76c49eb S MountService
+system    1198  1163  774376 51144 00000000 b76c4483 S VoldConnector
+system    1199  1163  774376 51144 00000000 b76c49eb S CallbackHandler
+system    1201  1163  774376 51144 00000000 b76c4483 S NetdConnector
+system    1202  1163  774376 51144 00000000 b76c49eb S CallbackHandler
+system    1203  1163  774376 51144 00000000 b76c49eb S NetworkStats
+system    1204  1163  774376 51144 00000000 b76c49eb S NetworkPolicy
+system    1205  1163  774376 51144 00000000 b76c49eb S WifiP2pService
+system    1206  1163  774376 51144 00000000 b76c49eb S WifiStateMachin
+system    1207  1163  774376 51144 00000000 b76c49eb S WifiService
+system    1208  1163  774376 51144 00000000 b76c49eb S ConnectivitySer
+system    1214  1163  774376 51144 00000000 b76c49eb S WifiManager
+system    1215  1163  774376 51144 00000000 b76c49eb S Tethering
+system    1216  1163  774376 51144 00000000 b76c49eb S CaptivePortalTr
+system    1217  1163  774376 51144 00000000 b76c49eb S WifiWatchdogSta
+system    1218  1163  774376 51144 00000000 b76c49eb S NsdService
+system    1219  1163  774376 51144 00000000 b76c4483 S mDnsConnector
+system    1220  1163  774376 51144 00000000 b76c49eb S CallbackHandler
+system    1227  1163  774376 51144 00000000 b76c49eb S SyncHandlerThre
+system    1228  1163  774376 51144 00000000 b76c49eb S AudioService
+system    1229  1163  774376 51144 00000000 b76c49eb S backup
+system    1233  1163  774376 51144 00000000 b76c49eb S AppWidgetServic
+system    1240  1163  774376 51144 00000000 b76c4d69 S AsyncTask #1
+system    1244  1163  774376 51144 00000000 b76c42a3 S Thread-64
+system    1284  1163  774376 51144 00000000 b76c4d69 S AsyncTask #2
+system    1316  1163  774376 51144 00000000 b76c2bb6 S UsbService host
+system    1319  1163  774376 51144 00000000 b76c4d69 S watchdog
+system    1330  1163  774376 51144 00000000 b76c49eb S LocationManager
+system    1336  1163  774376 51144 00000000 b76c2ff6 S Binder_3
+system    1348  1163  774376 51144 00000000 b76c49eb S CountryDetector
+system    1354  1163  774376 51144 00000000 b76c49eb S NetworkTimeUpda
+system    1360  1163  774376 51144 00000000 b76c2ff6 S Binder_4
+system    1391  1163  774376 51144 00000000 b76c2ff6 S Binder_5
+system    1395  1163  774376 51144 00000000 b76c2ff6 S Binder_6
+system    1397  1163  774376 51144 00000000 b76c2ff6 S Binder_7
+system    1516  1163  774376 51144 00000000 b76c4d69 S SoundPool
+system    1517  1163  774376 51144 00000000 b76c4d69 S SoundPoolThread
+system    1692  1163  774376 51144 00000000 b76c4d69 S AsyncTask #3
+system    1694  1163  774376 51144 00000000 b76c4d69 S AsyncTask #4
+system    1695  1163  774376 51144 00000000 b76c4d69 S AsyncTask #5
+system    1791  1163  774376 51144 00000000 b76c4d69 S pool-1-thread-1
+system    2758  1163  774376 51144 00000000 b76c4d69 S AudioTrack
+system    2829  1163  774376 51144 00000000 b76c49eb S KeyguardWidgetP<br></div></div>
+
+
+<p>See the famous WindowManager, ActivityManager? By the way, they are all running
+in the process of system_server. There are also a number of &quot;Binder-x&quot; threads
+that are created by individual services in response to an application remotely
+invoking a request. In addition, there are many internal threads, such as &quot;UI
+thread&quot;, &quot;InputReader&quot;, &quot;InputDispatch&quot;, etc. We will analyze these modules in
+subsequent articles. In this article, we only care about how System Server is
+created.</p>
+<h1 id="4-system-server-startup-process"><a name="4-system-server-startup-process" class="anchor-navigation-ex-anchor" href="#4-system-server-startup-process"><i class="fa fa-link" aria-hidden="true"></i></a>5. 4. System Server startup process</h1>
+<p>There are a lot of code in this process, involving many classes. We use a
+sequence diagram to describe this process. The different colors in the diagram
+represent running in different threads.</p>
+<p>     <a href="media/8759c6dbd9a0d49d27dcae60937eb128.png" rel="grouped" title="System Server startup process" target="_self" class="fancybox">
+       <img src="media/8759c6dbd9a0d49d27dcae60937eb128.png" alt="System Server startup process">
+     </a></p>
+<p><strong>1.</strong> ZygoteInit fork A new process, this process is the SystemServer process.</p>
+<p><strong>2.</strong> The child process that forks out starts
+initialization in <strong>handleSystemServerProcess</strong> . The initialization is divided
+into two steps, one is done in native, and the other part (mostly) is done in
+Java. The native side works in AppRuntime (subclass of
+AndroidRuntime)::onZygoteInit(). One thing to do is to start a Thread, which is
+the main thread of SystemServer (the leftmost pink square), which is responsible
+for receiving and sending to other processes. The Binder calls the request. code
+show as below</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">void ProcessState::spawnPooledThread(bool isMain)
+{
+    if (mThreadPoolStarted) {
+        String8 name = makeBinderThreadName(); //&#x201C;Binder_1&quot;
+        sp&lt;Thread&gt; t = new PoolThread(isMain);
+        t-&gt;run(name.string());
+    }
+}
+virtual bool threadLoop() {
+     IPCThreadState::self()-&gt;joinThreadPool(mIsMain); //blocking knows that the Binder driver wakes up
+     return false;
+  }<br></div></div>
+
+
+<p><strong>3.</strong> After nativeZygoteInit() is completed, the Java layer is initialized.
+This process is long and complicated. We divide it into many steps. The
+initialization entry is SystemServer&apos;s main() function, which calls Native&apos;s
+Init1(). Init1 is implemented in com_android_server_SystemServer.cpp, and the
+final call to the function is system_init(). The implementation of system_init()
+is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">extern &quot;C&quot; status_t system_init()
+{
+    sp&lt;ProcessState&gt; proc(ProcessState::self());
+    sp&lt;IServiceManager&gt; sm = defaultServiceManager();
+    sm-&gt;asBinder()-&gt;linkToDeath(grim, grim.get(), 0);
+    property_get(&quot;system_init.startsurfaceflinger&quot;, propBuf, &quot;1&quot;);
+    if (strcmp(propBuf, &quot;1&quot;) == 0) {
+        // Start the SurfaceFlinger
+        SurfaceFlinger::instantiate(); //&#x521D;&#x59CB;&#x5316; SurfaceFlinger
+        android_vt = 7;
+    }
+
+    property_get(&quot;system_init.startsensorservice&quot;, propBuf, &quot;1&quot;);
+    if (strcmp(propBuf, &quot;1&quot;) == 0) {
+       // Start the sensor service
+       SensorService::instantiate(); // &#x521D;&#x59CB;&#x5316;SensorService.
+    }
+
+    ALOGI(&quot;System server: starting Android runtime.\n&quot;);
+    AndroidRuntime* runtime = AndroidRuntime::getRuntime();
+    JNIEnv* env = runtime-&gt;getJNIEnv();
+    ...
+    jclass clazz = env-&gt;FindClass(&quot;com/android/server/SystemServer&quot;);
+    jmethodID methodId = env-&gt;GetStaticMethodID(clazz, &quot;init2&quot;, &quot;()V&quot;);
+    ...
+    env-&gt;CallStaticVoidMethod(clazz, methodId);
+    ProcessState::self()-&gt;startThreadPool();
+    IPCThreadState::self()-&gt;joinThreadPool();
+    return NO_ERROR;
+}<br></div></div>
+
+
+<p> Some points to note:</p>
+<blockquote>
+<p>   A. SurfaceFlinger Service can be run in the System_Server process, or it
+  can be run in a separate process. If it is the latter, you need to add
+  &quot;setprop system_init.startsurfaceflinger=1&quot; to init.rc and ensure that
+  service surfaceflinger is not &quot;disable&quot;. &#x201D;</p>
+<p>   B. init2 is implemented in System_Server.java, which we will cover in
+  detail later.</p>
+</blockquote>
+<p><strong>4.</strong> system_init() Finally, join_threadpool() suspends the current thread and
+waits for the request from the binder. The name of this thread is &quot;Binder_1&quot;.
+For the internal mechanism of service and binder, please refer to the
+article <a href="http://www.cnblogs.com/samchen2009/p/3316001.html" target="_blank">http://www.cnblogs.com/samchen2009/p/3316001.html</a></p>
+<p><strong>5.</strong> init2: At this point, the native initialization of the system server is
+completed, and it is back to the Java side. Here, many very important system
+services will be started. These jobs will start in a new thread with the thread
+name &quot;android.server.ServerThread&quot;, see the green bar below. In ServerThread,
+SystemServer first creates two threads, UI thread and WindowManager thread. See
+the orange and peach bars in the figure. The handles of these two threads will
+be passed to some Service constructors, and some startup work will be done.
+Distribute to these two Threads.</p>
+<p>Each Thread finally enters the wait loop. Here, Android&apos;s Looper mechanism
+is used. Looper and Handler are the in-process messaging and processing
+mechanism of Android. We will be in the
+article  <a href="http://www.cnblogs.com/samchen2009/p/3316004.html" target="_blank">http://www.cnblogs.com/samchen2009/p</a>  In
+detail, <a href="http://www.cnblogs.com/samchen2009/p/3316004.html" target="_blank">/3316004.html</a> ,
+here, we only need to know that Looper sleeps in a thread waiting for messages
+in the message queue, and then processes the message in a specific Handler. In
+other words, specify something to be processed in a thread.</p>
+<p><strong>6.</strong> Next, System Server will start a series of services, the most important
+of which is Acitivity Manager and Window Manager.</p>
+<p>As you can see from the figure, Activity Manager has a Looper Thread,
+AThread. Please pay attention to the difference between Binder Thread and
+Looper, we will have a special article to introduce them later. A lot of the
+combination of Binder and Looper is used in Android. One of the important
+reasons is to solve the complex synchronization problem in multi-threading.
+Through a Looper and corresponding Message queue, you can serialize Binder calls
+of different processes in the future without Need to maintain complex and
+problem-prone locks.</p>
+<p>Similar to WindowManager, his Handler Thread is one of the two Handler threads
+created in the initial stage of the System server we just mentioned, WMThread.
+His Binder thread will be specified by Kernel&apos;s Binder Driver.</p>
+<p>In addition to the ActivityManager Service and WindowManager Service, there are
+many other services that are started one after another. They are not detailed
+here. You only need to know a few steps required for a Service to start:</p>
+<pre><code>   1. Initialize the Service object to get the IBinder object.
+
+   2. Start the background thread and enter Loop to wait.
+
+   3. Register yourself to the Service Manager and let other processes get
+</code></pre><p>the IBinder objects that are required to be called remotely by name.</p>
+<p><strong>7.</strong> There is no doubt that there are dependencies between so many services.
+For example, the ActivityManager Service cannot start an application until the
+WindowManager Service is initialized. How do you control these priorities? This
+is done by the System server&apos;s startup thread (the green bar in the image below)
+through the SystemReady() interface. Each system service must implement a
+SystemReady() interface that, when called, indicates that the system is OK, and
+the service can access (directly or indirectly) resources of other services. The
+last service to be tuned is the ActivyManager Service. AM&apos;s SystemReady() is
+done in another thread via Runnable, and the arrow below the comment 8 in the
+figure below. The thing to do in this Runnable is to start an application that
+is currently at the top level - resumeTopActivityLocked(). Generally speaking,
+this is what we often call &apos;HOME&apos;. Of course, you can specify other applications
+as Startup applications, such as GoogleTV, can use the TV application as a
+launcher, so that users can see the program directly after launching, similar to
+the set-top box at home. In addition, the ActivityManager Service also
+broadcasts the BOOT_COMPLETED event to the entire system. In general, the
+background service of many applications can be monitored and started by
+registering the Receiver of this Event. The code to start Home is as follows</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">boolean startHomeActivityLocked(int userId) {
+        ...
+        Intent intent = new Intent(...);
+        ... intent.addCategory(Intent.CATEGORY_HOME);
+        ...
+        mMainStack.startActivityLocked(null, intent, null, aInfo,null, null, 0, 0, 0, null, 0, null, false, null);
+        ...
+}<br></div></div>
+
+
+
+<p><strong>8.</strong>  Android application startup is more complicated, we will study the
+details of ActivityManager in a special chapter. Here, we only need to know that
+ActivityStack is the stack that currently runs Activity, and
+resumeTopActivityLocked() finds the one to start from. (In the beginning, the
+stack was empty because we needed to push &apos;Home&apos; to the stack via
+moveTaskFromFrontLocked().) If the application has never been launched, we need
+to create a process for it via AcitivyManagerService. note! The process is not
+created by the ActivityManager, don&apos;t forget, we mentioned Zygote is the
+incubator of all Android applications, right, the ActivityManager just informs
+Zygote to create. This communication is implemented in Process.java, the
+specific code is as follows:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static LocalSocket sZygoteSocket;
+private static ProcessStartResult zygoteSendArgsAndGetResult(ArrayList&lt;String&gt; args)
+            throws ZygoteStartFailedEx {
+        openZygoteSocketIfNeeded();
+        try {
+            ...
+            sZygoteWriter.write(arg);
+          }
+          ...
+          sZygoteWriter.flush(); // wait after sending
+          ...
+          result.pid = sZygoteInputStream.readInt();
+          ...
+          return result;
+        }
+        sZygoteSocket = null ;
+    }
+}<br></div></div>
+
+
+<p>At this point, the startup of System Server has been completed, and the startup
+of Zygote has been completed. Next we introduce the only thing in the life of
+the Zygote process and clone itself.</p>
+<h1 id="5-fork"><a name="5-fork" class="anchor-navigation-ex-anchor" href="#5-fork"><i class="fa fa-link" aria-hidden="true"></i></a>6. 5. Fork</h1>
+<p>Before Process.java sends a fork request, Zygote is ready for the server side,
+which we have covered in the previous Zygote Init chapter. Here we briefly
+analyze the processing of the request received by the Zygote Server. The code is
+in runSelectLoop() of ZygoteInit.java,</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private static void runSelectLoop() throws MethodAndArgsCaller {
+
+    ArrayList&lt;FileDescriptor&gt; fds = new ArrayList&lt;FileDescriptor&gt;();
+    ArrayList&lt;ZygoteConnection&gt; peers = new ArrayList&lt;ZygoteConnection&gt;();
+    FileDescriptor [] fdArray = new FileDescriptor [4 ];
+    fds.add(sServerSocket.getFileDescriptor());
+    peers.add(null);
+
+    While ( true ) {
+         /* Doing the GC before the fork child process instead of doing it yourself in each child process can improve efficiency, but it can&apos;t be done every time because GC is still time consuming. */
+        if (loopCount &lt;= 0) {
+            gc();
+            loopCount = GC_LOOP_COUNT;
+        } else {
+            loopCount--;
+        }
+
+        try {
+            fdArray = fds.toArray(fdArray);
+            Index = selectReadable(fdArray); //select blocking wait
+        } catch (IOException ex) {
+           ...
+        }
+
+        /* Receive new connection */
+        else  if (index == 0 ) {
+            ZygoteConnection newPeer = acceptCommandPeer();
+            peers.add(newPeer);
+            fds.add(newPeer.getFileDesciptor());
+        } else {
+             boolean done;
+             /* complete the fork operation here */
+            done = peers.get(index).runOnce();
+             if (done) {
+                peers.remove(index);
+                fds.remove(index);
+            }
+        }
+    }
+}<br></div></div>
+
+
+
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">boolean runOnce() throws ZygoteInit.MethodAndArgsCaller {
+    ...
+    try {
+        args = readArgumentList();
+        descriptors = mSocket.getAncillaryFileDescriptors();
+    } catch (IOException ex) {
+        ...
+    }
+
+    FileDescriptor childPipeFd = null;
+    FileDescriptor serverPipeFd = null;
+
+    /*
+    if (parsedArgs.runtimeInit &amp;&amp; parsedArgs.invokeWith != null) {
+         FileDescriptor[] pipeFds = Libcore.os.pipe();
+         childPipeFd = pipeFds[1];
+         serverPipeFd = pipeFds[0];
+         ZygoteInit.setCloseOnExec(serverPipeFd, true);
+     }
+
+try {
+        parsedArgs = new Arguments(args);
+        applyUidSecurityPolicy(parsedArgs, peer, peerSecurityContext);
+        ...
+
+        pid = Zygote.forkAndSpecialize(parsedArgs.uid,parsedArgs.gid, parsedArgs.gids,parsedArgs.debugFlags, rlimits, parsedArgs.mountExternal, parsedArgs.seInfo,parsedArgs.niceName);
+    } catch (IOException ex) {
+        ...
+    }
+
+    Try {
+         if (pid == 0 ) {
+             // child process, release
+            serverPedFd = null for serverFd ;
+            handleChildProc(parsedArgs, descriptors, childPipeFd, newStderr);
+        } else {
+             //The parent process releases the
+            PipeFd of the unused child process IoUtils.closeQuietly(childPipeFd);
+            childPipeFd = null;
+            return handleParentProc(pid, descriptors, serverPipeFd, parsedArgs);
+        }
+    } finally {
+        IoUtils.closeQuietly(childPipeFd);
+        IoUtils.closeQuietly(serverPipeFd);
+    }
+}<br></div></div>
+
+
+<p>The launch of the Android app is done in handleChildProc:</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">private void handleChildProc(Arguments parsedArgs,
+        FileDescriptor[] descriptors, FileDescriptor pipeFd, PrintStream newStderr)
+        throws ZygoteInit.MethodAndArgsCaller {
+
+    closeSocket (); / / does not require the server socket
+    ZygoteInit.closeServerSocket ();
+    ...
+    If (parsedArgs.runtimeInit) { //All from Process.java is true
+        if (parsedArgs.invokeWith != null ) {
+            WrapperInit.execApplication(parsedArgs.invokeWith,
+                    parsedArgs.niceName, parsedArgs.targetSdkVersion,
+                    pipeFd, parsedArgs.remainingArgs); // Start the command line program
+        } else {
+            RuntimeInit.zygoteInit(parsedArgs.targetSdkVersion,
+                    parsedArgs.remainingArgs); // Almost all applications start this way
+        }
+    } else {
+        ...
+        if (parsedArgs.invokeWith != null) {
+            WrapperInit.execStandalone(parsedArgs.invokeWith,
+                    parsedArgs.classpath, className, mainArgs);
+        } else {
+            ...
+            try {
+                ZygoteInit.invokeStaticMain(cloader, className, mainArgs);
+            } catch (RuntimeException ex) {
+                ...
+            }
+        }
+    }
+}<br></div></div>
+
+
+<p>Here is the RuntimeInit.ZygoteInit(), which is the same as startSystemServer,
+and finally invokeStaticMain(,&quot;&quot;android.app.ActivityThread&quot;,);
+invokeStatickMain() function is implemented</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static void invokeStaticMain(ClassLoader loader,String className, String[] argv)     throws zygoteInit.MethodAndArgsCaller {
+        ...
+        throw new ZygoteInit.MethodAndArgsCaller(m, argv);
+    }<br></div></div>
+
+
+<p>Careful readers may ask a few questions:</p>
+<ol>
+<li>Why not directly call the corresponding Java function, but through an
+exception? MethodAndArgsCaller. Here Android cleverly uses some of the design
+features of Java Exception. One of the great features of Execption is that when
+an exception occurs or throws, it can be traced back from the call stack from
+where the error occurred until the code segment that caught the exception is
+found. The code to catch the exception is as follows</li>
+</ol>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">public static void main(String argv[]) {
+    ...
+    try {
+        runSelectLoop ();
+        closeServerSocket();
+    } catch (MethodAndArgsCaller caller) {
+        Caller.run(); //The real entry is here.
+    } catch (RuntimeException ex) {
+        ...
+    }
+}<br></div></div>
+
+
+<p>Now you understand why you always see the following call stack in the dumpstate
+file.</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;java&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">...
+   at java.lang.reflect.Method.invokeNative(Native Method)
+   at java.lang.reflect.Method.invoke(Method.java:511)
+   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+   at dalvik.system.NativeStart.main(Native Method)<br></div></div>
+
+<ol>
+<li>Why do all applications start with &quot;android.app.ActivityThread&quot;? Leave a
+foreshadowing here, we will introduce the entire process of Android Activity
+from startup to display at <a href="http://www.cnblogs.com/samchen2009/p/3315993.html" target="_blank">http://www.cnblogs.com/samchen2009/p/3315993.html</a>. </li>
+</ol>
+<p>Once the application is launched, Zygote has to go back to sleep and wait for a
+new application launch request.</p>
+<h1 id="6-after-work"><a name="6-after-work" class="anchor-navigation-ex-anchor" href="#6-after-work"><i class="fa fa-link" aria-hidden="true"></i></a>7. 6. After work</h1>
+<p>Isn&apos;t it after this, Zygote&apos;s work has become very easy, can you raise a
+good year? Unfortunately, in modern society, which parent can raise the child
+and leave it alone? Especially for the eldest son who has a heavy social
+responsibility like the Sytem Server, parents still have to help. Here, Zygote
+will silently stare at his eldest son in the background. Once he discovers that
+System Server has been hanged, he will recycle it, then kill himself and start a
+new life again, which is a pity for the parents. This implementation is in the
+code: dalvik/vm/native/dalvik_system_zygote.cpp,</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static void Dalvik_dalvik_system_Zygote_forkSystemServer(
+        const u4* args, JValue* pResult){
+    ...
+    pid_t pid;
+    pid = forkAndSpecializeCommon(args, true);
+    ...
+    if (pid &gt; 0) {
+        int status;
+        gDvm.systemServerPid = pid;
+         /* WNOHANG will cause waitpid to return immediately, just to prevent the above system from crashing before the assignment statement is completed */
+        if (waitpid(pid, &amp;status, WNOHANG) == pid) {
+            ALOGE(&quot;System server process %d has died. Restarting Zygote!&quot;, pid);
+            kill(getpid(), SIGKILL);
+        }
+    }
+    RETURN_INT(pid);
+}
+
+
+/* Real processing is here */
+static  void sigchldHandler( int s)
+{
+    ...
+    pid_t pid;
+    int status;
+    ...
+    while ((pid = waitpid(-1, &amp;status, WNOHANG)) &gt; 0) {
+        ...
+        if (pid == gDvm.systemServerPid) {
+            ...
+            kill(getpid(), SIGKILL);
+        }
+    }
+    ...
+}<br></div></div>
+
+
+
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;c_cpp&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;monokai&quot;}">static void Dalvik_dalvik_system_Zygote_fork(const u4* args, JValue* pResult)
+{
+    pid_t pid;
+    ...
+    setSignalHandler(); //signalHandler Register here
+    ...
+    pid = fork();
+    ...
+    RETURN_INT(pid);
+}<br></div></div>
+
+
+<p>On Unix-like systems, the parent process must wait for the child process to
+exit with waitpid, otherwise the child process will become a &quot;Zombie&quot; process,
+not only the system resources will leak, but the system will crash (no system
+server, all Android applications are Can not run). But waitpid() is a blocking
+function (except for the WNOHANG parameter), so the usual practice is to do
+non-blocking processing in the signal handler, because the system will issue a
+SIGCHID signal when each child exits. Zygote will kill himself, the father is
+dead, all the apps are not orphaned? No, because the system will automatically
+generate a SIGHUP signal to all child processes after the parent process is
+killed. The default processing of this signal is to kill itself and exit the
+current process. However, some background processes (Daemon) can ignore this
+signal by setting the SIG_IGN parameter, so that it can continue to run in the
+background.</p>
+<h1 id="summary"><a name="summary" class="anchor-navigation-ex-anchor" href="#summary"><i class="fa fa-link" aria-hidden="true"></i></a>8. Summary</h1>
+<p>The startup process of Zygote and System Server is finally finished. Let&apos;s
+revisit this process with the complete class diagram above.</p>
+<ol>
+<li><p>init runs app_process according to init.rc and carries the &apos;--zygote&apos; and
+&apos;--startSystemServer&apos; parameters.</p>
+</li>
+<li><p>JavaVM will be started in AndroidRuntime.cpp::start() and all system-related
+JNI interfaces will be registered.</p>
+</li>
+<li><p>For the first time into the Java world, run the ZygoteInit.java::main()
+function to initialize Zygote. Zygote and create the server side of the Socket.</p>
+</li>
+<li><p>Then fork a new process and initialize SystemServer in the new process.
+Before Fork, Zygote is a commonly used Java class library for preload, as well
+as the system&apos;s resources, while GC() cleans up the memory space, eliminating
+the need for duplicate work for the child process.</p>
+</li>
+<li><p>SystemServer initializes all system services, including ActivityManager and
+WindowManager, which are prerequisites for the application to run.</p>
+</li>
+<li><p>At the same time, Zygote listens to the server Socket and waits for a new
+application to start the request.</p>
+</li>
+<li><p>After the ActivityManager is ready, look for the system&apos;s &quot;Startup&quot;
+Application and send the request to Zygote.</p>
+</li>
+<li><p>After Zygote receives the request, the fork will issue a new process.</p>
+</li>
+<li><p>Zygote listens for and processes the SIGCHID signal from SystemServer and
+kills itself as soon as System Server crashes. Init will restart Zygote.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Graphical Android - Zygote, System Server startup analysis","level":"1.2.1","depth":2,"next":{"title":"Android Permissions","level":"1.3","depth":1,"ref":"","articles":[{"title":"Android Permissions - Android Runtime Permission","level":"1.3.1","depth":2,"path":"Android Permissions - Android Runtime Permission.md","ref":"Android Permissions - Android Runtime Permission.md","articles":[]},{"title":"Android Permissions - Android grantRuntimePermission Detailed","level":"1.3.2","depth":2,"path":"Android Permissions - Android grantRuntimePermission Detailed.md","ref":"Android Permissions - Android grantRuntimePermission Detailed.md","articles":[]},{"title":"Android Permissions - Android GrantPermissionsActivity Detailed","level":"1.3.3","depth":2,"path":"Android Permissions - Android GrantPermissionsActivity Detailed.md","ref":"Android Permissions - Android GrantPermissionsActivity Detailed.md","articles":[]},{"title":"Android Permissions - AppOps control for Normal permission","level":"1.3.4","depth":2,"path":"Android Permissions - AppOps control for Normal permission.md","ref":"Android Permissions - AppOps control for Normal permission.md","articles":[]},{"title":"Android Permissions - Android native permission control process","level":"1.3.5","depth":2,"path":"Android Permissions - Android native permission control process.md","ref":"Android Permissions - Android native permission control process.md","articles":[]},{"title":"Android Permissions - The difference between setUidMode and setMode in AppOps","level":"1.3.6","depth":2,"path":"Android Permissions - The difference between setUidMode and setMode in AppOps.md","ref":"Android Permissions - The difference between setUidMode and setMode in AppOps.md","articles":[]},{"title":"Android Permissions - Application permissions before android M and application permissions after M","level":"1.3.7","depth":2,"path":"Android Permissions - Application permissions before android M and application permissions after M.md","ref":"Android Permissions - Application permissions before android M and application permissions after M.md","articles":[]},{"title":"Android Permissions - Provider permissions detailed","level":"1.3.8","depth":2,"path":"Android Permissions - Provider permissions detailed.md","ref":"Android Permissions - Provider permissions detailed.md","articles":[]}]},"previous":{"title":"Graphical Android","level":"1.2","depth":1,"ref":"","articles":[{"title":"Graphical Android - Zygote, System Server startup analysis","level":"1.2.1","depth":2,"path":"Graphical Android - Zygote, System Server startup analysis.md","ref":"Graphical Android - Zygote, System Server startup analysis.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-html","fancybox","anchor-navigation-ex-toc","ace","-lunr","-search","search-plus","hide-published-with","splitter","expandable-chapters-interactive","wide-page"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"ace":{},"splitter":{},"wide-page":{},"anchor-navigation-ex-toc":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"hide-published-with":{},"include-html":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-interactive":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"Graphical Android - Zygote, System Server startup analysis.md","mtime":"2018-09-13T09:19:43.018Z","type":"markdown"},"gitbook":{"version":"3.3.6","time":"2023-12-10T09:35:29.798Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/@gitbook-ng/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
